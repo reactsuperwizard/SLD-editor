@@ -1,0 +1,118 @@
+.icon {
+  width: 32px;
+  height: 32px;
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-position: center center;
+  &.icon-hoz-line {
+    background-image: url("assets/i/hoz-line.svg");
+    width: 30px;
+    height: 20px;
+  }
+  &.icon-area {
+    background-image: url("assets/i/area.svg");
+  }
+  &.icon-policy {
+    background-image: url("assets/i/policy.svg");
+  }
+  &.icon-edit {
+    background-image: url("assets/i/edit-icon.svg");
+    background-size: 16px 16px;
+    height: 16px;
+    width: 16px;
+  }
+  &.icon-setting {
+    background-image: url("assets/i/setting.svg");
+  }
+  &.icon-project-entities {
+    background-image: url("assets/i/project-entities.svg");
+  }
+  &.icon-task-criterias {
+    background-image: url("assets/i/task-criterias.svg");
+  }
+  &.icon-project-modelling {
+    background-image: url("assets/i/project-modelling.svg");
+  }
+  &.icon-members-privileges {
+    background-image: url("assets/i/members-privileges.svg");
+  }
+  &.icon-manage-kernel {
+    background-image: url("assets/i/manage-kernel.svg");
+  }
+  &.icon-add-new {
+    background-image: url("assets/i/add-new.svg");
+    width: 32px;
+    height: 32px;
+  }
+  &.icon-info {
+    background-image: url("assets/i/info.svg");
+  }
+  &.icon-checkbox {
+    background-image: url("assets/i/checkbox-unchecked.svg");
+    &.checked {
+      background-image: url("assets/i/checkbox-checked.svg");
+    }
+  }
+  &.icon-switchbox {
+    background-image: none;
+    &.checked {
+      background-image: url("assets/i/CheckMark.svg");
+    }
+  }
+  &.icon-role {
+    background-image: url("assets/i/member.svg");
+  }
+  &.icon-role-black {
+    background-image: url("assets/i/member-black.svg");
+  }
+  &.icon-privilege.enabled {
+    background-image: url("assets/i/checked.svg");
+  }
+  &.icon-execution-team {
+    background-image: url("assets/i/execution-team.svg");
+    width: 100px;
+    height: 100px;
+  }
+  &.icon-back {
+    background-image: url("assets/i/back.svg");
+  }
+  &.icon-avatar {
+    background-image: url("assets/i/avatar.svg");
+  }
+  &.icon-filter {
+    background-image: url("assets/i/filter.svg");
+    &.checked {
+      background-image: url("assets/i/filter-checked.svg");
+    }
+  }
+  &.icon-remove {
+    background-image: url("assets/i/remove.svg");
+  }
+  &.icon-remove-user {
+    background-image: url("assets/i/remove-user.svg");
+  }
+  &.icon-zoom {
+    background-image: url("assets/i/zoom-in.svg");
+  }
+  &.icon-file {
+    background-image: url("assets/i/file.svg");
+  }
+  &.icon-reset {
+    background-image: url("assets/i/reset.svg");
+  }
+  &.icon-close {
+    background-image: url("assets/i/close.svg");
+  }
+  &.icon-notes {
+    background-image: url("assets/i/notes.svg");
+  }
+  &.icon-shield {
+    background-image: url("assets/i/shield.svg");
+  }
+  &.icon-calendar {
+    background-image: url("assets/i/calendar.svg");
+  }
+  &.icon-checkmark-circle {
+    background-image: url("assets/i/checkmark-circle.svg");
+  }
+}

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="40px" height="48px" viewBox="0 0 40 48" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 52.5 (67469) - http://www.bohemiancoding.com/sketch -->
+    <title>/pin</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Project-Modelling-–-GIS-&amp;-SLD" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="4.4-/-Settings-/-Edit-Mode-/-T&amp;D-Utility-/-Drop-Pin" transform="translate(-1200.000000, -288.000000)" fill-rule="nonzero">
+            <g id="/add_substation" transform="translate(1176.000000, 232.000000)">
+                <g id="/pin" transform="translate(24.000000, 56.000000)">
+                    <rect id="Rectangle" stroke="#F4F4F4" x="0.5" y="0.5" width="39" height="39" rx="19.5"></rect>
+                    <path d="M19.9999998,47.025562 C27.6680642,34.1511298 31.5,25.1171605 31.5,20 C31.5,18.0171848 30.7621841,15.292347 29.3417805,13.1514498 C27.3877527,10.2062499 24.3526849,8.50004954 20.0673668,8.50004954 C15.7797968,8.50004954 12.7155524,10.2090263 10.7231216,13.1551292 C9.27006352,15.30369 8.5,18.0465255 8.5,20 C8.5,25.1171748 12.3319328,34.1511394 19.9999916,47.0255484 Z M20,13.5 C23.5898509,13.5 26.5,16.4101491 26.5,20 C26.5,23.5898509 23.5898509,26.5 20,26.5 C16.4101491,26.5 13.5,23.5898509 13.5,20 C13.5,16.4101491 16.4101491,13.5 20,13.5 Z" id="Combined-Shape" stroke="#DBDBDB" fill="#FFFFFF"></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

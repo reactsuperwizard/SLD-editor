@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="32px" height="48px" viewBox="-4.0 0.0 32 48" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 52.5 (67469) - http://www.bohemiancoding.com/sketch -->
+    <title>power-supply</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Project-Modelling-–-GIS-&amp;-SLD" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" opacity="1">
+        <g id="Artboard" transform="translate(-424.000000, -2488.000000)" fill-rule="nonzero" stroke="#0ca919">
+            <g id="32-/-sld-/-vertical-/-box-icon-/-normal" transform="translate(420.000000, 2480.000000)">
+                <g id="sld-/-multi-/-power-supply-/-black" transform="translate(4.000000, 8.000000)">
+                    <rect id="Rectangle" x="0.5" y="0.5" width="23" height="23" rx="11.5"></rect>
+                    <path d="M12,12 C11.5542665,9.33333333 10.2209332,8 8,8 C5.77906682,8 4.44573348,9.33333333 4,12" id="Path-10" stroke-linecap="round"></path>
+                    <path d="M20,16 C19.5542665,13.3333333 18.2209332,12 16,12 C13.7790668,12 12.4457335,13.3333333 12,16" id="Path-10" stroke-linecap="round" transform="translate(16.000000, 14.000000) scale(1, -1) translate(-16.000000, -14.000000) "></path>
+                    <path d="M12,24 L12,48" id="Path"></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

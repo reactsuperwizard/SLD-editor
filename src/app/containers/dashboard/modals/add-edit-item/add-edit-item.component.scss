@@ -1,0 +1,54 @@
+@import 'mixin';
+.modal-container {
+  .modal-header {
+    border-bottom: 1px solid $pale-grey;
+    height: 55px;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 25px;
+    display: flex;
+    .modal-title {
+      margin: 0;
+      padding: 0;
+      font-size: 20px;
+      font-weight: 500;
+      font-style: normal;
+      font-stretch: normal;
+      line-height: 1.5;
+      letter-spacing: normal;
+      color: $black;
+    }
+    button {
+      border: 0;
+      background: transparent url('/assets/i/close.svg') center center no-repeat;
+      width: 14px;
+      height: 14px;
+      outline: none;
+    }
+  }
+  .modal-body {
+    display: flex;
+    flex-direction: column;
+    padding: 24px;
+    span {
+      color: $lightBlack;
+      font-size: 14px;
+    }
+    .name-input {
+      @include input-default();
+      margin-top: 10px;
+      width: 100%;
+    }
+  }
+  .modal-footer {
+    border: none;
+    .btn.btn-save {
+      @include button-default(white, black, black, 192px);
+      width: 50%;
+    }
+    .btn.btn-delete {
+      @include button-default(black, white, white, 192px);
+      width: 50%;
+    }
+  }
+}

@@ -1,0 +1,42 @@
+<div class="modal-container role-compare">
+  <div class="modal-header">
+    <span class="modal-title" id="modal-basic-title" i18n>All priviledges</span>
+    <button type="button" class="close" aria-label="Close" (click)="backWithoutSave()">
+      <span aria-hidden="false">&times;</span>
+    </button>
+  </div>
+  <div class="modal-body">
+    <div class="all-roles-list">
+
+      <div class="table-column">
+        <div class="header-cell cell-role" i18n>Role</div>
+        <div class="column-without-header">
+          <div class="cell-group" *ngFor="let permission of allPermissions">
+            <div class="cell">{{permission.name}}</div>
+            <div class="cell" *ngFor="let item of permission.items">{{item}}</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="table-datas" [perfectScrollbar]="{}">
+        <div class="table-column" *ngFor="let role of roleData">
+          <div class="header-cell">
+            <i class="icon icon-role-black"></i>
+            <span>{{role.roleName}}</span>
+          </div>
+          <div class="column-without-header">
+            <div class="cell-group" *ngFor="let permission of role.permissions">
+              <div class="cell"></div>
+              <div class="cell" *ngFor="let item of permission.list">
+                <app-three-state-slide-select [(ngModel)]="item.level" [disabled]="!permission.enabled"></app-three-state-slide-select>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+    <div class="modal-footer">
+      <a class="btn btn-save" (click)="save()" i18n>Save</a>
+    </div>
+  </div>

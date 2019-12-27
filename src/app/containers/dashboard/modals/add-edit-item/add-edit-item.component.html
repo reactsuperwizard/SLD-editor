@@ -1,0 +1,15 @@
+<div class="modal-container">
+  <div class="modal-header">
+    <span class="modal-title" id="modal-basic-title" i18n>{{title}}</span>
+    <button type="button" class="close" aria-label="Close" (click)="activeModal.dismiss('back')">
+    </button>
+  </div>
+  <div class="modal-body">
+    <span i18n>Name</span>
+    <input class="name-input" [formControl]="name">
+  </div>
+  <div class="modal-footer">
+    <a *ngIf="data && !disableDelete" class="btn btn-delete" (click)="delete()" i18n>Delete</a>
+    <a class="btn btn-save" [ngClass]="{'disabled':name.invalid}" (click)="save()" i18n>Save</a>
+  </div>
+</div>

@@ -1,0 +1,10 @@
+
+<svg width="20px" height="24px" viewBox="0 0 20 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="ABB-Template-/-Navigation-/-Top-Menu" transform="translate(-1170.000000, -16.000000)" fill="#DBDBDB">
+            <g id="/-24-/-policy" transform="translate(1170.000000, 16.000000)">
+                <path d="M0,1.23468996 L0,13.3742557 C0,15.1966403 0.645942336,16.7639282 1.94645441,18.0960698 C4.23828342,20.4424797 6.91862407,22.4146238 10.0002783,24 C13.0696872,22.5907176 15.7873205,20.6074014 18.1615273,18.0652135 C19.3932985,16.7458401 20,15.2251026 20,13.4567165 L20,1.23442395 C13.3332406,-0.392980635 6.66675943,-0.429955011 0,1.23468996" id="/policy"></path>
+            </g>
+        </g>
+    </g>
+</svg>

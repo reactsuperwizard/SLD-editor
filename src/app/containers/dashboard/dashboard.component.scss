@@ -1,0 +1,231 @@
+@import 'mixin';
+// dashboard styles
+.page-container {
+  padding: 0; // header styles
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  width: 100%;
+  height: 100%;
+  .header-container {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 10px 0 40px;
+    height: 56px;
+    border-bottom: 1px solid $lightGray;
+    h3 {
+      font-size: 20px;
+      font-weight: 400;
+      color: #262626;
+    }
+    .header-opts {
+      height: 100%;
+      display: flex;
+      align-items: center;
+      a {
+        height: 40px;
+        width: 56px;
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        &:nth-child(2) {
+          border-left: 1px solid $lightGray;
+          border-right: 1px solid $lightGray;
+        }
+        .icon {
+          background-size: 22px;
+          &.icon-setting {
+            opacity: $activeOpacity;
+            &.active {
+              opacity: 1;
+            }
+          }
+        }
+      }
+    }
+  }
+  .page-wrap {
+    flex: 1;
+    display: flex;
+    height: calc(100% - 56px);
+    max-height: calc(100% - 56px);
+    .left-aside {
+      width: 216px;
+      min-width: 216px;
+      user-select: none;
+      @include mobile {
+        width: 50px;
+        min-width: 50px;
+        .links {
+          span {
+            display: none;
+          }
+        }
+      }
+      .links {
+        display: flex;
+        flex-direction: column;
+        .link {
+          height: 56px;
+          display: flex;
+          align-items: center;
+          border-bottom: 1px solid #F4F4F4;
+          padding-left: 16px;
+          position: relative;
+          color: black;
+          .icon {
+            width: 16px;
+            height: 16px;
+          }
+          span {
+            padding-left: 10px;
+            font-size: 14px;
+          }
+          &.active {
+            .icon {
+              opacity: $activeOpacity;
+            }
+            span {
+              color: #9F9F9F;
+            }
+          }
+        }
+      }
+    }
+    .content-container {
+      background-color: $bgColor;
+      flex: 1;
+    }
+  }
+}
+
+// dashboard styles
+.card-default {
+  .lbl-latest {
+    font-size: 12px;
+    line-height: 2;
+    text-align: center;
+    color: #9f9f9f;
+    padding-top: 16px;
+  }
+  .user-list {
+    padding-top: 24px;
+  }
+  .bar-user {
+    border-radius: 4px;
+    border: solid 1px #f4f4f4;
+    background-color: #ffffff;
+    margin: 4px 16px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    padding: 8px;
+    cursor: pointer;
+    &:first-child {
+      margin-top: 0;
+    }
+    .thumb {
+      flex: 0 56px;
+    }
+    .user-details {
+      flex: 1;
+      .name {
+        font-size: 14px;
+        line-height: 1.14;
+        color: #262626;
+      }
+      .job-position {
+        font-size: 12px;
+        line-height: 2;
+        color: #686868;
+      }
+    }
+  }
+  // .execution-list
+  .execution-list {
+    padding-top: 24px;
+    .bar-execution {
+      height: 56px;
+      border-radius: 4px;
+      cursor: pointer;
+      border: solid 1px #f4f4f4;
+      background-color: #ffffff;
+      margin: 4px 16px;
+      display: flex;
+      padding: 8px;
+      transition-duration: 0.3s;
+      &:first-child {
+        margin-top: 0;
+      }
+      .team-details {
+        margin-left: 8px;
+        padding-top: 4px;
+      }
+      .team-id {
+        width: 40px;
+        height: 40px;
+        border-radius: 20px;
+        border: solid 3px #f4f4f4;
+        background-color: #ffffff;
+        font-size: 21px;
+        font-weight: 500;
+        line-height: 34px;
+        text-align: center;
+        color: #262626;
+      }
+      .tn {
+        font-size: 14px;
+        line-height: 1.14;
+        color: #262626;
+      }
+      .team-desc {
+        font-size: 12px;
+        line-height: 2;
+        color: #686868;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+        width: 190px;
+        overflow: hidden;
+      }
+      &:hover {
+        box-shadow: 0 4px 12px 0 rgba(0, 0, 0, 0.16);
+      }
+    }
+  }
+}
+
+// roles-list
+.roles-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 0 16px;
+  .bar-role {
+    flex: 0 128px;
+    height: 120px;
+    border-radius: 4px;
+    border: solid 1px #f4f4f4;
+    background-color: #ffffff;
+    margin-top: 8px;
+    padding-top: 12px;
+    cursor: pointer;
+    font-size: 14px;
+    line-height: 1.14;
+    text-align: center;
+    color: #262626;
+    transition-duration: 0.3s;
+    &:hover {
+      box-shadow: 0 4px 12px 0 rgba(0, 0, 0, 0.16);
+    }
+    .fig {
+      padding-bottom: 8px;
+      img {
+        width: 40px;
+        height: 40px;
+      }
+    }
+  }
+}

@@ -1,0 +1,222 @@
+<div class="sub-page edit-user" [class.modal-page]="mode === 'as-modal'">
+  <div class="viewport">
+    <header class="sub-header sub-header-sm" [class.modal-header]="mode === 'as-modal'">
+      <i class="icon icon-back" (click)="backWithoutSave()" *ngIf="mode!=='as-modal'"></i>
+      <h3>{{title}}</h3>
+      <button *ngIf="mode==='as-modal'" type="button" class="close" aria-label="Close"
+              (click)="activeModal.dismiss('back')">
+        <span aria-hidden="false">&times;</span>
+      </button>
+    </header>
+
+    <div class="scroll-container">
+      <div class="role-info-section container-fluid">
+        <div class="loading-box" *ngIf="loading">
+          <div class="img" alt="loading"></div>
+        </div>
+
+        <div class="group-header first-header" *ngIf="mode!=='as-modal'" i18n>Profile</div>
+        <div class="frow row">
+          <div class="col-lg-6">
+            <div class="fieldset">
+              <div class="fs-lbl">
+                <span i18n><sup>*</sup>Name</span>
+              </div>
+              <div class="fs-val">
+                <input type="text" class="input-ctrl" [(ngModel)]="member['userName']" (change)="validateForm()"/>
+              </div>
+              <span class="error-indicate" [ngClass]="{'invalid':submitted && !member['userName']}" i18n>Name is Reqiured</span>
+            </div>
+          </div>
+          <div class="col-lg-6">
+            <div class="fieldset">
+              <div class="fs-lbl">
+                <span i18n><sup>*</sup>Surname</span>
+              </div>
+              <div class="fs-val">
+                <input type="text" class="input-ctrl" [(ngModel)]="member['surName']" (change)="validateForm()"/>
+              </div>
+              <span class="error-indicate" [ngClass]="{'invalid':submitted && !member['surName']}" i18n>Surname is Reqiured</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="frow row">
+          <div class="col-lg-6">
+            <div class="fieldset">
+              <div class="fs-lbl">
+                <span i18n><sup>*</sup>Employer</span>
+              </div>
+              <div class="fs-val">
+                <input type="text" class="input-ctrl" [(ngModel)]="member['employer']" (change)="validateForm()"/>
+              </div>
+              <span class="error-indicate" [ngClass]="{'invalid':submitted && !member['employer']}" i18n>Employer is Reqiured</span>
+            </div>
+          </div>
+          <div class="col-lg-6">
+            <div class="fieldset">
+              <div class="fs-lbl">
+                <span i18n><sup>*</sup>Job position</span>
+              </div>
+              <div class="fs-val">
+                <input type="text" class="input-ctrl" [(ngModel)]="member['jobPosition']" (change)="validateForm()"/>
+              </div>
+              <span class="error-indicate" [ngClass]="{'invalid':submitted && !member['jobPosition']}" i18n>Job position is Reqiured</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="frow row">
+          <div class="col-lg-6">
+            <div class="fieldset">
+              <div class="fs-lbl">
+                <span i18n><sup>*</sup>Email</span>
+              </div>
+              <div class="fs-val">
+                <input type="email" class="input-ctrl" [(ngModel)]="member['email']" (change)="validateForm()"/>
+              </div>
+              <span class="error-indicate" [ngClass]="{'invalid':submitted && !isEmail(member['email'])}"
+                    i18n>Should enter email</span>
+            </div>
+          </div>
+          <div class="col-lg-6">
+            <div class="fieldset">
+              <div class="fs-lbl">
+                <span i18n><sup>*</sup>Phone</span>
+              </div>
+              <div class="fs-val fs-val-fx">
+                <div class="col-md-3">
+                  <select class="select-ctrl" [(ngModel)]="member['telCode']">
+                    <option>+1</option>
+                    <option>+91</option>
+                  </select>
+                </div>
+                <div class="col-md-9">
+                  <input type="text" class="input-ctrl" [(ngModel)]="member['phone']" (change)="validateForm()"/>
+                </div>
+              </div>
+              <span class="error-indicate" [ngClass]="{'invalid':submitted && !isPhone(member['phone'])}" i18n>Should enter phone
+                number</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="group-header" i18n *ngIf="!addNewUser" i18n>Role</div>
+        <div class="items" *ngIf="!addNewUser">
+          <div class="item" *ngFor="let role of member['role']">
+            <label (click)="deleteRole(role)">
+              <i class="icon icon-remove"></i>
+            </label>
+            <span>{{role}}</span>
+          </div>
+          <app-add-new (click)="assignNewRole()"><span i18n>Assign role</span></app-add-new>
+        </div>
+
+        <div class="group-header" i18n *ngIf="addNewUser" i18n>Assign role & priviledges</div>
+        <div [class.error]="isNoRoleSelected()" class="role-items" *ngIf="addNewUser && userType==='Admin'">
+          <a class="role-item" *ngFor="let role of allRoles" (click)="role.selected=!role.selected">
+            <i class="icon icon-checkbox" [class.checked]="role.selected"></i>
+            <span>{{role.roleName}}</span>
+          </a>
+        </div>
+        <div [perfectScrollbar]="{suppressScrollY: true}" [class.error]="isNoRoleSelected()" class="all-roles-list" *ngIf="addNewUser && userType==='PM'">
+          <app-role-card (roleClick)="role.selected=!role.selected " *ngFor="let role of allRoles" [role]="role"></app-role-card>
+        </div>
+
+        <div class="group-header" i18n *ngIf="showMaintenanceInfo" i18n>Maintenance information</div>
+        <ngb-tabset class="tabs tabs-maintenance" [destroyOnHide]="false" *ngIf="showMaintenanceInfo">
+          <ngb-tab title="Execution Team">
+            <ng-template ngbTabContent>
+              <div class="tab tab-execution-team">
+                <div class="items">
+                  <div class="item-row">
+                    <div class="item header"></div>
+                    <div class="label hourly-rate">
+                      <span i18n>*Hourly rate</span>
+                      <span class="error-indicate" [class.invalid]="hourlyRateMissing" i18n>Required</span>
+                    </div>
+                    <div class="label" i18n>Currency</div>
+                  </div>
+                  <div class="item-row" *ngFor="let team of member['executionTeams']">
+                    <div class="item">
+                      <label (click)="removeFromTeam(team)">
+                        <i class="icon icon-remove"></i>
+                      </label>
+                      <span>{{team.name}}</span>
+                    </div>
+                    <div class="hourly-rate">
+                      <input appNumberOnly [(ngModel)]="team.hourlyRate" (change)="validateForm()">
+                    </div>
+                    <div class="currency-text">
+                      <div class="currency-value" i18n>USD</div>
+                    </div>
+                  </div>
+                  <div class="item-row">
+                    <a class="item add-new" (click)="assignNewTeam()">
+                      <label>
+                        <i class="icon icon-add-new"></i>
+                      </label>
+                      <span i18n>Assign to execution team</span>
+                    </a>
+                    <div class="hourly-rate">
+                      <input appNumberOnly [(ngModel)]="defaultHourlyRate" (change)="validateForm()">
+                    </div>
+                    <div class="currency-text">
+                      <div class="currency-value" i18n>USD</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </ng-template>
+          </ngb-tab>
+
+          <ngb-tab title="Skills & certificates">
+            <ng-template ngbTabContent>
+              <div class="tab tab-skills">
+                <div class="items">
+                  <div class="item header" *ngIf="member['skills'] && member['skills'].length">
+                    <span class="label" i18n>Skill name</span>
+                    <div class="detail label" i18n>File</div>
+                    <div class="detail label" i18n>Validity</div>
+                  </div>
+                  <div class="item" *ngFor="let skill of member['skills']">
+                    <label (click)="toggleSkill(skill)">
+                      <i class="icon icon-checkbox" [class.checked]="skill.selected"></i>
+                    </label>
+                    <span>{{ skill.name }}</span>
+                    <div class="detail" *ngIf="skill.filename">
+                      <i class="icon icon-file"></i>
+                      <span class="filename">{{ skill.filename }}</span>
+                    </div>
+                    <div class="detail" *ngIf="skill.filename">
+                      <span class="date-value">{{ skill.validityMonth }}</span>
+                      <span class="date-value">{{ skill.validityYear }}</span>
+                    </div>
+                  </div>
+                  <a class="item add-new" (click)="assignOrEditSkill()">
+                    <label>
+                      <i class="icon icon-add-new"></i>
+                    </label>
+                    <span i18n>Assign skill</span>
+                  </a>
+                  <div class="skill-buttons">
+                    <a class="btn btn-clear" [class.disabled]="!selectedSkills.length" (click)="deleteSelectedSkills()"
+                       i18n>Delete</a>
+                    <a class="btn btn-edit" [class.disabled]="selectedSkills.length!==1"
+                       (click)="selectedSkills.length > 0 && assignOrEditSkill(selectedSkills[0])"
+                       i18n>Edit</a>
+                  </div>
+                </div>
+              </div>
+            </ng-template>
+          </ngb-tab>
+        </ngb-tabset>
+
+        <div class="bar-action fx-r">
+          <a class="btn btn-save btn-save-form" (click)="save()" i18n>Save</a>
+        </div>
+      </div>
+      <!-- /.create-user-form -->
+    </div>
+  </div>
+</div>

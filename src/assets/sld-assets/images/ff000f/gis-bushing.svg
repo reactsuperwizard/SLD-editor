@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="32px" height="48px" viewBox="-4.0 0.0 32 48" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 52.5 (67469) - http://www.bohemiancoding.com/sketch -->
+    <title>gis-bushing</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Project-Modelling-–-GIS-&amp;-SLD" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" opacity="1">
+        <g id="Artboard" transform="translate(-424.000000, -1988.000000)" fill-rule="nonzero" stroke="#ff000f">
+            <g id="32-/-sld-/-vertical-/-box-icon-/-normal" transform="translate(420.000000, 1980.000000)">
+                <g id="sld-/-multi-/-gis-busing-/-black" transform="translate(4.000000, 8.000000)">
+                    <path d="M12,-3.55271368e-15 L12,24" id="Path"></path>
+                    <rect id="Rectangle" x="5.5" y="13.5" width="13" height="23"></rect>
+                    <polyline id="Path-4" stroke-linecap="square" points="6 36 12 24 18 36"></polyline>
+                    <path d="M12,36.5 L12,48" id="Path"></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

@@ -1,0 +1,240 @@
+@import 'variables';
+
+@mixin tab-page-default {
+  margin: 16px;
+  background-color: white;
+  height: calc(100% - 32px);
+  width: calc(100% - 32px);
+  border-radius: 4px;
+  box-shadow: 0 4px 12px 0 rgba(0, 0, 0, 0.12);
+  .nav-tabs {
+    display: flex;
+    align-items: center;
+    height: 40px;
+    border-bottom: 1px solid $lighterGray;
+    .nav-item {
+      width: 192px;
+      height: 40px;
+      .nav-link {
+        color: black;
+        height: 40px;
+        line-height: 40px;
+        padding: 0;
+        width: 100%;
+        text-align: center;
+        font-size: 14px;
+        border: none;
+        &.active {
+          font-weight: bold;
+          border-bottom: 4px solid black;
+        }
+        &.disabled {
+          background-color: $bgColor;
+          color: rgba($black, .6);
+        }
+      }
+    }
+  }
+  .tab-content {
+    height: calc(100% - 40px);
+    .tab-pane {
+      height: 100%;
+      .tab {
+        height: 100%;
+      }
+    }
+  }
+}
+
+@mixin content-wrap-style() {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  .title {
+    margin: 0 16px;
+    border-bottom: 1px solid $lighterGray;
+    height: 56px;
+    line-height: 56px;
+    font-size: 18px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+    span {
+      width: 50%;
+      padding-left: 16px;
+    }
+    @include mobile {
+      font-size: 12px;
+      white-space: nowrap;
+      span {
+        padding-left: 0;
+      }
+    }
+  }
+  .body {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 20px 22px 0 22px;
+    &.row-flex {
+      flex-direction: row;
+    }
+  }
+}
+
+@mixin clear-cut-gradient() {
+  position: relative;
+  content: '';
+  display: block;
+  width: 100%;
+  height: 60px;
+  top: -50px;
+  left: 0;
+  background: -moz-linear-gradient(top, rgba(125, 185, 232, 0) 0%, rgba(255, 255, 255, 1) 100%); /* FF3.6-15 */
+  background: -webkit-linear-gradient(top, rgba(125, 185, 232, 0) 0%, rgba(255, 255, 255, 1) 100%); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to bottom, rgba(125, 185, 232, 0) 0%, rgba(255, 255, 255, 1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#007db9e8', endColorstr='#ffffff', GradientType=0); /* IE6-9 */
+}
+
+@mixin slide-checkbox-defualt() {
+  user-select: none;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: black;
+  height: 24px;
+  border-radius: 12px;
+  cursor: pointer;
+  input {
+    display: none;
+  }
+  span {
+    color: white;
+    font-size: 14px;
+    line-height: 20px;
+    text-align: center;
+    width: 50%;
+    height: 20px;
+    margin: 0 2px;
+    padding: 0 10px;
+    &:hover:not(.active) {
+      opacity: .7;
+    }
+    &.active {
+      color: black;
+      background-color: white;
+      border-radius: 10px;
+    }
+  }
+  &.disabled {
+    border: 1px solid $lightGray;
+    background-color: $lighterGray;
+    span {
+      color: $lightGray;
+      background-color: transparent;
+    }
+  }
+  &.readonly {
+    border: 1px solid $lightGray;
+    background-color: $lighterGray;
+    span {
+      color: $lightGray;
+      background-color: transparent;
+      &.active {
+        background-color: $lightGray;
+        color: white;
+        border-radius: 10px;
+      }
+    }
+  }
+}
+
+@mixin input-default() {
+  width: 272px;
+  height: 32px;
+  border: solid 1px $lightGray;
+  background-color: white;
+  padding: 0 7px;
+  &::placeholder {
+    color: $lightGray;
+  }
+}
+
+@mixin checkbox-default() {
+}
+
+@mixin button-default($color: black, $bgColor: white, $borderColor: black, $width: 192px) {
+  color: $color;
+  background-color: $bgColor;
+  border: 1px solid $borderColor;
+  font-size: 14px;
+  width: $width;
+}
+
+@mixin paging-default() {
+  text-align: left;
+  ul.pager {
+    display: flex;
+    margin-bottom: 0;
+    li {
+      width: 32px;
+      height: 32px;
+      text-align: center;
+      border: 1px solid $lightGray;
+      background-color: $lighterGray;
+      border-radius: 4px;
+      line-height: 28px;
+      margin: 0 4px;
+      &.active {
+        background-color: $lightGray;
+      }
+      &:first-child,
+      &:last-child {
+        display: none;
+      }
+      a {
+        color: $black;
+        height: 100%;
+        width: 100%;
+      }
+      .datatable-icon-left::before {
+        content: "";
+        width: 8px;
+        height: 8px;
+        float: left;
+        border-top: 2px solid black;
+        border-left: 2px solid black;
+        transform: rotate(-45deg) translateX(2px);
+      }
+      .datatable-icon-right::before {
+        content: "";
+        width: 8px;
+        height: 8px;
+        float: left;
+        border-top: 2px solid black;
+        border-right: 2px solid black;
+        transform: rotate(45deg) translateX(-2px);
+      }
+    }
+  }
+}
+
+@mixin tablet {
+  @media (min-width: #{$tablet-width}) and (max-width: #{$desktop-width - 1px}) {
+    @content;
+  }
+}
+
+@mixin desktop {
+  @media (min-width: #{$desktop-width}) {
+    @content;
+  }
+}
+
+@mixin mobile {
+  @media (min-width: #{$mobile-width}) and (max-width: #{$tablet-width - 1px}) {
+    @content;
+  }
+}

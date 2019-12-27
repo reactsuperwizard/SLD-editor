@@ -1,0 +1,48 @@
+<div class="page-container">
+  <header class="header-container">
+    <h3 i18n>{{title}}</h3>
+    <div class="header-opts">
+      <a><i class="icon icon-area"></i></a>
+      <a><i class="icon icon-policy"></i></a>
+      <a (click)="toggleSetting()">
+        <i class="icon icon-setting" [ngClass]="{'active':showMenuSidebar}"></i>
+      </a>
+    </div>
+  </header>
+
+  <div class="page-wrap">
+    <aside class="left-aside" *ngIf="showMenuSidebar">
+      <ul class="links">
+        <a routerLink="/dashboard/project-entities" routerLinkActive="active" class="link">
+          <i class="icon icon-project-entities"></i>
+          <span i18n>Project entities</span>
+        </a>
+        <a *ngIf="userType === 'PM'" routerLink="/dashboard/project-modelling" routerLinkActive="active" class="link">
+          <i class="icon icon-project-modelling"></i>
+          <span i18n>Project Modelling</span>
+        </a>
+        <a routerLink="/dashboard/task-criterias" routerLinkActive="active" class="link">
+          <i class="icon icon-task-criterias"></i>
+          <span i18n>Task criterias</span>
+        </a>
+        <a routerLink="/dashboard/members-privileges" routerLinkActive="active" class="link">
+          <i class="icon icon-members-privileges"></i>
+          <span i18n>Members & privileges</span>
+        </a>
+        <a routerLink="/dashboard/manage-kernel" routerLinkActive="active" class="link" *ngIf="userType==='Admin'">
+          <i class="icon icon-manage-kernel"></i>
+          <span i18n>Manage kernel</span>
+        </a>
+        <a routerLink="/dashboard/reset-system" routerLinkActive="active" class="link" *ngIf="userType==='PM'">
+          <i class="icon icon-reset"></i>
+          <span i18n>Reset system</span>
+        </a>
+      </ul>
+    </aside>
+
+    <div class="content-container">
+      <router-outlet></router-outlet>
+    </div>
+  </div>
+
+</div>

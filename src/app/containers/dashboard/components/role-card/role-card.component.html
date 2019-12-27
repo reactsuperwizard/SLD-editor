@@ -1,0 +1,20 @@
+<div class="card-role-container" (click)="roleClick.emit()">
+  <div class="card-role">
+    <div class="card-role-wrap">
+      <div class="card-header">
+        <i class="icon icon-checkbox" [ngClass]="{'checked':role.selected}"></i>
+        <i class="icon icon-role-black"></i>
+        <span class="role">{{role.roleName}}</span>
+      </div>
+      <div class="card-body" (click)="roleClick.emit()">
+        <div class="item" *ngFor="let privilege of role.rolePrivileges">
+          <div class="permission">
+            <i [ngClass]="{'enabled':privilege.enabled}" class="icon icon-privilege"></i>
+            <span>{{privilege.permissionName}}</span>
+          </div>
+          <span class="description">{{privilege.description}}</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

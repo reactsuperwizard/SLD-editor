@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="32px" height="48px" viewBox="3.0 0.0 32 48" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 52.5 (67469) - http://www.bohemiancoding.com/sketch -->
+    <title>current-transformer-brushing-iec</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Project-Modelling-–-GIS-&amp;-SLD" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" opacity="1">
+        <g id="Artboard" transform="translate(-1297.000000, -1668.000000)" fill-rule="nonzero" stroke="#0ca919">
+            <g id="32-/-sld-/-vertical-/-box-icon-/-normal" transform="translate(1300.000000, 1660.000000)">
+                <g id="sld-/-iec-/-current_transformer-(bushing-type)-/-black" transform="translate(4.000000, 8.000000)">
+                    <rect id="Rectangle" x="4.5" y="16.5" width="15" height="15" rx="7.5"></rect>
+                    <rect id="Rectangle" x="8.5" y="20.5" width="7" height="7" rx="3.5"></rect>
+                    <path d="M12,0 L12,48" id="Path"></path>
+                    <path d="M1.5,19 L2.5,29" id="Path"></path>
+                    <path d="M-0.5,19 L0.5,29" id="Path"></path>
+                    <path d="M-1,18 L-1,30" id="Path" transform="translate(-1.000000, 24.000000) rotate(90.000000) translate(1.000000, -24.000000) "></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

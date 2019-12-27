@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="16px" height="16px" viewBox="0 0 16 16" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 52.5 (67469) - http://www.bohemiancoding.com/sketch -->
+    <title>cross</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <path d="M8,0 C3.581722,-2.705415e-16 5.41083001e-16,3.581722 0,8 C-5.41083001e-16,12.418278 3.581722,16 8,16 C12.418278,16 16,12.418278 16,8 C16,5.87826808 15.1571453,3.84343678 13.6568542,2.34314575 C12.1565632,0.842854723 10.1217319,1.2991861e-16 8,0 Z M11.71,10.29 L10.3,11.7 L8,9.41 L5.71,11.71 L4.29,10.29 L6.59,8 L4.29,5.71 L5.71,4.29 L8,6.59 L10.29,4.3 L11.7,5.71 L9.41,8 L11.71,10.29 Z" id="path-1"></path>
+    </defs>
+    <g id="Project-Modelling-–-GIS-&amp;-SLD" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" opacity="1">
+        <g id="5.X-/-Settings-/-Edit-Mode-/-SLD-Modelling-/-Defined-Outage-/-Finished" transform="translate(-1232.000000, -156.000000)">
+            <g id="/outage-area/multiple-oa" transform="translate(1104.000000, 104.000000)">
+                <g id="/OA-842" transform="translate(8.000000, 40.000000)">
+                    <g id="16-/-delete_circle" transform="translate(120.000000, 12.000000)">
+                        <g id="--16-/-ErrorCircle1-">
+                            <mask id="mask-2" fill="white">
+                                <use xlink:href="#path-1"></use>
+                            </mask>
+                            <use id="Mask" fill="#464646" fill-rule="nonzero" xlink:href="#path-1"></use>
+                            <g id="color-background-icon-regular" mask="url(#mask-2)" fill="#000000">
+                                <rect id="Rectangle" x="0" y="0" width="16" height="16"></rect>
+                            </g>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

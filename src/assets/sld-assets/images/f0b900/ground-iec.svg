@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="32px" height="48px" viewBox="-4.0 -12.0 32 48" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 52.5 (67469) - http://www.bohemiancoding.com/sketch -->
+    <title>ground-iec</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Project-Modelling-–-GIS-&amp;-SLD" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" opacity="1">
+        <g id="Artboard" transform="translate(-1304.000000, -2304.000000)" fill-rule="nonzero">
+            <g id="32-/-sld-/-squared-/-box-icon-/-normal" transform="translate(1300.000000, 2300.000000)">
+                <g id="sld-/-iec-/-ground-/-black" transform="translate(4.000000, 4.000000)">
+                    <path d="M12,-3.55271368e-15 L12,11" id="Path" stroke="#f0b900" stroke-width="1"></path>
+                    <rect id="Rectangle" fill="#f0b900" x="6" y="11" width="12" height="1"></rect>
+                    <rect id="Rectangle" fill="#f0b900" x="8" y="13" width="8" height="1"></rect>
+                    <rect id="Rectangle" fill="#f0b900" x="10" y="15" width="4" height="1"></rect>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

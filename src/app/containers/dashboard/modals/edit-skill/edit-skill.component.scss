@@ -1,0 +1,139 @@
+@import 'mixin';
+.modal-container {
+  .modal-header {
+    border-bottom: 1px solid $pale-grey;
+    height: 55px;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 25px;
+    display: flex;
+    .modal-title {
+      margin: 0;
+      padding: 0;
+      font-size: 20px;
+      font-weight: 500;
+      font-style: normal;
+      font-stretch: normal;
+      line-height: 1.5;
+      letter-spacing: normal;
+      color: $black;
+    }
+    button {
+      border: 0;
+      background: transparent url('/assets/i/close.svg') center center no-repeat;
+      width: 14px;
+      height: 14px;
+      outline: none;
+    }
+  }
+  .modal-body {
+    padding: 24px;
+    .label {
+      color: #686868;
+      margin-bottom: 4px;
+    }
+    select.select-ctrl {
+      background: $white url('/assets/i/chevron-down-dark.svg') top 12px right 8px no-repeat;
+      width: 100%;
+    }
+    .level-of-expertise {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      .custom-slider {
+        width: 50%;
+        margin-top: 0;
+        .ng5-slider {
+          margin-bottom: 8px;
+        }
+        .slider-labels {
+          display: flex;
+          justify-content: space-between;
+        }
+      }
+      .label {
+        width: 50%;
+        margin-top: 20px;
+      }
+    }
+    .items {
+      width: 100%;
+      padding: 0;
+      display: flex;
+      margin-top: 28px;
+      flex-direction: column;
+      .item {
+        border: 1px solid $lightGray;
+        border-radius: 5px;
+        height: 41px;
+        display: flex;
+        align-items: center;
+        margin-bottom: 4px;
+        &.add-new {
+          background-color: $bgColor;
+          border: none;
+        }
+        label {
+          margin: 0;
+          cursor: pointer;
+          input {
+            display: none;
+          }
+          width: 41px;
+          height: 41px;
+          line-height: 47px;
+          text-align: center;
+          border-right: 1px solid $lightGray;
+          .icon {
+            width: 16px;
+            height: 16px;
+          }
+        }
+        span {
+          flex: 1;
+          padding-left: 15px;
+          font-size: 15px;
+          overflow: hidden;
+          text-overflow: ellipsis;
+          white-space: nowrap;
+          line-height: 18px;
+        }
+        &.header {
+          border: none;
+          height: auto;
+          margin-bottom: 6px;
+          padding-bottom: 6px;
+          border-bottom: 1px solid #f4f4f4;
+        }
+        .label {
+          color: #686868;
+        }
+        .detail {
+          width: 64px;
+          margin: 0 4px;
+          white-space: nowrap;
+          overflow-x: hidden;
+          text-overflow: ellipsis;
+          font-size: 15px;
+          padding-right: 6px;
+        }
+        select.select-ctrl {
+          background-color: #dbdbdb;
+          border-color: #9f9f9f;
+          border-radius: 3px;
+        }
+      }
+    }
+  }
+  .modal-footer {
+    border: none;
+    padding: 24px;
+    .btn.btn-save {
+      @include button-default(white, black, black, 192px);
+    }
+    .btn.btn-delete {
+      @include button-default(black, white, white, 192px);
+      text-decoration: underline;
+    }
+  }
+}

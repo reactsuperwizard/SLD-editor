@@ -1,0 +1,79 @@
+@import "variables";
+
+
+.modal-container {
+  border-radius: 4px;
+  box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.12);
+  background-color: $white;
+  .modal-header {
+    border-bottom: 1px solid $pale-grey;
+    height: 55px;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 25px;
+    display: flex;
+    .modal-title {
+      margin: 0;
+      padding: 0;
+      font-size: 20px;
+      font-weight: 500;
+      font-style: normal;
+      font-stretch: normal;
+      line-height: 1.5;
+      letter-spacing: normal;
+      color: $black;
+    }
+    button {
+      border: 0;
+      background: transparent url('/assets/i/close.svg') center center no-repeat;
+      width: 14px;
+      height: 14px;
+      outline: none;
+    }
+  }
+  .modal-body {
+    padding: 0 24px;
+  }
+  .modal-footer {
+    border: 0;
+  }
+}
+
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  tr {
+    th {
+      text-align: left;
+      height: 40px;
+      line-height: 40px;
+      padding-left: 20px;
+      font-size: 12px;
+      font-weight: normal;
+      font-style: normal;
+      font-stretch: normal;
+      letter-spacing: normal;
+      color: $brownish-grey;
+      border-bottom: 1px solid $white-grey;
+    }
+    td {
+      height: 56px;
+      padding: 12px 16px;
+      border-bottom: 1px solid $white-grey;
+    }
+    &.hidden {
+      display: none;
+    }
+  }
+}
+
+.remove {
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  background: url('/assets/i/remove.svg') no-repeat;
+  &:hover {
+    opacity: .6;
+  }
+}

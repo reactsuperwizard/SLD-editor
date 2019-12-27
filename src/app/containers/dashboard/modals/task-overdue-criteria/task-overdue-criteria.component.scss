@@ -1,0 +1,100 @@
+@import 'mixin';
+
+.modal-container {
+  border-radius: 4px;
+  box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.12);
+  background-color: $white;
+  .modal-header {
+    border-bottom: 1px solid $pale-grey;
+    height: 55px;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 25px;
+    display: flex;
+    .modal-title {
+      margin: 0;
+      padding: 0;
+      font-size: 20px;
+      font-weight: 500;
+      font-style: normal;
+      font-stretch: normal;
+      line-height: 1.5;
+      letter-spacing: normal;
+      color: $black;
+    }
+    button {
+      border: 0;
+      background: transparent url('/assets/i/close.svg') center center no-repeat;
+      width: 14px;
+      height: 14px;
+      outline: none;
+    }
+  }
+  .modal-body {
+    padding: 16px 16px 40px 16px;
+    .info-table {
+      width: 100%;
+      tr {
+        th {
+          width: calc(100% / 6);
+          border-bottom: 1px solid $white-grey;
+          font-size: 16px;
+          font-weight: 500;
+          font-style: normal;
+          font-stretch: normal;
+          line-height: 1.25;
+          letter-spacing: normal;
+          text-align: center;
+          color: $text;
+          padding: 35px;
+          position: relative;
+          &:after {
+            content: attr(title);
+            position: absolute;
+            bottom: -12px;
+            left: 50%;
+            margin-left: -12px;
+            width: 24px;
+            height: 24px;
+            border-radius: 12px;
+            background-color: $white;
+            border: 1px solid $white-grey;
+            font-size: 13px;
+            font-weight: normal;
+            font-style: normal;
+            font-stretch: normal;
+            line-height: 1.54;
+            letter-spacing: normal;
+            text-align: center;
+            color: $text;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+          }
+          &:last-child:after {
+            background-image: url("/assets/i/CheckMark-white.svg");
+            background-size: 10px 10px;
+            background-position: center center;
+            background-repeat: no-repeat;
+            background-color: $black;
+          }
+        }
+        td {
+          border-right: 1px solid $white-grey;
+          padding: 25px 25px 60px 25px;
+          font-size: 13px;
+          font-weight: normal;
+          font-style: normal;
+          font-stretch: normal;
+          line-height: 1.54;
+          letter-spacing: normal;
+          text-align: center;
+          color: $text;
+          &:last-child {
+            border-right: 0;
+          }
+        }
+      }
+    }
+  }
+}

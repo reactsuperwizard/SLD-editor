@@ -1,0 +1,64 @@
+{
+  "rows": [
+    {
+      "areaId": "BA-OPEX-2",
+      "description": "Voltage transformers on Baden substation",
+      "items": [
+        {
+          "id": 10000,
+          "areaId": "OA-OPEX-2",
+          "description": "Voltage transformers on Baden substation",
+          "refId": "51-T66A-0",
+          "region": "Baden",
+          "type": "Circuit break",
+          "tech": "AIS",
+          "model": "Single break",
+          "manufacture": "",
+          "risk": 78
+        },
+        {
+          "id": 10001,
+          "areaId": "OA-OPEX-3",
+          "description": "Voltage transformers on Baden substation",
+          "refId": "51-T66A-1",
+          "region": "Baden",
+          "type": "Circuit break",
+          "tech": "AIS",
+          "model": "DIALT",
+          "manufacture": "",
+          "risk": 75
+        }
+      ]
+    },
+    {
+      "areaId": "BA-OPEX-4",
+      "description": "Voltage transformers on Baden substation",
+      "items": [
+        {
+          "id": 10000,
+          "areaId": "OA-OPEX-2",
+          "description": "Voltage transformers on Baden substation",
+          "refId": "51-T66A-0",
+          "region": "Baden",
+          "type": "Circuit break",
+          "tech": "AIS",
+          "model": "Single break",
+          "manufacture": "",
+          "risk": 78
+        },
+        {
+          "id": 10001,
+          "areaId": "OA-OPEX-3",
+          "description": "Voltage transformers on Baden substation",
+          "refId": "51-T66A-1",
+          "region": "Baden",
+          "type": "Circuit break",
+          "tech": "AIS",
+          "model": "DIALT",
+          "manufacture": "",
+          "risk": 75
+        }
+      ]
+    }
+  ]
+}

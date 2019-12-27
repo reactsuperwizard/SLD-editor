@@ -1,0 +1,4 @@
+@import 'mixin';
+.tabs-member-container {
+  @include tab-page-default;
+}

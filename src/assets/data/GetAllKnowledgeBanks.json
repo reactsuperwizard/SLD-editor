@@ -1,0 +1,66 @@
+{
+  "docs": [
+    {
+      "id": 1,
+      "name": "Datasheet"
+    },
+    {
+      "id": 2,
+      "name": "Certificates"
+    },
+    {
+      "id": 3,
+      "name": "User manual"
+    },
+    {
+      "id": 4,
+      "name": "Test report"
+    },
+    {
+      "id": 5,
+      "name": "Failure report"
+    },
+    {
+      "id": 6,
+      "name": "Drawing"
+    },
+    {
+      "id": 7,
+      "name": "Test report1"
+    },
+    {
+      "id": 8,
+      "name": "Failure report1"
+    },
+    {
+      "id": 9,
+      "name": "Drawing1"
+    },
+    {
+      "id": 10,
+      "name": "Test report2"
+    },
+    {
+      "id": 11,
+      "name": "Failure report2"
+    },
+    {
+      "id": 12,
+      "name": "Drawing2"
+    }
+  ],
+  "images": [
+    {
+      "id": 1,
+      "name": "Site"
+    },
+    {
+      "id": 2,
+      "name": "Equipment"
+    },
+    {
+      "id": 3,
+      "name": "System"
+    }
+  ]
+}

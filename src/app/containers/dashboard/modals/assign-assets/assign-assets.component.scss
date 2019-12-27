@@ -1,0 +1,23 @@
+@import 'mixin';
+
+.modal-container {
+  border-radius: 4px;
+  box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.12);
+  background-color: $white;
+
+  .modal-body {
+    padding: 0;
+  }
+  .modal-footer {
+    border: 0;
+
+    .btn.btn-save {
+      @include button-default(white, black, black, 192px);
+      width: 192px;
+    }
+    .btn.btn-delete {
+      @include button-default(black, white, white, 192px);
+      width: 192px;
+    }
+  }
+}

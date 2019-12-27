@@ -1,0 +1,179 @@
+@import 'mixin';
+
+.sub-page.all-assets {
+  .sub-header {
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    padding-left: 0;
+    input {
+      width: 192px
+    }
+    .select-ctrl {
+      margin-left: 16px;
+      width: 192px;
+    }
+    .filter-container {
+      width: 152px;
+      position: absolute;
+      right: 0;
+      top: 56px;
+      z-index: 1000;
+      background-color: #3D3D3D;
+      display: flex;
+      flex-direction: column;
+      color: white;
+      padding: 0 0 16px 16px;
+      border-radius: 5px;
+      user-select: none;
+      .header {
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: space-between;
+        align-items: center;
+        border-bottom: 2px solid #686868;
+        height: 41px;
+        .icon {
+          width: 40px;
+          height: 40px;
+          background-size: 40%;
+          cursor: pointer;
+        }
+      }
+      .filter-option {
+        height: 30px;
+        display: flex;
+        align-items: center;
+        .icon {
+          width: 16px;
+          height: 16px;
+        }
+        span {
+          padding-left: 16px;
+          font-size: 13px;
+        }
+      }
+      &.filter-hide {
+        background-color: transparent;
+        .header {
+          border-bottom: none;
+          span {
+            display: none;
+          }
+        }
+        .filter-option {
+          display: none;
+        }
+      }
+    }
+  }
+  .create-user-form {
+    min-height: auto;
+    box-shadow: none !important;
+    &.modal-user-popup {
+      min-height: auto;
+      .all-assets-table {
+        .datatable-header {
+          display: none;
+        }
+      }
+    }
+  }
+  .all-assets-table {
+    width: 100%;
+    .datatable-header,
+    .datatable-body .datatable-body-row {
+      height: 40px !important;
+      border-bottom: 1px solid $lighterGray;
+    }
+    .empty-row {
+      height: 40px;
+      line-height: 40px;
+    }
+    .checkbox-wrap {
+      width: 40px;
+      height: 40px;
+      line-height: 48px;
+      margin: 0;
+      text-align: center;
+      border-right: 1px solid $lighterGray;
+      input {
+        display: none;
+      }
+      .icon {
+        width: 16px;
+        height: 16px;
+      }
+    }
+    .datatable-header-cell {
+      margin-bottom: 10px;
+      .sort-btn {
+        width: 4px;
+        height: 4px;
+        margin-left: 12px;
+        text-align: center;
+        border-left: 4px solid transparent;
+        border-right: 4px solid transparent;
+        border-bottom: 4px solid #464646;
+        &.sort-desc {
+          border-bottom: 0;
+          border-top: 4px solid #464646;
+        }
+      }
+    }
+    .datatable-header-cell:nth-child(2),
+    .datatable-body-cell:nth-child(2) {
+      margin-left: 20px;
+    }
+    .datatable-body-cell,
+    .datatable-header-cell-wrapper {
+      color: $gray;
+      line-height: 40px;
+      .icon {
+        width: 16px;
+        height: 16px;
+      }
+      .datatable-header-cell-label {
+        font-size: 12px;
+        font-weight: normal;
+        font-style: normal;
+        font-stretch: normal;
+        letter-spacing: normal;
+        color: $text;
+      }
+      .datatable-body-cell-label {
+        font-size: 14px;
+        font-weight: normal;
+        font-style: normal;
+        font-stretch: normal;
+        letter-spacing: normal;
+        color: $lightBlack;
+      }
+    }
+    .datatable-footer {
+      .page-count {
+        display: none;
+      }
+      .datatable-pager {
+        @include paging-default();
+      }
+    }
+    .add-new {
+      background-color: $bgColor;
+      width: 100%;
+      display: flex;
+      align-items: center;
+      margin-top: -2px;
+      .icon {
+        width: 40px;
+        height: 40px;
+        background-size: 40%;
+        border-right: 1px solid $lighterGray;
+      }
+      span {
+        padding-left: 20px;
+        white-space: nowrap;
+      }
+    }
+  }
+}

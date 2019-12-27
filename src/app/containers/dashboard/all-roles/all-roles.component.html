@@ -1,0 +1,47 @@
+<div class="content-wrap all-roles">
+  <div class="title">
+    <span i18n>Manage roles</span>
+  </div>
+  <div class="scroll-panel">
+    <div [perfectScrollbar]="{}" class="body-panel">
+      <div class="loading-box" *ngIf="loading">
+        <div class="img" alt="loading"></div>
+      </div>
+      <div class="all-roles container-fluid">
+        <div class="row">
+          <div class="col-lg-3" *ngFor="let item of roles">
+            <div class="card-role-wrap" (click)="addOrEditRole(item)">
+              <div class="card-header">
+                <i class="icon icon-role"></i>
+                <span class="role">{{item.roleName}}</span>
+              </div>
+              <div class="card-body">
+                <div class="item" *ngFor="let privilege of item.rolePrivileges">
+                  <div class="permission">
+                    <i [ngClass]="{'enabled':privilege.enabled}" class="icon icon-privilege"></i>
+                    <span>{{privilege.permissionName}}</span>
+                  </div>
+                  <span class="description">{{privilege.description}}</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3">
+            <div class="card-role-wrap add-new" (click)="addOrEditRole()">
+              <i class="icon icon-add-new"></i>
+              <span class="add-new-text" i18n>Create<br/>new role</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="footer-panel">
+      <div class="footer-buttons">
+        <button class="btn btn-secondary" (click)="compareRoles()">Compare</button>
+      </div>
+      <div class="footer-buttons">
+        <button class="btn btn-primary">Save</button>
+      </div>
+    </div>
+  </div>
+</div>

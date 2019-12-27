@@ -1,0 +1,31 @@
+{
+  "dailyStatus": {
+    "pendingConstraints": 14,
+    "pendingMaintenanceActions": 8,
+    "plan": {
+      "name": 2019,
+      "status": "approval"
+    },
+    "overdueTasks": 99,
+    "onGoingImprovements": 8
+  },
+  "completeness": 49,
+  "assetsManufacture": [
+    {
+      "maker": "ABB",
+      "value": 25
+    },
+    {
+      "maker": "SIEMENS",
+      "value": 15
+    },
+    {
+      "maker": "GE",
+      "value": 10
+    },
+    {
+      "maker": "OTHER",
+      "value": 5
+    }
+  ]
+}

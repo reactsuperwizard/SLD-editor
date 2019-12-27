@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="16px" height="20px" viewBox="0 0 16 20" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 52.5 (67469) - http://www.bohemiancoding.com/sketch -->
+    <title>outage</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <polygon id="path-1" points="4 20 8 12 0 12 12 0 8 8 16 8"></polygon>
+    </defs>
+    <g id="Project-Modelling-–-GIS-&amp;-SLD" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" opacity="1">
+        <g id="5.X-/-Settings-/-Edit-Mode-/-SLD-Modelling-/-Defining-Outage" transform="translate(-32.000000, -358.000000)">
+            <g id="/controls-left" transform="translate(16.000000, 104.000000)">
+                <g id="/display" transform="translate(0.000000, 240.000000)">
+                    <g id="32-/-normal-/-box-icon-/-normal" transform="translate(8.000000, 8.000000)">
+                        <g id="16-/-outage" transform="translate(8.000000, 8.000000)">
+                            <g transform="translate(0.000000, -2.000000)">
+                                <mask id="mask-2" fill="white">
+                                    <use xlink:href="#path-1"></use>
+                                </mask>
+                                <use id="outage" fill="#101010" fill-rule="nonzero" xlink:href="#path-1"></use>
+                                <g id="color-background-icon-regular" mask="url(#mask-2)" fill="#000000">
+                                    <rect id="Rectangle" x="0" y="0" width="16" height="20"></rect>
+                                </g>
+                            </g>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

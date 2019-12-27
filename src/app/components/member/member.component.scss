@@ -1,0 +1,35 @@
+@import "variables";
+.member {
+  margin-bottom: 5px;
+  display: flex;
+  border: 1px solid $lighterGray;
+  height: 56px;
+  border-radius: 4px;
+  align-items: center;
+  padding: 8px 10px;
+  justify-content: space-between;
+  img {
+    margin-right: 10px;
+    width: 40px;
+    height: 40px;
+    border-radius: 100%;
+  }
+  p {
+    width: calc(100% - 60px);
+    font-size: 14px;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: normal;
+    text-align: left;
+    letter-spacing: normal;
+    color: $text;
+    margin: 0;
+  }
+  a {
+    i {
+      width: 16px;
+      height: 16px;
+    }
+  }
+}

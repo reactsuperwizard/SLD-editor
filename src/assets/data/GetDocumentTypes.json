@@ -1,0 +1,32 @@
+[
+  {
+    "documenttypeid": 8,
+    "documenttypename": "name",
+    "documentdescription": "description",
+    "deleted": false,
+    "createddate": "2018-10-10T09:28:45.904269",
+    "createdby": null,
+    "updateddate": "2018-10-10T09:28:45.90443",
+    "updateddby": null
+  },
+  {
+    "documenttypeid": 10,
+    "documenttypename": "name",
+    "documentdescription": "description",
+    "deleted": false,
+    "createddate": "2018-10-10T09:33:42.866405",
+    "createdby": null,
+    "updateddate": "2018-10-10T09:33:43.710071",
+    "updateddby": null
+  },
+  {
+    "documenttypeid": 3,
+    "documenttypename": "test3",
+    "documentdescription": "test3",
+    "deleted": false,
+    "createddate": null,
+    "createdby": null,
+    "updateddate": "2018-10-10T06:45:59.531354",
+    "updateddby": 0
+  }
+]

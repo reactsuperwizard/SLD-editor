@@ -1,0 +1,67 @@
+@import "mixin";
+
+.main-container {
+  padding: 16px 16px 32px 16px;
+  background: $white-grey;
+  min-height: calc(100vh - 32px - 56px);
+}
+
+.panel {
+  border-radius: 4px;
+  box-shadow: 0 4px 12px 0 rgba(0, 0, 0, 0.06);
+  background-color: $white;
+  .panel-header {
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    border-bottom: 1px solid $white-grey;
+    a {
+      width: 16px;
+      height: 16px;
+      margin: 0 15px;
+      background: url('/assets/i/back.svg') no-repeat;
+    }
+    h5 {
+      margin: 0;
+      padding: 0;
+      font-size: 16px;
+      font-weight: 500;
+      font-style: normal;
+      font-stretch: normal;
+      letter-spacing: normal;
+      color: $black;
+    }
+  }
+  form {
+    display: flex;
+    width: 100%;
+    height: calc(100vh - 160px);
+  }
+  .panel-content {
+    padding: 0 16px 16px 16px;
+    @include mobile {
+      padding: 10px;
+    }
+  }
+}
+
+.members-block {
+  width: 100%;
+  padding: 20px 25px;
+  min-height: 208px;
+  border-radius: 4px;
+  border: 1px solid $white-grey;
+  label {
+    font-size: 12px;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    padding-bottom: 10px;
+    margin: 15px 0 0 0;
+    display: block;
+    letter-spacing: normal;
+    color: $brownish-grey;
+
+  }
+}

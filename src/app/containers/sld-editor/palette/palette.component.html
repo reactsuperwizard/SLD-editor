@@ -1,0 +1,10 @@
+<div class="palette-div-container">
+    <div #paletteDiv class="palette-div" [style.height]="paletteHeight + 'px'"></div>
+    <div #hoverPaletteContainer class="hover-palette-container" [hidden]="!showHoverPalette"
+        [style.top]="hoverPaletteTopOffset + 'px'" [style.opacity]="hoverPaletteOpacity"
+        [style.width]="(hoverPaletteWidth + 16) + 'px'">
+        <div class="hover-palette-inner-container">
+            <div #hoverPaletteDiv class="hover-palette-div" [style.width]="hoverPaletteWidth + 'px'"></div>
+        </div>
+    </div>
+</div>

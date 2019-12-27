@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="32px" height="48px" viewBox="-4.0 -12.0 32 48" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 52.5 (67469) - http://www.bohemiancoding.com/sketch -->
+    <title>ground-ansi</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Project-Modelling-–-GIS-&amp;-SLD" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" opacity="1">
+        <g id="Artboard" transform="translate(-2404.000000, -2304.000000)" fill-rule="nonzero" stroke="#0f6cff">
+            <g id="32-/-sld-/-squared-/-box-icon-/-normal-copy" transform="translate(2400.000000, 2300.000000)">
+                <g id="sld-/-ansi-/-ground-/-black" transform="translate(4.000000, 4.000000)">
+                    <path d="M12,-3.55271368e-15 L12,9.5" id="Path"></path>
+                    <polyline id="Path-11" points="12 10 19.0061384 10 14.5 15.5"></polyline>
+                    <path d="M15.0061384,10 L10.5,15.5" id="Path-11"></path>
+                    <path d="M11.0061384,10 L6.5,15.5" id="Path-11"></path>
+                    <polyline id="Path-11" points="12 10 7.00613839 10 2.5 15.5"></polyline>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

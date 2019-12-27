@@ -1,0 +1,29 @@
+<div class="header">
+    <div class="tool-bar">
+        <div class="left-content">
+            <img class="back-btn" [src]="iconsPath + 'chevron-large.svg'" (click)="goBack()">
+            <div class="title" i18n>SLD edit mode</div>
+            <div class="faux-drop-down">
+                <div class="input-area">
+                    <div class="green-circle"></div>
+                    <span i18n>Baden 1</span>
+                </div>
+                <img [src]="iconsPath + 'chevron-large.svg'">
+            </div>
+            <div>
+                <div class="user-action-btn-group">
+                    <img [src]="iconsPath + 'connect.svg'">
+                </div>
+            </div>
+        </div>
+        <div class="right-content">
+            <sld-search [diagram]="diagram"></sld-search>
+            <div class="separator"></div>
+            <div>
+                <div class="user-action-btn-group" (click)="toggleViewMode()">
+                    <img [src]="iconsPath + (viewModeActive ? 'edit' : 'play') + '.svg'">
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

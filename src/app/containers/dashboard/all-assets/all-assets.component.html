@@ -1,0 +1,58 @@
+<div class="sub-page all-assets">
+  <div class="viewport">
+
+    <div class="loading-box" *ngIf="loading">
+      <div class="img" alt="loading"></div>
+    </div>
+    <header *ngIf="tableVisible" class="sub-header">
+      <h3 i18n>All function locations</h3>
+      <div>
+      <input type="search" class="input-ctrl search-ctrl" placeholder="Search" [(ngModel)]="filterStr" (keyup)='updateFilter()' />
+      <select ([ngModel])="filterOption" class="select-ctrl">
+        <option *ngFor="let item of masterData.filterOptions" [value]="item">{{item}}</option>
+      </select>
+      </div>
+      <div *ngIf="!isSingleSelect" class="filter-container" [ngClass]="{'filter-hide':!filterShow}">
+        <div class="header">
+          <i class="icon icon-filter" (click)="filterShow=!filterShow" [ngClass]="{'checked':!filterShow}"></i>
+          <span i18n>Filters</span>
+        </div>
+        <div class="filter-option" *ngFor="let item of filterColumns;let i = index" (click)="item.selected=!item.selected;updateFilter()">
+          <i class="icon icon-checkbox" [ngClass]="{'checked':item.selected}"></i>
+          <span>{{item.name}}</span>
+        </div>
+      </div>
+    </header>
+    <!--end .sub-header-->
+
+    <div class="create-user-form sticky view-all-user-table-section">
+      <div class="all-assets-table">
+        <ngx-datatable *ngIf="tableVisible" #usertable [rows]="allUsers" [columnMode]="'force'" rowHeight="40" footerHeight="56" [selected]="selected"
+                       [selectionType]="'checkbox'" (select)="onSelect($event)" [externalPaging]="true" [count]="page.totalElements"
+                       [offset]="page.pageNumber" [limit]="page.size" (page)='setPage($event)'>
+          <ngx-datatable-column *ngIf="filterColumns[0].selected" name="Reference" prop="refId"></ngx-datatable-column>
+          <ngx-datatable-column *ngIf="filterColumns[1].selected" name="Region" prop="region"></ngx-datatable-column>
+          <ngx-datatable-column *ngIf="filterColumns[2].selected" name="Type" prop="type"></ngx-datatable-column>
+          <ngx-datatable-column *ngIf="filterColumns[3].selected" name="Tech" prop="tech"></ngx-datatable-column>
+          <ngx-datatable-column *ngIf="filterColumns[4].selected" name="Manufact" prop="manufacture"></ngx-datatable-column>
+          <ngx-datatable-column *ngIf="filterColumns[5].selected" name="Model" prop="model"></ngx-datatable-column>
+          <ngx-datatable-column *ngIf="filterColumns[6].selected" name="Risk" prop="risk"></ngx-datatable-column>
+          <ngx-datatable-column name="" prop="id" [width]="41" [sortable]="false" [canAutoResize]="false" [draggable]="false"
+                                [resizeable]="false">
+            <ng-template ngx-datatable-cell-template let-row="row" let-value="value" let-isSelected="isSelected" let-i="index"
+                         let-onCheckboxChangeFn="onCheckboxChangeFn">
+              <label [for]="'all-user-'+row.id + (asModal?'-modal':'')" class="checkbox-wrap">
+                <input [id]="'all-user-'+row.id + (asModal?'-modal':'')" type="checkbox" [checked]="isSelected"
+                       (change)="onCheckboxChangeFn($event)">
+                <i class="icon icon-checkbox" [ngClass]="{'checked':isSelected}"></i>
+              </label>
+            </ng-template>
+          </ngx-datatable-column>
+        </ngx-datatable>
+        <!--end ngx-datatable-->
+      </div>
+    </div>
+    <!-- end .view-all-user-table-section -->
+  </div>
+
+</div>

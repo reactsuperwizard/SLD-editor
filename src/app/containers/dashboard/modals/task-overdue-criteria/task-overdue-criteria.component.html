@@ -1,0 +1,40 @@
+<div class="modal-container">
+  <div class="modal-header">
+    <span class="modal-title" id="modal-basic-title" i18n>Task overdue criteria</span>
+    <button type="button" class="close" aria-label="Close" (click)="activeModal.dismiss('back')">
+    </button>
+  </div>
+  <div class="modal-body">
+    <table class="info-table">
+      <tr>
+        <th title="1" i18n>Not
+          acknowledged
+        </th>
+        <th title="2" i18n>Planned
+        </th>
+        <th title="3" i18n>Under
+          preparation
+        </th>
+        <th title="4" i18n>Under
+          execution
+        </th>
+        <th title="5" i18n>Under
+          validation
+        </th>
+        <th title="" i18n>Validated</th>
+      </tr>
+      <tr>
+        <td i18n>Tasks that have not been reviewed for assigment.</td>
+        <td i18n>Tasks that have been acknolowedged by assigning a task owner. </td>
+        <td i18n>Pre-onsite tasks,
+          intented to organize
+          material, procedures, equipment or instruments required to perform an maintanance action.</td>
+        <td i18n>Onsite tasks,
+          related to perform a single or set of maintanance actions such as inspections,
+          reparing, changes and asset data collection.</td>
+        <td i18n>Tasks that have been complete and are ready to be reviewed.</td>
+        <td i18n>Tasks that have been reviewed or approved.</td>
+      </tr>
+    </table>
+  </div>
+</div>

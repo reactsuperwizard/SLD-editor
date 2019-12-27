@@ -1,0 +1,148 @@
+@import 'mixin';
+.modal-container {
+  .modal-header {
+    font-size: 18px;
+    .close {
+      outline: none;
+    }
+  }
+  .modal-body {
+    padding: 8px 16px;
+    @include content-wrap-style();
+    .title {
+      margin-left: 0;
+      span {
+        padding-left: 0;
+        font-size: 16px;
+        font-weight: 500;
+      }
+    }
+    .filter-container {
+      width: 152px;
+      position: absolute;
+      right: -12px;
+      top: 55px;
+      z-index: 1000;
+      background-color: #3D3D3D;
+      display: flex;
+      flex-direction: column;
+      color: white;
+      padding: 0 0 16px 16px;
+      border-radius: 5px;
+      user-select: none;
+      box-shadow: 0 2px 4px $lightGray;
+      .header {
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: space-between;
+        align-items: center;
+        border-bottom: 2px solid #686868;
+        height: 41px;
+        .icon {
+          width: 40px;
+          height: 40px;
+          background-size: 40%;
+          cursor: pointer;
+        }
+      }
+      .filter-option {
+        height: 30px;
+        display: flex;
+        align-items: center;
+        .icon {
+          width: 16px;
+          height: 16px;
+        }
+        span {
+          padding-left: 16px;
+          font-size: 13px;
+          white-space: nowrap;
+        }
+      }
+      &.filter-hide {
+        background-color: transparent;
+        box-shadow: none;
+        .header {
+          border-bottom: none;
+          span {
+            display: none;
+          }
+        }
+        .filter-option {
+          display: none;
+        }
+      }
+    }
+    .execution-teams-table {
+      width: 100%;
+      border-top: 1px solid #f4f4f4;
+      .datatable-header,
+      .datatable-body .datatable-body-row {
+        height: 40px !important;
+        border-bottom: 1px solid $lighterGray;
+      }
+      .datatable-header-cell-label {
+        font-size: 12px;
+        color: $gray;
+      }
+      .empty-row {
+        height: 40px;
+        line-height: 40px;
+      }
+      .checkbox-wrap {
+        width: 40px;
+        height: 40px;
+        line-height: 48px;
+        margin: 0;
+        text-align: center;
+        border-right: 1px solid $lighterGray;
+        input {
+          display: none;
+        }
+        .icon {
+          width: 16px;
+          height: 16px;
+        }
+      }
+      .datatable-header-cell {
+        margin-bottom: 10px;
+      }
+      .datatable-header-cell:nth-child(2),
+      .datatable-body-cell:nth-child(2) {
+        margin-left: 20px;
+      }
+      .datatable-body-cell,
+      .datatable-header-cell-wrapper {
+        color: $gray;
+        line-height: 40px;
+        .datatable-header-cell-label {
+          font-size: 14px;
+        }
+        .skills-span {
+          max-width: 85%;
+          white-space: nowrap;
+          overflow: hidden;
+          text-overflow: ellipsis;
+          margin-right: 8px;
+        }
+      }
+      .datatable-footer {
+        .page-count {
+          display: none;
+        }
+        .datatable-pager {
+          @include paging-default();
+        }
+      }
+    }
+  }
+  .modal-footer {
+    border: none;
+    .btn.btn-save {
+      @include button-default(white, black, black, 192px);
+    }
+    .btn.btn-delete {
+      @include button-default(black, white, white, 192px);
+    }
+  }
+}

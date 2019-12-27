@@ -1,0 +1,40 @@
+<div class="modal-container">
+  <div class="modal-header">
+    <span class="modal-title" i18n>Managing connection</span>
+    <button type="button" class="close" (click)="close()">
+    </button>
+  </div>
+  <div class="modal-body">
+    <table>
+      <tr>
+        <th i18n>Reference</th>
+        <th i18n>Origin</th>
+        <th i18n>Source</th>
+        <th i18n>Destination</th>
+        <th>&nbsp;</th>
+      </tr>
+
+      <tr *ngFor="let connection of localConnections" [class.hidden]="connection.removed">
+        <td><input class="form-input" type="text" [value]="connection.reference"/></td>
+        <td><input class="form-input substation" type="text" [value]="connection.origin"/></td>
+        <td>
+          <select class="form-input" [value]="connection.source"
+                  (change)="changeSource($event.target.value, connection.id)">
+            <option *ngFor="let type of types" value={{type}}>
+              {{type}}
+            </option>
+          </select>
+        </td>
+        <td><input class="form-input substation" type="text" [value]="connection.destination"/></td>
+        <td>
+          <a (click)="remove(connection.id)" href="javascript:;" class="remove"></a>
+        </td>
+      </tr>
+    </table>
+  </div>
+  <div class="modal-footer">
+    <button (click)="deleteAll()" type="button" class="btn btn-link" i18n>Delete connections</button>
+    <button (click)="confirm()" type="submit" class="btn btn-secondary" i18n>Confirm</button>
+  </div>
+
+</div>

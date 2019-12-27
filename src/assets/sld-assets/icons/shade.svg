@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="16px" height="16px" viewBox="0 0 16 16" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 52.5 (67469) - http://www.bohemiancoding.com/sketch -->
+    <title>shade</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <path d="M8,0 C12.418278,-8.11624501e-16 16,3.581722 16,8 C16,12.418278 12.418278,16 8,16 C3.581722,16 5.41083001e-16,12.418278 0,8 C-5.41083001e-16,3.581722 3.581722,8.11624501e-16 8,0 Z M8,1 C4.13400675,1 1,4.13400675 1,8 C1,11.8659932 4.13400675,15 8,15 C11.8659932,15 15,11.8659932 15,8 C15,4.13400675 11.8659932,1 8,1 Z" id="path-1"></path>
+        <polygon id="path-3" points="2.7533531e-14 1.86517468e-14 4 5 4 8 5.99707031 7.06652832 5.99707031 5 9.99707031 1.86517468e-14"></polygon>
+    </defs>
+    <g id="Project-Modelling-–-GIS-&amp;-SLD" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" opacity="1">
+        <g id="5.X-/-Settings-/-Edit-Mode-/-SLD-Modelling-/-Shade-by-risk--active" transform="translate(-28.000000, -232.000000)">
+            <g id="/controls-left" transform="translate(16.000000, 104.000000)">
+                <g id="/zoom" transform="translate(0.000000, 112.000000)">
+                    <g id="32-/-normal-/-box-icon-/-normal" transform="translate(8.000000, 8.000000)">
+                        <g id="16-/-filter_icon" transform="translate(4.000000, 8.000000)">
+                            <g>
+                                <g id="border">
+                                    <mask id="mask-2" fill="white">
+                                        <use xlink:href="#path-1"></use>
+                                    </mask>
+                                    <path stroke="#000000" d="M8,0.5 C3.85786438,0.5 0.5,3.85786438 0.5,8 C0.5,12.1421356 3.85786438,15.5 8,15.5 C12.1421356,15.5 15.5,12.1421356 15.5,8 C15.5,3.85786438 12.1421356,0.5 8,0.5 Z M8,0.5 C12.1421356,0.5 15.5,3.85786438 15.5,8 C15.5,12.1421356 12.1421356,15.5 8,15.5 C3.85786438,15.5 0.5,12.1421356 0.5,8 C0.5,3.85786438 3.85786438,0.5 8,0.5 Z"></path>
+                                    <g id="color-background-icon-regular" mask="url(#mask-2)" fill="#000000">
+                                        <rect id="Rectangle" x="0" y="0" width="16" height="16"></rect>
+                                    </g>
+                                </g>
+                                <g id="filter" transform="translate(3.000000, 5.000000)">
+                                    <mask id="mask-4" fill="white">
+                                        <use xlink:href="#path-3"></use>
+                                    </mask>
+                                    <use id="Path" fill="#464646" fill-rule="nonzero" xlink:href="#path-3"></use>
+                                    <g id="color-background-icon-regular" mask="url(#mask-4)" fill="#000000">
+                                        <g transform="translate(-3.000000, -5.000000)" id="Rectangle">
+                                            <rect x="0" y="0" width="16" height="16"></rect>
+                                        </g>
+                                    </g>
+                                </g>
+                            </g>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

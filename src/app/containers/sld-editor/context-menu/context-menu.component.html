@@ -1,0 +1,22 @@
+<div #contextMenuDiv class="context-menu">
+    <ul>
+        <li *ngFor="let item of items; let i=index" (click)="optionPressed(item)" [class.separator]="item.separator"
+            [hidden]="!item.visible" [class.clickable]="item.fn" [class.hoverable]="item.expansion">
+            <div class="item-row">
+                <span>{{ item.text }}</span>
+                <img [src]="iconsPath + item.icon + '-white.svg'" *ngIf="item.icon && !item.activated">
+                <img [src]="iconsPath + 'checkbox-white.svg'" *ngIf="item.activated">
+            </div>
+            <ul *ngIf="item.expansion" class="expansion-list">
+                <li *ngFor="let subItem of item.expansion" (click)="optionPressed(subItem)" class="clickable">
+                    <div class="item-row">
+                        <span>{{ subItem.text }}</span>
+                        <img [src]="iconsPath + item.icon + '-white.svg'" *ngIf="subItem.icon && !subItem.activated">
+                        <img [src]="iconsPath + 'checkbox-white.svg'" *ngIf="subItem.activated">
+                    </div>
+                </li>
+            </ul>
+
+        </li>
+    </ul>
+</div>

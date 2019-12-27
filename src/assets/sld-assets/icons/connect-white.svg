@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="16px" height="20px" viewBox="0 0 16 20" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 52.5 (67469) - http://www.bohemiancoding.com/sketch -->
+    <title>connect-white</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <path d="M14.79,7.28 L14.79,7.99 L12.31,10.46 L12.75,10.9 L12.75,11.61 L11.69,12.67 L5.33,6.31 L6.39,5.25 L7.1,5.25 L7.54,5.69 L10.01,3.21 L10.72,3.22 L12.22,4.72 L13.93,3.01 L14.99,4.07 L13.29,5.78 L14.79,7.28 Z M3.25,8.39 L4.31,7.33 L10.67,13.7 L9.61,14.76 L8.9,14.75 L8.46,14.31 L5.99,16.79 L5.27,16.78 L3.77,15.29 L2.07,16.99 L1.01,15.93 L2.71,14.22 L1.22,12.73 L1.21,12.02 L3.69,9.54 L3.25,9.11 L3.25,8.39 Z" id="path-1"></path>
+    </defs>
+    <g id="Project-Modelling-–-GIS-&amp;-SLD" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" opacity="1">
+        <g id="5.X-/-Settings-/-Edit-Mode-/-SLD-Modelling-/-Defining-Outage" transform="translate(-376.000000, -50.000000)">
+            <g id="/submenu" transform="translate(0.000000, 20.000000)">
+                <g id="32-/-normal-/-box-icon-/-normal" transform="translate(368.000000, 24.000000)">
+                    <g id="16-/-connect" transform="translate(8.000000, 8.000000)">
+                        <g transform="translate(0.000000, -2.000000)">
+                            <mask id="mask-2" fill="black">
+                                <use xlink:href="#path-1"></use>
+                            </mask>
+                            <use id="Combined-Shape" fill="#FFFFFF" xlink:href="#path-1"></use>
+                            <g id="color-background-icon-regular" mask="url(#mask-2)" fill="#FFFFFF">
+                                <rect id="Rectangle" x="0" y="0" width="16" height="20"></rect>
+                            </g>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

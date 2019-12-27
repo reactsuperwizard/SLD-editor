@@ -1,0 +1,52 @@
+<div class="dialog edit-area-dialog" [sldDialog]="close">
+    <div class="title-bar">{{ (mode==='edit' ? 'Edit' : 'Create') + (type==='outage' ? ' outage area' : ' bay') }}</div>
+
+    <div class="content">
+        <div class="dialog-form-row">
+            <div class="label" i18n>Name *</div>
+            <div class="input-container">
+                <input [(ngModel)]="name">
+            </div>
+        </div>
+        <div class="dialog-form-row" *ngIf="type==='outage'">
+            <div class="label" i18n>Duration of outage *</div>
+            <div class="input-container">
+                <input [(ngModel)]="duration" >
+            </div>
+        </div>
+        <div class="dialog-form-row" *ngIf="type==='outage'">
+            <div class="label" i18n>Schedule *</div>
+            <div class="input-container">
+                <input [(ngModel)]="schedule" mask="00/00/0000">
+                <div class="format-error">
+                    <span *ngIf="dateFormatError" i18n>Format reqduired: mm/dd/yyyy</span>
+                </div>
+            </div>
+        </div>
+        <div class="dialog-form-row" *ngIf="type==='bay'">
+            <div class="label" i18n>Weight *</div>
+            <div class="input-container">
+                <input [(ngModel)]="weight">
+                <div class="format-error">
+                    <span *ngIf="weightFormatError" i18n>Value should be a number</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="message">
+            <span *ngIf="showRequiredFieldsMessage" i18n>Please enter all fields</span>
+            <span *ngIf="showInvalidDateMessage" i18n>Invalid date entered: mm/dd/yyyy</span>
+            <span *ngIf="showUniqueNameMessage" i18n>Please enter a unique name</span>
+        </div>
+
+        <div class="button-row">
+            <button (click)="discard()" i18n>
+                Cancel
+            </button>
+            <button (click)="submit()" i18n>
+                Submit
+            </button>
+        </div>
+    </div>
+
+</div>

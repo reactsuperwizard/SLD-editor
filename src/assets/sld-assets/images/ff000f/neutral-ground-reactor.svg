@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="32px" height="48px" viewBox="-4.0 0.5 32 48" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 52.5 (67469) - http://www.bohemiancoding.com/sketch -->
+    <title>neutral-ground-reactor</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Project-Modelling-–-GIS-&amp;-SLD" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" opacity="1">
+        <g id="Artboard" transform="translate(-424.000000, -1827.000000)">
+            <g id="32-/-sld-/-vertical-/-box-icon-/-normal-copy-15" transform="translate(420.000000, 1820.000000)">
+                <g id="sld-/-iec-/-neutral-grounding-reactor-/-black" transform="translate(4.000000, 8.000000)">
+                    <rect id="Rectangle" fill="#ff000f" fill-rule="nonzero" x="6" y="42" width="12" height="1"></rect>
+                    <rect id="Rectangle" fill="#ff000f" fill-rule="nonzero" x="8" y="44" width="8" height="1"></rect>
+                    <rect id="Rectangle" fill="#ff000f" fill-rule="nonzero" x="10" y="46" width="4" height="1"></rect>
+                    <path d="M12,36 L12,42.5" id="Path" stroke="#ff000f" stroke-width="1" fill-rule="nonzero"></path>
+                    <path d="M15,15 C14.2,11 12.2,9 9,9 C5.8,9 3.8,11 3,15" id="Path-10" stroke="#ff000f" stroke-width="1" stroke-linecap="round" fill-rule="nonzero" transform="translate(9.000000, 12.000000) scale(-1, 1) rotate(90.000000) translate(-9.000000, -12.000000) "></path>
+                    <path d="M16,24 C15.0666667,20 12.7333333,18 9,18 C5.26666667,18 2.93333333,20 2,24" id="Path-10" stroke="#ff000f" stroke-width="1" stroke-linecap="round" fill-rule="nonzero" transform="translate(9.000000, 21.000000) scale(-1, 1) rotate(90.000000) translate(-9.000000, -21.000000) "></path>
+                    <path d="M11.25,18.75 C12.3656286,18.75 13.25,17.9540658 13.25,17 C13.25,15.6166522 12.0697365,13.25 11.25,13.25 C10.4302635,13.25 9.25,15.6166522 9.25,17 C9.25,17.9540658 10.1343714,18.75 11.25,18.75 Z" id="Oval" stroke="#ff000f" stroke-width="1" transform="translate(11.250000, 16.000000) scale(-1, 1) rotate(90.000000) translate(-11.250000, -16.000000) "></path>
+                    <path d="M11.25,28.75 C12.3656286,28.75 13.25,27.9540658 13.25,27 C13.25,25.6166522 12.0697365,23.25 11.25,23.25 C10.4302635,23.25 9.25,25.6166522 9.25,27 C9.25,27.9540658 10.1343714,28.75 11.25,28.75 Z" id="Oval" stroke="#ff000f" stroke-width="1" transform="translate(11.250000, 26.000000) scale(-1, 1) rotate(90.000000) translate(-11.250000, -26.000000) "></path>
+                    <path d="M15,33 C14.2,29 12.2,27 9,27 C5.8,27 3.8,29 3,33" id="Path-10" stroke="#ff000f" stroke-width="1" stroke-linecap="round" fill-rule="nonzero" transform="translate(9.000000, 30.000000) scale(-1, 1) rotate(90.000000) translate(-9.000000, -30.000000) "></path>
+                    <path d="M12,0 L12,6" id="Path" stroke="#ff000f" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" fill-rule="nonzero"></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

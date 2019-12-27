@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="16px" height="16px" viewBox="0 0 16 16" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 52.5 (67469) - http://www.bohemiancoding.com/sketch -->
+    <title>heirarchy-white</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <path d="M16,8.99948974 L16,7.99948974 L8.5,7.99948974 L8.5,5.44948974 C9.75748161,5.19280738 10.6289944,4.02564039 10.5,2.74872759 C10.3710056,1.4718148 9.28341179,0.5 8,0.5 C6.71658821,0.5 5.62899439,1.4718148 5.5,2.74872759 C5.37100561,4.02564039 6.24251839,5.19280738 7.5,5.44948974 L7.5,7.99948974 L0,7.99948974 L0,8.99948974 L2,8.99948974 L2,11.9994897 L0,11.9994897 L0,15.9994897 L4,15.9994897 L4,11.9994897 L3,11.9994897 L3,8.99948974 L7.5,8.99948974 L7.5,11.9994897 L6,11.9994897 L6,15.9994897 L10,15.9994897 L10,11.9994897 L8.5,11.9994897 L8.5,8.99948974 L13,8.99948974 L13,11.9994897 L12,11.9994897 L12,15.9994897 L16,15.9994897 L16,11.9994897 L14,11.9994897 L14,8.99948974 L16,8.99948974 Z" id="path-1"></path>
+    </defs>
+    <g id="Project-Modelling-–-GIS-&amp;-SLD" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" opacity="1">
+        <g id="5.X-/-Settings-/-Edit-Mode-/-SLD-Modelling-/-Defining-Outage" transform="translate(-1212.000000, -675.000000)">
+            <g id="/controls-right" transform="translate(1176.000000, 608.000000)">
+                <g id="/hierarchical-view" transform="translate(0.000000, 56.000000)">
+                    <g id="16-/-sld-modelling2" transform="translate(36.000000, 11.000000)">
+                        <g id="Group-2">
+                            <mask id="mask-2" fill="black">
+                                <use xlink:href="#path-1"></use>
+                            </mask>
+                            <use id="Path" fill="#FFFFFF" xlink:href="#path-1"></use>
+                            <g id="color-background-icon-regular" mask="url(#mask-2)" fill="#FFFFFF">
+                                <rect id="Rectangle" x="0" y="0" width="16" height="16"></rect>
+                            </g>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

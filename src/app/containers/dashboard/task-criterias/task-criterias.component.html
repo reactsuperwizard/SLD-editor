@@ -1,0 +1,26 @@
+<div class="tabs-project-modelling-container">
+  <ngb-tabset class="tabs" [destroyOnHide]="true">
+    <ngb-tab title="Opex">
+      <ng-template ngbTabContent>
+        <app-manage-task-criterias type="Opex" class="tab tab-outage-type">
+        </app-manage-task-criterias>
+      </ng-template>
+    </ngb-tab>
+    <ngb-tab title="Unplanned">
+      <ng-template ngbTabContent>
+      </ng-template>
+    </ngb-tab>
+    <ngb-tab title="Continous Improvement">
+      <ng-template ngbTabContent>
+        <app-manage-task-criterias type="ContinousImprovement" class="tab tab-outage-type">
+        </app-manage-task-criterias>
+      </ng-template>
+    </ngb-tab>
+    <ngb-tab title="Capex" [disabled]="true">
+      <ng-template ngbTabContent>
+        <div class="tab tab-outage-type">
+        </div>
+      </ng-template>
+    </ngb-tab>
+  </ngb-tabset>
+</div>

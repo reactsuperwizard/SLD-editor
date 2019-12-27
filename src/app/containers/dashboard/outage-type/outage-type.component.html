@@ -1,0 +1,135 @@
+<div class="loading-box" *ngIf="loading">
+  <div class="img" alt="loading"></div>
+</div>
+<div class="scroll-panel" *ngIf="!loading">
+  <div class="body-panel" [perfectScrollbar]="{}">
+    <div class="main-container container-fluid">
+      <div *ngIf="userType === 'PM'" class="row">
+        <div class="col-lg-7">
+          <h2 i18n>Client details</h2>
+          <div class="row">
+            <div class="col-lg-4">
+              <div class="form-field">
+                <label class="label">Name</label>
+                <div class="value">{{projectOutageData.name}}</div>
+              </div>
+            </div>
+            <div class="col-lg-4">
+              <div class="form-field">
+                &nbsp;
+              </div>
+            </div>
+            <div class="col-lg-4">
+              <div class="form-field">
+                <label class="label">Area</label>
+                <div class="value">{{projectOutageData.area}}</div>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-lg-4">
+              <div class="form-field">
+                <label class="label">Country</label>
+                <div class="value">{{projectOutageData.country}}</div>
+              </div>
+            </div>
+            <div class="col-lg-4">
+              <div class="form-field" [class.watermark]="projectOutageData.state === ''">
+                <label class="label">State</label>
+                <div class="value">{{projectOutageData.state === '' ? 'N/D' : projectOutageData.state}}</div>
+              </div>
+            </div>
+            <div class="col-lg-4">
+              <div class="form-field" [class.watermark]="projectOutageData.city === ''">
+                <label class="label">City</label>
+                <div class="value">{{projectOutageData.city === '' ? 'N/D' : projectOutageData.city}}</div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-5">
+          <h2 i18n class="no-border">Project support</h2>
+
+          <div class="members">
+
+            <h5>Project Support</h5>
+            <ng-container *ngFor="let projectSupport of projectOutageData.projectSupports; let $index = index;">
+              <app-member [member]="projectSupport" (remove)="removeProjectSupport($event)"
+                          [index]="$index"></app-member>
+            </ng-container>
+            <app-add-new (click)="add('projectSupports')"><span i18n>Assign member</span></app-add-new>
+          </div>
+        </div>
+      </div>
+      <div class="full-section">
+        <h2 *ngIf="userType === 'PM'" i18n>Project details</h2>
+        <div *ngIf="userType === 'PM'" class="row">
+          <div class="col-lg-2">
+            <div class="form-field">
+              <label class="label">Name</label>
+              <div class="value">{{projectOutageData.name}}</div>
+            </div>
+          </div>
+          <div class="col-lg-2">
+            <div class="form-field">
+              <label class="label">Type</label>
+              <div class="value">{{projectOutageData.projectType}}</div>
+            </div>
+          </div>
+          <div class="col-lg-3">
+            <div class="form-field">
+              <label class="label">Currency</label>
+              <select [(ngModel)]="projectOutageData.currency" class="select-ctrl">
+                <option value=""></option>
+                <option *ngFor="let item of masterData.currencies" [value]="item">{{item}}</option>
+              </select>
+            </div>
+          </div>
+          <div class="col-lg-3">
+            <div class="form-field">
+              <label class="label">Decimal delimiter</label>
+              <select [(ngModel)]="projectOutageData.delimiter" class="select-ctrl">
+                <option value=""></option>
+                <option *ngFor="let item of masterData.delimiters" [value]="item">{{item}}</option>
+              </select>
+            </div>
+          </div>
+          <div class="col-lg-2">
+            <div class="form-field">
+              <label class="label">Diagram symbols</label>
+              <select [(ngModel)]="projectOutageData.diagram" class="select-ctrl">
+                <option value=""></option>
+                <option *ngFor="let item of masterData.diagrams" [value]="item">{{item}}</option>
+              </select>
+            </div>
+          </div>
+        </div>
+        <div class="full-section row">
+          <div class="col-md-12">
+            <h2 i18n>Manage outage types</h2>
+          </div>
+          <app-outage-table (clear)="clear($event)" [periocidy]="masterData.periocidy"
+                            [data]="projectOutageData.outages"></app-outage-table>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="footer-panel">
+    <div class="footer-buttons">
+      <div *ngIf="outageTable !== undefined && outageTable.selected.length > 0">
+        <button class="btn btn-link" [class.disabled]="outageTable && !outageTable.selected.length"
+                (click)="outageTable && outageTable.delete()" i18n>Delete
+        </button>
+        <button class="btn btn-secondary" *ngIf="outageTable && outageTable.selected.length == 1"
+                [class.disabled]="outageTable && (!outageTable.selected.length || outageTable.selected.length > 1)"
+                (click)="outageTable && outageTable.selected.length > 0 && outageTable.addOrEditMember((outageTable && outageTable.selected[0]))"
+                i18n>Edit
+        </button>
+      </div>
+    </div>
+    <div class="footer-buttons">
+      <button class="btn btn-secondary" (click)="outageTable && outageTable.reset()" i18n>Reset</button>
+      <button class="btn btn-primary" i18n>Save</button>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="12px" height="13px" viewBox="0 0 12 13" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 52.5 (67469) - http://www.bohemiancoding.com/sketch -->
+    <title>16 / error-circle</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <path d="M12,5.13895784 L12,0 L10.2356245,1.76437552 C8.39121026,-0.0804030251 5.5656159,-0.520840221 3.24723738,0.675066437 C0.928858866,1.87097309 -0.350158115,4.42872288 0.0839150458,7.00100828 C0.517988207,9.57329368 2.56551715,11.5696888 5.14795574,11.9385826 C7.73039433,12.3074764 10.2549862,10.9641953 11.39189,8.6163193 L9.67890404,7.75982633 C8.90842387,9.35866975 7.19211338,10.2753658 5.43482329,10.0266259 C3.6775332,9.77788605 2.28306121,8.42086685 1.98658254,6.67099818 C1.69010386,4.92112951 2.55974467,3.18050373 4.13702433,2.36679073 C5.714304,1.55307773 7.63678839,1.853256 8.89093051,3.10906949 L6.86104216,5.13895784 L12,5.13895784 Z" id="path-1"></path>
+    </defs>
+    <g id="2-–-Manage-Project" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="8.1-/-Settings-/-Members" transform="translate(-18.000000, -333.000000)">
+            <g id="menu-/-settings-/-list" transform="translate(0.000000, 312.000000)">
+                <g id="16-/-return" transform="translate(16.000000, 19.649123)">
+                    <g transform="translate(8.000000, 8.000000) scale(-1, 1) translate(-8.000000, -8.000000) translate(2.000000, 2.000000)">
+                        <mask id="mask-2" fill="white">
+                            <use xlink:href="#path-1"></use>
+                        </mask>
+                        <use id="Path" fill="#464646" xlink:href="#path-1"></use>
+                        <g id="color-background-icon-regular" mask="url(#mask-2)" fill="#000000">
+                            <g transform="translate(-0.857143, -0.857143)" id="Rectangle">
+                                <rect x="0" y="0" width="14" height="14"></rect>
+                            </g>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

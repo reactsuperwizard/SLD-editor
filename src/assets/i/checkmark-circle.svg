@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="16px" height="16px" viewBox="0 0 16 16" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 52.5 (67469) - http://www.bohemiancoding.com/sketch -->
+    <title>16 / checkmark-circle</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <path d="M8,0 C3.581722,-2.705415e-16 5.41083001e-16,3.581722 0,8 C-5.41083001e-16,12.418278 3.581722,16 8,16 C12.418278,16 16,12.418278 16,8 C16,5.87826808 15.1571453,3.84343678 13.6568542,2.34314575 C12.1565632,0.842854723 10.1217319,1.2991861e-16 8,0 Z M6.92,11.37 L3.7,8.19 L5.11,6.77 L6.93,8.57 L10.93,4.63 L12.33,6.06 L6.92,11.37 Z" id="path-1"></path>
+    </defs>
+    <g id="2-–-Manage-Project" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="1.1-/-Reliability-Center-/-Project-Manager-Dashboard" transform="translate(-60.000000, -388.000000)">
+            <g id="/widgets" transform="translate(24.000000, 180.000000)">
+                <g id="/daily-status" transform="translate(0.000000, 4.000000)">
+                    <g id="digest_card" transform="translate(16.000000, 184.000000)">
+                        <g id="16-/-checkmark_circle" transform="translate(20.000000, 20.000000)">
+                            <g id="--16-/-CheckMarkCircle1-">
+                                <mask id="mask-2" fill="white">
+                                    <use xlink:href="#path-1"></use>
+                                </mask>
+                                <use id="Mask" fill="#464646" fill-rule="nonzero" xlink:href="#path-1"></use>
+                                <g id="color-background-icon-regular" mask="url(#mask-2)" fill="#000000">
+                                    <rect id="Rectangle" x="0" y="0" width="16" height="16"></rect>
+                                </g>
+                            </g>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="60px" height="75px" viewBox="0 0 60 75" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 52.5 (67469) - http://www.bohemiancoding.com/sketch -->
+    <title>/pin</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <filter x="-100.0%" y="-60.0%" width="300.0%" height="220.0%" filterUnits="objectBoundingBox" id="filter-1">
+            <feGaussianBlur stdDeviation="8" in="SourceGraphic"></feGaussianBlur>
+        </filter>
+        <path d="M0,12 C1.2490009e-16,9 2.13473356,4.95426284e-05 12.0673668,4.95426284e-05 C22,4.95426284e-05 24,9 24,12 C24,14.2741169 24,20.2741169 24,30 L12,40 L0,30 C0,19.1364499 0,13.1364499 0,12 Z" id="path-2"></path>
+    </defs>
+    <g id="------Project-Modelling-–-GIS-&amp;-SLD" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="4.11-/-Settings-/-Edit-Mode-/-T&amp;D-Utility-/-Dragging-Joint" transform="translate(-903.000000, -316.000000)">
+            <g id="/pin" transform="translate(911.000000, 324.000000)">
+                <path d="M10,22 C10,19 12.1347336,10.0000495 22.0673668,10.0000495 C32,10.0000495 34,19 34,22 C34,24.2741169 34,30.2741169 34,40 L22,50 L10,40 C10,29.1364499 10,23.1364499 10,22 Z" id="Rectangle" fill-opacity="0.5" fill="#000000" fill-rule="nonzero" filter="url(#filter-1)"></path>
+                <mask id="mask-3" fill="white">
+                    <use xlink:href="#path-2"></use>
+                </mask>
+                <use id="Rectangle" fill="#0F50FF" fill-rule="nonzero" xlink:href="#path-2"></use>
+                <g id="sld-/-multi-/-load-/-black" mask="url(#mask-3)" fill-rule="nonzero" stroke="#FFFFFF" stroke-width="2">
+                    <g transform="translate(6.000000, -17.000000)">
+                        <path d="M6,0 L6,47" id="Path"></path>
+                        <polyline id="Path-4" stroke-linecap="round" transform="translate(6.000000, 42.000000) scale(1, -1) translate(-6.000000, -42.000000) " points="0 48 6 36 12 48"></polyline>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

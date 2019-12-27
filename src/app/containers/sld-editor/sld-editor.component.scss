@@ -1,0 +1,317 @@
+// the sle editor component container
+.outer-container {
+    width: 100%;
+    height: 100%;
+    white-space: nowrap;
+    background: white;
+
+    font-family: 'ABBVoice';
+    font-weight: 400;
+    font-size: 14px;
+
+    button {
+        font-family: 'ABBVoice';
+        font-size: 14px;
+        font-weight: 400;
+    }
+}
+
+.workspace-container {
+    height: calc(100% - 60px);
+    position: relative;
+}
+
+// container for the diagram and palette
+.canvases {
+    height: 100%;
+
+    // palette container
+    .palette-container {
+        position: absolute;
+        right: 0;
+        top: 16px;
+        width: 186px;
+        background-color: #fff;
+        border: 1px solid #d8d8d8;
+        border-radius: 4px;
+        border-right: none;
+        z-index: 5001;
+
+        .equipment-library-title {
+            margin-top: 12px;
+            text-align: center;
+            font-size: 12px;
+            font-family: 'ABBVoice';
+            margin-bottom: 4px;
+        }
+    }
+}
+
+// menu-bar-container
+.menu-bar-container {
+    position: absolute;
+    left: 16px;
+    top: 16px;
+    z-index: 10001;
+}
+
+// dialog and toast containers
+.context-menu-container,
+.metadata-dialog-container,
+.name-dialog-container,
+.find-dialog-container,
+.edit-area-dialog-container,
+.static-content-dialog-container,
+.toast {
+    z-index: 10001;
+    position: absolute;
+}
+.find-dialog-container,
+.edit-area-dialog-container,
+.static-content-dialog-container,
+.toast {
+    left: calc(50% - 150px);
+    top: 16px;
+}
+.toast {
+    background-color: #3d3d3d;
+    height:32px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 4px 16px 0 #f4f4f4;
+    width: 300px;
+    border-radius: 16px;
+    color: #fff;
+}
+
+// the loaded images div that's hidden
+.loaded-images-container {
+    display: none;
+}
+
+
+.user-action-btn-group {
+    background-color: #d8d8d8;
+    border: 1px solid #a7a7a7;
+    border-radius: 4px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    user-select: none;
+
+    &:active {
+        background-color: #a7a7a7;
+        border-color: #7a7a7a;
+    }
+}
+
+.user-action-tool-set {
+    z-index: 10001;
+    border: 1px solid #dbdbdb;
+    border-radius: 4px;
+    padding: 8px;
+    position: absolute;
+    background-color: #fff;
+
+    .user-action-btn-group {
+
+        .action-button {
+            width: 100%;
+            height: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            &:active {
+                background-color: #a7a7a7;
+            }
+
+            &.disabled {
+                opacity: 0.3;
+            }
+        }
+
+        &:active {
+            background-color: #d8d8d8;
+            border-color: #a7a7a7;
+        }
+
+        &.active {
+            background-color: #a7a7a7;
+            border-color: #7a7a7a;
+        }
+    }
+}
+.user-action-tool-set.outage-area-tool {
+    left: 16px;
+    top: 264px;
+    .user-action-btn-group {
+        height: 32px;
+        width: 32px;
+    }
+}
+.user-action-tool-set.bay-area-tool {
+    left: 16px;
+    top: 328px;
+    .user-action-btn-group {
+        height: 32px;
+        width: 32px;
+    }
+}
+.user-action-tool-set.zoom-tool {
+    right: 16px;
+    bottom: 64px;
+    .user-action-btn-group {
+        height: 32px;
+        width: 72px;
+        justify-content: space-between;
+        .action-button {
+            border-right: 1px solid #a7a7a7;
+        }
+        .action-button:last-child {
+            border: none;
+        }
+    }
+}
+.user-action-tool-set.undo-redo-tool {
+    left: 16px;
+    bottom: 16px;
+
+    .user-action-btn-group {
+        height: 64px;
+        width: 32px;
+        flex-direction: column;
+        justify-content: space-between;
+
+        .separator {
+            width: 100%;
+            height: 1px;
+        }
+
+        .action-button:first-child {
+            border-bottom: 1px solid #a7a7a7;
+        }
+    }
+}
+.user-action-tool-set.heirarchy-tool {
+    right: 16px;
+    bottom: 16px;
+    .user-action-btn-group {
+        height: 24px;
+        width: 72px;
+        justify-content: space-between;
+        background-color: #fff;
+        border-color: #f4f4f4;
+        border-radius: 12px;
+        .action-button {
+            border-right: 1px solid #f4f4f4;
+
+            &:active {
+                background-color: #dbdbdb;
+                border-color: #dbdbdb;
+            }
+        }
+        .action-button:last-child {
+            border: none;
+        }
+    }
+}
+
+
+// user drawn areas (outage & bays) list
+.user-drawn-areas-list {
+    position: absolute;
+    width: 160px;
+    right: 16px;
+    top: 16px;
+    background-color: #fff;
+    border: 1px solid #dbdbdb;
+    padding: 12px 0;
+    border-radius: 4px;
+    z-index: 10001;
+
+    .title {
+        text-align: center;
+        margin-bottom: 12px;
+        font-size: 12px;
+    }
+
+    // individual outage area boxes
+    .area-box {
+        border: 1px solid #dbdbdb;
+        border-radius: 4px;
+        padding: 2px;
+        margin-bottom: 8px;
+        margin-left: 8px;
+        margin-right: 8px;
+
+        .inner-box {
+            border-radius: 4px;
+            padding: 4px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            cursor: pointer;
+
+            .pill-box {
+                color: #fff;
+                border-radius: 12px;
+                height: 24px;
+                padding: 0 10px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                font-size: 0.9em;
+            }
+
+            .delete-btn {
+                background-color: #fff;
+                border-radius: 8px;
+                height: 16px;
+                width: 16px;
+                cursor: pointer;
+            }
+        }
+    }
+
+    .separator {
+        height: 1px;
+        width: 100%;
+        background-color: #dbdbdb;
+        margin-top: 16px;
+        margin-bottom: 16px;
+    }
+
+    // create area button
+    .create-area {
+        padding: 0 16px;
+
+        button {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 2px 7px;
+
+            cursor: pointer;
+            width: 100%;
+            border: 1px solid #a7a7a7;
+            background-color: #d8d8d8;
+            border-radius: 4px;
+            height: 32px;
+
+            &:focus {
+                outline: none;
+            }
+
+            &:active {
+                background-color: #a7a7a7;
+            }
+
+            &:disabled {
+                opacity: 0.5;
+            }
+        }
+    }
+}

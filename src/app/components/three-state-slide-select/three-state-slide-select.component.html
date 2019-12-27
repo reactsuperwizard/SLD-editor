@@ -1,0 +1,4 @@
+
+<div class="three-state-slide" [class.disabled]="disabled" [class.readonly]="readOnly">
+  <span *ngFor="let state of states; let i = index" (click)="!readOnly && !disabled && writeValue(states[currentIndex=i])" [ngClass]="{'active':currentIndex === i}">{{state}}</span>
+</div>

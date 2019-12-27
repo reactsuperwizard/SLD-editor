@@ -1,0 +1,142 @@
+@import 'mixin';
+.edit-exce-team {
+  .role-info-section {
+    padding-left: 120px;
+  }
+  .icon.icon-back {
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    background-size: 40%;
+    left: 0px;
+    top: 0px;
+    cursor: pointer;
+  }
+  .fs-lbl {
+    display: flex;
+    justify-content: space-between;
+  }
+  .error-indicate {
+    font-size: 12px;
+    display: none;
+    padding: 5px 0 0 15px;
+    position: relative;
+    &:before {
+      content: '';
+      width: 12px;
+      height: 12px;
+      position: absolute;
+      left: 0;
+      top: 5px;
+      background: url('/assets/i/error.svg') no-repeat;
+      background-size: 12px 12px;
+    }
+    &.invalid {
+      display: block;
+      color: $errorColor;
+    }
+  }
+  textarea.input-ctrl.h-lg {
+    height: 177px;
+  }
+  .tabs.tabs-exec-team {
+    @include tab-page-default();
+    .nav-item {
+      width: 50% !important;
+    }
+    .tab {
+      .user-list {
+        margin-top: 20px;
+        .heading {
+          padding: 0 58px 0 26px;
+        }
+        .icon.icon-remove-user {
+          width: 16px;
+          height: 16px;
+        }
+      }
+      .bar-user .user-details .name {
+        display: flex;
+        flex-direction: column;
+        .leader-tag {
+          color: $gray;
+          font-size: 12px;
+        }
+      }
+      .bar-user.leader-deputy {
+        border-style: dashed;
+        padding-left: 20px;
+        .name {
+          color: $gray;
+        }
+      }
+      &.tab-tasks {
+        .rating {
+          .sort-btn {
+            width: 4px;
+            height: 4px;
+            margin-left: 12px;
+            text-align: center;
+            border-left: 4px solid transparent;
+            border-right: 4px solid transparent;
+            border-bottom: 4px solid #464646;
+            &.desc {
+              border-bottom: 0;
+              border-top: 4px solid #464646;
+            }
+          }
+        }
+        .bar-user.search {
+          display: flex;
+          flex-direction: row;
+          align-items: center;
+          justify-content: space-between;
+          .pager-container {
+            @include paging-default();
+          }
+        }
+      }
+    }
+  }
+  .team-type {
+    width: 60%;
+  }
+  .goodat-col {
+    border: 1px solid $lighterGray;
+    .user-list {
+      margin-top: 20px;
+      .goodat {
+        padding: 14px 0;
+        .goodat-count {
+          font-size: 14px;
+          margin-bottom: 12px;
+        }
+        .goodat-skills {
+          display: flex;
+          flex-wrap: wrap;
+          align-items: center;
+          margin-bottom: 16px;
+          .skill {
+            border: 1px solid $lighterGray;
+            height: 24px;
+            margin: 4px 12px 4px 0;
+            line-height: 24px;
+            text-align: center;
+            font-size: 15px;
+            span {
+              padding: 0 12px;
+              font-size: 15px;
+            }
+          }
+        }
+      }
+    }
+  }
+  .btn.btn-save {
+    @include button-default(white, black, black, 192px);
+  }
+  .btn.btn-clear {
+    @include button-default(black, white, white, 192px);
+    text-decoration: underline;
+  }
+}

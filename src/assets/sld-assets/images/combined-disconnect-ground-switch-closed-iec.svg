@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="32px" height="48px" viewBox="-4.0 0.0 32 48" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 52.5 (67469) - http://www.bohemiancoding.com/sketch -->
+    <title>combined-disconnect-ground-switch-closed-iec</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Project-Modelling-–-GIS-&amp;-SLD" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" opacity="1">
+        <g id="Artboard" transform="translate(-1504.000000, -928.000000)" fill-rule="nonzero">
+            <g id="32-/-sld-/-vertical-/-box-icon-/-normal-copy-6" transform="translate(1500.000000, 920.000000)">
+                <g id="sld-/-iec-/-combined-disconnector-switch-(closed)---ground-switch-/-black" transform="translate(4.000000, 8.000000)">
+                    <path d="M20,0 L20,10.5" id="Path" stroke="#000000" stroke-width="1"></path>
+                    <path d="M18,8 L18,13" id="Path" stroke="#000000" stroke-width="1" transform="translate(18.000000, 10.500000) rotate(90.000000) translate(-18.000000, -10.500000) "></path>
+                    <path d="M18,36 L18,41" id="Path" stroke="#000000" stroke-width="1" transform="translate(18.000000, 38.500000) rotate(90.000000) translate(-18.000000, -38.500000) "></path>
+                    <polyline id="Path" stroke="#000000" stroke-width="1" points="16 19 16 31.3243243 16 38"></polyline>
+                    <path d="M20,38.5 L20,48" id="Path" stroke="#000000" stroke-width="1"></path>
+                    <path d="M16,10.5 L16,19" id="Path" stroke="#000000" stroke-width="1"></path>
+                    <path d="M6,11 L6,23" id="Path" stroke="#000000" stroke-width="1"></path>
+                    <rect id="Rectangle" fill="#000000" x="0" y="10" width="12" height="1"></rect>
+                    <rect id="Rectangle" fill="#000000" x="2" y="8" width="8" height="1"></rect>
+                    <rect id="Rectangle" fill="#000000" x="4" y="6" width="4" height="1"></rect>
+                    <path d="M15.5,11.5 L15.5,18.5" id="Path" stroke="#000000" stroke-width="1" transform="translate(15.500000, 15.500000) rotate(90.000000) translate(-15.500000, -15.500000) "></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

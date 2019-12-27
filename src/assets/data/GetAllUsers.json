@@ -1,0 +1,627 @@
+[
+  {
+    "userId": 1,
+    "userName": "Bharathy",
+    "surName": "surname",
+    "password": "abscd",
+    "employer": "Vattenfall",
+    "jobPosition": "Manager",
+    "role": ["Maintenance Technician", "Execution Team lead"],
+    "email": "Bharathy@abb.com",
+    "phone": "23432353",
+    "telCode": "+1",
+    "hourlyRate": 2,
+    "goodat": ["Testing", "Learning"],
+    "enableSkill": true,
+    "performanceRating": 2,
+    "photo": "/assets/i/user.jpg",
+    "deleted": false,
+    "createdDate": "2001-02-16T00:00:00",
+    "createdBy": 1,
+    "updatedDate": "2001-02-16T00:00:00",
+    "updateddBy": 1,
+    "executionTeams": [
+      {
+        "name": "Baden 1",
+        "hourlyRate": 90
+      }
+    ],
+    "teamUsersDTOList": [
+
+    ],
+    "userRolesDTOList": [
+
+    ],
+    "userSkillsDTOList": [
+
+    ],
+    "skills": [
+      {
+        "name": "Transformer batteries",
+        "filename": "batteries_280hz.pdf",
+        "validityMonth": "Dec",
+        "validityYear": 2019
+      },
+      {
+        "name": "On-load tap charger",
+        "filename": "adapters_260hz.pdf",
+        "validityMonth": "Mar",
+        "validityYear": 2022
+      }
+    ]
+  },
+  {
+    "userId": 2,
+    "userName": "Raja",
+    "surName": "surname",
+    "password": "abscd",
+    "employer": "ABB",
+    "jobPosition": "Manager",
+    "role": ["ABB System Administrator"],
+    "email": "raja@abb.com",
+    "phone": "23432353",
+    "telCode": "+1",
+    "hourlyRate": 2,
+    "goodat": ["Testing", "Learning"],
+    "enableSkill": true,
+    "performanceRating": 2,
+    "photo": "/assets/i/user.jpg",
+    "deleted": false,
+    "createdDate": "2001-02-16T00:00:00",
+    "createdBy": 1,
+    "updatedDate": "2001-02-16T00:00:00",
+    "updateddBy": 1,
+    "executionTeams": [
+      {
+        "name": "Baden 1",
+        "hourlyRate": 80
+      },
+      {
+        "name": "Baden 2",
+        "hourlyRate": 65
+      }
+    ],
+    "teamUsersDTOList": [
+
+    ],
+    "userRolesDTOList": [
+
+    ],
+    "userSkillsDTOList": [
+
+    ],
+    "skills": [
+      {
+        "name": "Transformer batteries",
+        "filename": "batteries_280hz.pdf",
+        "validityMonth": "Dec",
+        "validityYear": 2019
+      },
+      {
+        "name": "On-load tap charger",
+        "filename": "adapters_260hz.pdf",
+        "validityMonth": "Mar",
+        "validityYear": 2022
+      }
+    ]
+  },
+  {
+    "userId": 3,
+    "userName": "Bharathy 1",
+    "surName": "surname",
+    "password": "abscd",
+    "employer": "Vattenfall",
+    "jobPosition": "Manager",
+    "role": ["ABB Global Product Manager"],
+    "email": "Bharathy@abb.com",
+    "phone": "23432353",
+    "telCode": "+1",
+    "hourlyRate": 2,
+    "goodat": ["Testing", "Learning"],
+    "enableSkill": true,
+    "performanceRating": 2,
+    "photo": "/assets/i/user.jpg",
+    "deleted": false,
+    "createdDate": "2001-02-16T00:00:00",
+    "createdBy": 1,
+    "updatedDate": "2001-02-16T00:00:00",
+    "updateddBy": 1,
+    "executionTeams": [],
+    "teamUsersDTOList": [
+
+    ],
+    "userRolesDTOList": [
+
+    ],
+    "userSkillsDTOList": [
+
+    ],
+    "skills": [
+      {
+        "name": "Transformer batteries",
+        "filename": "batteries_280hz.pdf",
+        "validityMonth": "Dec",
+        "validityYear": 2019
+      },
+      {
+        "name": "On-load tap charger",
+        "filename": "adapters_260hz.pdf",
+        "validityMonth": "Mar",
+        "validityYear": 2022
+      }
+    ]
+  },
+  {
+    "userId": 4,
+    "userName": "Raja",
+    "surName": "surname",
+    "password": "abscd",
+    "employer": "Vattenfall",
+    "jobPosition": "Manager",
+    "role": ["ABB System Administrator"],
+    "email": "raja@abb.com",
+    "phone": "23432353",
+    "telCode": "+1",
+    "hourlyRate": 2,
+    "goodat": ["Testing", "Learning"],
+    "enableSkill": true,
+    "performanceRating": 2,
+    "photo": "/assets/i/user.jpg",
+    "deleted": false,
+    "createdDate": "2001-02-16T00:00:00",
+    "createdBy": 1,
+    "updatedDate": "2001-02-16T00:00:00",
+    "updateddBy": 1,
+    "executionTeams": [
+      {
+        "name": "Baden 1",
+        "hourlyRate": 80
+      },
+      {
+        "name": "Baden 2",
+        "hourlyRate": 65
+      }
+    ],
+    "teamUsersDTOList": [
+
+    ],
+    "userRolesDTOList": [
+
+    ],
+    "userSkillsDTOList": [
+
+    ],
+    "skills": [
+      {
+        "name": "Transformer batteries",
+        "filename": "batteries_280hz.pdf",
+        "validityMonth": "Dec",
+        "validityYear": 2019
+      },
+      {
+        "name": "On-load tap charger",
+        "filename": "adapters_260hz.pdf",
+        "validityMonth": "Mar",
+        "validityYear": 2022
+      }
+    ]
+  },
+  {
+    "userId": 5,
+    "userName": "Bharathy 2",
+    "surName": "surname",
+    "password": "abscd",
+    "employer": "ABB",
+    "jobPosition": "Manager",
+    "role": ["ABB Global Product Manager"],
+    "email": "Bharathy@abb.com",
+    "phone": "23432353",
+    "telCode": "+1",
+    "hourlyRate": 2,
+    "goodat": ["Testing", "Learning"],
+    "enableSkill": true,
+    "performanceRating": 2,
+    "photo": "/assets/i/user.jpg",
+    "deleted": false,
+    "createdDate": "2001-02-16T00:00:00",
+    "createdBy": 1,
+    "updatedDate": "2001-02-16T00:00:00",
+    "updateddBy": 1,
+    "executionTeams": [
+      {
+        "name": "Baden 1",
+        "hourlyRate": 80
+      },
+      {
+        "name": "Baden 2",
+        "hourlyRate": 65
+      }
+    ],
+    "teamUsersDTOList": [
+
+    ],
+    "userRolesDTOList": [
+
+    ],
+    "userSkillsDTOList": [
+
+    ],
+    "skills": [
+      {
+        "name": "Transformer batteries",
+        "filename": "batteries_280hz.pdf",
+        "validityMonth": "Dec",
+        "validityYear": 2019
+      },
+      {
+        "name": "On-load tap charger",
+        "filename": "adapters_260hz.pdf",
+        "validityMonth": "Mar",
+        "validityYear": 2022
+      }
+    ]
+  },
+  {
+    "userId": 6,
+    "userName": "Leon Hunt",
+    "surName": "surname",
+    "password": "abscd",
+    "employer": "Vattenfall",
+    "jobPosition": "Manager",
+    "role": ["Reliability Engineer"],
+    "email": "raja@abb.com",
+    "phone": "23432353",
+    "telCode": "+1",
+    "hourlyRate": 2,
+    "goodat": ["Testing", "Learning"],
+    "enableSkill": true,
+    "performanceRating": 2,
+    "photo": "/assets/i/user.jpg",
+    "deleted": false,
+    "createdDate": "2001-02-16T00:00:00",
+    "createdBy": 1,
+    "updatedDate": "2001-02-16T00:00:00",
+    "updateddBy": 1,
+    "executionTeams": [],
+    "teamUsersDTOList": [
+
+    ],
+    "userRolesDTOList": [
+
+    ],
+    "userSkillsDTOList": [
+
+    ],
+    "skills": [
+      {
+        "name": "Transformer batteries",
+        "filename": "batteries_280hz.pdf",
+        "validityMonth": "Dec",
+        "validityYear": 2019
+      },
+      {
+        "name": "On-load tap charger",
+        "filename": "adapters_260hz.pdf",
+        "validityMonth": "Mar",
+        "validityYear": 2022
+      }
+    ]
+  },
+  {
+    "userId": 7,
+    "userName": "Bharathy",
+    "surName": "surname",
+    "password": "abscd",
+    "employer": "Vattenfall",
+    "jobPosition": "Manager",
+    "role": [
+      "ABB Global Product Manager",
+      "ABB System Administrator"
+    ],
+    "email": "Bharathy@abb.com",
+    "phone": "23432353",
+    "telCode": "+1",
+    "hourlyRate": 2,
+    "goodat": [
+      "Testing",
+      "Learning"
+    ],
+    "enableSkill": true,
+    "performanceRating": 2,
+    "photo": "/assets/i/user.jpg",
+    "deleted": false,
+    "createdDate": "2001-02-16T00:00:00",
+    "createdBy": 1,
+    "updatedDate": "2001-02-16T00:00:00",
+    "updateddBy": 1,
+    "executionTeams": [
+      {
+        "name": "Baden 2",
+        "hourlyRate": 110
+      }
+    ],
+    "teamUsersDTOList": [],
+    "userRolesDTOList": [],
+    "userSkillsDTOList": [],
+    "skills": [
+      {
+        "name": "Transformer batteries",
+        "filename": "batteries_280hz.pdf",
+        "validityMonth": "Dec",
+        "validityYear": 2019
+      },
+      {
+        "name": "On-load tap charger",
+        "filename": "adapters_260hz.pdf",
+        "validityMonth": "Mar",
+        "validityYear": 2022
+      }
+    ]
+  },
+  {
+    "userId": 8,
+    "userName": "Raja",
+    "surName": "surname",
+    "password": "abscd",
+    "employer": "Vattenfall",
+    "jobPosition": "Manager",
+    "role": [
+      "ABB System Administrator"
+    ],
+    "email": "raja@abb.com",
+    "phone": "23432353",
+    "telCode": "+1",
+    "hourlyRate": 2,
+    "goodat": [
+      "Testing",
+      "Learning"
+    ],
+    "enableSkill": true,
+    "performanceRating": 2,
+    "photo": "/assets/i/user.jpg",
+    "deleted": false,
+    "createdDate": "2001-02-16T00:00:00",
+    "createdBy": 1,
+    "updatedDate": "2001-02-16T00:00:00",
+    "updateddBy": 1,
+    "executionTeams": [
+      {
+        "name": "Baden 1",
+        "hourlyRate": 90
+      }
+    ],
+    "teamUsersDTOList": [],
+    "userRolesDTOList": [],
+    "userSkillsDTOList": [],
+    "skills": [
+      {
+        "name": "Transformer batteries",
+        "filename": "batteries_280hz.pdf",
+        "validityMonth": "Dec",
+        "validityYear": 2019
+      },
+      {
+        "name": "On-load tap charger",
+        "filename": "adapters_260hz.pdf",
+        "validityMonth": "Mar",
+        "validityYear": 2022
+      }
+    ]
+  },
+  {
+    "userId": 9,
+    "userName": "Bharathy 1",
+    "surName": "surname",
+    "password": "abscd",
+    "employer": "Vattenfall",
+    "jobPosition": "Manager",
+    "role": [
+      "ABB Global Product Manager"
+    ],
+    "email": "Bharathy@abb.com",
+    "phone": "23432353",
+    "telCode": "+1",
+    "hourlyRate": 2,
+    "goodat": [
+      "Testing",
+      "Learning"
+    ],
+    "enableSkill": true,
+    "performanceRating": 2,
+    "photo": "/assets/i/user.jpg",
+    "deleted": false,
+    "createdDate": "2001-02-16T00:00:00",
+    "createdBy": 1,
+    "updatedDate": "2001-02-16T00:00:00",
+    "updateddBy": 1,
+    "executionTeams": [
+      {
+        "name": "Baden 1",
+        "hourlyRate": 80
+      },
+      {
+        "name": "Baden 2",
+        "hourlyRate": 65
+      }
+    ],
+    "teamUsersDTOList": [],
+    "userRolesDTOList": [],
+    "userSkillsDTOList": [],
+    "skills": [
+      {
+        "name": "Transformer batteries",
+        "filename": "batteries_280hz.pdf",
+        "validityMonth": "Dec",
+        "validityYear": 2019
+      },
+      {
+        "name": "On-load tap charger",
+        "filename": "adapters_260hz.pdf",
+        "validityMonth": "Mar",
+        "validityYear": 2022
+      }
+    ]
+  },
+  {
+    "userId": 10,
+    "userName": "Raja",
+    "surName": "surname",
+    "password": "abscd",
+    "employer": "Vattenfall",
+    "jobPosition": "Manager",
+    "role": [
+      "ABB System Administrator"
+    ],
+    "email": "raja@abb.com",
+    "phone": "23432353",
+    "telCode": "+1",
+    "hourlyRate": 2,
+    "goodat": [
+      "Testing",
+      "Learning"
+    ],
+    "enableSkill": true,
+    "performanceRating": 2,
+    "photo": "/assets/i/user.jpg",
+    "deleted": false,
+    "createdDate": "2001-02-16T00:00:00",
+    "createdBy": 1,
+    "updatedDate": "2001-02-16T00:00:00",
+    "updateddBy": 1,
+    "executionTeams": [
+      {
+        "name": "Baden 1",
+        "hourlyRate": 80
+      },
+      {
+        "name": "Baden 2",
+        "hourlyRate": 65
+      }
+    ],
+    "teamUsersDTOList": [],
+    "userRolesDTOList": [],
+    "userSkillsDTOList": [],
+    "skills": [
+      {
+        "name": "Transformer batteries",
+        "filename": "batteries_280hz.pdf",
+        "validityMonth": "Dec",
+        "validityYear": 2019
+      },
+      {
+        "name": "On-load tap charger",
+        "filename": "adapters_260hz.pdf",
+        "validityMonth": "Mar",
+        "validityYear": 2022
+      }
+    ]
+  },
+  {
+    "userId": 11,
+    "userName": "Bharathy 2",
+    "surName": "surname",
+    "password": "abscd",
+    "employer": "Vattenfall",
+    "jobPosition": "Manager",
+    "role": [
+      "ABB Global Product Manager"
+    ],
+    "email": "Bharathy@abb.com",
+    "phone": "23432353",
+    "telCode": "+1",
+    "hourlyRate": 2,
+    "goodat": [
+      "Testing",
+      "Learning"
+    ],
+    "enableSkill": true,
+    "performanceRating": 2,
+    "photo": "/assets/i/user.jpg",
+    "deleted": false,
+    "createdDate": "2001-02-16T00:00:00",
+    "createdBy": 1,
+    "updatedDate": "2001-02-16T00:00:00",
+    "updateddBy": 1,
+    "executionTeams": [
+      {
+        "name": "Baden 1",
+        "hourlyRate": 80
+      },
+      {
+        "name": "Baden 2",
+        "hourlyRate": 65
+      }
+    ],
+    "teamUsersDTOList": [],
+    "userRolesDTOList": [],
+    "userSkillsDTOList": [],
+    "skills": [
+      {
+        "name": "Transformer batteries",
+        "filename": "batteries_280hz.pdf",
+        "validityMonth": "Dec",
+        "validityYear": 2019
+      },
+      {
+        "name": "On-load tap charger",
+        "filename": "adapters_260hz.pdf",
+        "validityMonth": "Mar",
+        "validityYear": 2022
+      }
+    ]
+  },
+  {
+    "userId": 12,
+    "userName": "Leon Hunt",
+    "surName": "surname",
+    "password": "abscd",
+    "employer": "Vattenfall",
+    "jobPosition": "Manager",
+    "role": [
+      "Reliability Engineer"
+    ],
+    "email": "raja@abb.com",
+    "phone": "23432353",
+    "telCode": "+1",
+    "hourlyRate": 2,
+    "goodat": [
+      "Testing",
+      "Learning"
+    ],
+    "enableSkill": true,
+    "performanceRating": 2,
+    "photo": "/assets/i/user.jpg",
+    "deleted": false,
+    "createdDate": "2001-02-16T00:00:00",
+    "createdBy": 1,
+    "updatedDate": "2001-02-16T00:00:00",
+    "updateddBy": 1,
+    "executionTeams": [
+      {
+        "name": "Baden 1",
+        "hourlyRate": 80
+      },
+      {
+        "name": "Baden 2",
+        "hourlyRate": 65
+      }
+    ],
+    "teamUsersDTOList": [],
+    "userRolesDTOList": [],
+    "userSkillsDTOList": [],
+    "skills": [
+      {
+        "name": "Transformer batteries",
+        "filename": "batteries_280hz.pdf",
+        "validityMonth": "Dec",
+        "validityYear": 2019
+      },
+      {
+        "name": "On-load tap charger",
+        "filename": "adapters_260hz.pdf",
+        "validityMonth": "Mar",
+        "validityYear": 2022
+      }
+    ]
+  }
+]

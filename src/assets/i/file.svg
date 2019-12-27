@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="14px" height="16px" viewBox="0 0 14 16" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 52.5 (67469) - http://www.bohemiancoding.com/sketch -->
+    <title>icon</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <path d="M6,7 L12,7 L12,8 L6,8 L6,7 Z M15,4 L15,14 L13,14 L13,16 L1,16 L1,2 L3,2 L3,0 L10,0 L15,4 Z M12,14 L3,14 L3,3 L2,3 L2,15 L12,15 L12,14 Z M13,5 L9.3,2 L5,2 L5,12 L13,12 L13,5 Z M6,6 L10,6 L10,5 L6,5 L6,6 Z" id="path-1"></path>
+    </defs>
+    <g id="2-–-Manage-Project" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="8.5-/-Settings-/--Members/-Skills" transform="translate(-652.000000, -841.000000)">
+            <g id="NEW-/-ABB-/-Template-/-Skill-and-certificate" transform="translate(233.000000, 809.000000)">
+                <g id="16-/-reports" transform="translate(418.000000, 32.000000)">
+                    <g>
+                        <mask id="mask-2" fill="white">
+                            <use xlink:href="#path-1"></use>
+                        </mask>
+                        <use id="Reports" fill="#464646" fill-rule="nonzero" xlink:href="#path-1"></use>
+                        <g id="color-background-icon-regular" mask="url(#mask-2)" fill="#000000">
+                            <rect id="Rectangle" x="0" y="0" width="16" height="16"></rect>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

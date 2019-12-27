@@ -1,0 +1,39 @@
+<div class="tabs-member-container">
+  <ngb-tabset class="tabs" [destroyOnHide]="true">
+    <ngb-tab title="Members">
+      <ng-template ngbTabContent>
+        <div class="tab tab-members">
+          <app-all-users></app-all-users>
+        </div>
+      </ng-template>
+    </ngb-tab>
+    <ngb-tab title="Execution teams">
+      <ng-template ngbTabContent>
+        <div class="tab tab-teams">
+          <app-all-exeu-teams></app-all-exeu-teams>
+        </div>
+      </ng-template>
+    </ngb-tab>
+    <ngb-tab title="Roles">
+      <ng-template ngbTabContent>
+        <div class="tab tab-roles">
+          <app-all-roles></app-all-roles>
+        </div>
+      </ng-template>
+    </ngb-tab>
+    <ngb-tab title="Skills">
+      <ng-template ngbTabContent>
+        <div class="tab tab-notifications">
+          <app-skills></app-skills>
+        </div>
+      </ng-template>
+    </ngb-tab>
+    <ngb-tab title="Notifications" [disabled]="true" *ngIf="userType === 'PM'">
+      <ng-template ngbTabContent>
+        <div class="tab tab-notifications">
+          Notifications
+        </div>
+      </ng-template>
+    </ngb-tab>
+  </ngb-tabset>
+</div>

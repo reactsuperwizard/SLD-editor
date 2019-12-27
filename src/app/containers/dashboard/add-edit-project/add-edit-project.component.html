@@ -1,0 +1,229 @@
+<!-- headers -->
+<div class="main-container">
+  <div class="panel">
+    <div class="panel-header">
+      <a href="javascript:;" routerLink="/dashboard"></a>
+      <h5>{{id ? 'Edit project' : 'Create new project'}}</h5>
+    </div>
+    <div class="loading-box" *ngIf="loading">
+      <div class="img" alt="loading"></div>
+    </div>
+    <form *ngIf="!loading" [formGroup]="form" (ngSubmit)="onSubmit()">
+      <div class="scroll-panel">
+        <div class="body-panel" [perfectScrollbar]="{}">
+          <div class="panel-content container-fluid">
+            <div class="row">
+              <div class="col-lg-7">
+                <h5 class="h2-title" i18n>Client details</h5>
+                <div class="row">
+                  <div class="col-lg-6">
+                    <div class="form-wrapper">
+                      <label class="label-element" i18n>Name</label>
+                      <input [class.invalid]="validation('name')" type="text" formControlName="name"
+                             class="form-input"/>
+                      <div [class.show]="validation('name')" class="error-message" i18n>Name is required.</div>
+                    </div>
+                  </div>
+                  <div class="col-lg-6">
+                    <div class="form-wrapper">
+                      <label class="label-element" i18n>Area</label>
+                      <select [class.invalid]="validation('area')" formControlName="area" class="form-input">
+                        <option value="">Select</option>
+                        <option *ngFor="let item of masterData.areas" [value]="item">{{item}}</option>
+                      </select>
+                      <div [class.show]="validation('area')" class="error-message" i18n>Area is required.</div>
+                    </div>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-lg-4">
+                    <div class="form-wrapper">
+                      <label class="label-element" i18n>Country</label>
+                      <select [class.invalid]="validation('country')" formControlName="country" class="form-input">
+                        <option value="">Select</option>
+                        <option *ngFor="let item of getCountries()" [value]="item">{{item}}</option>
+                      </select>
+                      <div [class.show]="validation('country')" class="error-message" i18n>Country is required.</div>
+                    </div>
+                  </div>
+                  <div class="col-lg-4">
+                    <div class="form-wrapper">
+                      <label class="label-element" i18n>State</label>
+                      <select [class.invalid]="validation('state')" formControlName="state" class="form-input">
+                        <option value="">Select</option>
+                        <option *ngFor="let item of getStates()" [value]="item">{{item}}</option>
+                      </select>
+                      <div [class.show]="validation('state')" class="error-message" i18n>State is required.</div>
+                    </div>
+                  </div>
+                  <div class="col-lg-4">
+                    <div class="form-wrapper">
+                      <label class="label-element" i18n>City</label>
+                      <select [class.invalid]="validation('city')" formControlName="city" class="form-input">
+                        <option value="">Select</option>
+                        <option *ngFor="let item of getCities()" [value]="item">{{item}}</option>
+                      </select>
+                      <div [class.show]="validation('city')" class="error-message" i18n>City is required.</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-5">
+                <h5 class="h2-title" i18n>Members</h5>
+                <div class="members-block">
+                  <label i18n>System Manager</label>
+
+                  <ng-container *ngFor="let systemManager of data.systemManagers; let $index = index;">
+                    <app-member [member]="systemManager" (remove)="removeSystemManager($event)"
+                                [index]="$index"></app-member>
+                  </ng-container>
+
+                  <app-add-new *ngIf="!(data.systemManagers && data.systemManagers.length > 0)"
+                               (click)="assignSystemManger()"><span i18n>Assign member</span></app-add-new>
+
+                  <label i18n>Project Manager</label>
+
+                  <ng-container *ngFor="let projectManager of data.projectManagers; let $index = index;">
+                    <app-member [member]="projectManager" (remove)="removeProjectManager($event)"
+                                [index]="$index"></app-member>
+                  </ng-container>
+
+                  <app-add-new (click)="assignProjectManger()"><span i18n>Assign member</span></app-add-new>
+
+                </div>
+              </div>
+            </div>
+            <h5 class="h2-title" i18n>Project details</h5>
+            <div class="row">
+              <div class="col-lg-3">
+                <div class="form-wrapper">
+                  <label class="label-element" i18n>Name</label>
+                  <input [class.invalid]="validation('projectName')" type="text" formControlName="projectName"
+                         class="form-input"/>
+                  <div [class.show]="validation('projectName')" class="error-message" i18n>Project Name is required.
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-2">
+                <div class="form-wrapper">
+                  <label class="label-element" i18n>Type</label>
+                  <select [class.invalid]="validation('projectType')" formControlName="projectType" class="form-input">
+                    <option value="">Select</option>
+                    <option *ngFor="let item of masterData.projectTypes" [value]="item">{{item}}</option>
+                  </select>
+                  <div [class.show]="validation('projectType')" class="error-message" i18n>Project Type is required.
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-2">
+                <div class="form-wrapper">
+                  <label class="label-element" i18n>Currency</label>
+                  <select [class.invalid]="validation('projectCurrency')" formControlName="projectCurrency"
+                          class="form-input">
+                    <option value="">Select</option>
+                    <option *ngFor="let item of masterData.currencies" [value]="item">{{item}}</option>
+                  </select>
+                  <div [class.show]="validation('projectCurrency')" class="error-message" i18n>Project Currency is
+                    required.
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-2">
+                <div class="form-wrapper">
+                  <label class="label-element" i18n>Decimal delimiter</label>
+                  <select [class.invalid]="validation('decimalDelimiter')" formControlName="decimalDelimiter"
+                          class="form-input">
+                    <option value="">Select</option>
+                    <option *ngFor="let item of masterData.delimiters" [value]="item">{{item}}</option>
+                  </select>
+                  <div [class.show]="validation('decimalDelimiter')" class="error-message" i18n>Decimal delimiter is
+                    required.
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-3">
+                <div class="form-wrapper">
+                  <label class="label-element" i18n>Diagram symbols</label>
+                  <select [class.invalid]="validation('diagramSymbols')" formControlName="diagramSymbols"
+                          class="form-input">
+                    <option value="">Select</option>
+                    <option *ngFor="let item of masterData.diagrams" [value]="item">{{item}}</option>
+                  </select>
+                  <div [class.show]="validation('decimalDelimiter')" class="error-message" i18n>Diagram symbols is
+                    required.
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <h5 class="h2-title" i18n>Commercial Scope</h5>
+            <div class="row">
+              <div class="col-lg-4">
+                <div class="form-wrapper">
+                  <label class="label-element" i18n>Start</label>
+                  <div class="date-selector">
+                    <select [class.invalid]="validation('startD')" formControlName="startD"
+                            class="form-input select-v-day">
+                      <option value="">Select</option>
+                      <option *ngFor="let item of masterData.days" [value]="item">{{item}}</option>
+                    </select>
+                    <select [class.invalid]="validation('startM')" formControlName="startM"
+                            class="form-input select-v-month">
+                      <option value="">Select</option>
+                      <option *ngFor="let item of masterData.months" [value]="item">{{item}}</option>
+                    </select>
+                    <select [class.invalid]="validation('startY')" formControlName="startY"
+                            class="form-input select-v-year">
+                      <option value="">Select</option>
+                      <option *ngFor="let item of masterData.years" [value]="item">{{item}}</option>
+                    </select>
+                  </div>
+                  <div [class.show]="validation('startD') || validation('startM') || validation('startY')"
+                       class="error-message" i18n>Start date is required.
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-2">&nbsp;</div>
+              <div class="col-lg-4">
+                <div class="form-wrapper">
+                  <label class="label-element" i18n>End</label>
+                  <div class="date-selector">
+                    <select [class.invalid]="validation('endD')" formControlName="endD" class="form-input select-v-day">
+                      <option value="">Select</option>
+                      <option *ngFor="let item of masterData.days" [value]="item">{{item}}</option>
+                    </select>
+                    <select [class.invalid]="validation('endM')" formControlName="endM"
+                            class="form-input select-v-month">
+                      <option value="">Select</option>
+                      <option *ngFor="let item of masterData.months" [value]="item">{{item}}</option>
+                    </select>
+                    <select [class.invalid]="validation('endY')" formControlName="endY"
+                            class="form-input select-v-year">
+                      <option value="">Select</option>
+                      <option *ngFor="let item of masterData.years" [value]="item">{{item}}</option>
+                    </select>
+                  </div>
+                  <div [class.show]="validation('endD') || validation('endM') || validation('endY')"
+                       class="error-message"
+                       i18n>End date is required.
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-2">&nbsp;</div>
+            </div>
+          </div>
+        </div>
+        <div class="footer-panel">
+          <div class="footer-buttons">
+            <button (click)="deleteProject()" *ngIf="id" type="button" class="btn btn-link" i18n>Delete</button>
+            <button *ngIf="id" routerLink="/project-modelling/{{id}}" type="button" class="btn btn-secondary" i18n>Edit
+            </button>
+          </div>
+          <div class="footer-buttons">
+            <button type="submit" class="btn btn-primary" i18n>Save</button>
+          </div>
+        </div>
+      </div>
+    </form>
+  </div>
+</div>

@@ -1,0 +1,46 @@
+<div class="dialog metadata-dialog" [sldDialog]="discard">
+    <div class="tabs-row">
+        <div class="tab" *ngFor="let tab of dataDescription"
+            [class.active]="selectedTab===tab"
+            (click)="selectedTab = tab">
+            <div class="tab-inner">
+                {{ tab.category }}
+            </div>
+        </div>
+    </div>
+
+    <div class="content">
+        <div *ngFor="let property of selectedTab.properties" class="dialog-form-row">
+            <div>{{ property.name }}</div>
+            <span class="star" *ngIf="property.required">*</span>
+            <div class="input-container">
+                <div *ngIf="property.readOnly">{{ sldData[property.key] }}</div>
+
+                <input *ngIf="!property.readOnly && (!property.type || property.type==='string')"
+                    [(ngModel)]="sldData[property.key]">
+
+                <input *ngIf="!property.readOnly && (property.type=='number')" [(ngModel)]="sldData[property.key]"
+                     [mask]="property.format" (input)="onUserInput(property)">
+
+                <select *ngIf="property.type==='enum'" [(ngModel)]="sldData[property.key]">
+                    <option *ngFor="let option of property.options">{{ option }}</option>
+                </select>
+
+                <div class="format-error">
+                    <span *ngIf="property.formatError">
+                        {{ 'Format reqduired: ' + property.format }}
+                    </span>
+                </div>
+            </div>
+        </div>
+
+        <div class="message">
+            <span *ngIf="message">{{ message }}</span>
+        </div>
+
+        <div class="button-row">
+            <button (click)="onDiscard()">Discard</button>
+            <button (click)="onSave()">Save</button>
+        </div>
+    </div>
+</div>

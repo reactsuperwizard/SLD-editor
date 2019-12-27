@@ -1,0 +1,1593 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2">
+  <file source-language="en" datatype="plaintext" original="ng2.template">
+    <body>
+      <trans-unit id="ngb.alert.close" datatype="html">
+        <source>Close</source>
+<target>la Close</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">../node_modules/@ng-bootstrap/ng-bootstrap/alert/alert.d.ts</context>
+          <context context-type="linenumber">2</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="ngb.carousel.previous" datatype="html">
+        <source>Previous</source>
+<target>la Previous</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">../node_modules/@ng-bootstrap/ng-bootstrap/carousel/carousel.d.ts</context>
+          <context context-type="linenumber">13</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="ngb.carousel.next" datatype="html">
+        <source>Next</source>
+<target>la Next</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">../node_modules/@ng-bootstrap/ng-bootstrap/carousel/carousel.d.ts</context>
+          <context context-type="linenumber">17</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="ngb.datepicker.previous-month" datatype="html">
+        <source>Previous month</source>
+<target>la Previous month</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">../node_modules/@ng-bootstrap/ng-bootstrap/datepicker/datepicker-navigation.d.ts</context>
+          <context context-type="linenumber">4</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">../node_modules/@ng-bootstrap/ng-bootstrap/datepicker/datepicker-navigation.d.ts</context>
+          <context context-type="linenumber">5</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="ngb.datepicker.next-month" datatype="html">
+        <source>Next month</source>
+<target>la Next month</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">../node_modules/@ng-bootstrap/ng-bootstrap/datepicker/datepicker-navigation.d.ts</context>
+          <context context-type="linenumber">26</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">../node_modules/@ng-bootstrap/ng-bootstrap/datepicker/datepicker-navigation.d.ts</context>
+          <context context-type="linenumber">27</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="ngb.datepicker.select-month" datatype="html">
+        <source>Select month</source>
+<target>la Select month</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">../node_modules/@ng-bootstrap/ng-bootstrap/datepicker/datepicker-navigation-select.d.ts</context>
+          <context context-type="linenumber">6</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">../node_modules/@ng-bootstrap/ng-bootstrap/datepicker/datepicker-navigation-select.d.ts</context>
+          <context context-type="linenumber">7</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="ngb.datepicker.select-year" datatype="html">
+        <source>Select year</source>
+<target>la Select year</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">../node_modules/@ng-bootstrap/ng-bootstrap/datepicker/datepicker-navigation-select.d.ts</context>
+          <context context-type="linenumber">15</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">../node_modules/@ng-bootstrap/ng-bootstrap/datepicker/datepicker-navigation-select.d.ts</context>
+          <context context-type="linenumber">16</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="ngb.pagination.first" datatype="html">
+        <source>««</source>
+<target>la ««</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">../node_modules/@ng-bootstrap/ng-bootstrap/pagination/pagination.d.ts</context>
+          <context context-type="linenumber">7</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="ngb.pagination.first-aria" datatype="html">
+        <source>First</source>
+<target>la First</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">../node_modules/@ng-bootstrap/ng-bootstrap/pagination/pagination.d.ts</context>
+          <context context-type="linenumber">5</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="ngb.pagination.previous" datatype="html">
+        <source>«</source>
+<target>la «</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">../node_modules/@ng-bootstrap/ng-bootstrap/pagination/pagination.d.ts</context>
+          <context context-type="linenumber">15</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="ngb.pagination.previous-aria" datatype="html">
+        <source>Previous</source>
+<target>la Previous</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">../node_modules/@ng-bootstrap/ng-bootstrap/pagination/pagination.d.ts</context>
+          <context context-type="linenumber">13</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="ngb.pagination.next" datatype="html">
+        <source>»</source>
+<target>la »</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">../node_modules/@ng-bootstrap/ng-bootstrap/pagination/pagination.d.ts</context>
+          <context context-type="linenumber">29</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="ngb.pagination.next-aria" datatype="html">
+        <source>Next</source>
+<target>la Next</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">../node_modules/@ng-bootstrap/ng-bootstrap/pagination/pagination.d.ts</context>
+          <context context-type="linenumber">27</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="ngb.pagination.last" datatype="html">
+        <source>»»</source>
+<target>la »»</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">../node_modules/@ng-bootstrap/ng-bootstrap/pagination/pagination.d.ts</context>
+          <context context-type="linenumber">36</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="ngb.pagination.last-aria" datatype="html">
+        <source>Last</source>
+<target>la Last</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">../node_modules/@ng-bootstrap/ng-bootstrap/pagination/pagination.d.ts</context>
+          <context context-type="linenumber">34</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="ngb.progressbar.value" datatype="html">
+        <source><x id="INTERPOLATION" equiv-text="{{getPercentValue()}}"/>%</source>
+<target>la <x id="INTERPOLATION" equiv-text="{{getPercentValue()}}"/>%</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">../node_modules/@ng-bootstrap/ng-bootstrap/progressbar/progressbar.d.ts</context>
+          <context context-type="linenumber">6</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="ngb.timepicker.increment-hours" datatype="html">
+        <source>Increment hours</source>
+<target>la Increment hours</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">../node_modules/@ng-bootstrap/ng-bootstrap/timepicker/timepicker.d.ts</context>
+          <context context-type="linenumber">9</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="ngb.timepicker.HH" datatype="html">
+        <source>HH</source>
+<target>la HH</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">../node_modules/@ng-bootstrap/ng-bootstrap/timepicker/timepicker.d.ts</context>
+          <context context-type="linenumber">12</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="ngb.timepicker.hours" datatype="html">
+        <source>Hours</source>
+<target>la Hours</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">../node_modules/@ng-bootstrap/ng-bootstrap/timepicker/timepicker.d.ts</context>
+          <context context-type="linenumber">14</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="ngb.timepicker.decrement-hours" datatype="html">
+        <source>Decrement hours</source>
+<target>la Decrement hours</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">../node_modules/@ng-bootstrap/ng-bootstrap/timepicker/timepicker.d.ts</context>
+          <context context-type="linenumber">19</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="ngb.timepicker.increment-minutes" datatype="html">
+        <source>Increment minutes</source>
+<target>la Increment minutes</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">../node_modules/@ng-bootstrap/ng-bootstrap/timepicker/timepicker.d.ts</context>
+          <context context-type="linenumber">28</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="ngb.timepicker.MM" datatype="html">
+        <source>MM</source>
+<target>la MM</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">../node_modules/@ng-bootstrap/ng-bootstrap/timepicker/timepicker.d.ts</context>
+          <context context-type="linenumber">31</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="ngb.timepicker.minutes" datatype="html">
+        <source>Minutes</source>
+<target>la Minutes</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">../node_modules/@ng-bootstrap/ng-bootstrap/timepicker/timepicker.d.ts</context>
+          <context context-type="linenumber">33</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="ngb.timepicker.decrement-minutes" datatype="html">
+        <source>Decrement minutes</source>
+<target>la Decrement minutes</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">../node_modules/@ng-bootstrap/ng-bootstrap/timepicker/timepicker.d.ts</context>
+          <context context-type="linenumber">38</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="ngb.timepicker.increment-seconds" datatype="html">
+        <source>Increment seconds</source>
+<target>la Increment seconds</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">../node_modules/@ng-bootstrap/ng-bootstrap/timepicker/timepicker.d.ts</context>
+          <context context-type="linenumber">47</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="ngb.timepicker.SS" datatype="html">
+        <source>SS</source>
+<target>la SS</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">../node_modules/@ng-bootstrap/ng-bootstrap/timepicker/timepicker.d.ts</context>
+          <context context-type="linenumber">50</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="ngb.timepicker.seconds" datatype="html">
+        <source>Seconds</source>
+<target>la Seconds</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">../node_modules/@ng-bootstrap/ng-bootstrap/timepicker/timepicker.d.ts</context>
+          <context context-type="linenumber">52</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="ngb.timepicker.decrement-seconds" datatype="html">
+        <source>Decrement seconds</source>
+<target>la Decrement seconds</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">../node_modules/@ng-bootstrap/ng-bootstrap/timepicker/timepicker.d.ts</context>
+          <context context-type="linenumber">57</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="ngb.timepicker.PM" datatype="html">
+        <source>PM</source>
+<target>la PM</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">../node_modules/@ng-bootstrap/ng-bootstrap/timepicker/timepicker.d.ts</context>
+          <context context-type="linenumber">65</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="ngb.timepicker.AM" datatype="html">
+        <source>AM</source>
+<target>la AM</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">../node_modules/@ng-bootstrap/ng-bootstrap/timepicker/timepicker.d.ts</context>
+          <context context-type="linenumber">66</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="caa163c4475314079e231bc3281ba6eac14f9248" datatype="html">
+        <source>
+            User name
+          </source>
+          <target>la User name</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/containers/login/login.component.html</context>
+          <context context-type="linenumber">9</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="7134e281c530d444197db7c2e06e9a823ee0c83a" datatype="html">
+        <source>
+            Password
+          </source>
+          <target>
+            la Password
+          </target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/containers/login/login.component.html</context>
+          <context context-type="linenumber">17</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="705f0a148682f17f5e21e77dd6ad15ed62629bd9" datatype="html">
+        <source>Reliability Care</source>
+<target>la Reliability Care</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/containers/login/login.component.html</context>
+          <context context-type="linenumber">38</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="a303f882abbc4050eb93053476876e7005c85811" datatype="html">
+        <source>
+            Email
+          </source>
+          <target>
+            la Email
+          </target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/containers/login/login.component.html</context>
+          <context context-type="linenumber">42</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="1fa1d7593bd93988c0780463e06d70294b265cc2" datatype="html">
+        <source>
+            Recovery password
+          </source>
+          <target>
+            la Recovery password
+          </target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/containers/login/login.component.html</context>
+          <context context-type="linenumber">50</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="71c77bb8cecdf11ec3eead24dd1ba506573fa9cd" datatype="html">
+        <source>Submit</source>
+<target>la Submit</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/containers/login/login.component.html</context>
+          <context context-type="linenumber">59</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="ae8c26cfbd5b1121d90f83c147a85aeb3d0ef633" datatype="html">
+        <source>
+        <x id="START_TAG_DIV" ctype="x-div" equiv-text="&lt;div&gt;"/>Reliability Care<x id="CLOSE_TAG_DIV" ctype="x-div" equiv-text="&lt;/div&gt;"/>
+      </source>
+      <target>
+              <x id="START_TAG_DIV" ctype="x-div" equiv-text="&lt;div&gt;"/>Reliability Care<x id="CLOSE_TAG_DIV" ctype="x-div" equiv-text="&lt;/div&gt;"/>
+            </target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/containers/login/login.component.html</context>
+          <context context-type="linenumber">66</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="323655c8853358b040fa1946c94af20d9a0d125d" datatype="html">
+        <source>
+            Customer name
+          </source>
+          <target>
+            la Customer name
+          </target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/containers/login/login.component.html</context>
+          <context context-type="linenumber">71</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="a911eee019174741b0aec6fcf3fbd5752fab3e67" datatype="html">
+        <source>
+            Language
+          </source>
+          <target>
+            la Language
+          </target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/containers/login/login.component.html</context>
+          <context context-type="linenumber">79</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="a0843de0a64adcc7ee6a946408b6876cd8abdcae" datatype="html">
+        <source>English</source>
+<target>la English</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/containers/login/login.component.html</context>
+          <context context-type="linenumber">84</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="856d3f3c256f48af55ae0c4c591cf2ce988aaec7" datatype="html">
+        <source>Hindi</source>
+<target>la Hindi</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/containers/login/login.component.html</context>
+          <context context-type="linenumber">85</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="f732c304c7433e5a83ffcd862c3dce709a0f4982" datatype="html">
+        <source>Next</source>
+<target>la Next</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/containers/login/login.component.html</context>
+          <context context-type="linenumber">91</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="52c9a103b812f258bcddc3d90a6e3f46871d25fe" datatype="html">
+        <source>Save</source>
+<target>la Save</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/containers/dashboard/modals/new-role-template/new-role-template.component.html</context>
+          <context context-type="linenumber">35</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/containers/dashboard/add-edit-project/add-edit-project.component.html</context>
+          <context context-type="linenumber">120</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/containers/dashboard/edit-user/edit-user.component.html</context>
+          <context context-type="linenumber">114</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/containers/dashboard/all-users/all-users.component.html</context>
+          <context context-type="linenumber">83</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/containers/dashboard/modals/role-compare/role-compare.component.html</context>
+          <context context-type="linenumber">40</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/containers/dashboard/edit-role/edit-role.component.html</context>
+          <context context-type="linenumber">83</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/containers/dashboard/edit-exec-team/edit-exec-team.component.html</context>
+          <context context-type="linenumber">167</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/containers/dashboard/modals/add-edit-item/add-edit-item.component.html</context>
+          <context context-type="linenumber">14</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/containers/dashboard/project-entity/project-entity.component.html</context>
+          <context context-type="linenumber">45</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/containers/dashboard/project-entity/project-entity.component.html</context>
+          <context context-type="linenumber">96</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="ae93b082ce9da6dc9afdde908524bf3777f3ceda" datatype="html">
+        <source>Editing substation</source>
+<target>la Editing substation</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/containers/project-modelling/modal/create-substation-modal/create-substation-modal.component.html</context>
+          <context context-type="linenumber">3</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="9b5e977eaa2ce1e4d733ead63962f132bca78b12" datatype="html">
+        <source>Creating substation</source>
+<target>la Creating substation</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/containers/project-modelling/modal/create-substation-modal/create-substation-modal.component.html</context>
+          <context context-type="linenumber">4</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="4f8b2bb476981727ab34ed40fde1218361f92c45" datatype="html">
+        <source>Details</source>
+<target>la Details</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/containers/project-modelling/modal/create-substation-modal/create-substation-modal.component.html</context>
+          <context context-type="linenumber">10</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="cff1428d10d59d14e45edec3c735a27b5482db59" datatype="html">
+        <source>Name</source>
+<target>la Name</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/containers/project-modelling/modal/create-substation-modal/create-substation-modal.component.html</context>
+          <context context-type="linenumber">13</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/containers/dashboard/add-edit-project/add-edit-project.component.html</context>
+          <context context-type="linenumber">15</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/containers/dashboard/add-edit-project/add-edit-project.component.html</context>
+          <context context-type="linenumber">80</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/containers/dashboard/modals/add-edit-item/add-edit-item.component.html</context>
+          <context context-type="linenumber">9</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="2ae797460f17fe72086256ec5e2da35ddc6e1614" datatype="html">
+        <source>Region</source>
+<target>la Region</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/containers/project-modelling/modal/create-substation-modal/create-substation-modal.component.html</context>
+          <context context-type="linenumber">17</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="7e79d14f645450bdfb46e959963f49b0d4cad802" datatype="html">
+        <source>Substation Reference</source>
+<target>la Substation Reference</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/containers/project-modelling/modal/create-substation-modal/create-substation-modal.component.html</context>
+          <context context-type="linenumber">24</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="f61c6867295f3b53d23557021f2f4e0aa1d0b8fc" datatype="html">
+        <source>Type</source>
+<target>la Type</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/containers/project-modelling/modal/create-substation-modal/create-substation-modal.component.html</context>
+          <context context-type="linenumber">31</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/containers/dashboard/add-edit-project/add-edit-project.component.html</context>
+          <context context-type="linenumber">84</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="0ee5132a8da30e0b7f9f5c70dbc91928d17dd909" datatype="html">
+        <source>Owner</source>
+<target>la Owner</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/containers/project-modelling/modal/create-substation-modal/create-substation-modal.component.html</context>
+          <context context-type="linenumber">38</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="0afdf2c0a0852029f5b0ec11d355f0de7b3230a4" datatype="html">
+        <source>Administer</source>
+<target>la Administer</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/containers/project-modelling/modal/create-substation-modal/create-substation-modal.component.html</context>
+          <context context-type="linenumber">42</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="ed31c09fd77c36238c13d83635f3fe5294c733d2" datatype="html">
+        <source>Location</source>
+<target>la Location</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/containers/project-modelling/modal/create-substation-modal/create-substation-modal.component.html</context>
+          <context context-type="linenumber">47</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="76fef7c7446cd96cd65b7b0f3e0e527955f9ef34" datatype="html">
+        <source>Longitude</source>
+<target>la Longitude</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/containers/project-modelling/modal/create-substation-modal/create-substation-modal.component.html</context>
+          <context context-type="linenumber">50</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="d95840b42ca39e22b1458fe893c244e4f2c173f5" datatype="html">
+        <source>Latitude</source>
+<target>la Latitude</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/containers/project-modelling/modal/create-substation-modal/create-substation-modal.component.html</context>
+          <context context-type="linenumber">55</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="7c3601dbca4edb4c1d34626084ff078a158a1ab4" datatype="html">
+        <source>Altitude</source>
+<target>la Altitude</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/containers/project-modelling/modal/create-substation-modal/create-substation-modal.component.html</context>
+          <context context-type="linenumber">60</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="01e392e8bd5f7e10a7eaa16c3ec5d59fae470626" datatype="html">
+        <source>Construction area (km²)</source>
+<target>la Construction area (km²)</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/containers/project-modelling/modal/create-substation-modal/create-substation-modal.component.html</context>
+          <context context-type="linenumber">67</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="0dad42886d5eaf5703853d8a2fa9db3eaaa5f2ac" datatype="html">
+        <source>Total area (km²)</source>
+<target>la Total area (km²)</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/containers/project-modelling/modal/create-substation-modal/create-substation-modal.component.html</context>
+          <context context-type="linenumber">72</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="4151184a6a2acd314d2d86be5ea41ade0d3100be" datatype="html">
+        <source>Free space (km²)</source>
+<target>la Free space (km²)</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/containers/project-modelling/modal/create-substation-modal/create-substation-modal.component.html</context>
+          <context context-type="linenumber">77</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="c0d1144f816f96b878dc4db7b0126a9f5de3db5c" datatype="html">
+        <source>Technical</source>
+<target>la Technical</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/containers/project-modelling/modal/create-substation-modal/create-substation-modal.component.html</context>
+          <context context-type="linenumber">82</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="3f31a67ca7035b291a1e5f93508c1039e0787bf5" datatype="html">
+        <source>Control rooms</source>
+<target>la Control rooms</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/containers/project-modelling/modal/create-substation-modal/create-substation-modal.component.html</context>
+          <context context-type="linenumber">85</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="12a505d4b1460287274ca5705178f102b78ff37b" datatype="html">
+        <source>Type of Switchgear</source>
+<target>la Type of Switchgear</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/containers/project-modelling/modal/create-substation-modal/create-substation-modal.component.html</context>
+          <context context-type="linenumber">90</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="c166e7c5f4c6d9d1a5a5c201a3d65d3f851dc389" datatype="html">
+        <source>Voltage level</source>
+<target>la Voltage level</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/containers/project-modelling/modal/create-substation-modal/create-substation-modal.component.html</context>
+          <context context-type="linenumber">97</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="379757a3395f30fc562ece42cf96c445a2652b73" datatype="html">
+        <source>Contract</source>
+<target>la Contract</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/containers/project-modelling/modal/create-substation-modal/create-substation-modal.component.html</context>
+          <context context-type="linenumber">104</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="fef8b65df87894daeb30f1a4fcd0359be1916ff0" datatype="html">
+        <source>Year of installation</source>
+<target>la Year of installation</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/containers/project-modelling/modal/create-substation-modal/create-substation-modal.component.html</context>
+          <context context-type="linenumber">107</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="102ca6912826766a43654f2dcbb7c0a898d5a0c2" datatype="html">
+        <source>Year of commisioning</source>
+<target>la Year of commisioning</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/containers/project-modelling/modal/create-substation-modal/create-substation-modal.component.html</context>
+          <context context-type="linenumber">114</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="8d5c5d61800e55f7dd52f613620bad7bbdde5064" datatype="html">
+        <source>Possibility to extend</source>
+<target>la Possibility to extend</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/containers/project-modelling/modal/create-substation-modal/create-substation-modal.component.html</context>
+          <context context-type="linenumber">121</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="17f849daa125056681a591008eca7aa05e3dfd40" datatype="html">
+        <source>Delete substation</source>
+<target>la Delete substation</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/containers/project-modelling/modal/create-substation-modal/create-substation-modal.component.html</context>
+          <context context-type="linenumber">133</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="03a2062bc7d11cda4e6e8cbcc28d3d3cb8e092d7" datatype="html">
+        <source>Continue adding</source>
+<target>la Continue adding</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/containers/project-modelling/modal/create-substation-modal/create-substation-modal.component.html</context>
+          <context context-type="linenumber">134</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="d6da7e47c0dd46e79f4871c17c467631e1783112" datatype="html">
+        <source>Edit SLD</source>
+<target>la Edit SLD</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/containers/project-modelling/modal/create-substation-modal/create-substation-modal.component.html</context>
+          <context context-type="linenumber">135</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="fdefa8e14882d4a72f4e35de9b4725e3974d6bfc" datatype="html">
+        <source>Create SLD</source>
+<target>la Create SLD</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/containers/project-modelling/modal/create-substation-modal/create-substation-modal.component.html</context>
+          <context context-type="linenumber">136</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="5b333e83676bc4686d10f62eb2e2f2b7038679d1" datatype="html">
+        <source>Managing connection</source>
+<target>la Managing connection</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/containers/project-modelling/modal/create-connection-modal/create-connection-modal.component.html</context>
+          <context context-type="linenumber">3</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="7529307ff5a8475ecd0755abb1b8a91ae24c1d52" datatype="html">
+        <source>Reference</source>
+<target>la Reference</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/containers/project-modelling/modal/create-connection-modal/create-connection-modal.component.html</context>
+          <context context-type="linenumber">10</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="950b5f04a2efd3f11c0f76418d5a4212381e792e" datatype="html">
+        <source>Origin</source>
+<target>la Origin</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/containers/project-modelling/modal/create-connection-modal/create-connection-modal.component.html</context>
+          <context context-type="linenumber">11</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="6834fa6b43d1ecbdf147c48dd9c4d72f1484571d" datatype="html">
+        <source>Source</source>
+<target>la Source</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/containers/project-modelling/modal/create-connection-modal/create-connection-modal.component.html</context>
+          <context context-type="linenumber">12</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="a7369891e88cd613e45a39b55a282c97776d05f5" datatype="html">
+        <source>Destination</source>
+<target>la Destination</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/containers/project-modelling/modal/create-connection-modal/create-connection-modal.component.html</context>
+          <context context-type="linenumber">13</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="d20f8b3bff5467056069c4cdc098f1a4a74efe9f" datatype="html">
+        <source>Delete connections</source>
+<target>la Delete connections</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/containers/project-modelling/modal/create-connection-modal/create-connection-modal.component.html</context>
+          <context context-type="linenumber">36</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="68e710782ccb5398b3acb8844caf0b199da2c3da" datatype="html">
+        <source>Confirm</source>
+<target>la Confirm</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/containers/project-modelling/modal/create-connection-modal/create-connection-modal.component.html</context>
+          <context context-type="linenumber">37</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="8dc08e00fb59eaabbfc1f502fb000d6e605f1a1e" datatype="html">
+        <source>Substation list</source>
+<target>la Substation list</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/containers/project-modelling/map/map.component.html</context>
+          <context context-type="linenumber">5</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="951d4a0e018d116278d5e49588578805e8266358" datatype="html">
+        <source>Add<x id="LINE_BREAK" ctype="lb" equiv-text="&lt;br/&gt;"/>
+      substation
+    </source>
+    <target>la Add<x id="LINE_BREAK" ctype="lb" equiv-text="&lt;br/&gt;"/>
+      substation
+    </target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/containers/project-modelling/map/map.component.html</context>
+          <context context-type="linenumber">25</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="a8229e8d0cc82954130921ad460f85253fbdbd84" datatype="html">
+        <source>Add joint</source>
+<target>la Add joint</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/containers/project-modelling/map/map.component.html</context>
+          <context context-type="linenumber">32</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="da6aa9950c74cadd85a3bf26272f34f28d8338c8" datatype="html">
+        <source>Connect</source>
+<target>la Connect</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/containers/project-modelling/map/map.component.html</context>
+          <context context-type="linenumber">37</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="061c80a19227966b77cf6f42685a10b57186468b" datatype="html">
+        <source>ABB Reliability Care</source>
+<target>la ABB Reliability Care</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/components/main-header/main-header.component.html</context>
+          <context context-type="linenumber">4</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="c0715bc93b059cbe12e611cd35de021a950471e2" datatype="html">
+        <source>Assign project support</source>
+<target>la Assign project support</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/containers/dashboard/modals/assign-member/assign-member.component.html</context>
+          <context context-type="linenumber">3</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="1da6e5076d6a884a4241733942825718559f3075" datatype="html">
+        <source>Assign</source>
+<target>la Assign</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/containers/dashboard/modals/assign-member/assign-member.component.html</context>
+          <context context-type="linenumber">11</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/containers/dashboard/modals/assign-member-to-team/assign-member-to-team.component.html</context>
+          <context context-type="linenumber">12</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="f326522d3e5129625a32650416b2dd032f5df8c9" datatype="html">
+        <source>Client details</source>
+<target>la Client details</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/containers/dashboard/add-edit-project/add-edit-project.component.html</context>
+          <context context-type="linenumber">12</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="d5f4d7abe93d192366c0290168b7421ce33b816d" datatype="html">
+        <source>Area</source>
+<target>la Area</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/containers/dashboard/add-edit-project/add-edit-project.component.html</context>
+          <context context-type="linenumber">19</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="a43f25a9ac40e8e2441ff0be7a36b8e5d15534df" datatype="html">
+        <source>Country</source>
+<target>la Country</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/containers/dashboard/add-edit-project/add-edit-project.component.html</context>
+          <context context-type="linenumber">28</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="873b72903b1858a9cd6c8967521030b4d7d1435b" datatype="html">
+        <source>State</source>
+<target>la State</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/containers/dashboard/add-edit-project/add-edit-project.component.html</context>
+          <context context-type="linenumber">35</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="5c7012b5a926b32d9e45fefdcc8a1a3cb6f023d0" datatype="html">
+        <source>City</source>
+<target>la City</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/containers/dashboard/add-edit-project/add-edit-project.component.html</context>
+          <context context-type="linenumber">42</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="80fa90ce67552f3f8a824f756a94327e41d3fc49" datatype="html">
+        <source>Members</source>
+<target>la Members</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/containers/dashboard/add-edit-project/add-edit-project.component.html</context>
+          <context context-type="linenumber">51</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/containers/dashboard/edit-exec-team/edit-exec-team.component.html</context>
+          <context context-type="linenumber">88</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="e80f3aaa587184c54389f0246d738cb60d927bc3" datatype="html">
+        <source>System Manager</source>
+<target>la System Manager</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/containers/dashboard/add-edit-project/add-edit-project.component.html</context>
+          <context context-type="linenumber">53</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="ef5f83d550dd47f7652c9f313f863468115a981f" datatype="html">
+        <source>Assign member</source>
+<target>la Assign member</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/containers/dashboard/add-edit-project/add-edit-project.component.html</context>
+          <context context-type="linenumber">61</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/containers/dashboard/add-edit-project/add-edit-project.component.html</context>
+          <context context-type="linenumber">72</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="97f33414e811b7a856652ff34790e0afb3a48920" datatype="html">
+        <source>Project Manager</source>
+<target>la Project Manager</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/containers/dashboard/add-edit-project/add-edit-project.component.html</context>
+          <context context-type="linenumber">64</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="11a2593d86d081aa237e99be3c763adc43d0e3b4" datatype="html">
+        <source>Project details</source>
+<target>la Project details</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/containers/dashboard/add-edit-project/add-edit-project.component.html</context>
+          <context context-type="linenumber">77</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="32072c7fb0469aaf82d256a59b3e0d6ecce973b9" datatype="html">
+        <source>Currency</source>
+<target>la Currency</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/containers/dashboard/add-edit-project/add-edit-project.component.html</context>
+          <context context-type="linenumber">91</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="6a46ac641091284be5bcb79d85a13529017a26f1" datatype="html">
+        <source>Decimal delimiter</source>
+<target>la Decimal delimiter</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/containers/dashboard/add-edit-project/add-edit-project.component.html</context>
+          <context context-type="linenumber">98</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="2d15638fd65f00045206606b400567d6c774dd29" datatype="html">
+        <source>Diagram symbols</source>
+<target>la Diagram symbols</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/containers/dashboard/add-edit-project/add-edit-project.component.html</context>
+          <context context-type="linenumber">105</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="826b25211922a1b46436589233cb6f1a163d89b7" datatype="html">
+        <source>Delete</source>
+<target>la Delete</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/containers/dashboard/add-edit-project/add-edit-project.component.html</context>
+          <context context-type="linenumber">116</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/containers/dashboard/modals/delete-alert-modal/delete-alert-modal.component.html</context>
+          <context context-type="linenumber">13</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/containers/dashboard/all-users/all-users.component.html</context>
+          <context context-type="linenumber">78</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/containers/dashboard/edit-role/edit-role.component.html</context>
+          <context context-type="linenumber">82</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/containers/dashboard/edit-exec-team/edit-exec-team.component.html</context>
+          <context context-type="linenumber">166</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/containers/dashboard/modals/add-edit-item/add-edit-item.component.html</context>
+          <context context-type="linenumber">13</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/containers/dashboard/project-entity/project-entity.component.html</context>
+          <context context-type="linenumber">92</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="28f86ffd419b869711aa13f5e5ff54be6d70731c" datatype="html">
+        <source>Edit</source>
+<target>la Edit</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/containers/dashboard/add-edit-project/add-edit-project.component.html</context>
+          <context context-type="linenumber">117</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/containers/dashboard/all-users/all-users.component.html</context>
+          <context context-type="linenumber">80</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/containers/dashboard/project-entity/project-entity.component.html</context>
+          <context context-type="linenumber">93</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="9e599fbf81d77886663b38d88f035d854902f5f5" datatype="html">
+        <source>GIS edit mode</source>
+<target>la GIS edit mode</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/containers/project-modelling/project-modelling.component.html</context>
+          <context context-type="linenumber">4</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="585ecd123696f1c9dd0a7e508d7674172693e7ea" datatype="html">
+        <source>Are you sure you want to exit without saving?</source>
+<target>la Are you sure you want to exit without saving?</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/containers/dashboard/modals/back-without-save-alert-modal/back-without-save-alert-modal.component.html</context>
+          <context context-type="linenumber">9</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="d7b35c384aecd25a516200d6921836374613dfe7" datatype="html">
+        <source>Cancel</source>
+<target>la Cancel</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/containers/dashboard/modals/back-without-save-alert-modal/back-without-save-alert-modal.component.html</context>
+          <context context-type="linenumber">12</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/containers/dashboard/modals/delete-alert-modal/delete-alert-modal.component.html</context>
+          <context context-type="linenumber">12</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="7656aa6a73a60ad6b5e3857b7953c4c3b594c59e" datatype="html">
+        <source>Still Leave</source>
+<target>la Still Leave</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/containers/dashboard/modals/back-without-save-alert-modal/back-without-save-alert-modal.component.html</context>
+          <context context-type="linenumber">13</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="994363f08f9fbfa3b3994ff7b35c6904fdff18d8" datatype="html">
+        <source>Profile</source>
+<target>la Profile</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/containers/dashboard/edit-user/edit-user.component.html</context>
+          <context context-type="linenumber">21</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="a2ea6f5c0a8568df4831efa3aa72217a13e626d8" datatype="html">
+        <source><x id="START_SUPERSCRIPT" ctype="x-sup" equiv-text="&lt;sup&gt;"/>*<x id="CLOSE_SUPERSCRIPT" ctype="x-sup" equiv-text="&lt;/sup&gt;"/>Name</source>
+<target>la <x id="START_SUPERSCRIPT" ctype="x-sup" equiv-text="&lt;sup&gt;"/>*<x id="CLOSE_SUPERSCRIPT" ctype="x-sup" equiv-text="&lt;/sup&gt;"/>Name</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/containers/dashboard/edit-user/edit-user.component.html</context>
+          <context context-type="linenumber">25</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/containers/dashboard/edit-exec-team/edit-exec-team.component.html</context>
+          <context context-type="linenumber">19</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="dc171cb14f29ae8044ee8383eb7e48db17788420" datatype="html">
+        <source>Reqiured</source>
+<target>la Reqiured</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/containers/dashboard/edit-user/edit-user.component.html</context>
+          <context context-type="linenumber">26</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/containers/dashboard/edit-user/edit-user.component.html</context>
+          <context context-type="linenumber">35</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/containers/dashboard/edit-user/edit-user.component.html</context>
+          <context context-type="linenumber">47</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/containers/dashboard/edit-user/edit-user.component.html</context>
+          <context context-type="linenumber">56</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/containers/dashboard/edit-exec-team/edit-exec-team.component.html</context>
+          <context context-type="linenumber">20</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/containers/dashboard/edit-exec-team/edit-exec-team.component.html</context>
+          <context context-type="linenumber">37</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="c846a32cfc1dc1f66d56beb6d64000f73a0d6ee8" datatype="html">
+        <source><x id="START_SUPERSCRIPT" ctype="x-sup" equiv-text="&lt;sup&gt;"/>*<x id="CLOSE_SUPERSCRIPT" ctype="x-sup" equiv-text="&lt;/sup&gt;"/>Surname</source>
+<target>la <x id="START_SUPERSCRIPT" ctype="x-sup" equiv-text="&lt;sup&gt;"/>*<x id="CLOSE_SUPERSCRIPT" ctype="x-sup" equiv-text="&lt;/sup&gt;"/>Surname</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/containers/dashboard/edit-user/edit-user.component.html</context>
+          <context context-type="linenumber">34</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="33fd42659759db982a123e24da854e1054523227" datatype="html">
+        <source><x id="START_SUPERSCRIPT" ctype="x-sup" equiv-text="&lt;sup&gt;"/>*<x id="CLOSE_SUPERSCRIPT" ctype="x-sup" equiv-text="&lt;/sup&gt;"/>Employer</source>
+<target>la <x id="START_SUPERSCRIPT" ctype="x-sup" equiv-text="&lt;sup&gt;"/>*<x id="CLOSE_SUPERSCRIPT" ctype="x-sup" equiv-text="&lt;/sup&gt;"/>Employer</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/containers/dashboard/edit-user/edit-user.component.html</context>
+          <context context-type="linenumber">46</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="81798d3583b152607f9f1b4d1aa7c1e2c33b9e4c" datatype="html">
+        <source><x id="START_SUPERSCRIPT" ctype="x-sup" equiv-text="&lt;sup&gt;"/>*<x id="CLOSE_SUPERSCRIPT" ctype="x-sup" equiv-text="&lt;/sup&gt;"/>Job position</source>
+<target>la <x id="START_SUPERSCRIPT" ctype="x-sup" equiv-text="&lt;sup&gt;"/>*<x id="CLOSE_SUPERSCRIPT" ctype="x-sup" equiv-text="&lt;/sup&gt;"/>Job position</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/containers/dashboard/edit-user/edit-user.component.html</context>
+          <context context-type="linenumber">55</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="07405260b1d30d117d51987965242904911e0033" datatype="html">
+        <source><x id="START_SUPERSCRIPT" ctype="x-sup" equiv-text="&lt;sup&gt;"/>*<x id="CLOSE_SUPERSCRIPT" ctype="x-sup" equiv-text="&lt;/sup&gt;"/>Email</source>
+<target>la <x id="START_SUPERSCRIPT" ctype="x-sup" equiv-text="&lt;sup&gt;"/>*<x id="CLOSE_SUPERSCRIPT" ctype="x-sup" equiv-text="&lt;/sup&gt;"/>Email</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/containers/dashboard/edit-user/edit-user.component.html</context>
+          <context context-type="linenumber">67</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="c8d7af2f0d59ff71dd6b4a268799a7d294d26577" datatype="html">
+        <source>Should enter email</source>
+<target>la Should enter email</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/containers/dashboard/edit-user/edit-user.component.html</context>
+          <context context-type="linenumber">68</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="bfddcf90e991d955b7aa87ba812053ec46339da6" datatype="html">
+        <source><x id="START_SUPERSCRIPT" ctype="x-sup" equiv-text="&lt;sup&gt;"/>*<x id="CLOSE_SUPERSCRIPT" ctype="x-sup" equiv-text="&lt;/sup&gt;"/>Phone</source>
+<target>la <x id="START_SUPERSCRIPT" ctype="x-sup" equiv-text="&lt;sup&gt;"/>*<x id="CLOSE_SUPERSCRIPT" ctype="x-sup" equiv-text="&lt;/sup&gt;"/>Phone</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/containers/dashboard/edit-user/edit-user.component.html</context>
+          <context context-type="linenumber">76</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="84cf12634908947119d26300449718f3953f36e4" datatype="html">
+        <source>Should enter phone number</source>
+<target>la Should enter phone number</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/containers/dashboard/edit-user/edit-user.component.html</context>
+          <context context-type="linenumber">77</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="c36a66f2107e8da5371ebc9d15c2008dff567f46" datatype="html">
+        <source>Role</source>
+<target>la Role</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/containers/dashboard/edit-user/edit-user.component.html</context>
+          <context context-type="linenumber">89</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/containers/dashboard/modals/role-compare/role-compare.component.html</context>
+          <context context-type="linenumber">12</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="d43af6fae715eeef7407835850db2114697e6786" datatype="html">
+        <source>Assign role</source>
+<target>la Assign role</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/containers/dashboard/edit-user/edit-user.component.html</context>
+          <context context-type="linenumber">101</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="65d5ee4a7c358ee847de5d98842f66b13da37c90" datatype="html">
+        <source>Assign role &amp; priviledges</source>
+<target>la Assign role &amp; priviledges</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/containers/dashboard/edit-user/edit-user.component.html</context>
+          <context context-type="linenumber">105</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="78b359f2af12df33a8ba6a74eaddadd6c7d51f3b" datatype="html">
+        <source>Are you sure you want to delete the <x id="INTERPOLATION" equiv-text="{{deleteItemName}}"/>?</source>
+<target>la Are you sure you want to delete the <x id="INTERPOLATION" equiv-text="{{deleteItemName}}"/>?</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/containers/dashboard/modals/delete-alert-modal/delete-alert-modal.component.html</context>
+          <context context-type="linenumber">9</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="e43c7a8526b6f3eb83c3a1460c0d63cd650039b9" datatype="html">
+        <source><x id="INTERPOLATION" equiv-text="{{asModal?&apos;Members&apos;:&apos;Manage members&apos;}}"/></source>
+<target>la <x id="INTERPOLATION" equiv-text="{{asModal?&apos;Members&apos;:&apos;Manage members&apos;}}"/></target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/containers/dashboard/all-users/all-users.component.html</context>
+          <context context-type="linenumber">8</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="1298c1d2bbbb7415f5494e800f6775fdb70f4df6" datatype="html">
+        <source>Filters</source>
+<target>la Filters</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/containers/dashboard/all-users/all-users.component.html</context>
+          <context context-type="linenumber">13</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="ff41eacbc2a51a027721a10e105f4f631f6af9dc" datatype="html">
+        <source>Add new member</source>
+<target>la Add new member</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/containers/dashboard/all-users/all-users.component.html</context>
+          <context context-type="linenumber">70</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="d03e92388e368a97a175d0beffc137be20b7b2b1" datatype="html">
+        <source>All priviledges</source>
+<target>la All priviledges</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/containers/dashboard/modals/role-compare/role-compare.component.html</context>
+          <context context-type="linenumber">3</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="7cfb5a5dcf17b5e506e09abd02f3e490280efb45" datatype="html">
+        <source>
+            <x id="START_SUPERSCRIPT" ctype="x-sup" equiv-text="&lt;sup&gt;"/>*<x id="CLOSE_SUPERSCRIPT" ctype="x-sup" equiv-text="&lt;/sup&gt;"/>Role name
+          </source>
+                 <target>
+            la <x id="START_SUPERSCRIPT" ctype="x-sup" equiv-text="&lt;sup&gt;"/>*<x id="CLOSE_SUPERSCRIPT" ctype="x-sup" equiv-text="&lt;/sup&gt;"/>Role name
+          </target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/containers/dashboard/edit-role/edit-role.component.html</context>
+          <context context-type="linenumber">19</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="eec715de352a6b114713b30b640d319fa78207a0" datatype="html">
+        <source>Description</source>
+<target>la Description</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/containers/dashboard/edit-role/edit-role.component.html</context>
+          <context context-type="linenumber">28</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/containers/dashboard/edit-exec-team/edit-exec-team.component.html</context>
+          <context context-type="linenumber">47</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="21b1d846bccc669a07cb1c55e0f687ac9f701527" datatype="html">
+        <source>Manage roles</source>
+<target>la Manage roles</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/containers/dashboard/all-roles/all-roles.component.html</context>
+          <context context-type="linenumber">9</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="fae05dde484d15f466c4f1428b65a4a55e838e2c" datatype="html">
+        <source>Create<x id="LINE_BREAK" ctype="lb" equiv-text="&lt;br/&gt;"/>new role</source>
+<target>la Create<x id="LINE_BREAK" ctype="lb" equiv-text="&lt;br/&gt;"/>new role</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/containers/dashboard/all-roles/all-roles.component.html</context>
+          <context context-type="linenumber">35</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="d6766c52d05ba0bde1ed8189c0bb74bee5da7d8c" datatype="html">
+        <source>Assign to execution team</source>
+<target>la Assign to execution team</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/containers/dashboard/modals/assign-member-to-team/assign-member-to-team.component.html</context>
+          <context context-type="linenumber">3</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="6ae00a328dc6d29b53e00cef18cd946c1db22bf1" datatype="html">
+        <source>
+            Type of Execution team:
+          </source>
+          <target>
+            la Type of Execution team:
+          </target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/containers/dashboard/edit-exec-team/edit-exec-team.component.html</context>
+          <context context-type="linenumber">26</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="6101589b6333406304153d03b82779425d11732a" datatype="html">
+        <source><x id="START_SUPERSCRIPT" ctype="x-sup" equiv-text="&lt;sup&gt;"/>*<x id="CLOSE_SUPERSCRIPT" ctype="x-sup" equiv-text="&lt;/sup&gt;"/>Service provider name</source>
+<target>la <x id="START_SUPERSCRIPT" ctype="x-sup" equiv-text="&lt;sup&gt;"/>*<x id="CLOSE_SUPERSCRIPT" ctype="x-sup" equiv-text="&lt;/sup&gt;"/>Service provider name</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/containers/dashboard/edit-exec-team/edit-exec-team.component.html</context>
+          <context context-type="linenumber">36</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="16787cd86ec634d8b7e2f4457846a90f670842d9" datatype="html">
+        <source>Team leadership</source>
+<target>la Team leadership</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/containers/dashboard/edit-exec-team/edit-exec-team.component.html</context>
+          <context context-type="linenumber">68</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="a1d729477c856cc174722013e49b3d53d32530bc" datatype="html">
+        <source>$<x id="INTERPOLATION" equiv-text="{{getTotalHourlyRage() | number:&apos;.2&apos;}}"/> USD</source>
+<target>la $<x id="INTERPOLATION" equiv-text="{{getTotalHourlyRage() | number:&apos;.2&apos;}}"/> USD</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/containers/dashboard/edit-exec-team/edit-exec-team.component.html</context>
+          <context context-type="linenumber">69</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="314de06d6f64d39149e78e6d796585c0246fec0b" datatype="html">
+        <source>Leader</source>
+<target>la Leader</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/containers/dashboard/edit-exec-team/edit-exec-team.component.html</context>
+          <context context-type="linenumber">76</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="82167d653ca7c515db14ca8ee7279a8730b036e9" datatype="html">
+        <source>$<x id="INTERPOLATION" equiv-text="{{item.hourlyRate | number:&apos;.2&apos;}}"/> USD</source>
+<target>la $<x id="INTERPOLATION" equiv-text="{{item.hourlyRate | number:&apos;.2&apos;}}"/> USD</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/containers/dashboard/edit-exec-team/edit-exec-team.component.html</context>
+          <context context-type="linenumber">97</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="bfb6296690dd4861462e3b414628dbc4011312f2" datatype="html">
+        <source>Asign members</source>
+<target>la Asign members</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/containers/dashboard/edit-exec-team/edit-exec-team.component.html</context>
+          <context context-type="linenumber">102</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="61435c6c3b3cca0c204ef9f5369027565d327acb" datatype="html">
+        <source>Task</source>
+<target>la Task</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/containers/dashboard/edit-exec-team/edit-exec-team.component.html</context>
+          <context context-type="linenumber">115</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="a9b941f25f425bd907b8e23cbaed9e96a85e7db7" datatype="html">
+        <source>Rating</source>
+<target>la Rating</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/containers/dashboard/edit-exec-team/edit-exec-team.component.html</context>
+          <context context-type="linenumber">117</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="205140f0c259d6d0a8772187e405efddf8d01289" datatype="html">
+        <source><x id="INTERPOLATION" equiv-text="{{item.count}}"/> members good at</source>
+<target>la <x id="INTERPOLATION" equiv-text="{{item.count}}"/> members good at</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/containers/dashboard/edit-exec-team/edit-exec-team.component.html</context>
+          <context context-type="linenumber">154</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="764a8a101f8ee5a4b98844e93406182fb078507b" datatype="html">
+        <source>Team</source>
+<target>la Team</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/containers/dashboard/all-exeu-teams/all-exeu-teams.component.html</context>
+          <context context-type="linenumber">23</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/containers/dashboard/all-exeu-teams/all-exeu-teams.component.html</context>
+          <context context-type="linenumber">69</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/containers/dashboard/all-exeu-teams/all-exeu-teams.component.html</context>
+          <context context-type="linenumber">115</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="76f121e6cd26442f5af47ad2bf0c3664fea51b15" datatype="html">
+        <source>Top Skills</source>
+<target>la Top Skills</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/containers/dashboard/all-exeu-teams/all-exeu-teams.component.html</context>
+          <context context-type="linenumber">35</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/containers/dashboard/all-exeu-teams/all-exeu-teams.component.html</context>
+          <context context-type="linenumber">81</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/containers/dashboard/all-exeu-teams/all-exeu-teams.component.html</context>
+          <context context-type="linenumber">127</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="f3dcdd904f758bbc4b2ae7fc3b521fb1a9bb1dce" datatype="html">
+        <source>Hourly Rate</source>
+<target>la Hourly Rate</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/containers/dashboard/all-exeu-teams/all-exeu-teams.component.html</context>
+          <context context-type="linenumber">42</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/containers/dashboard/all-exeu-teams/all-exeu-teams.component.html</context>
+          <context context-type="linenumber">88</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/containers/dashboard/all-exeu-teams/all-exeu-teams.component.html</context>
+          <context context-type="linenumber">134</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="c0da9feb4a9e968edea9fcec43886a71c5906e44" datatype="html">
+        <source>Create<x id="LINE_BREAK" ctype="lb" equiv-text="&lt;br/&gt;"/>new team</source>
+<target>la Create<x id="LINE_BREAK" ctype="lb" equiv-text="&lt;br/&gt;"/>new team</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/containers/dashboard/all-exeu-teams/all-exeu-teams.component.html</context>
+          <context context-type="linenumber">50</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/containers/dashboard/all-exeu-teams/all-exeu-teams.component.html</context>
+          <context context-type="linenumber">96</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/containers/dashboard/all-exeu-teams/all-exeu-teams.component.html</context>
+          <context context-type="linenumber">142</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="d23c9ac92ccd074d00595a92a9e13d16184c8239" datatype="html">
+        <source>Mixed</source>
+<target>la Mixed</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/containers/dashboard/all-exeu-teams/all-exeu-teams.component.html</context>
+          <context context-type="linenumber">57</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="72638e600ce222ed8184c47260bbd68d362e693e" datatype="html">
+        <source>External</source>
+<target>la External</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/containers/dashboard/all-exeu-teams/all-exeu-teams.component.html</context>
+          <context context-type="linenumber">103</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="2aac63625190149ddf42544474a28461ce6aaedd" datatype="html">
+        <source>Project manager</source>
+<target>la Project manager</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/containers/dashboard/project-list/project-list.component.html</context>
+          <context context-type="linenumber">11</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="ff6e7213e3a84f52e4a8ab2724baa0cc20559204" datatype="html">
+        <source>Kernel version <x id="INTERPOLATION" equiv-text="{{project.kernelVersion}}"/></source>
+<target>la Kernel version <x id="INTERPOLATION" equiv-text="{{project.kernelVersion}}"/></target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/containers/dashboard/project-list/project-list.component.html</context>
+          <context context-type="linenumber">16</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="803fa8a96d2eb68ebf0c428a0582a45bb0a434e8" datatype="html">
+        <source>Commercial Scope: <x id="INTERPOLATION" equiv-text="{{project.commercialScope}}"/></source>
+<target>la Commercial Scope: <x id="INTERPOLATION" equiv-text="{{project.commercialScope}}"/></target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/containers/dashboard/project-list/project-list.component.html</context>
+          <context context-type="linenumber">17</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="6841f6e9854310822ddb72e9374582fd623caaa6" datatype="html">
+        <source>Add<x id="LINE_BREAK" ctype="lb" equiv-text="&lt;br/&gt;"/>New Item</source>
+<target>la Add<x id="LINE_BREAK" ctype="lb" equiv-text="&lt;br/&gt;"/>New Item</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/containers/dashboard/project-list/project-list.component.html</context>
+          <context context-type="linenumber">26</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="6f5aad60bedbb27b294efceb2821e1e82e52f1e4" datatype="html">
+        <source>Importance</source>
+<target>la Importance</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/components/risk-matrix/risk-matrix.component.html</context>
+          <context context-type="linenumber">138</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="72279141a67cc042d9864102b703216cc8a428a3" datatype="html">
+        <source>High</source>
+<target>la High</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/components/risk-matrix/risk-matrix.component.html</context>
+          <context context-type="linenumber">139</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/components/risk-matrix/risk-matrix.component.html</context>
+          <context context-type="linenumber">201</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/containers/dashboard/project-entity/project-entity.component.html</context>
+          <context context-type="linenumber">31</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="a22cbb32d31567b839c7d1418d189d9202dc96af" datatype="html">
+        <source>Poor</source>
+<target>la Poor</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/components/risk-matrix/risk-matrix.component.html</context>
+          <context context-type="linenumber">142</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="bb0d8c7d921bc9d97697d3e41b1f8dda01cc1c39" datatype="html">
+        <source>Condition</source>
+<target>la Condition</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/components/risk-matrix/risk-matrix.component.html</context>
+          <context context-type="linenumber">143</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="7bd34bd120146afef0e0d8fa168d9bdabd594b6a" datatype="html">
+        <source>Good</source>
+<target>la Good</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/components/risk-matrix/risk-matrix.component.html</context>
+          <context context-type="linenumber">144</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="9556266f0a2b1762a44b686f2bb21dbfefb01c12" datatype="html">
+        <source>Low</source>
+<target>la Low</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/components/risk-matrix/risk-matrix.component.html</context>
+          <context context-type="linenumber">195</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/containers/dashboard/project-entity/project-entity.component.html</context>
+          <context context-type="linenumber">29</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="7d9241387918beed34b73911e9f9f8ad78b2b0c6" datatype="html">
+        <source>Medium</source>
+<target>la Medium</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/components/risk-matrix/risk-matrix.component.html</context>
+          <context context-type="linenumber">198</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="e79d081da132bef2785a4551ea83494f5884929a" datatype="html">
+        <source>Manage risk matrix</source>
+<target>la Manage risk matrix</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/containers/dashboard/project-entity/project-entity.component.html</context>
+          <context context-type="linenumber">14</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="1599188f3e160de84a4f7f29afef8ff2cc24c6ce" datatype="html">
+        <source>Design matrix type</source>
+<target>la Design matrix type</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/containers/dashboard/project-entity/project-entity.component.html</context>
+          <context context-type="linenumber">21</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="f5fa4e525a748b780a1612f91b76a852add8e481" datatype="html">
+        <source>Flexible</source>
+<target>la Flexible</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/containers/dashboard/project-entity/project-entity.component.html</context>
+          <context context-type="linenumber">24</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="3556042a5c0e32c683bc1c4735545a9404874c33" datatype="html">
+        <source>Absolute </source>
+<target>la Absolute </target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/containers/dashboard/project-entity/project-entity.component.html</context>
+          <context context-type="linenumber">25</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="59e6920aef18bc7e92938d357688dceff4e9e3b0" datatype="html">
+        <source>Mediun</source>
+<target>la Mediun</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/containers/dashboard/project-entity/project-entity.component.html</context>
+          <context context-type="linenumber">30</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="1ba063cc2d493d2dadcc77b53b83edbba2db732e" datatype="html">
+        <source>Select and click on triangles to change the risk type</source>
+<target>la Select and click on triangles to change the risk type</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/containers/dashboard/project-entity/project-entity.component.html</context>
+          <context context-type="linenumber">34</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="06c663bf1474713f57551123a46b34318543b67d" datatype="html">
+        <source>Reset</source>
+<target>la Reset</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/containers/dashboard/project-entity/project-entity.component.html</context>
+          <context context-type="linenumber">43</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="913f409db514bf07800e3c0916d76945345a688c" datatype="html">
+        <source>Document categories</source>
+<target>la Document categories</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/containers/dashboard/project-entity/project-entity.component.html</context>
+          <context context-type="linenumber">54</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="9a46406038b26afc1f88878e8811c5ee77ad8820" datatype="html">
+        <source>Image categories</source>
+<target>la Image categories</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/containers/dashboard/project-entity/project-entity.component.html</context>
+          <context context-type="linenumber">55</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="52cb3a1dbc20365867f39819932e43d19542474d" datatype="html">
+        <source>Add new</source>
+<target>la Add new</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/containers/dashboard/project-entity/project-entity.component.html</context>
+          <context context-type="linenumber">70</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/containers/dashboard/project-entity/project-entity.component.html</context>
+          <context context-type="linenumber">86</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="045ed332fbb2645493d6955677247db0d1134c2d" datatype="html">
+        <source><x id="INTERPOLATION" equiv-text="{{title}}"/></source>
+<target>la <x id="INTERPOLATION" equiv-text="{{title}}"/></target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/containers/dashboard/dashboard.component.html</context>
+          <context context-type="linenumber">3</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="1e7d4bf38424fbfda02dcefb3b9db77c21f0596f" datatype="html">
+        <source>Project entities</source>
+<target>la Project entities</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/containers/dashboard/dashboard.component.html</context>
+          <context context-type="linenumber">18</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="39786c3e3522d6231cc58589f9bb464e8828b3d2" datatype="html">
+        <source>Task criterias</source>
+<target>la Task criterias</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/containers/dashboard/dashboard.component.html</context>
+          <context context-type="linenumber">22</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="1a4395e85579e175f81661038b527302a025e229" datatype="html">
+        <source>Members &amp; privileges</source>
+<target>la Members &amp; privileges</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/containers/dashboard/dashboard.component.html</context>
+          <context context-type="linenumber">26</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="5ed69840ed9496ce93e4b0d90c0af2812747325a" datatype="html">
+        <source>Manage kernel</source>
+<target>la Manage kernel</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/containers/dashboard/dashboard.component.html</context>
+          <context context-type="linenumber">30</context>
+        </context-group>
+      </trans-unit>
+    </body>
+  </file>
+</xliff>

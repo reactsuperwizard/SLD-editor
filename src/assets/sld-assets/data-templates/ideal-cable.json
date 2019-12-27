@@ -1,0 +1,12 @@
+{
+    "assetId": "00000000-0000-0000-0000-000000000000",
+    "assetName": "Ideal Cable",
+    "serialNumber": null,
+    "model": null,
+    "manufacturer": null,
+    "sldReference": null,
+    "isOpen": false,
+    "outForFault": false,
+    "outForMaintenance": false,
+    "outForIsolation": false
+}

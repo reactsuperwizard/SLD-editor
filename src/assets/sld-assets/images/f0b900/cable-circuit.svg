@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="32px" height="56px" viewBox="-28.0 0.0 32 56" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 52.5 (67469) - http://www.bohemiancoding.com/sketch -->
+    <title>cable-circuit</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Project-Modelling-–-GIS-&amp;-SLD" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" opacity="1" transform="rotate(90)">
+        <g id="Artboard" transform="translate(-208.000000, -984.000000)" fill-rule="nonzero">
+            <g id="32-/-sld-/-horizontal-/-box-icon-/-normal" transform="translate(200.000000, 980.000000)">
+                <g id="sld-/-multi-/-cable-circuit-/-black" transform="translate(8.000000, 4.000000)">
+                    <rect id="Rectangle" fill="#f0b900" x="0" y="11" width="56" height="2"></rect>
+                    <path d="M0.5,7 L0.5,17 L7.16666667,12 L0.5,7 Z" id="Rectangle" stroke="#f0b900" stroke-width="1"></path>
+                    <path d="M48.5,7 L48.5,17 L55.1666667,12 L48.5,7 Z" id="Rectangle" stroke="#f0b900" stroke-width="1" transform="translate(52.000000, 12.000000) scale(-1, 1) translate(-52.000000, -12.000000) "></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

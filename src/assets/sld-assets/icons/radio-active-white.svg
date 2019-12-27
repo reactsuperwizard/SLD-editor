@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="16px" height="16px" viewBox="0 0 16 16" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 52.5 (67469) - http://www.bohemiancoding.com/sketch -->
+    <title>radio-active-white</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Project-Modelling-–-GIS-&amp;-SLD" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" opacity="1">
+        <g id="5.X-/-Settings-/-Edit-Mode-/-SLD-Modelling-/-Shade-by-results" transform="translate(-528.000000, -376.000000)">
+            <g id="/menu" transform="translate(16.000000, 104.000000)">
+                <g id="/shade" transform="translate(304.000000, 256.000000)">
+                    <g id="32-/-combo-box-/-filled" transform="translate(8.000000, 0.000000)">
+                        <g id="atoms-/-radio-checked-black" transform="translate(200.000000, 16.000000)">
+                            <circle id="Circle-Copy" fill="#000000" fill-rule="evenodd" cx="8" cy="8" r="7.11111111"></circle>
+                            <circle id="Oval" fill="#FFFFFF" fill-rule="nonzero" cx="8" cy="8" r="2.66666667"></circle>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="16px" height="20px" viewBox="0 0 16 20" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 52.5 (67469) - http://www.bohemiancoding.com/sketch -->
+    <title>16 / checkmark-circle</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <path d="M0,0.987751965 C5.33340755,-0.343964009 10.6665925,-0.314384508 16,0.987539163 L16,10.7653732 C16,12.180082 15.5146388,13.396672 14.5292219,14.4521708 C12.6298564,16.4859211 10.4557497,18.0725741 8.00022264,19.2 C5.53489925,17.9316991 3.39062674,16.3539838 1.55716353,14.4768559 C0.516753868,13.4111426 0,12.1573122 0,10.6994046 L0,0.987751965 Z M2,2.77168122 L2,10.3589098 C2,11.4979002 2.3875654,12.4774552 3.16787265,13.3100436 C4.54297005,14.7765498 6.15117444,16.0091399 8.00016698,17 C9.84181231,16.1191985 11.4723923,14.8796259 12.8969164,13.2907584 C13.6359791,12.46615 14,11.5156891 14,10.4104478 L14,2.77151497 C9.99994434,1.7543871 6.00005566,1.73127812 2,2.77168122 Z" id="path-1"></path>
+    </defs>
+    <g id="2-–-Manage-Project" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="1.1-/-Reliability-Center-/-Project-Manager-Dashboard" transform="translate(-376.000000, -515.000000)">
+            <g id="/widgets" transform="translate(24.000000, 180.000000)">
+                <g id="/daily-status" transform="translate(0.000000, 4.000000)">
+                    <g id="digest_card" transform="translate(16.000000, 312.000000)">
+                        <g id="16-/-policy" transform="translate(336.000000, 20.000000)">
+                            <g id="--16-/-policy" transform="translate(0.000000, -1.000000)">
+                                <mask id="mask-2" fill="white">
+                                    <use xlink:href="#path-1"></use>
+                                </mask>
+                                <use id="/policy" fill="#525252" xlink:href="#path-1"></use>
+                                <g id="color-background-icon-regular" mask="url(#mask-2)" fill="#000000">
+                                    <rect id="Rectangle" x="0" y="0" width="16" height="19"></rect>
+                                </g>
+                            </g>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

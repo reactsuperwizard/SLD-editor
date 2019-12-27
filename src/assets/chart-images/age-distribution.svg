@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="368px" height="296px" viewBox="0 0 368 296" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 52.5 (67469) - http://www.bohemiancoding.com/sketch -->
+    <title>/graph</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <path d="M44,0 L368,0 L368,296 L44,296 C41.790861,296 40,294.209139 40,292 L40,4 C40,1.790861 41.790861,4.05812251e-16 44,0 Z" id="path-1"></path>
+        <filter x="-0.2%" y="-0.2%" width="100.3%" height="100.3%" filterUnits="objectBoundingBox" id="filter-2">
+            <feOffset dx="0" dy="1" in="SourceAlpha" result="shadowOffsetInner1"></feOffset>
+            <feComposite in="shadowOffsetInner1" in2="SourceAlpha" operator="arithmetic" k2="-1" k3="1" result="shadowInnerInner1"></feComposite>
+            <feColorMatrix values="0 0 0 0 0.956862745   0 0 0 0 0.956862745   0 0 0 0 0.956862745  0 0 0 1 0" type="matrix" in="shadowInnerInner1" result="shadowMatrixInner1"></feColorMatrix>
+            <feOffset dx="0" dy="-1" in="SourceAlpha" result="shadowOffsetInner2"></feOffset>
+            <feComposite in="shadowOffsetInner2" in2="SourceAlpha" operator="arithmetic" k2="-1" k3="1" result="shadowInnerInner2"></feComposite>
+            <feColorMatrix values="0 0 0 0 0.956862745   0 0 0 0 0.956862745   0 0 0 0 0.956862745  0 0 0 1 0" type="matrix" in="shadowInnerInner2" result="shadowMatrixInner2"></feColorMatrix>
+            <feOffset dx="1" dy="0" in="SourceAlpha" result="shadowOffsetInner3"></feOffset>
+            <feComposite in="shadowOffsetInner3" in2="SourceAlpha" operator="arithmetic" k2="-1" k3="1" result="shadowInnerInner3"></feComposite>
+            <feColorMatrix values="0 0 0 0 0.956862745   0 0 0 0 0.956862745   0 0 0 0 0.956862745  0 0 0 1 0" type="matrix" in="shadowInnerInner3" result="shadowMatrixInner3"></feColorMatrix>
+            <feMerge>
+                <feMergeNode in="shadowMatrixInner1"></feMergeNode>
+                <feMergeNode in="shadowMatrixInner2"></feMergeNode>
+                <feMergeNode in="shadowMatrixInner3"></feMergeNode>
+            </feMerge>
+        </filter>
+    </defs>
+    <g id="2-–-Manage-Project" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="1.1-/-Reliability-Center-/-Project-Manager-Dashboard" transform="translate(-456.000000, -1128.000000)">
+            <g id="/custom-dashboard" transform="translate(24.000000, 616.000000)">
+                <g id="/assets-by-age-distribution" transform="translate(416.000000, 456.000000)">
+                    <g id="/graph" transform="translate(16.000000, 56.000000)">
+                        <rect id="div" fill="#F4F4F4" fill-rule="nonzero" x="40" y="255" width="328" height="1"></rect>
+                        <path d="M40,231 L368,231 L368,232 L40,232 L40,231 Z" id="div" fill="#F4F4F4" fill-rule="nonzero"></path>
+                        <path d="M40,207 L368,207 L368,208 L40,208 L40,207 Z" id="div" fill="#F4F4F4" fill-rule="nonzero"></path>
+                        <path d="M40,183 L368,183 L368,184 L40,184 L40,183 Z" id="div" fill="#F4F4F4" fill-rule="nonzero"></path>
+                        <path d="M40,159 L368,159 L368,160 L40,160 L40,159 Z" id="div" fill="#F4F4F4" fill-rule="nonzero"></path>
+                        <path d="M40,135 L368,135 L368,136 L40,136 L40,135 Z" id="div" fill="#F4F4F4" fill-rule="nonzero"></path>
+                        <path d="M40,111 L368,111 L368,112 L40,112 L40,111 Z" id="div" fill="#F4F4F4" fill-rule="nonzero"></path>
+                        <path d="M40,87 L368,87 L368,88 L40,88 L40,87 Z" id="div" fill="#F4F4F4" fill-rule="nonzero"></path>
+                        <path d="M40,63 L368,63 L368,64 L40,64 L40,63 Z" id="div" fill="#F4F4F4" fill-rule="nonzero"></path>
+                        <rect id="div" fill="#F4F4F4" fill-rule="nonzero" x="0" y="39" width="368" height="1"></rect>
+                        <path d="M39.5,295.5 L39.5,0.5 L4,0.5 C2.06700338,0.5 0.5,2.06700338 0.5,4 L0.5,292 C0.5,293.932997 2.06700338,295.5 4,295.5 L39.5,295.5 Z" id="Rectangle" stroke="#F4F4F4" fill-opacity="0.25" fill="#F4F4F4" fill-rule="nonzero"></path>
+                        <rect id="Rectangle" fill="#DBDBDB" fill-rule="nonzero" x="39" y="0" width="1" height="296"></rect>
+                        <g id="Rectangle" fill-rule="nonzero" transform="translate(204.000000, 148.000000) scale(-1, 1) translate(-204.000000, -148.000000) " fill="black" fill-opacity="1">
+                            <use filter="url(#filter-2)" xlink:href="#path-1"></use>
+                        </g>
+                        <text id="0" font-family="ABBvoice-Regular, ABBvoice" font-size="12" font-weight="normal" line-spacing="24" fill="#9F9F9F">
+                            <tspan x="16.244" y="257">0</tspan>
+                        </text>
+                        <text id="5" font-family="ABBvoice-Regular, ABBvoice" font-size="12" font-weight="normal" line-spacing="24" fill="#9F9F9F">
+                            <tspan x="17.086" y="233">5</tspan>
+                        </text>
+                        <text id="10" font-family="ABBvoice-Regular, ABBvoice" font-size="12" font-weight="normal" line-spacing="24" fill="#9F9F9F">
+                            <tspan x="14.158" y="209">10</tspan>
+                        </text>
+                        <text id="15" font-family="ABBvoice-Regular, ABBvoice" font-size="12" font-weight="normal" line-spacing="24" fill="#9F9F9F">
+                            <tspan x="14.32" y="185">15</tspan>
+                        </text>
+                        <text id="20" font-family="ABBvoice-Regular, ABBvoice" font-size="12" font-weight="normal" line-spacing="24" fill="#9F9F9F">
+                            <tspan x="13.04" y="161">20</tspan>
+                        </text>
+                        <text id="25" font-family="ABBvoice-Regular, ABBvoice" font-size="12" font-weight="normal" line-spacing="24" fill="#9F9F9F">
+                            <tspan x="13.382" y="137">25</tspan>
+                        </text>
+                        <text id="30" font-family="ABBvoice-Regular, ABBvoice" font-size="12" font-weight="normal" line-spacing="24" fill="#9F9F9F">
+                            <tspan x="13.474" y="113">30</tspan>
+                        </text>
+                        <text id="35" font-family="ABBvoice-Regular, ABBvoice" font-size="12" font-weight="normal" line-spacing="24" fill="#9F9F9F">
+                            <tspan x="13.816" y="89">35</tspan>
+                        </text>
+                        <text id="40" font-family="ABBvoice-Regular, ABBvoice" font-size="12" font-weight="normal" line-spacing="24" fill="#9F9F9F">
+                            <tspan x="13.132" y="65">40</tspan>
+                        </text>
+                        <text id="0" font-family="ABBvoice-Regular, ABBvoice" font-size="12" font-weight="normal" line-spacing="24" fill="#9F9F9F">
+                            <tspan x="56" y="268">0</tspan>
+                        </text>
+                        <text id="4" font-family="ABBvoice-Regular, ABBvoice" font-size="12" font-weight="normal" line-spacing="24" fill="#9F9F9F">
+                            <tspan x="80" y="268">4</tspan>
+                        </text>
+                        <text id="8" font-family="ABBvoice-Regular, ABBvoice" font-size="12" font-weight="normal" line-spacing="24" fill="#9F9F9F">
+                            <tspan x="104" y="268">8</tspan>
+                        </text>
+                        <text id="12" font-family="ABBvoice-Regular, ABBvoice" font-size="12" font-weight="normal" line-spacing="24" fill="#9F9F9F">
+                            <tspan x="126" y="268">12</tspan>
+                        </text>
+                        <text id="16" font-family="ABBvoice-Regular, ABBvoice" font-size="12" font-weight="normal" line-spacing="24" fill="#9F9F9F">
+                            <tspan x="150" y="268">16</tspan>
+                        </text>
+                        <text id="20" font-family="ABBvoice-Regular, ABBvoice" font-size="12" font-weight="normal" line-spacing="24" fill="#9F9F9F">
+                            <tspan x="173" y="268">20</tspan>
+                        </text>
+                        <text id="24" font-family="ABBvoice-Regular, ABBvoice" font-size="12" font-weight="normal" line-spacing="24" fill="#9F9F9F">
+                            <tspan x="197" y="268">24</tspan>
+                        </text>
+                        <text id="28" font-family="ABBvoice-Regular, ABBvoice" font-size="12" font-weight="normal" line-spacing="24" fill="#9F9F9F">
+                            <tspan x="221" y="268">28</tspan>
+                        </text>
+                        <text id="32" font-family="ABBvoice-Regular, ABBvoice" font-size="12" font-weight="normal" line-spacing="24" fill="#9F9F9F">
+                            <tspan x="245" y="268">32</tspan>
+                        </text>
+                        <text id="36" font-family="ABBvoice-Regular, ABBvoice" font-size="12" font-weight="normal" line-spacing="24" fill="#9F9F9F">
+                            <tspan x="269" y="268">36</tspan>
+                        </text>
+                        <text id="40" font-family="ABBvoice-Regular, ABBvoice" font-size="12" font-weight="normal" line-spacing="24" fill="#9F9F9F">
+                            <tspan x="292" y="268">40</tspan>
+                        </text>
+                        <text id="44" font-family="ABBvoice-Regular, ABBvoice" font-size="12" font-weight="normal" line-spacing="24" fill="#9F9F9F">
+                            <tspan x="317" y="268">44</tspan>
+                        </text>
+                        <text id="48" font-family="ABBvoice-Regular, ABBvoice" font-size="12" font-weight="normal" line-spacing="24" fill="#9F9F9F">
+                            <tspan x="340" y="268">48</tspan>
+                        </text>
+                        <path d="M58,216 L62,216 C63.1045695,216 64,216.895431 64,218 L64,256 L56,256 L56,218 C56,216.895431 56.8954305,216 58,216 Z" id="Rectangle" fill="#973196" fill-rule="nonzero"></path>
+                        <path d="M82,152 L86,152 C87.1045695,152 88,152.895431 88,154 L88,256 L80,256 L80,154 C80,152.895431 80.8954305,152 82,152 Z" id="Rectangle" fill="#973196" fill-rule="nonzero"></path>
+                        <path d="M106,176 L110,176 C111.104569,176 112,176.895431 112,178 L112,256 L104,256 L104,178 C104,176.895431 104.895431,176 106,176 Z" id="Rectangle" fill="#973196" fill-rule="nonzero"></path>
+                        <path d="M130,136 L134,136 C135.104569,136 136,136.895431 136,138 L136,256 L128,256 L128,138 C128,136.895431 128.895431,136 130,136 Z" id="Rectangle" fill="#973196" fill-rule="nonzero"></path>
+                        <path d="M154,88 L158,88 C159.104569,88 160,88.8954305 160,90 L160,256 L152,256 L152,90 C152,88.8954305 152.895431,88 154,88 Z" id="Rectangle" fill="#973196" fill-rule="nonzero"></path>
+                        <path d="M178,104 L182,104 C183.104569,104 184,104.895431 184,106 L184,256 L176,256 L176,106 C176,104.895431 176.895431,104 178,104 Z" id="Rectangle" fill="#973196" fill-rule="nonzero"></path>
+                        <path d="M202,56 L206,56 C207.104569,56 208,56.8954305 208,58 L208,256 L200,256 L200,58 C200,56.8954305 200.895431,56 202,56 Z" id="Rectangle" fill="#973196" fill-rule="nonzero"></path>
+                        <path d="M226,120 L230,120 C231.104569,120 232,120.895431 232,122 L232,256 L224,256 L224,122 C224,120.895431 224.895431,120 226,120 Z" id="Rectangle" fill="#973196" fill-rule="nonzero"></path>
+                        <path d="M250,160 L254,160 C255.104569,160 256,160.895431 256,162 L256,256 L248,256 L248,162 C248,160.895431 248.895431,160 250,160 Z" id="Rectangle" fill="#973196" fill-rule="nonzero"></path>
+                        <path d="M274,96 L278,96 C279.104569,96 280,96.8954305 280,98 L280,256 L272,256 L272,98 C272,96.8954305 272.895431,96 274,96 Z" id="Rectangle" fill="#973196" fill-rule="nonzero"></path>
+                        <path d="M298,80 L302,80 C303.104569,80 304,80.8954305 304,82 L304,256 L296,256 L296,82 C296,80.8954305 296.895431,80 298,80 Z" id="Rectangle" fill="#973196" fill-rule="nonzero"></path>
+                        <path d="M322,176 L326,176 C327.104569,176 328,176.895431 328,178 L328,256 L320,256 L320,178 C320,176.895431 320.895431,176 322,176 Z" id="Rectangle" fill="#973196" fill-rule="nonzero"></path>
+                        <path d="M346,200 L350,200 C351.104569,200 352,200.895431 352,202 L352,256 L344,256 L344,202 C344,200.895431 344.895431,200 346,200 Z" id="Rectangle" fill="#973196" fill-rule="nonzero"></path>
+                        <text id="Years" font-family="ABBvoice-Regular, ABBvoice" font-size="12" font-weight="normal" line-spacing="24" fill="#686868">
+                            <tspan x="321.388" y="20">Years</tspan>
+                        </text>
+                        <text id="No." font-family="ABBvoice-Regular, ABBvoice" font-size="12" font-weight="normal" line-spacing="24" fill="#686868">
+                            <tspan x="10.358" y="20">No.</tspan>
+                        </text>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

@@ -1,0 +1,8 @@
+<div class="container" [ngClass]="{'fix-scroll':showContent}">
+  <app-main-header *ngIf=" router.url.indexOf('/login') === -1"
+    (callback)="callbackHeader($event)" [showExtraInfo]="router.url.indexOf('/sld-editor') !== -1">
+  </app-main-header>
+  <div class="main-content add-box" [ngClass]="{'show-content':showContent, 'login-page':router.url === '/' || router.url === '/login'}">
+    <router-outlet></router-outlet>
+  </div>
+</div>

@@ -1,0 +1,29 @@
+@import 'mixin';
+.modal-container {
+  .modal-header {
+    font-size: 18px;
+    .close {
+      outline: none;
+    }
+  }
+  .modal-body {
+    display: flex;
+    flex-direction: column;
+    padding: 24px;
+    span {
+      color: $black;
+      font-size: 14px;
+    }
+  }
+  .modal-footer {
+    border: none;
+    .btn.btn-sure {
+      @include button-default(white, black, black, 192px);
+      width: 50%;
+    }
+    .btn.btn-cancel {
+      @include button-default(black, white, white, 192px);
+      width: 50%;
+    }
+  }
+}

@@ -1,0 +1,25 @@
+<div class="tabs-reliability-container">
+  <ngb-tabset class="tabs" [destroyOnHide]="true">
+    <ngb-tab title="Overview">
+      <ng-template ngbTabContent>
+        <div class="tab tab-overview">
+          <app-reliability-overview></app-reliability-overview>
+        </div>
+      </ng-template>
+    </ngb-tab>
+    <ngb-tab title="Workspace">
+      <ng-template ngbTabContent>
+        <div class="tab tab-workspace">
+            <app-reliability-workspace></app-reliability-workspace>
+        </div>
+      </ng-template>
+    </ngb-tab>
+    <ngb-tab title="Output">
+      <ng-template ngbTabContent>
+        <div class="tab tab-output">
+          Output
+        </div>
+      </ng-template>
+    </ngb-tab>
+  </ngb-tabset>
+</div>

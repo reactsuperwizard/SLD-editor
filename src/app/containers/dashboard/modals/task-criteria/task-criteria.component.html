@@ -1,0 +1,46 @@
+<div class="modal-container">
+  <div class="modal-header">
+    <span class="modal-title" id="modal-basic-title" i18n>{{title}}</span>
+    <button type="button" class="close" aria-label="Close" (click)="activeModal.dismiss('back')">
+    </button>
+  </div>
+  <div class="modal-body">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12">
+          <div class="form-wrapper">
+            <label class="label-element" i18n>Name</label>
+            <input [class.invalid]="submitted && name === ''" [(ngModel)]="name" type="text" class="form-input"/>
+            <div [class.show]="submitted && name === ''" class="error-message" i18n>Name is required.</div>
+          </div>
+
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-12">
+          <div class="form-wrapper">
+            <label class="label-element" i18n>Incremental</label>
+            <input appPositiveNumberOnly [class.invalid]="submitted && incremental === ''" [(ngModel)]="incremental" type="text" class="form-input"/>
+            <div [class.show]="submitted && incremental === ''" class="error-message" i18n>Incremental is required.</div>
+          </div>
+
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-12">
+          <div class="form-wrapper">
+            <label class="label-element" i18n>Weight</label>
+
+            <div class="custom-slider">
+              <ng5-slider class="rangle-slider" [manualRefresh]="manualRefresh" [(value)]="weight"
+                          [options]="sliderOptions"></ng5-slider>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="modal-footer">
+    <button (click)="onSubmit()" type="submit" class="btn btn-save" i18n>Save</button>
+  </div>
+</div>

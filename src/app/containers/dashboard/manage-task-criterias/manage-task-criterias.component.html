@@ -1,0 +1,128 @@
+<div class="loading-box" *ngIf="loading">
+  <div class="img" alt="loading"></div>
+</div>
+<div *ngIf="!loading" class="scroll-panel">
+  <div class="body-panel" [perfectScrollbar]="{}">
+    <div class="page manage-task-criterias-page">
+      <div class="task-criterias-table">
+        <h2 class="h2-title">
+          Manage task overdue criteria
+        </h2>
+
+        <ngx-datatable #manageTaskTable [columnMode]="'force'" [rows]="data.manageTasks" rowHeight="56">
+          <ngx-datatable-column name="Status" prop='status'>
+          </ngx-datatable-column>
+          <ngx-datatable-column name="Not Acknowledged" [flexGrow]="1">
+            <ng-template let-row="row" ngx-datatable-cell-template>
+              <input type="text" class="form-input" appNumberOnly [(ngModel)]="row.notAcknowledged"/>
+            </ng-template>
+          </ngx-datatable-column>
+          <ngx-datatable-column name="Planned" [flexGrow]="1">
+            <ng-template let-row="row" ngx-datatable-cell-template>
+              <input type="text" class="form-input" appNumberOnly [(ngModel)]="row.planned"/>
+            </ng-template>
+          </ngx-datatable-column>
+          <ngx-datatable-column name="Under Preparation" prop='underPreparation' [flexGrow]="1">
+            <ng-template let-row="row" ngx-datatable-cell-template>
+              <input type="text" class="form-input" appNumberOnly [(ngModel)]="row.underPreparation"/>
+            </ng-template>
+          </ngx-datatable-column>
+          <ngx-datatable-column name="Under Execution" prop='underExecution' [flexGrow]="1">
+            <ng-template let-row="row" ngx-datatable-cell-template>
+              <input type="text" class="form-input" appNumberOnly [(ngModel)]="row.underExecution"/>
+            </ng-template>
+          </ngx-datatable-column>
+          <ngx-datatable-column name="Under Validation" prop='underValidation' [flexGrow]="1">
+            <ng-template let-row="row" ngx-datatable-cell-template>
+              <input type="text" class="form-input" appNumberOnly [(ngModel)]="row.underValidation"/>
+            </ng-template>
+          </ngx-datatable-column>
+          <ngx-datatable-column name="Validated" prop='validated' [flexGrow]="1">
+            <ng-template let-row="row" ngx-datatable-cell-template>
+              <input type="text" class="form-input" appNumberOnly [(ngModel)]="row.validated"/>
+            </ng-template>
+          </ngx-datatable-column>
+          <ngx-datatable-column [width]="40">
+            <ng-template let-row="row" ngx-datatable-header-template>
+              <i (click)="info()" class="icon icon-info"></i>
+            </ng-template>
+            <ng-template let-row="row" ngx-datatable-cell-template>
+              &nbsp;
+            </ng-template>
+          </ngx-datatable-column>
+        </ngx-datatable>
+
+        <h2 class="h2-title with-action">
+          <span>Enable task rating criteria</span>
+          <label for="enableTaskRating" class="checkbox-switch">
+            <input id="enableTaskRating" type="checkbox" [checked]="data.enableTaskRating"
+                   (change)="onEnableTaskRating($event)">
+            <i class="icon icon-switchbox" [ngClass]="{'checked':data.enableTaskRating}"></i>
+          </label>
+        </h2>
+        <div *ngIf="data.enableTaskRating" class="performance">
+          <p>Performance</p>
+          <div class="select-ctrl-wrapper">
+            <div class="custom-slider">
+              <div class="name">Range</div>
+              <ng5-slider class="rangle-slider" [manualRefresh]="manualRefresh" [(value)]="data.performance"
+                          [options]="sliderPerfOptions"></ng5-slider>
+            </div>
+          </div>
+          <select [(ngModel)]="data.performanceGroup" class="select-ctrl">
+            <option *ngFor="let item of data.performanceGroups" [value]="item">{{item}}</option>
+
+          </select>
+        </div>
+        <div *ngIf="data.enableTaskRating">
+          <ngx-datatable #taskRatingTable [columnMode]="'force'" [rows]="data.taskRatings" rowHeight="80"
+                         [selected]="selected"
+                         [selectionType]="'checkbox'" (select)="onSelect($event)">
+            <ngx-datatable-column [width]="40" [sortable]="false" [canAutoResize]="false" [draggable]="false"
+                                  [resizeable]="false">
+
+              <ng-template ngx-datatable-cell-template let-row="row" let-value="value" let-isSelected="isSelected"
+                           let-i="index"
+                           let-onCheckboxChangeFn="onCheckboxChangeFn">
+                <label [for]="'all-task-'+row.id" class="checkbox-wrap">
+                  <input [id]="'all-task-'+row.id" type="checkbox" [checked]="isSelected"
+                         (change)="onCheckboxChangeFn($event)">
+                  <i class="icon icon-checkbox" [ngClass]="{'checked':isSelected}"></i>
+                </label>
+              </ng-template>
+            </ngx-datatable-column>
+            <ngx-datatable-column [flexGrow]="1" name="Criteria" prop='name' [width]="150"></ngx-datatable-column>
+            <ngx-datatable-column [flexGrow]="1" name="" prop='type' [width]="100">
+            </ngx-datatable-column>
+            <ngx-datatable-column [flexGrow]="1" name="Incremental" prop='incremental'></ngx-datatable-column>
+            <ngx-datatable-column [flexGrow]="1" name="Weight" prop='range' [width]="150"></ngx-datatable-column>
+            <ngx-datatable-column [flexGrow]="1" name="">
+              <ng-template let-row="row" ngx-datatable-cell-template>
+                <div class="custom-slider">
+                  <ng5-slider class="rangle-slider" [manualRefresh]="manualRefresh" [(value)]="row.weight"
+                              [options]="sliderOptions"></ng5-slider>
+                </div>
+              </ng-template>
+            </ngx-datatable-column>
+          </ngx-datatable>
+          <app-add-new (click)="addOrEditMember(null)"><span i18n>Add new criteria</span></app-add-new>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="footer-panel">
+    <div class="footer-buttons">
+      <div *ngIf="data.enableTaskRating && selected.length > 0">
+        <button class="btn btn-link" [class.disabled]="!selected.length" (click)="delete()" i18n>Delete</button>
+        <button class="btn btn-secondary" *ngIf="selected.length == 1"
+                [class.disabled]="!selected.length || selected.length > 1"
+                (click)="selected.length > 0 && addOrEditMember(selected[0])" i18n>Edit
+        </button>
+      </div>
+    </div>
+    <div class="footer-buttons">
+      <button class="btn btn-primary" i18n>Save</button>
+    </div>
+  </div>
+  <!-- end .footer -->
+</div>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="32px" height="48px" viewBox="-4.0 0.0 32 48" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 52.5 (67469) - http://www.bohemiancoding.com/sketch -->
+    <title>disconnect-switch-closed</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Project-Modelling-–-GIS-&amp;-SLD" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" opacity="1">
+        <g id="Artboard" transform="translate(-624.000000, -1308.000000)" fill-rule="nonzero" stroke="#ff000f">
+            <g id="32-/-sld-/-vertical-/-box-icon-/-normal" transform="translate(620.000000, 1300.000000)">
+                <g id="sld-/-multi-/-disconnect-switch-(closed)-/-black" transform="translate(4.000000, 8.000000)">
+                    <path d="M8,19 L8,38.5" id="Path"></path>
+                    <path d="M12,0 L12,10" id="Path"></path>
+                    <path d="M10,8 L10,13" id="Path" transform="translate(10.000000, 10.500000) rotate(90.000000) translate(-10.000000, -10.500000) "></path>
+                    <path d="M8,10.5 L8,19" id="Path"></path>
+                    <path d="M10,36 L10,41" id="Path" transform="translate(10.000000, 38.500000) rotate(90.000000) translate(-10.000000, -38.500000) "></path>
+                    <path d="M12,38.5 L12,48" id="Path"></path>
+                    <path d="M7.5,11.5 L7.5,18.5" id="Path" transform="translate(7.500000, 15.500000) rotate(90.000000) translate(-7.500000, -15.500000) "></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

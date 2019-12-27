@@ -1,0 +1,27 @@
+<div class="tabs-project-modelling-container">
+  <ngb-tabset class="tabs" [destroyOnHide]="true">
+    <ngb-tab title="GIS & SLD Editor">
+      <ng-template ngbTabContent>
+        <app-project-modalling-editor class="tab tab-outage-type"></app-project-modalling-editor>
+      </ng-template>
+    </ngb-tab>
+    <ngb-tab title="Outage areas">
+      <ng-template ngbTabContent>
+        <app-project-modalling-area class="tab tab-outage-type">
+        </app-project-modalling-area>
+      </ng-template>
+    </ngb-tab>
+    <ngb-tab title="Budget areas">
+      <ng-template ngbTabContent>
+        <div class="tab tab-outage-type">
+          <app-project-modalling-area
+            title="Manage budget areas"
+            type="Budget"
+            placeholder="BA-TYPE"
+            class="tab tab-outage-type">
+          </app-project-modalling-area>
+        </div>
+      </ng-template>
+    </ngb-tab>
+  </ngb-tabset>
+</div>

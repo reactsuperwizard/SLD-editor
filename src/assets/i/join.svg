@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="40px" height="48px" viewBox="0 0 40 48" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 52.5 (67469) - http://www.bohemiancoding.com/sketch -->
+    <title>/pin</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <path d="M8,20 C8,17 10.1347336,8.00004954 20.0673668,8.00004954 C30,8.00004954 32,17 32,20 C32,22.2741169 32,28.2741169 32,38 L20,48 L8,38 C8,27.1364499 8,21.1364499 8,20 Z" id="path-1"></path>
+    </defs>
+    <g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="/add_joint" transform="translate(-24.000000, -40.000000)">
+            <g id="/pin">
+                <g transform="translate(24.000000, 40.000000)">
+                    <rect id="Rectangle" fill="#FFFFFF" x="8" y="12" width="24" height="24" rx="12"></rect>
+                    <rect id="Rectangle" fill="#F4F4F4" fill-rule="nonzero" x="0" y="0" width="40" height="40" rx="20"></rect>
+                    <mask id="mask-2" fill="white">
+                        <use xlink:href="#path-1"></use>
+                    </mask>
+                    <path stroke="#A7A7A7" d="M8.5,37.7658125 L20,47.3491459 L31.5,37.7658125 C31.5,25.273916 31.5,25.2415637 31.5,20 C31.5,18.0171848 30.7621841,15.292347 29.3417805,13.1514498 C27.3877527,10.2062499 24.3526849,8.50004954 20.0673668,8.50004954 C15.7797968,8.50004954 12.7155524,10.2090263 10.7231216,13.1551292 C9.27006352,15.30369 8.5,18.0465255 8.5,20 C8.5,21.4602812 8.5,21.4602812 8.5,25.3523374 C8.5,30.4068402 8.5,30.459722 8.5,37.7658125 Z"></path>
+                    <g id="sld-/-multi-/-load-/-black" mask="url(#mask-2)" fill-rule="nonzero" stroke="#000000">
+                        <g transform="translate(8.000000, -9.000000)">
+                            <path d="M12,0 L12,47" id="Path"></path>
+                            <polyline id="Path-4" stroke-linecap="square" transform="translate(12.000000, 42.000000) scale(1, -1) translate(-12.000000, -42.000000) " points="6 48 12 36 18 48"></polyline>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

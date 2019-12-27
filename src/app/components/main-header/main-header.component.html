@@ -1,0 +1,20 @@
+<header class="main-header">
+  <div class="left-content">
+    <div>
+      <a [routerLink]="[(userType==='PM' ? '/dashboard/reliability-center' : '/dashboard')]" class="logo">
+        <i class="icon icon-hoz-line"></i>
+        <span i18n>ABB Reliability Care</span>
+      </a>
+    </div>
+    <div i18n *ngIf="userType==='PM' && project">{{project.company}}</div>
+    <div i18n *ngIf="userType==='PM' && project">{{project.location}}</div>
+    <div class="light-txt" i18n *ngIf="userType==='PM' && project">Kernel v{{project.kernelVersion}}</div>
+  </div>
+  <div class="header-opts">
+    <a class="lnk-logger" [routerLink]="['/login']">{{db.logger}}
+      <span class="logger-thumb">
+        <img *ngIf="db.avatar" [src]="'assets/avatars/'+db.avatar" alt=""/>
+      </span>
+    </a>
+  </div>
+</header>

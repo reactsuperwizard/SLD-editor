@@ -1,0 +1,22 @@
+[
+  {
+    "imageTypeId": 1,
+    "imageTypeName": "Equipment",
+    "imageDescription": "Equipment Description",
+    "deleted": false,
+    "createdDate": "2018-10-11T15:45:28.840638",
+    "createdBy": null,
+    "updatedDate": null,
+    "updateddBy": null
+  },
+  {
+    "imageTypeId": 2,
+    "imageTypeName": "Site",
+    "imageDescription": "Site Description",
+    "deleted": false,
+    "createdDate": "2018-10-11T15:46:01.095161",
+    "createdBy": null,
+    "updatedDate": null,
+    "updateddBy": null
+  }
+]

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="18px" height="18px" viewBox="0 0 18 18" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 49.3 (51167) - http://www.bohemiancoding.com/sketch -->
+    <title>Group 6</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="A-Migration-Engineer" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="A2_Migration-Engineer-V2" transform="translate(-50.000000, -726.000000)">
+            <g id="Group-6" transform="translate(47.000000, 722.000000)">
+                <path d="M19,4 L5,4 C3.9,4 3,4.9 3,6 L3,20 C3,21.1 3.9,22 5,22 L19,22 C20.1,22 21,21.1 21,20 L21,6 C21,4.9 20.1,4 19,4 Z M9,18 L7,18 L7,11 L9,11 L9,18 Z M13,18 L11,18 L11,8 L13,8 L13,18 Z M17,18 L15,18 L15,14 L17,14 L17,18 Z" id="Shape" fill="#000000" fill-rule="nonzero"></path>
+                <polygon id="Shape" points="0 0 24 0 24 24 0 24"></polygon>
+            </g>
+        </g>
+    </g>
+</svg>

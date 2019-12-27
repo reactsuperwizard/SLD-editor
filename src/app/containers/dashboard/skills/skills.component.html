@@ -1,0 +1,50 @@
+<div class="tab tab-skills">
+  <div class="loading-box" *ngIf="loading">
+    <div class="img" alt="loading"></div>
+  </div>
+  <div class="scroll-panel small" *ngIf="!loading">
+    <div class="body-panel" [perfectScrollbar]="{}">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-md-6 col-sm-12">
+            <div class="title">
+              <span i18n>Default skills</span>
+            </div>
+            <div class="items">
+              <div class="item" *ngFor="let item of defaultSkills;let i = index">
+                <label [for]="'default-select-'+i" [ngClass]="{'selected': item.selected}">
+                  <input [id]="'default-select-'+i" type="checkbox" [(ngModel)]="item.selected">
+                </label>
+                <span>{{item.name}}</span>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-sm-12">
+
+            <div class="title">
+              <span i18n>Customised skills</span>
+            </div>
+            <div class="items">
+              <div class="item" *ngFor="let item of customisedSkills;let i = index">
+                <label [for]="'customized-select-'+i">
+                  <input [id]="'customized-select-'+i" type="checkbox" [(ngModel)]="item.selected">
+                  <i class="icon icon-checkbox" [ngClass]="{'checked': item.selected}"></i>
+                </label>
+                <span>{{item.name}}</span>
+              </div>
+              <app-add-new (click)="addNewSkill()"><span i18n>Add new</span></app-add-new>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="footer-panel">
+      <div class="footer-buttons">
+        <a class="btn btn-link" *ngIf="getSkillsSelectedCount() > 0" (click)="deleteSkill()"
+           i18n>Delete</a>
+        <a class="btn btn-secondary" *ngIf="getSkillsSelectedCount()===1" (click)="editSelectedSkill()"
+           i18n>Edit</a>
+      </div>
+    </div>
+  </div>
+</div>

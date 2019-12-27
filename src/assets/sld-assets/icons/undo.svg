@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="16px" height="16px" viewBox="0 0 16 16" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 52.5 (67469) - http://www.bohemiancoding.com/sketch -->
+    <title>undo</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <path d="M14,10.5 C14,10.5 13.4925,5.95 5.25,5.95 L5.25,8.75 L0,4.375 L5.25,0 L5.25,2.8 C11.59375,2.8 14,5.5475 14,10.5 Z" id="path-1"></path>
+    </defs>
+    <g id="Project-Modelling-–-GIS-&amp;-SLD" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" opacity="1">
+        <g id="5.X-/-Settings-/-Edit-Mode-/-SLD-Modelling-/-Shade-by-results" transform="translate(-32.000000, -676.000000)">
+            <g id="/controls-left" transform="translate(16.000000, 104.000000)">
+                <g id="/undo&amp;redo" transform="translate(0.000000, 536.000000)">
+                    <g id="32-/-normal-/-box-icon-/-normal" transform="translate(8.000000, 32.000000)">
+                        <g id="16-/-undo" transform="translate(8.000000, 4.000000)">
+                            <g transform="translate(1.000000, 3.000000)">
+                                <mask id="mask-2" fill="white">
+                                    <use xlink:href="#path-1"></use>
+                                </mask>
+                                <use id="Path" fill="#464646" xlink:href="#path-1"></use>
+                                <g id="color-background-icon-regular" mask="url(#mask-2)" fill="#000000">
+                                    <g transform="translate(-1.000000, -3.000000)" id="Rectangle">
+                                        <rect x="0" y="0" width="16" height="16"></rect>
+                                    </g>
+                                </g>
+                            </g>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

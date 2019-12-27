@@ -1,0 +1,39 @@
+{
+  "name": "Vattenfall",
+  "country": "Switzerland",
+  "state": "",
+  "city": "",
+  "area": "Europe",
+  "projectName": "Switzerland",
+  "projectType": "T&D Utility",
+  "currency": "USD",
+  "delimiter": "Comma (,)",
+  "diagram": "IEC",
+  "outages": [
+    {
+      "id": "1",
+      "type": "Short",
+      "duration": "8",
+      "period": "12"
+    },
+    {
+      "id": "2",
+      "type": "Medium",
+      "duration": "12",
+      "period": "24"
+    },
+    {
+      "id": "3",
+      "type": "Long",
+      "duration": "24",
+      "period": "48"
+    }
+  ],
+  "projectManagers": [
+    {
+      "userName": "Anabelle Queiroz",
+      "photo": "/assets/i/user.jpg"
+    }
+  ],
+  "projectSupports": []
+}

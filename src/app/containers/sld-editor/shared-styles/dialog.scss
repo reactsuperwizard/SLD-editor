@@ -1,0 +1,108 @@
+// the dialog div
+.dialog {
+    background-color: white;
+    box-shadow:  0 4px 10px 0 rgba(0, 0, 0, 0.12);
+    border-radius: 4px;
+    font-family: 'ABBVoice';
+    font-weight: 400;
+
+    input,
+    button {
+        font-family: 'ABBVoice';
+        font-size: 14px;
+        font-weight: 400;
+    }
+}
+
+// title bar
+.title-bar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid #d8d8d8;
+    padding: 14px 24px;
+    user-select: none;
+    font-size: 20px;
+    font-weight: 500;
+}
+
+// main content area of dialog
+.content {
+    padding: 24px;
+    padding-top: 16px;
+
+    // input field with label
+    .dialog-form-row {
+
+        padding-top: 12px;
+        padding-bottom: 12px;
+
+        .label {
+            color: #7a7a7a;
+            margin-bottom: 4px;
+            font-size: 12px;
+        }
+
+        .input-container {
+            input {
+                height: 32px;
+                line-height: 28px;
+                border: 1px solid #bababa;
+                width: 100%;
+                padding: 0 8px;
+                box-sizing: border-box;
+
+                &:focus {
+                    outline: none;
+                }
+            }
+        }
+    }
+
+    // error / alert message
+    .format-error,
+    .message {
+        height: 16px;
+        color: #101010;
+        font-size: 12px;
+        text-align: center;
+    }
+    .format-error {
+        margin-top: 8px;
+    }
+    .message {
+        margin-top: 16px;
+    }
+
+
+    // button row
+    .button-row {
+        display: flex;
+        justify-content: space-between;
+
+        button {
+            cursor: pointer;
+            background-color: #101010;
+            color: #fff;
+            margin: 0 20px;
+            height: 32px;
+            width: 168px;
+            border-radius: 4px;
+            border-color: transparent;
+            margin-top: 24px;
+
+            &:active {
+                background-color: #000;
+            }
+            &:focus {
+                outline: none;
+            }
+
+            &:disabled {
+                opacity: 0.2;
+                cursor: default;
+            }
+        }
+    }
+
+}

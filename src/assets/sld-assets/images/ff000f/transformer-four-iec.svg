@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="32px" height="48px" viewBox="-2.0 0.0 32 48" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 52.5 (67469) - http://www.bohemiancoding.com/sketch -->
+    <title>transformer-four-iec</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Project-Modelling-–-GIS-&amp;-SLD" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" opacity="1">
+        <g id="Artboard" transform="translate(-1902.000000, -1308.000000)" fill-rule="nonzero" stroke="#ff000f">
+            <g id="32-/-sld-/-vertical-/-box-icon-/-normal" transform="translate(1900.000000, 1300.000000)">
+                <g id="sld-/-iec-/-transformer2-/-black" transform="translate(4.000000, 8.000000)">
+                    <rect id="Rectangle" x="2.5" y="14.5" width="19" height="19" rx="9.5"></rect>
+                    <path d="M21.5,24 C21.5,16.7716684 18.3333333,11.6050017 12,8.5 C12,6.19954523 12,3.3662119 12,0" id="Path-6"></path>
+                    <path d="M8.5,27.5 C10.8333333,25.1666667 12,24 12,24 C12,24 12,22.5 12,19.5" id="Path"></path>
+                    <path d="M11.9962769,27.5 C14.3320923,25.1666667 15.5,24 15.5,24" id="Path" transform="translate(13.748138, 25.750000) scale(-1, 1) translate(-13.748138, -25.750000) "></path>
+                    <rect id="Rectangle" fill="#FFFFFF" x="-1.5" y="20.5" width="7" height="7" rx="3.5"></rect>
+                    <polygon id="Path-8" points="0.997314453 24 2 23 2 25"></polygon>
+                    <path d="M12,33.5 L12,48" id="Path"></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

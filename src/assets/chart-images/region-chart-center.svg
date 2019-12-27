@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="768px" height="58px" viewBox="0 0 768 58" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 52.5 (67469) - http://www.bohemiancoding.com/sketch -->
+    <title>/center</title>
+    <desc>Created with Sketch.</desc>
+    <g id="2-–-Manage-Project" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="1.1-/-Reliability-Center-/-Project-Manager-Dashboard" transform="translate(-48.000000, -823.000000)">
+            <g id="/custom-dashboard" transform="translate(24.000000, 616.000000)">
+                <g id="/risk-by-region" transform="translate(0.000000, 40.000000)">
+                    <g id="/center" transform="translate(24.000000, 164.000000)">
+                        <rect id="Base" fill="#4FB0A0" x="0" y="28" width="392" height="8" rx="2"></rect>
+                        <rect id="Base" fill="#E85335" x="392" y="28" width="376" height="8" rx="2"></rect>
+                        <rect id="Base" fill="#FAF4B2" x="184" y="28" width="312" height="8"></rect>
+                        <text id="0" font-family="ABBvoice-Medium, ABBvoice" font-size="12" font-weight="400" line-spacing="24" fill="#9F9F9F">
+                            <tspan x="0" y="56">0</tspan>
+                        </text>
+                        <text id="10" font-family="ABBvoice-Medium, ABBvoice" font-size="12" font-weight="400" line-spacing="24" fill="#9F9F9F">
+                            <tspan x="75" y="56">10</tspan>
+                        </text>
+                        <text id="20" font-family="ABBvoice-Medium, ABBvoice" font-size="12" font-weight="400" line-spacing="24" fill="#9F9F9F">
+                            <tspan x="148" y="56">20</tspan>
+                        </text>
+                        <text id="30" font-family="ABBvoice-Medium, ABBvoice" font-size="12" font-weight="400" line-spacing="24" fill="#9F9F9F">
+                            <tspan x="222" y="56">30</tspan>
+                        </text>
+                        <text id="40" font-family="ABBvoice-Medium, ABBvoice" font-size="12" font-weight="400" line-spacing="24" fill="#9F9F9F">
+                            <tspan x="296" y="56">40</tspan>
+                        </text>
+                        <text id="50" font-family="ABBvoice-Medium, ABBvoice" font-size="12" font-weight="400" line-spacing="24" fill="#9F9F9F">
+                            <tspan x="370" y="56">50</tspan>
+                        </text>
+                        <text id="60" font-family="ABBvoice-Medium, ABBvoice" font-size="12" font-weight="400" line-spacing="24" fill="#9F9F9F">
+                            <tspan x="444" y="56">60</tspan>
+                        </text>
+                        <text id="70" font-family="ABBvoice-Medium, ABBvoice" font-size="12" font-weight="400" line-spacing="24" fill="#9F9F9F">
+                            <tspan x="518" y="56">70</tspan>
+                        </text>
+                        <text id="80" font-family="ABBvoice-Medium, ABBvoice" font-size="12" font-weight="400" line-spacing="24" fill="#9F9F9F">
+                            <tspan x="591" y="56">80</tspan>
+                        </text>
+                        <text id="90" font-family="ABBvoice-Medium, ABBvoice" font-size="12" font-weight="400" line-spacing="24" fill="#9F9F9F">
+                            <tspan x="665" y="56">90</tspan>
+                        </text>
+                        <text id="100" font-family="ABBvoice-Medium, ABBvoice" font-size="12" font-weight="400" line-spacing="24" fill="#9F9F9F">
+                            <tspan x="747.396" y="56">100</tspan>
+                        </text>
+                        <text id="Center" font-family="ABBvoice-Regular, ABBvoice" font-size="12" font-weight="normal" fill="#686868">
+                            <tspan x="0" y="12">Center</tspan>
+                        </text>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

@@ -1,0 +1,59 @@
+@import 'mixin';
+
+.tab-skills {
+  padding: 0;
+  &.tab {
+    .title {
+      margin: 0 16px 24px 16px;
+      border-bottom: 1px solid $lighterGray;
+      height: 56px;
+      line-height: 56px;
+      font-size: 16px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      position: relative;
+    }
+  }
+  .container-fluid {
+    height: 100%;
+  }
+  .items {
+    width: 100%;
+    display: flex;
+    padding-bottom: 16px;
+    flex-direction: column;
+    .item {
+      border: 1px solid $lightGray;
+      border-radius: 5px;
+      height: 41px;
+      min-height: 41px;
+      display: flex;
+      align-items: center;
+      margin-bottom: 4px;
+      &:hover {
+        background-color: $lighterGray;
+      }
+      label {
+        margin: 0;
+        input {
+          display: none;
+        }
+        width: 41px;
+        height: 41px;
+        line-height: 47px;
+        text-align: center;
+        border-right: 1px solid $lightGray;
+        .icon {
+          width: 16px;
+          height: 16px;
+        }
+      }
+      span {
+        flex: 1;
+        padding-left: 15px;
+        font-size: 15px;
+      }
+    }
+  }
+}

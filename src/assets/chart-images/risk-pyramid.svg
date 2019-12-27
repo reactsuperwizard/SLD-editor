@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="349px" height="295px" viewBox="0 0 349 295" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 52.5 (67469) - http://www.bohemiancoding.com/sketch -->
+    <title>/risk_pyramid</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <linearGradient x1="80.8707682%" y1="60.9250992%" x2="19.7477214%" y2="60.9250992%" id="linearGradient-1">
+            <stop stop-color="#FFFBBF" offset="0%"></stop>
+            <stop stop-color="#FAF4B2" offset="100%"></stop>
+        </linearGradient>
+        <path d="M210.805721,3.79201418 L326.276317,246.280266 C327.2261,248.27481 326.379154,250.661659 324.384609,251.611442 C323.847399,251.867257 323.259884,252 322.664875,252 L89,252 L207.194279,3.79201418 C207.66917,2.79474199 208.862595,2.37126878 209.859867,2.8461603 C210.274366,3.04354082 210.608341,3.37751509 210.805721,3.79201418 Z" id="path-2"></path>
+        <filter x="-16.7%" y="-11.6%" width="132.4%" height="130.7%" filterUnits="objectBoundingBox" id="filter-4">
+            <feOffset dx="0" dy="8" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="12" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.06 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix>
+        </filter>
+    </defs>
+    <g id="2-–-Manage-Project" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="1.1-/-Reliability-Center-/-Project-Manager-Dashboard" transform="translate(-479.000000, -253.000000)">
+            <g id="/widgets" transform="translate(24.000000, 180.000000)">
+                <g id="/risk_pyramid" transform="translate(455.000000, 84.000000)">
+                    <rect id="Rectangle" fill="#E85335" fill-rule="nonzero" x="1" y="111" width="209" height="1"></rect>
+                    <rect id="Rectangle" fill="#FAF4B2" fill-rule="nonzero" x="1" y="199" width="209" height="1"></rect>
+                    <rect id="Rectangle" fill="#4FB0A0" fill-rule="nonzero" x="1" y="251" width="209" height="1"></rect>
+                    <mask id="mask-3" fill="white">
+                        <use xlink:href="#path-2"></use>
+                    </mask>
+                    <g id="Rectangle">
+                        <use fill="black" fill-opacity="1" filter="url(#filter-4)" xlink:href="#path-2"></use>
+                        <use fill="url(#linearGradient-1)" fill-rule="evenodd" xlink:href="#path-2"></use>
+                    </g>
+                    <rect id="Rectangle" fill="#4FB0A0" fill-rule="nonzero" mask="url(#mask-3)" x="89" y="200" width="240" height="52"></rect>
+                    <rect id="Rectangle" fill="#E85335" fill-rule="nonzero" mask="url(#mask-3)" x="91" y="0" width="236" height="112"></rect>
+                    <text id="↳🖋-Text" font-family="ABBvoice-Regular, ABBvoice" font-size="20" font-weight="normal" line-spacing="14" fill="#686868">
+                        <tspan x="0" y="242">42</tspan>
+                    </text>
+                    <text id="↳🖋-Text" font-family="ABBvoice-Regular, ABBvoice" font-size="20" font-weight="normal" line-spacing="14" fill="#686868">
+                        <tspan x="0" y="190">249</tspan>
+                    </text>
+                    <text id="↳🖋-Text" font-family="ABBvoice-Regular, ABBvoice" font-size="20" font-weight="normal" line-spacing="14" fill="#686868">
+                        <tspan x="0" y="102">165</tspan>
+                    </text>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

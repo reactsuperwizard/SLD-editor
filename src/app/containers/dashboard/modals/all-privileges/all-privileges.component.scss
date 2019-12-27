@@ -1,0 +1,119 @@
+@import 'mixin';
+.modal-container {
+  .modal-header {
+    font-size: 18px;
+    .close {
+      outline: none;
+    }
+  }
+  .modal-body {
+    padding: 8px 16px;
+    .all-privileges-table {
+      font-size: 14px;
+      display: flex;
+      padding-left: 12px;
+      .privilege-group {
+        &:last-child {
+          border-bottom: 1px solid #f4f4f4;
+        }
+      }
+      .privilege-table-column {
+        width: 184px;
+      }
+      .privilege-table-row {
+        height: 36px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        &.separator-row {
+          align-items: flex-end;
+          height: 18px;
+        }
+      }
+      .privilege-sub-header,
+      .privilege-table-header {
+        font-weight: 500;
+        font-size: 16px;
+      }
+      .privilege-sub-header {
+        padding-top: 18px;
+        height: 54px;
+      }
+      .privilege-table-header {
+        height: 128px;
+        padding-bottom: 16px;
+        margin-top: 12px;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        border-bottom: 1px solid #f4f4f4;
+      }
+      .separator {
+        width: 100%;
+        height: 1px;
+        background-color: #f4f4f4;
+      }
+      .frozen-column {
+        flex-shrink: 0;
+        .privilege-table-row {
+          justify-content: flex-start;
+          border-right: 1px solid #f4f4f4;
+        }
+      }
+      .scrollable-column-group {
+        overflow-x: auto;
+        overflow-y: hidden;
+        white-space: nowrap;
+        .privilege-table-column {
+          display: inline-block;
+          margin-right: 16px;
+          .privilege-table-row {
+            border-right: 1px solid #f4f4f4;
+            border-left: 1px solid #f4f4f4;
+          }
+          &:first-child {
+            margin-left: 8px;
+          }
+        }
+      }
+      .role-header-cell {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 128px;
+        background-color: white;
+        border-radius: 3px;
+        box-shadow: 0 4px 12px 0 rgba(0, 0, 0, 0.12);
+        padding: 2px 12px 8px 12px;
+        font-size: 14px;
+        font-weight: 400;
+        .icon.icon-checkbox {
+          width: 32px;
+          height: 32px;
+          cursor: pointer;
+          background-size: 50%;
+          align-self: flex-end;
+        }
+        .icon.icon-role {
+          width: 32px;
+          height: 32px;
+          margin-bottom: 10px;
+        }
+        .role-name {
+          white-space: normal;
+          text-align: center;
+        }
+      }
+    }
+  }
+  .modal-footer {
+    border: none;
+    .btn.btn-save {
+      @include button-default(white, black, black, 192px);
+    }
+    .btn.btn-delete {
+      @include button-default(black, white, white, 192px);
+    }
+  }
+}

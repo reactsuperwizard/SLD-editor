@@ -1,0 +1,49 @@
+{
+  "enableTaskRating": true,
+  "manageTasks": [
+    {
+      "status": "Days",
+      "notAcknowledged": 2,
+      "planned": 2,
+      "underPreparation": 2,
+      "underExecution": 2,
+      "underValidation": 2,
+      "validated": 2
+    }
+  ],
+  "taskRatings": [
+    {
+      "id": "1",
+      "type": "Individual",
+      "name": "Health & Safety",
+      "incremental": 0.5,
+      "range": 1,
+      "weight": 20
+    },
+    {
+      "id": "2",
+      "type": "Individual",
+      "name": "Enviroment",
+      "incremental": 0.5,
+      "range": 1,
+      "weight": 50
+    },
+    {
+      "id": "3",
+      "type": "Individual",
+      "name": "Traceability",
+      "incremental": 0.5,
+      "range": 1,
+      "weight": 20
+    },
+    {
+      "id": "4",
+      "name": "Technical credibility",
+      "incremental": 0.5,
+      "weight": 30
+    }
+  ],
+  "performance": 10,
+  "performanceGroups": ["Group", "Individual"],
+  "performanceGroup": "Individual"
+}

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="32px" height="56px" viewBox="-28.0 0.0 32 56" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 52.5 (67469) - http://www.bohemiancoding.com/sketch -->
+    <title>bus-duct</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Project-Modelling-–-GIS-&amp;-SLD" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" opacity="1" transform="rotate(90)">
+        <g id="Artboard" transform="translate(-208.000000, -864.000000)" fill-rule="nonzero">
+            <g id="32-/-sld-/-horizontal-/-box-icon-/-normal" transform="translate(200.000000, 860.000000)">
+                <g id="sld-/-multi-/-bus-duct-/-black" transform="translate(8.000000, 4.000000)">
+                    <rect id="Rectangle" fill="#0ca919" x="0" y="11" width="56" height="2"></rect>
+                    <polyline id="Path-2" stroke="#0ca919" stroke-width="2" transform="translate(28.000000, 17.500000) scale(1, -1) translate(-28.000000, -17.500000) " points="54 16 50.4545455 19 5.54545455 19 2 16"></polyline>
+                    <polyline id="Path-2" stroke="#0ca919" stroke-width="2" points="54 5 50.4545455 8 5.54545455 8 2 5"></polyline>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="32px" height="48px" viewBox="-3.0 0.5 32 48" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 52.5 (67469) - http://www.bohemiancoding.com/sketch -->
+    <title>transformer-three-iec</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Project-Modelling-–-GIS-&amp;-SLD" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" opacity="1">
+        <g id="Artboard" transform="translate(-1703.000000, -1308.000000)" fill-rule="nonzero" stroke="#ff000f">
+            <g id="32-/-sld-/-vertical-/-box-icon-/-normal-copy-10" transform="translate(1700.000000, 1300.000000)">
+                <g id="sld-/-iec-/-transformer3-/-black" transform="translate(4.000000, 8.000000)">
+                    <path d="M12,-3.55271368e-15 L12,10.5" id="Path"></path>
+                    <polyline id="Path" stroke-linecap="round" points="17 35 17 45.0170898 12 48"></polyline>
+                    <polyline id="Path" stroke-linecap="round" points="7 35 7 45.0310059 12 48"></polyline>
+                    <rect id="Rectangle" x="-0.5" y="19.5" width="15" height="15" rx="7.5"></rect>
+                    <rect id="Rectangle" x="9.5" y="19.5" width="15" height="15" rx="7.5"></rect>
+                    <rect id="Rectangle" x="4.5" y="10.5" width="15" height="15" rx="7.5"></rect>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

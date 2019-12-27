@@ -1,0 +1,58 @@
+[
+  {
+    "userId": 17,
+    "userName": "Victor",
+    "surName": "Kumar",
+    "password": "Kumar",
+    "employer": "Vattenfall",
+    "jobPosition": "Maintenance Specialist",
+    "email": "Victor@abb.com",
+    "telCode": "+1",
+    "phone": "23 525 23 23",
+    "hourlyRate": 90.00,
+    "enableSkill": true,
+    "performanceRating": 2,
+    "photo": "../../../assets/i/user.jpg",
+    "deleted": false,
+    "createdDate": "2018-10-10T14:09:50.517688",
+    "createdBy": 1,
+    "updatedDate": "2001-02-16T00:00:00",
+    "updateddBy": 1,
+    "assignToVal": "Baden 1",
+    "teamUsersDTOList": [
+      
+    ],
+    "userRolesDTOList": [
+      {
+        "userId": 17,
+        "roleId": 1,
+        "deleted": false,
+        "createdDate": null,
+        "createdBy": null,
+        "updatedDate": null,
+        "updateddBy": null
+      },
+      {
+        "userId": 17,
+        "roleId": 2,
+        "deleted": false,
+        "createdDate": null,
+        "createdBy": null,
+        "updatedDate": null,
+        "updateddBy": null
+      },
+      {
+        "userId": 17,
+        "roleId": 4,
+        "deleted": false,
+        "createdDate": "2018-10-10T14:42:09.503959",
+        "createdBy": 0,
+        "updatedDate": "2018-10-10T14:42:09.494207",
+        "updateddBy": 0
+      }
+    ],
+    "userSkillsDTOList": [
+      20, 21, 22, 23, 24, 25, 5, 4, 6, 7, 11, 12
+    ]
+  }
+]

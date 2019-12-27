@@ -1,0 +1,133 @@
+@import 'mixin';
+
+.page.manage-task-criterias-page {
+  width: 100%;
+  padding: 0 16px 16px 16px;
+  .task-criterias-table {
+    width: 100%;
+    position: relative;
+    .ngx-datatable {
+      border: 1px solid $lighterGray;
+      border-top: 0;
+      border-radius: 4px;
+      .datatable-header {
+        line-height: 38px;
+        height: 40px !important;
+      }
+      .datatable-header,
+      .datatable-body .datatable-body-row {
+        border-bottom: 1px solid $lighterGray;
+        font-size: 12px;
+        color: $lightBlack;
+      }
+      .datatable-header-cell-label {
+        line-height: 38px;
+        height: 40px !important;
+      }
+      .datatable-body-row {
+        .datatable-body-cell {
+          font-size: 14px;
+          .datatable-body-cell-label {
+            padding-right: 16px;
+          }
+        }
+        .datatable-body-cell:not(:last-child) {
+          .datatable-body-cell-label {
+            align-items: center;
+            display: flex;
+            height: 100%;
+          }
+        }
+      }
+      .datatable-row-center {
+        .datatable-header-cell:last-child {
+          text-align: right;
+          line-height: 40px;
+          padding-right: 46px;
+        }
+        .datatable-header-cell, .datatable-body-cell {
+          padding-left: 10px;
+          i.icon-info {
+            cursor: pointer;
+            width: 16px;
+            height: 16px;
+          }
+        }
+      }
+    }
+    .empty-row {
+      height: 40px;
+      line-height: 40px;
+      text-align: center;
+      font-size: 12px;
+    }
+    .checkbox-wrap {
+      width: 40px;
+      height: 40px;
+      line-height: 48px;
+      margin: 0;
+      text-align: center;
+      input {
+        display: none;
+      }
+      .icon {
+        width: 16px;
+        height: 16px;
+      }
+    }
+    .performance {
+      margin-top: 24px;
+      border: 1px solid $white-grey;
+      width: 100%;
+      padding: 23px;
+      display: flex;
+      height: 80px;
+      border-radius: 4px;
+      justify-content: space-between;
+      align-items: center;
+      .custom-slider {
+        width: 115px;
+        margin-top: 10px;
+        position: relative;
+        .name {
+          font-size: 12px;
+          font-weight: normal;
+          font-style: normal;
+          font-stretch: normal;
+          line-height: 2;
+          letter-spacing: normal;
+          color: #686868;
+          position: absolute;
+          top: 0;
+          left: 0;
+        }
+      }
+      p {
+        width: 170px;
+        font-size: 14px;
+        font-weight: normal;
+        font-style: normal;
+        font-stretch: normal;
+        letter-spacing: normal;
+        color: $text;
+        margin: 0;
+      }
+      div.select-ctrl-wrapper {
+        flex: 1;
+        .select-ctrl {
+          width: 152px;
+          font-size: 14px;
+          font-weight: normal;
+          font-style: normal;
+          font-stretch: normal;
+          line-height: normal;
+          letter-spacing: normal;
+          color: $text;
+          border-radius: 4px;
+          border: 1px solid $brown-grey;
+          background-color: rgba($lightGray, .8);
+        }
+      }
+    }
+  }
+}

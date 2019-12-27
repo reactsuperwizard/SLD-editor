@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="32px" height="48px" viewBox="-4.0 0.5 32 48" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 52.5 (67469) - http://www.bohemiancoding.com/sketch -->
+    <title>neutral-ground-resistor</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Project-Modelling-–-GIS-&amp;-SLD" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" opacity="1">
+        <g id="Artboard" transform="translate(-624.000000, -1827.000000)" fill-rule="nonzero">
+            <g id="32-/-sld-/-vertical-/-box-icon-/-normal-copy-16" transform="translate(620.000000, 1820.000000)">
+                <g id="sld-/-iec-/-neutral-grounding-resistor-/-black" transform="translate(4.000000, 8.000000)">
+                    <rect id="Rectangle" fill="#000000" x="6" y="42" width="12" height="1"></rect>
+                    <rect id="Rectangle" fill="#000000" x="8" y="44" width="8" height="1"></rect>
+                    <rect id="Rectangle" fill="#000000" x="10" y="46" width="4" height="1"></rect>
+                    <path d="M12,0 L12,6" id="Path" stroke="#000000" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"></path>
+                    <path d="M12,36 L12,42.5" id="Path" stroke="#000000" stroke-width="1"></path>
+                    <polyline id="Path" stroke="#000000" stroke-width="1" stroke-linecap="round" transform="translate(9.000000, 21.000000) rotate(90.000000) translate(-9.000000, -21.000000) " points="-6 18 -1 24 4 18 9 24 14 18 19 24 24 18"></polyline>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

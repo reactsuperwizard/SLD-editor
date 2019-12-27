@@ -1,0 +1,25 @@
+@import 'mixin';
+.modal-container {
+  .modal-header {
+    font-size: 18px;
+    .close {
+      outline: none;
+    }
+  }
+  .modal-body {
+    display: flex;
+    flex-direction: column;
+    padding: 0 24px 24px 24px;
+  }
+  .modal-footer {
+    border: none;
+    .btn.btn-save {
+      @include button-default(white, black, black, 192px);
+      width: 192px;
+    }
+    .btn.btn-delete {
+      @include button-default(black, white, white, 192px);
+      width: 192px;
+    }
+  }
+}

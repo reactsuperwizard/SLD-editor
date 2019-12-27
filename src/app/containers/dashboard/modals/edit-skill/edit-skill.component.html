@@ -1,0 +1,59 @@
+<div class="modal-container">
+  <div class="modal-header">
+    <span class="modal-title" id="modal-basic-title" i18n>Manager user skill</span>
+    <button type="button" class="close" aria-label="Close" (click)="activeModal.dismiss('back')">
+    </button>
+  </div>
+  <div class="modal-body">
+    <div class="loading-box" *ngIf="loading">
+      <div class="img" alt="loading"></div>
+    </div>
+    <div *ngIf="!loading">
+      <div class="label" i18n>Skill name</div>
+      <select [(ngModel)]="skill.name" class="select-ctrl">
+        <option *ngFor="let possibleSkill of skills" [value]="possibleSkill.skillName">{{possibleSkill.skillName}}</option>
+      </select>
+      <div class="level-of-expertise">
+        <div class="label" i18n>Level of expertise</div>
+        <div class="custom-slider">
+          <ng5-slider class="range-slider" [options]="sliderPerfOptions"
+            [(value)]="skillLevel" [manualRefresh]="manualRefresh">
+          </ng5-slider>
+          <div class="slider-labels">
+            <span>1</span><span>2</span><span>3</span><span>4</span><span>5</span>
+          </div>
+        </div>
+      </div>
+      <div class="items">
+        <div class="item header">
+          <span class="label">File</span>
+          <div class="detail label">Validity</div>
+          <div class="detail label"></div>
+        </div>
+        <div class="item" *ngIf="skill.filename">
+          <label (click)="skill.filename = null">
+            <i class="icon icon-remove"></i>
+          </label>
+          <span>{{skill.filename}}</span>
+          <select [(ngModel)]="skill.validityMonth" class="select-ctrl detail">
+            <option *ngFor="let month of months" [value]="month">{{month}}</option>
+          </select>
+          <select [(ngModel)]="skill.validityYear" class="select-ctrl detail">
+            <option *ngFor="let year of years" [value]="year">{{year}}</option>
+          </select>
+        </div>
+        <a class="item add-new" (click)="attachDocument()">
+          <label>
+            <i class="icon icon-add-new"></i>
+          </label>
+          <span i18n>Attach document</span>
+          <input #fileInput type="file" [(ngModel)]="documentFile" hidden (change)="onInputFileSelected($event)">
+        </a>
+      </div>
+    </div>
+  </div>
+  <div class="modal-footer">
+    <a class="btn btn-delete" (click)="deleteSkill()" i18n>Delete</a>
+    <a class="btn btn-save" (click)="save()" i18n>Save</a>
+  </div>
+</div>

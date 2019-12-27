@@ -1,0 +1,22 @@
+<div class="dialog name-dialog" [sldDialog]="discard">
+    <div class="title-bar">
+        {{ 'Edit ' + type + ' name' }}
+    </div>
+
+    <div class="content">
+        <div class="input-container">
+            <span>*</span>
+            <input [(ngModel)]="name">
+        </div>
+
+        <div class="message">
+            <span *ngIf="message">{{ message }}</span>
+        </div>
+
+        <div class="button-row">
+            <button (click)="onDiscard()">Cancel</button>
+            <button (click)="onSave()">Save</button>
+        </div>
+    </div>
+
+</div>

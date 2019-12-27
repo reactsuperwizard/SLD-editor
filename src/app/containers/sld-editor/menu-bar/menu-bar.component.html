@@ -1,0 +1,31 @@
+<div #menuBarDiv class="menu-bar">
+    <div *ngFor="let item of menuBar" class="menu-item" (click)="toggleMenuItem(item)">
+        <div class="menu-item-box" [class.active]="selectedMenuItem===item">
+            <div class="icon-box">
+                <img [src]="iconsPath + item.icon + '.svg'" [hidden]="selectedMenuItem===item">
+                <img [src]="iconsPath + item.icon + '-white.svg'" [hidden]="selectedMenuItem!==item">
+            </div>
+            <div class="separator"></div>
+            <div class="chevron">
+                <img [src]="iconsPath + 'chevron.svg'" [hidden]="selectedMenuItem===item">
+                <img [src]="iconsPath + 'chevron-white.svg'" [hidden]="selectedMenuItem!==item">
+            </div>
+        </div>
+        <div class="menu-sub-item-list-container" *ngIf="selectedMenuItem === item">
+            <div class="menu-sub-item-list">
+                <div *ngFor="let subItem of item.subItems" class="menu-sub-item" [class.disabled]="!subItem.enabled"
+                    [class.disabled]="!subItem.enabled" (click)="subItem.enabled && onClickMenuSubItem(subItem)">
+                    {{ subItem.name }}
+                    <img *ngIf="(subItem.icon && !subItem.isActivated) || (subItem.icon && subItem.activated)"
+                        [src]="iconsPath + subItem.icon + '-white.svg'">
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="input-file-container">
+        <input #inputSubstationJSONFile type="file" accept="application/json,.json"
+            (change)="onSubstationJSONFileSelected($event)" [(ngModel)]="substationFileInputValue">
+        <input #inputComponentDataFile type="file" accept="application/vnd.openxmlformats-officedocument.spreadsheetml.sheet"
+            (change)="onComponentDataFileSelected($event)" [(ngModel)]="componentDataFileInputValue">
+    </div>
+</div>

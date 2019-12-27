@@ -1,0 +1,26 @@
+{
+  "projectName": "Project Name",
+  "projectType": "T&D Utility",
+  "projectCurrency": "USD",
+  "diagramSymbols": "IEC",
+  "decimalDelimiter": "Comma (,)",
+  "country": "Afghanistan",
+  "state": "Badakhshan",
+  "name": "Name",
+  "area": "North",
+  "city": "Eshkashem",
+  "systemManagers": [
+    {
+      "userName": "Anabelle Queiroz",
+      "photo": "/assets/i/user.jpg"
+    }
+  ],
+  "projectManagers": [],
+  "endD": "12",
+  "endM": "Oct",
+  "endY": "2018",
+  "startD": "2",
+  "startM": "Jan",
+  "startY": "2018"
+
+}

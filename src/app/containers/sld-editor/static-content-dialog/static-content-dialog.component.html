@@ -1,0 +1,13 @@
+<div class="dialog static-content-dialog" [sldDialog]="close">
+    <div class="title-bar">{{ title }}</div>
+
+    <div class="content">
+        <div class="text-row" *ngFor="let row of rows">
+            {{ row }}
+        </div>
+
+        <div class="button-row">
+            <button (click)="close.emit()" i18n>Close</button>
+        </div>
+    </div>
+</div>

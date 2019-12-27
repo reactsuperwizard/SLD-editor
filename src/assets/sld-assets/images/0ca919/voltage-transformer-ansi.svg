@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="32px" height="48px" viewBox="-4.0 0.0 32 48" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 52.5 (67469) - http://www.bohemiancoding.com/sketch -->
+    <title>voltage-transformer-ansi</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Project-Modelling-–-GIS-&amp;-SLD" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" opacity="1">
+        <g id="Artboard" transform="translate(-2404.000000, -1828.000000)" stroke="#0ca919">
+            <g id="32-/-sld-/-vertical-/-box-icon-/-normal-copy-20" transform="translate(2400.000000, 1820.000000)">
+                <g id="sld-/-ansi-/-voltage-transformer-/-black" transform="translate(4.000000, 8.000000)">
+                    <path d="M12,-3.55271368e-15 L12,48" id="Path" fill-rule="nonzero"></path>
+                    <path d="M22,44 C21.3333333,41.3333333 19.6666667,40 17,40 C14.3333333,40 12.6666667,41.3333333 12,44" id="Path-10" stroke-linecap="round" fill-rule="nonzero" transform="translate(17.000000, 42.000000) scale(-1, 1) rotate(90.000000) translate(-17.000000, -42.000000) "></path>
+                    <path d="M3.75,46.25 L3.75,47.75" id="Path" stroke-linecap="round" fill-rule="nonzero" transform="translate(3.750000, 47.000000) rotate(90.000000) translate(-3.750000, -47.000000) "></path>
+                    <path d="M3.75,6.25 L3.75,7.75" id="Path" stroke-linecap="round" fill-rule="nonzero" transform="translate(3.750000, 7.000000) rotate(90.000000) translate(-3.750000, -7.000000) "></path>
+                    <path d="M20.25,22.25 L20.25,23.75" id="Path" stroke-linecap="round" fill-rule="nonzero" transform="translate(20.250000, 23.000000) rotate(90.000000) translate(-20.250000, -23.000000) "></path>
+                    <path d="M20.25,46.25 L20.25,47.75" id="Path" stroke-linecap="round" fill-rule="nonzero" transform="translate(20.250000, 47.000000) rotate(90.000000) translate(-20.250000, -47.000000) "></path>
+                    <path d="M23,37 C22.2,34.3333333 20.2,33 17,33 C13.8,33 11.8,34.3333333 11,37" id="Path-10" stroke-linecap="round" fill-rule="nonzero" transform="translate(17.000000, 35.000000) scale(-1, 1) rotate(90.000000) translate(-17.000000, -35.000000) "></path>
+                    <path d="M22,30 C21.3333333,27.3333333 19.6666667,26 17,26 C14.3333333,26 12.6666667,27.3333333 12,30" id="Path-10" stroke-linecap="round" fill-rule="nonzero" transform="translate(17.000000, 28.000000) scale(-1, 1) rotate(90.000000) translate(-17.000000, -28.000000) "></path>
+                    <path d="M12,44 C11.3333333,41.3333333 9.66666667,40 7,40 C4.33333333,40 2.66666667,41.3333333 2,44" id="Path-10" stroke-linecap="round" fill-rule="nonzero" transform="translate(7.000000, 42.000000) rotate(90.000000) translate(-7.000000, -42.000000) "></path>
+                    <path d="M13,37 C12.2,34.3333333 10.2,33 7,33 C3.8,33 1.8,34.3333333 1,37" id="Path-10" stroke-linecap="round" fill-rule="nonzero" transform="translate(7.000000, 35.000000) rotate(90.000000) translate(-7.000000, -35.000000) "></path>
+                    <path d="M13,29 C12.2,26.3333333 10.2,25 7,25 C3.8,25 1.8,26.3333333 1,29" id="Path-10" stroke-linecap="round" fill-rule="nonzero" transform="translate(7.000000, 27.000000) rotate(90.000000) translate(-7.000000, -27.000000) "></path>
+                    <path d="M13,21 C12.2,18.3333333 10.2,17 7,17 C3.8,17 1.8,18.3333333 1,21" id="Path-10-Copy" stroke-linecap="round" fill-rule="nonzero" transform="translate(7.000000, 19.000000) rotate(90.000000) translate(-7.000000, -19.000000) "></path>
+                    <path d="M12,14 C11.3333333,11.3333333 9.66666667,10 7,10 C4.33333333,10 2.66666667,11.3333333 2,14" id="Path-10-Copy-2" stroke-linecap="round" fill-rule="nonzero" transform="translate(7.000000, 12.000000) rotate(90.000000) translate(-7.000000, -12.000000) "></path>
+                    <path d="M5,41.5 C6.11562861,41.5 7,40.7040658 7,39.75 C7,38.4609003 5.86580539,36.5 5,36.5 C4.13419461,36.5 3,38.4609003 3,39.75 C3,40.7040658 3.88437139,41.5 5,41.5 Z" id="Oval" transform="translate(5.000000, 39.000000) rotate(90.000000) translate(-5.000000, -39.000000) "></path>
+                    <path d="M19,41.5 C20.1156286,41.5 21,40.7040658 21,39.75 C21,38.4609003 19.8658054,36.5 19,36.5 C18.1341946,36.5 17,38.4609003 17,39.75 C17,40.7040658 17.8843714,41.5 19,41.5 Z" id="Oval" transform="translate(19.000000, 39.000000) scale(-1, 1) rotate(90.000000) translate(-19.000000, -39.000000) "></path>
+                    <path d="M19,33.5 C20.1156286,33.5 21,32.7040658 21,31.75 C21,30.4609003 19.8658054,28.5 19,28.5 C18.1341946,28.5 17,30.4609003 17,31.75 C17,32.7040658 17.8843714,33.5 19,33.5 Z" id="Oval" transform="translate(19.000000, 31.000000) scale(-1, 1) rotate(90.000000) translate(-19.000000, -31.000000) "></path>
+                    <path d="M5,33.5 C6.11562861,33.5 7,32.7040658 7,31.75 C7,30.4609003 5.86580539,28.5 5,28.5 C4.13419461,28.5 3,30.4609003 3,31.75 C3,32.7040658 3.88437139,33.5 5,33.5 Z" id="Oval" transform="translate(5.000000, 31.000000) rotate(90.000000) translate(-5.000000, -31.000000) "></path>
+                    <path d="M5,25.5 C6.11562861,25.5 7,24.7040658 7,23.75 C7,22.4609003 5.86580539,20.5 5,20.5 C4.13419461,20.5 3,22.4609003 3,23.75 C3,24.7040658 3.88437139,25.5 5,25.5 Z" id="Oval" transform="translate(5.000000, 23.000000) rotate(90.000000) translate(-5.000000, -23.000000) "></path>
+                    <path d="M5,17.5 C6.11562861,17.5 7,16.7040658 7,15.75 C7,14.4609003 5.86580539,12.5 5,12.5 C4.13419461,12.5 3,14.4609003 3,15.75 C3,16.7040658 3.88437139,17.5 5,17.5 Z" id="Oval" transform="translate(5.000000, 15.000000) rotate(90.000000) translate(-5.000000, -15.000000) "></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

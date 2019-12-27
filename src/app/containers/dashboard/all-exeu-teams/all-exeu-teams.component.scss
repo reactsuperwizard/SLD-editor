@@ -1,0 +1,176 @@
+@import 'mixin';
+.scroll-container {
+  height: 100%;
+  overflow-y: scroll;
+  position: relative;
+}
+
+.content-wrap.all-teams {
+  @include content-wrap-style();
+  height: auto;
+  .body {
+    overflow-y: hidden;
+    height: auto;
+  }
+  .all-teams {
+    display: flex;
+    flex-wrap: wrap;
+    .card-execu {
+      width: 100%;
+      height: 336px;
+      display: flex;
+      flex-direction: column;
+      cursor: pointer;
+      margin: 0 16px 24px 0;
+      border: 1px solid transparent;
+      border-radius: 4px;
+      background-color: white;
+      box-shadow: 0 4px 12px 0 rgba(0, 0, 0, 0.12);
+      &:hover {
+        box-shadow: 0 4px 12px 0 rgba(0, 0, 0, 0.3);
+      }
+      &.selected {
+        border: 1px solid #6f81f4;
+      }
+      &.card-role-create {
+        box-shadow: none;
+        border: 1px dashed #dbdbdb;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        cursor: pointer;
+        .card-create-new-role {
+          display: inline-block;
+          padding-top: 56px;
+          background: url("../../../../assets/i/error-circ.svg") 50% 0 no-repeat;
+          background-size: 32px;
+          font-size: 14px;
+          color: #101010;
+        }
+      }
+      .fig {
+        text-align: center;
+        padding-top: 18px;
+        img {
+          width: 40px;
+          height: 40px;
+          display: inline-block;
+        }
+      }
+      .fig-caption {
+        font-size: 14px;
+        line-height: 1.14;
+        text-align: center;
+        color: #262626;
+        padding: 16px 16px 0;
+      }
+      .cr-head {
+        height: 71px;
+        display: flex;
+        align-items: center;
+        padding: 0 15px 0 8px;
+        .circ-member-count {
+          width: 40px;
+          height: 40px;
+          border-radius: 20px;
+          border: solid 3px #f4f4f4;
+          background-color: #ffffff;
+          text-align: center;
+          line-height: 34px;
+          font-size: 21px;
+          font-weight: 500;
+          color: $black;
+        }
+        .tinfo {
+          padding-left: 10px;
+        }
+        .team-rating {
+          margin-left: auto;
+          padding-top: 20px;
+          background: url("../../../../assets/i/star-d.svg") 50% 0 no-repeat;
+          background-size: 16px;
+          .ra-val {
+            font-size: 13px;
+            line-height: 1.08;
+            text-align: center;
+            color: #000000;
+          }
+        }
+        .lbl {
+          font-size: 12px;
+          line-height: 2;
+          color: #686868;
+        }
+        h4 {
+          font-size: 14px;
+          line-height: 1.14;
+          color: #262626;
+        }
+      }
+      .role-desc {
+        font-size: 13px;
+        line-height: 1.46;
+        text-align: center;
+        color: #262626;
+        padding: 16px;
+        border-top: 1px solid #f4f4f4;
+        height: 86px;
+        overflow: hidden;
+      }
+      .lbl-tskills {
+        font-size: 12px;
+        line-height: 1.17;
+        text-align: center;
+        color: #686868;
+      }
+      .tskill-list {
+        padding: 4px 16px 24px 16px;
+        .tskill {
+          height: 24px;
+          line-height: 22px;
+          opacity: 0.8;
+          border-radius: 12px;
+          border: solid 1px #bababa;
+          background-color: #f4f4f4;
+          margin-top: 8px;
+          font-size: 13px;
+          padding-left: 7px;
+          &:first-child {
+            margin-top: 0;
+          }
+        }
+      } // cr-footer
+      .cr-footer {
+        border-top: 1px solid #f4f4f4;
+        padding: 0 16px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        height: 40px;
+        .hrate {
+          font-size: 12px;
+        }
+        .hrate-v {
+          font-size: 14px;
+          font-weight: 400;
+          line-height: 1.71;
+          text-align: right;
+          color: #262626;
+        }
+      }
+      &.add-new {
+        border: 1px dashed $lightGray;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+        box-shadow: none;
+        .add-new-text {
+          font-size: 16px;
+          text-align: center;
+          margin-top: 20px;
+        }
+      }
+    }
+  }
+}

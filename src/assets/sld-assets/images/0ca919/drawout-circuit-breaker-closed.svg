@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="32px" height="48px" viewBox="-4.0 0.0 32 48" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 52.5 (67469) - http://www.bohemiancoding.com/sketch -->
+    <title>drawout-circuit-breaker-closed</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Project-Modelling-–-GIS-&amp;-SLD" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" opacity="1">
+        <g id="Artboard" transform="translate(-624.000000, -1108.000000)" fill-rule="nonzero" stroke="#0ca919">
+            <g id="32-/-sld-/-vertical-/-box-icon-/-normal" transform="translate(620.000000, 1100.000000)">
+                <g id="sld-/-multi-/-draw-out-circuit-breaker-closed-/-black" transform="translate(4.000000, 8.000000)">
+                    <path d="M12,9.5 L12,16.5" id="Path-3"></path>
+                    <path d="M12,0 L12,5.5" id="Path-3"></path>
+                    <polyline id="Path-4" points="4 13 12 9 20 13"></polyline>
+                    <polyline id="Path-4" points="4 9 12 5 20 9"></polyline>
+                    <path d="M12,31.5 L12,38.5" id="Path-3"></path>
+                    <polyline id="Path-4" transform="translate(12.000000, 41.000000) scale(1, -1) translate(-12.000000, -41.000000) " points="4 43 12 39 20 43"></polyline>
+                    <polyline id="Path-4" transform="translate(12.000000, 37.000000) scale(1, -1) translate(-12.000000, -37.000000) " points="4 39 12 35 20 39"></polyline>
+                    <path d="M12,42.5 L12,48" id="Path-3"></path>
+                    <rect id="Rectangle" fill="#686868" x="4.5" y="16.5" width="15" height="15"></rect>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="6px" height="10px" viewBox="0 0 6 10" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 49.3 (51167) - http://www.bohemiancoding.com/sketch -->
+    <title>Combined Shape</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <path d="M386,336 L980,336 C981.656854,336 983,337.343146 983,339 L983,698 C983,699.656854 981.656854,701 980,701 L386,701 C384.343146,701 383,699.656854 383,698 L383,339 C383,337.343146 384.343146,336 386,336 Z" id="path-1"></path>
+        <filter x="-2.9%" y="-3.4%" width="105.8%" height="109.6%" filterUnits="objectBoundingBox" id="filter-2">
+            <feOffset dx="0" dy="5" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="5" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feComposite in="shadowBlurOuter1" in2="SourceAlpha" operator="out" result="shadowBlurOuter1"></feComposite>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.03 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix>
+        </filter>
+        <rect id="path-3" x="0" y="0" width="90" height="40" rx="20"></rect>
+    </defs>
+    <g id="A-Migration-Engineer" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="A0_Migration-Engineer-V1" transform="translate(-937.000000, -667.000000)">
+            <rect id="Rectangle-2-Copy-7" fill="#FFFFFF" fill-rule="nonzero" x="0" y="86" width="1366" height="715"></rect>
+            <g id="Rectangle-5-Copy-8">
+                <use fill="black" fill-opacity="1" filter="url(#filter-2)" xlink:href="#path-1"></use>
+                <use fill="#FFFFFF" fill-rule="evenodd" xlink:href="#path-1"></use>
+                <path stroke="#EAEAEA" stroke-width="1" d="M386,336.5 C384.619288,336.5 383.5,337.619288 383.5,339 L383.5,698 C383.5,699.380712 384.619288,700.5 386,700.5 L980,700.5 C981.380712,700.5 982.5,699.380712 982.5,698 L982.5,339 C982.5,337.619288 981.380712,336.5 980,336.5 L386,336.5 Z"></path>
+            </g>
+            <g id="Group-6-Copy-4" transform="translate(878.000000, 652.000000)" fill-rule="nonzero">
+                <g id="Mask" transform="translate(45.000000, 20.000000) scale(-1, 1) translate(-45.000000, -20.000000) ">
+                    <use fill="#FFFFFF" fill-rule="evenodd" xlink:href="#path-3"></use>
+                    <rect stroke="#DDDDDD" stroke-width="1" x="0.5" y="0.5" width="89" height="39" rx="19.5"></rect>
+                </g>
+                <path d="M58,22.1428571 L63,22.1428571 L63,23.2142857 L58,23.2142857 L57,23.2142857 L57,16.7857143 L58,16.7857143 L58,22.1428571 Z" id="Combined-Shape" fill="#2E2E2F" transform="translate(60.000000, 20.000000) scale(-1, 1) rotate(45.000000) translate(-60.000000, -20.000000) "></path>
+            </g>
+        </g>
+    </g>
+</svg>

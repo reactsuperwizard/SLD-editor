@@ -1,0 +1,252 @@
+@import 'mixin';
+
+.project-modalling-area-page {
+  padding: 16px;
+  h3.header {
+    font-size: 16px;
+    font-weight: 500;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.5;
+    letter-spacing: normal;
+    color: $text;
+    margin: 0 0 32px 0;
+    padding: 0 0 16px 0;
+    border-bottom: 1px solid $white-grey;
+  }
+  .group-table + app-add-new {
+    margin-top: 8px;
+    display: block;
+  }
+  .group-row {
+    margin-bottom: 8px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 56px;
+    border-radius: 4px;
+    background-color: #f4f4f4;
+    padding-left: 24px;
+    padding-right: 20px;
+    .left-section {
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+      .name {
+        font-size: 16px;
+        font-weight: normal;
+        font-style: normal;
+        font-stretch: normal;
+        line-height: 1;
+        letter-spacing: normal;
+        color: $text;
+      }
+      .description {
+        font-size: 12px;
+        font-weight: normal;
+        font-style: normal;
+        font-stretch: normal;
+        line-height: 1.33;
+        letter-spacing: normal;
+        color: $text;
+      }
+      button {
+        margin: 0 20px;
+      }
+    }
+    button.expand {
+      background: transparent url('/assets/i/chevron-down-dark.svg') no-repeat;
+      width: 8px;
+      height: 8px;
+      display: block;
+      outline: none;
+      border: 0;
+      &.expanded {
+        transform: rotate(180deg);
+      }
+    }
+  }
+
+  .icon-remove, .icon-edit {
+    background-color: transparent;
+    width: 16px;
+    height: 16px;
+    margin-left: 10px;
+  }
+  .sub-header {
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    span {
+      font-size: 16px;
+      font-weight: 500;
+      font-style: normal;
+      font-stretch: normal;
+      letter-spacing: normal;
+      color: $text;
+      display: flex;
+    }
+    .filter-container {
+      width: 152px;
+      position: absolute;
+      right: -4px;
+      top: 0;
+      z-index: 1000;
+      background-color: #3D3D3D;
+      display: flex;
+      flex-direction: column;
+      padding: 0 0 16px 16px;
+      border-radius: 5px;
+      user-select: none;
+      color: $white;
+      .header {
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: space-between;
+        align-items: center;
+        font-weight: normal;
+        border-bottom: 2px solid #686868;
+        height: 41px;
+        .icon {
+          width: 40px;
+          height: 40px;
+          background-size: 40%;
+          cursor: pointer;
+        }
+        span {
+          color: $white;
+          font-weight: normal;
+        }
+      }
+      .filter-option {
+        height: 30px;
+        display: flex;
+        align-items: center;
+        .icon {
+          width: 16px;
+          height: 16px;
+        }
+        span {
+          color: $white;
+          padding-left: 10px;
+          font-size: 13px;
+          font-weight: normal;
+        }
+      }
+      &.filter-hide {
+        background-color: transparent;
+        .header {
+          border-bottom: none;
+          span {
+            display: none;
+          }
+        }
+        .filter-option {
+          display: none;
+        }
+      }
+    }
+  }
+  .pm-area-table {
+    width: 100%;
+    border-top: 1px solid $lighterGray;
+    .datatable-header {
+      font-size: 12px;
+    }
+    .datatable-header,
+    .datatable-body .datatable-body-row {
+      height: 40px !important;
+      border-bottom: 1px solid $lighterGray;
+    }
+    .empty-row {
+      height: 40px;
+      line-height: 40px;
+      text-align: center;
+      font-size: 12px;
+    }
+
+    .datatable-header-cell {
+      margin-bottom: 10px;
+      font-size: 12px;
+      .sort-btn {
+        width: 4px;
+        height: 4px;
+        margin-left: 12px;
+        text-align: center;
+        border-left: 4px solid transparent;
+        border-right: 4px solid transparent;
+        border-bottom: 4px solid #464646;
+        &.sort-desc {
+          border-bottom: 0;
+          border-top: 4px solid #464646;
+        }
+      }
+    }
+    .datatable-header-cell:nth-child(2),
+    .datatable-body-cell:nth-child(2) {
+      margin-left: 20px;
+    }
+    .datatable-body-cell:last-child {
+      margin-left: 20px;
+      .datatable-body-cell-label {
+        text-align: right;
+      }
+    }
+    .datatable-body-cell,
+    .datatable-header-cell-wrapper {
+      color: $gray;
+      line-height: 40px;
+      .datatable-body-cell-label {
+        font-size: 14px;
+        font-weight: normal;
+        padding-left: 24px;
+        padding-right: 20px;
+      }
+      .datatable-header-cell-label {
+        font-size: 12px;
+        padding-left: 24px;
+        padding-right: 20px;
+      }
+    }
+    .datatable-footer {
+      display: none;
+      .page-count {
+        display: none;
+      }
+      .datatable-pager {
+        @include paging-default();
+      }
+    }
+  }
+  .add-new-area {
+    width: 100%;
+    height: 56px;
+    border-radius: 4px;
+    background-color: $white-grey;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 16px;
+    .form {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      input:first-child {
+        width: 136px;
+        margin-right: 16px;
+      }
+      input:last-child {
+        width: 400px;
+      }
+    }
+    .btn.btn-assign {
+      @include button-default(black, $lightGray, $gray, 144px);
+      i {
+        width: 8px;
+        height: 8px;
+        background-size: 8px 8px;
+        margin-right: 10px;
+      }
+    }
+  }
+}

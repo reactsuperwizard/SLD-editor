@@ -1,0 +1,147 @@
+<div class="reliability-overview" [perfectScrollbar]="{}">
+  <div class="loading-box" *ngIf="loading">
+    <div class="img" alt="loading"></div>
+  </div>
+  <div *ngIf="!loading" class="container-fluid">
+    <div class="row">
+      <div class="col-lg-4 daily-status-section">
+        <div class="section-header" i18n>Daily status</div>
+        <div class="chart-card daily-status">
+          <div class="status-item">
+            <span class="value">{{dailyStatus.pendingConstraints}}</span>
+            <span class="text" i18n>Constraints waiting to be defined</span>
+            <i class="icon icon-notes"></i>
+          </div>
+          <div class="status-item">
+            <span class="value">{{dailyStatus.pendingMaintenanceActions}}</span>
+            <span class="text" i18n>Maitenance actions pending decision</span>
+            <i class="icon icon-notes"></i>
+          </div>
+          <div class="status-item">
+            <span class="value"><i class="icon icon-checkmark-circle"></i></span>
+            <span class="text" i18n>Plan {{dailyStatus.plan.name}} ready for approval</span>
+            <i class="icon icon-notes"></i>
+          </div>
+          <div class="status-item">
+            <span class="value">{{dailyStatus.overdueTasks}}</span>
+            <span class="text" i18n>Overdue tasks</span>
+            <i class="icon icon-manage-kernel"></i>
+          </div>
+          <div class="status-item">
+            <span class="value">{{dailyStatus.onGoingImprovements}}</span>
+            <span class="text" i18n>On going continue improvements</span>
+            <i class="icon icon-shield"></i>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-8 assets-management-section">
+        <div class="horizontal-flex">
+          <div class="section-header" i18n>Assets management</div>
+          <div class="completeness" i18n>Completeness <span class="pill-box">{{completeness}}%</span></div>
+        </div>
+        <div class="chart-card assets-management">
+          <img src="assets/chart-images/risk-pyramid.svg"/>
+          <div class="separator"></div>
+          <img src="assets/chart-images/risk-matrix.svg"/>
+        </div>
+      </div>
+    </div>
+    <div class="custom-dashboard-section">
+      <div class="horizontal-flex">
+        <div class="section-header" i18n>Custom dashboard</div>
+        <div class="blue-txt" i18n>Edit</div>
+      </div>
+      <div class="row">
+        <div class="col-lg-8">
+          <div class="row">
+            <div class="col-lg-12">
+              <div class="chart-card region-risk">
+                <div class="chart-card-title" i18n>Risk by Region</div>
+                <div class="chart-container">
+                  <img src="assets/chart-images/region-chart-east.svg">
+                </div>
+                <div class="chart-container">
+                  <img src="assets/chart-images/region-chart-center.svg">
+                </div>
+                <div class="chart-container last">
+                  <img src="assets/chart-images/region-chart-west.svg">
+                </div>
+                <div class="legend">
+                  <div class="legend-indicator green"></div>
+                  <div class="legend-label" i18n>Low</div>
+                  <div class="legend-indicator yello"></div>
+                  <div class="legend-label" i18n>Medium</div>
+                  <div class="legend-indicator red"></div>
+                  <div class="legend-label" i18n>High</div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-lg-6">
+              <div class="chart-card year-expenditure">
+                <div class="chart-card-title" i18n>Year Expenditure</div>
+                <div>
+                  <img src="assets/chart-images/year-expenditure.svg">
+                </div>
+                <div class="legend">
+                  <div class="legend-indicator teal"></div>
+                  <div class="legend-label" i18n>OPEX</div>
+                  <div class="legend-indicator red"></div>
+                  <div class="legend-label" i18n>Spare Parts</div>
+                  <div class="legend-indicator purple"></div>
+                  <div class="legend-label" i18n>CAPEX</div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-6">
+              <div class="chart-card age-distribution">
+                <div class="chart-card-title" i18n>Assets by Age Distribution</div>
+                <div>
+                  <img src="assets/chart-images/year-expenditure.svg">
+                </div>
+                <div class="legend">
+                  <div class="legend-indicator purple"></div>
+                  <div class="legend-label" i18n>Assets</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 chart-card assets-manufacture">
+          <div class="chart-card-title" i18n>Assets by Manufacture</div>
+          <div class="chart-container last">
+            <img src="assets/chart-images/pie-chart.svg">
+          </div>
+          <div class="vertical-legend">
+            <div class="legend-header">
+              <span>Maker</span>
+              <span>No.</span>
+            </div>
+            <div class="legend-row">
+              <div class="legend-indicator orange"></div>
+              <div class="legend-label">{{assetsManufacture[0].maker}}</div>
+              <div class="pill-box">{{assetsManufacture[0].value}}</div>
+            </div>
+            <div class="legend-row">
+              <div class="legend-indicator purple"></div>
+              <div class="legend-label">{{assetsManufacture[1].maker}}</div>
+              <div class="pill-box">{{assetsManufacture[1].value}}</div>
+            </div>
+            <div class="legend-row">
+              <div class="legend-indicator green"></div>
+              <div class="legend-label">{{assetsManufacture[2].maker}}</div>
+              <div class="pill-box">{{assetsManufacture[2].value}}</div>
+            </div>
+            <div class="legend-row">
+              <div class="legend-indicator lime"></div>
+              <div class="legend-label">{{assetsManufacture[3].maker}}</div>
+              <div class="pill-box">{{assetsManufacture[3].value}}</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</div>

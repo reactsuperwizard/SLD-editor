@@ -1,0 +1,121 @@
+.project-listing {
+  display: block;
+  padding: 16px;
+  .ngx-datatable {
+    .datatable-header {
+      border-bottom: 1px solid $white-grey;
+      .datatable-header-cell {
+        .sort-btn {
+          width: 8px;
+          height: 8px;
+          &.sort-asc {
+            background: url('/assets/i/sort-down.svg') no-repeat;
+            background-size: 8px 8px;
+            margin-left: 16px;
+          }
+          &.sort-desc {
+            background: url('/assets/i/sort-down.svg') no-repeat;
+            background-size: 8px 8px;
+            margin-left: 16px;
+            transform: rotate(180deg);
+          }
+        }
+        .datatable-header-cell-label {
+          font-size: 12px;
+          font-weight: normal;
+          font-style: normal;
+          font-stretch: normal;
+          letter-spacing: normal;
+          color: $lightBlack;
+          padding-left: 24px;
+        }
+      }
+    }
+    .datatable-body-row {
+      background: $white;
+      border-top: 8px solid $bgColor;
+      box-shadow: inset 0 1px 0 0 $white-grey, inset 0 -1px 0 0 $white-grey, inset -1px 0 0 0 $white-grey;
+      .datatable-body-cell {
+        .datatable-body-cell-label {
+          display: flex;
+          width: 100%;
+          height: 100%;
+          align-items: center;
+          padding-left: 24px;
+        }
+        &:nth-child(2), &:nth-child(3), &:nth-child(4) {
+          .datatable-body-cell-label {
+            border-right: 1px solid $white-grey;
+          }
+        }
+        &:last-child {
+          .datatable-body-cell-label {
+            padding-left: 0;
+            align-items: flex-start;
+            .last-row {
+              display: flex;
+              justify-content: space-between;
+              flex-direction: column;
+              height: 56px;
+              width: 100%;
+              .year {
+                height: 46px;
+                padding-left: 24px;
+                display: flex;
+                align-items: center;
+              }
+              .year-progress {
+                width: 100%;
+                background-color: $lighterGray;
+                height: 10px;
+                padding: 0;
+                .progress {
+                  height: 100%;
+                  background-color: #0F6CFF;
+                  border-radius: 1px;
+                }
+              }
+            }
+          }
+        }
+        .tcell-user {
+          display: flex;
+          .icon-avatar {
+            width: 32px;
+            height: 32px;
+            border-radius: 16px;
+            margin-right: 16px;
+          }
+        }
+        &:first-child {
+          .datatable-body-cell-label {
+            padding-left: 0;
+            align-items: flex-start;
+            font-size: 14px;
+            font-weight: normal;
+            font-style: normal;
+            font-stretch: normal;
+            line-height: 1.14;
+            letter-spacing: normal;
+            color: $text;
+            .country-header {
+              padding-left: 24px;
+              width: 100%;
+              height: 56px;
+              display: flex;
+              align-items: center;
+              background-position: center left;
+              font-size: 16px;
+              font-weight: 500;
+              font-style: normal;
+              font-stretch: normal;
+              line-height: 1.5;
+              letter-spacing: normal;
+              color: $text;
+            }
+          }
+        }
+      }
+    }
+  }
+}

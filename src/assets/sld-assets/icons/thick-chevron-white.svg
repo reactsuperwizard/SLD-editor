@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="16px" height="16px" viewBox="0 0 16 16" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 52.5 (67469) - http://www.bohemiancoding.com/sketch -->
+    <title>thick-chevron-white</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <polygon id="path-1" points="1.68 13.24 0.32 11.76 5.52 7 0.32 2.24 1.68 0.76 8.48 7"></polygon>
+    </defs>
+    <g id="Project-Modelling-–-GIS-&amp;-SLD" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" opacity="1">
+        <g id="5.X-/-Settings-/-Edit-Mode-/-SLD-Modelling-/-Shade-by-results" transform="translate(-288.000000, -376.000000)">
+            <g id="/menu" transform="translate(16.000000, 104.000000)">
+                <g id="/shade" transform="translate(0.000000, 112.000000)">
+                    <g id="32-/-combo-box-/-filled" transform="translate(72.000000, 144.000000)">
+                        <g id="16-/-right" transform="translate(200.000000, 16.000000)">
+                            <g id="--16-/-Right-" transform="translate(4.000000, 1.000000)">
+                                <mask id="mask-2" fill="white">
+                                    <use xlink:href="#path-1"></use>
+                                </mask>
+                                <use id="Mask" fill="#464646" fill-rule="nonzero" xlink:href="#path-1"></use>
+                                <g id="color-grey-0" mask="url(#mask-2)" fill="#FFFFFF">
+                                    <g transform="translate(-4.000000, -1.000000)" id="Rectangle">
+                                        <rect x="0" y="0" width="16" height="16"></rect>
+                                    </g>
+                                </g>
+                            </g>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

@@ -1,0 +1,343 @@
+<div class="sub-page">
+  <div class="viewport">
+    <header class="sub-header">
+      <h3>{{state.form.userName}} {{state.form.surName}}</h3>
+    </header>
+
+    <div class="create-user-form">
+      <div class="emp-info">
+        <div class="fig">
+          <img [src]="state.form.photo" accept="image/*">
+          <a class="btn-upload-img">+
+            <input type='file' class="file" (change)="onSelectFile($event)"></a>
+        </div>
+
+        <div class="ei"><span>Employee Information</span>
+          </div>
+      </div>
+
+      <div class="frow">
+        <div class="fieldset">
+          <div class="fs-lbl">
+            <sup>*</sup>Name
+          </div>
+          <div class="fs-val">
+            {{state.form.userName}}
+          </div>
+        </div>
+        <div class="fieldset">
+          <div class="fs-lbl">
+            <sup>*</sup>Surname
+          </div>
+          <div class="fs-val">
+            {{state.form.surName}}
+          </div>
+        </div>
+      </div>
+
+      <div class="frow">
+        <div class="fieldset">
+          <div class="fs-lbl">
+            <sup>*</sup>Employer
+          </div>
+          <div class="fs-val">
+            {{state.form.employer}}
+          </div>
+        </div>
+        <div class="fieldset">
+          <div class="fs-lbl">
+            <sup>*</sup>Job position
+          </div>
+          <div class="fs-val">
+            {{state.form.jobPosition}}
+          </div>
+        </div>
+      </div>
+
+      <div class="frow">
+        <div class="fieldset">
+          <div class="fs-lbl">
+            <sup>*</sup>Email
+          </div>
+          <div class="fs-val">
+            {{state.form.email}}
+          </div>
+        </div>
+        <div class="fieldset">
+          <div class="fs-lbl">
+            <sup>*</sup>Phone
+          </div>
+          <div class="fs-val fs-val-fx">
+            {{state.form.telCode}} {{state.form.phone}} 
+          </div>
+        </div>
+      </div>
+      <div class="frow fstart">
+        <div class="added-roles ml-0">
+          <span class="role-tag">{{state.form.jobPosition}}
+          </span>
+        </div>
+      </div>
+
+      <div class="section-execution-info">
+        <div class="ei"><span>Field Maintanance Information</span>
+        </div>
+        <div class="frow">
+          <div class="fieldset">
+            <div class="fs-lbl">
+              Assign to:
+            </div>
+            <div class="fs-val">
+              {{state.form.assignToVal}}
+            </div>
+          </div>
+          <div class="fieldset fieldset-sm">
+            <div class="fs-lbl">
+              Currency
+            </div>
+            <div class="fs-val fs-val-fx">
+              <div class="txt-val">
+              {{state.form.currency}}
+              </div>
+            </div>
+          </div>
+          <div class="fieldset fieldset-md">
+            <div class="fs-lbl">
+              Hourly rate
+            </div>
+            <div class="fs-val fs-val-fx">
+              {{state.form.hourlyRate}}
+            </div>
+          </div>
+        </div>
+
+        <div class="frow">
+          <div class="fieldset fluid">
+          <div class="fs-lbl">
+              Skills
+            </div>
+            
+            <div class="fs-val skills-list">
+              <a class="skill-tag alt" *ngFor="let item of getSkillFromId(state.form.userSkillsDTOList)" (click)="toggleManageSkill(true, item)">{{item.skillName}}</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- /.section-execution-info -->
+
+       <div class="bar-action fx-r">
+        <a class="btn btn-save" [routerLink]="['/dashboard/editProfile']">Edit</a>
+      </div>
+    </div>
+    <!-- /.create-user-form -->
+  </div>
+
+  <div class="modal-wrap" *ngIf="state.isShowAddRole">
+    <div class="modal modal-role">
+      <header class="modal-title">
+        <h4>Add Role</h4>
+        <a class="close" (click)="hideAddRole()"></a>
+      </header>
+      <div class="modal-body">
+
+        <div class="cards-role">
+          <owl-carousel-o *ngIf="state.roles" [options]="state.slideOpts">
+            <ng-container *ngFor="let item of state.roles; let i = index">
+
+              <ng-template carouselSlide>
+                <div class="card-role" [class.selected]="state.selectedRole[item.roleId]" (click)="toggleSelectRole(item)">
+                  <div class="cr-head">
+                    <figure class="fig">
+                      <img [src]=" '../../../../assets/i/role-' + item.roleId+'.svg'" alt="">
+                    </figure>
+                    <div class="fig-caption">{{item.roleName}}</div>
+                  </div>
+                  <div class="role-desc">
+                    {{item.roleDescription}}
+                  </div>
+                </div>
+              </ng-template>
+            </ng-container>
+          </owl-carousel-o>
+
+        </div>
+
+        <div class="bar-action">
+          <a class="btn btn-save" (click)="hideAddRole()">Save</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal-wrap" *ngIf="state.isShowManagePermissions">
+    <div class="modal  modal-permission">
+      <header class="modal-title">
+        <h4>Manage Permissions</h4>
+        <a class="close" (click)="togglePermisson(false)"></a>
+      </header>
+      <div class="modal-body">
+
+        <div class="permission-list">
+
+          <div class="permission-group" *ngFor="let item of state.form.permissions">
+            <header class="pg-head">
+              <label [for]="'pg-' + item.id" class="checkbox-ctrl">
+                <input [id]="'pg-' + item.id" type="checkbox" class="chk" [(ngModel)]="item.enabled">
+                <span class="txt">{{item.permissionName}}</span>
+              </label>
+            </header>
+            <div class="pg-body">
+              <div class="pg-row" *ngFor="let permission of item.permissionList; let i = index">
+                <label [for]="'pc-' + item.id + '-'  + i" class="switch-ctrl" [class.disabled]="!item.enabled">
+                  <input [id]="'pc-' + item.id + '-' + i" type="checkbox" class="chk" [(ngModel)]="permission.isEnabled">
+                  <span class="txt"> <i></i> <span class="sl">Edit</span> {{permission.name}}</span>
+                </label>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+        <div class="bar-action">
+          <a class="btn btn-save" (click)="togglePermisson(false)">Save</a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- /. modal-permission -->
+
+  <div class="modal-wrap" *ngIf="state.showCreateNewExe">
+    <div class="modal  modal-permission modal-new-execution">
+      <header class="modal-title">
+        <h4>Create New Execution Team</h4>
+        <a class="close" (click)="toggleCreateExTeam(false)"></a>
+      </header>
+      <div class="modal-body">
+
+        <div class="frow">
+          <div class="fieldset">
+            <div class="fs-lbl">
+              <sup>*</sup>Name
+            </div>
+            <div class="fs-val">
+              <input type="text" class="input-ctrl" [(ngModel)]="state.createNewExecutionTeam.name" />
+            </div>
+          </div>
+        </div>
+        <div class="frow">
+          <div class="fieldset inline">
+            <div class="fs-lbl">
+              <sup>*</sup>Team type
+            </div>
+            <div class="fs-val">
+              <label [for]="'team-type'" class="switch-ctrl lg">
+                  <input [id]="'team-type'" type="checkbox" class="chk" [(ngModel)]="state.createNewExecutionTeam.teamTypeExternal">
+                  <span class="txt"> <i></i> <span class="sl">External</span> </span>
+                </label>
+            </div>
+          </div>
+        </div>
+        <div class="frow" *ngIf="state.createNewExecutionTeam.teamTypeExternal">
+          <div class="fieldset">
+            <div class="fs-lbl">
+              <sup>*</sup>Company
+            </div>
+            <div class="fs-val">
+              <input type="text" class="input-ctrl" [(ngModel)]="state.createNewExecutionTeam.company" />
+            </div>
+          </div>
+        </div>
+
+        <div class="bar-action">
+          <a class="btn btn-save" (click)="toggleCreateExTeam(false)">Save</a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- /.modal-new-execution -->
+
+  <div class="modal-wrap" *ngIf="state.showManageSkill">
+    <div class="modal  modal-permission modal-manage-skill">
+      <header class="modal-title">
+        <h4>Manage skill</h4>
+        <a class="close" (click)="toggleManageSkill(false)"></a>
+      </header>
+      <div class="modal-body">
+
+        <div class="frow">
+          <div class="fieldset">
+            <div class="fs-lbl">
+              Skill name
+            </div>
+            <div class="fs-val">
+              <input type="text" class="input-ctrl" [(ngModel)]="state.manageSkill.selectedSkill.skillName" />
+            </div>
+          </div>
+        </div>
+        <div class="frow">
+          <div class="fieldset inline">
+            <div class="fs-lbl">
+              Level of Expertise
+            </div>
+            <div class="fs-val">
+              <ng5-slider class="rangle-slider" [(value)]="state.manageSkill.loe.value" [options]="state.manageSkill.loe.options"></ng5-slider>
+            </div>
+          </div>
+        </div>
+        <div class="frow">
+          <div class="fieldset">
+            <div class="fs-lbl">
+              Validity
+            </div>
+            <div class="fs-val fs-val-validity">
+              <select class="select-ctrl select-v-month">
+                <option value="">Jan</option>
+                <option value="">Feb</option>
+                <option value="">Mar</option>
+                <option value="">Apr</option>
+                <option value="">May</option>
+                <option value="">Jun</option>
+              </select>
+              <select class="select-ctrl select-v-year">
+                <option value="">2018</option>
+                <option value="">2019</option>
+              </select>
+              <a class="btn btn-upload-certificate">Upload certificate
+                <input type="file" class="file">
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="bar-action">
+          <a class="btn btn-save" (click)="toggleManageSkill(false)">Save</a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- /.modal-manage-skill -->
+
+  <div class="modal-wrap" *ngIf="state.showManageSkills">
+    <div class="modal  modal-permission modal-manage-skills">
+      <header class="modal-title">
+        <h4>Manage Skills</h4>
+        <a class="close" (click)="toggleManageSkills(false)"></a>
+      </header>
+      <div class="modal-body">
+
+        <div class="bar-search-skill">
+          <input type="search" placeholder="Search" class="input-ctrl" />
+        </div>
+
+        <div class="skills-list">
+          <a class="skill-tag" *ngFor="let item of skillOpts$"  [class.system]="!item.createdBy">{{item.skillName}} <a class="remove-st" (click)="removeSkillTag(item)" *ngIf="item.createdBy">× </a></a>
+        </div>
+
+        <div class="bar-action">
+          <a class="btn btn-save" (click)="toggleManageSkills(false)">Save</a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- /.modal-manage-skills -->
+</div>

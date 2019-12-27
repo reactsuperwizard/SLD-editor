@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="32px" height="48px" viewBox="-4.0 0.0 32 48" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 52.5 (67469) - http://www.bohemiancoding.com/sketch -->
+    <title>circuit-breaker-closed</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Project-Modelling-–-GIS-&amp;-SLD" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" opacity="1">
+        <g id="Artboard" transform="translate(-624.000000, -748.000000)" fill-rule="nonzero" stroke="#ff000f">
+            <g id="32-/-sld-/-vertical-/-box-icon-/-normal" transform="translate(620.000000, 740.000000)">
+                <g id="sld-/-multi-/-circuit-breaker-closed-/-black" transform="translate(4.000000, 8.000000)">
+                    <path d="M12,0 L12,14.5" id="Path"></path>
+                    <path d="M12,33.5 L12,48" id="Path"></path>
+                    <rect id="Rectangle" fill="#686868" x="2.5" y="14.5" width="19" height="19"></rect>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

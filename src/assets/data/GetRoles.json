@@ -1,0 +1,970 @@
+[
+  {
+    "roleId": 1,
+    "roleName": "ABB System Administrator",
+    "roleDescription": "The technical meaning of maintenance involves functional checks. servicing, repairing orreplacing of necessary devices, equipment, machinery and building.infrastructure, and supporting utilities in industrial, business,governmental, and residential installations.",
+    "canBeDeleted": null,
+    "deleted": false,
+    "createdDate": "2018-10-09T09:07:27.541699",
+    "createdBy": null,
+    "updatedDate": null,
+    "updatedBy": null,
+    "rolePrivileges": [
+      {
+        "id": 1,
+        "permissionName": "System",
+        "description": "Here a small description about each area",
+        "enabled": false,
+        "permissionList": [
+          {
+            "name": "Users & Roles",
+            "level": "View"
+          },
+          {
+            "name": "Execution Teams",
+            "level": "View"
+          },
+          {
+            "name": "Risk Matrix",
+            "level": "View"
+          },
+          {
+            "name": "Knowledge Bank",
+            "level": "View"
+          }
+        ]
+      },
+      {
+          "id": 2,
+          "permissionName": "Project",
+          "description": "Here a small description about each area",
+          "enabled": true,
+          "permissionList": [
+          {
+            "name": "Project Definition",
+            "level": "View"
+          },
+          {
+            "name": "GIS",
+            "level": "View"
+          },
+          {
+            "name": "SLD Modelling",
+            "level": "View"
+          },
+          {
+            "name": "Outage Areas",
+            "level": "View"
+          },
+          {
+            "name": "Budget Areas",
+            "level": "View"
+          }
+        ]
+      },
+      {
+        "id": 3,
+        "permissionName": "Planning",
+        "description": "Here a small description about each area",
+        "enabled": true,
+        "permissionList": [
+          {
+            "name": "Constrain Definition",
+            "level": "Edit"
+          },
+          {
+            "name": "Task Navigator",
+            "level": "Edit"
+          },
+          {
+            "name": "Approve & Dispatch",
+            "level": "Edit"
+          },
+          {
+            "name": "Validate Planning",
+            "level": "Edit"
+          }
+        ]
+      }
+    ],
+    "userRoles": [
+      {
+        "id": 1,
+        "userName": "Kenjo Assou",
+        "photo": "../../../assets/i/user.jpg"
+      },
+      {
+        "id": 2,
+        "userName": "Kun Chang-Min",
+        "photo": "../../../assets/i/user.jpg"
+      },
+      {
+        "id": 3,
+        "userName": "Fatima Delgadillo",
+        "photo": "../../../assets/i/user.jpg"
+      },
+      {
+        "id": 4,
+        "userName": "Virendra Sana",
+        "photo": "../../../assets/i/user.jpg"
+      },
+      {
+        "id": 5,
+        "userName": "Emmalynn Mazzia",
+        "photo": "../../../assets/i/user.jpg"
+      },
+      {
+        "id": 6,
+        "userName": "Onyekachukwu Chibueze",
+        "photo": "../../../assets/i/user.jpg"
+      }
+    ]
+  },
+  {
+    "roleId": 2,
+    "roleName": "Global Product Mngr",
+    "roleDescription": "The technical meaning of maintenance involves functional checks. servicing, repairing orreplacing of necessary devices, equipment, machinery and building.infrastructure, and supporting utilities in industrial, business,governmental, and residential installations.",
+    "canBeDeleted": null,
+    "deleted": false,
+    "createdDate": "2018-10-09T09:07:27.541699",
+    "createdBy": null,
+    "updatedDate": null,
+    "updatedBy": null,
+    "rolePrivileges": [
+      {
+        "id": 1,
+        "permissionName": "System",
+        "description": "Here a small description about each area",
+        "enabled": false,
+        "permissionList": [
+          {
+            "name": "Users & Roles",
+            "level": "Edit"
+          },
+          {
+            "name": "Execution Teams",
+            "level": "View"
+          },
+          {
+            "name": "Risk Matrix",
+            "level": "View"
+          },
+          {
+            "name": "Knowledge Bank",
+            "level": "View"
+          }
+        ]
+      },
+      {
+          "id": 2,
+          "permissionName": "Project",
+          "description": "Here a small description about each area",
+          "enabled": true,
+          "permissionList": [
+          {
+            "name": "Project Definition",
+            "level": "View"
+          },
+          {
+            "name": "GIS",
+            "level": "View"
+          },
+          {
+            "name": "SLD Modelling",
+            "level": "View"
+          },
+          {
+            "name": "Outage Areas",
+            "level": "View"
+          },
+          {
+            "name": "Budget Areas",
+            "level": "View"
+          }
+        ]
+      },
+      {
+        "id": 3,
+        "permissionName": "Planning",
+        "description": "Here a small description about each area",
+        "enabled": true,
+        "permissionList": [
+          {
+            "name": "Constrain Definition",
+            "level": "View"
+          },
+          {
+            "name": "Task Navigator",
+            "level": "View"
+          },
+          {
+            "name": "Approve & Dispatch",
+            "level": "View"
+          },
+          {
+            "name": "Validate Planning",
+            "level": "View"
+          }
+        ]
+      }
+    ],
+    "userRoles": [
+      {
+        "id": 1,
+        "userName": "Kenjo Assou",
+        "photo": "../../../assets/i/user.jpg"
+      },
+      {
+        "id": 2,
+        "userName": "Kun Chang-Min",
+        "photo": "../../../assets/i/user.jpg"
+      },
+      {
+        "id": 3,
+        "userName": "Fatima Delgadillo",
+        "photo": "../../../assets/i/user.jpg"
+      },
+      {
+        "id": 4,
+        "userName": "Virendra Sana",
+        "photo": "../../../assets/i/user.jpg"
+      },
+      {
+        "id": 5,
+        "userName": "Emmalynn Mazzia",
+        "photo": "../../../assets/i/user.jpg"
+      },
+      {
+        "id": 6,
+        "userName": "Onyekachukwu Chibueze",
+        "photo": "../../../assets/i/user.jpg"
+      }
+    ]
+  },
+  {
+    "roleId": 3,
+    "roleName": "Maintenance Specialist",
+    "roleDescription": "The technical meaning of maintenance involves functional checks. servicing, repairing orreplacing of necessary devices, equipment, machinery and building.infrastructure, and supporting utilities in industrial, business,governmental, and residential installations.",
+    "canBeDeleted": null,
+    "deleted": false,
+    "createdDate": "2018-10-09T09:07:27.541699",
+    "createdBy": null,
+    "updatedDate": null,
+    "updatedBy": null,
+    "rolePrivileges": [
+      {
+        "id": 1,
+        "permissionName": "System",
+        "description": "Here a small description about each area",
+        "enabled": false,
+        "permissionList": [
+          {
+            "name": "Users & Roles",
+            "level": "Hide"
+          },
+          {
+            "name": "Execution Teams",
+            "level": "Hide"
+          },
+          {
+            "name": "Risk Matrix",
+            "level": "Hide"
+          },
+          {
+            "name": "Knowledge Bank",
+            "level": "Hide"
+          }
+        ]
+      },
+      {
+          "id": 2,
+          "permissionName": "Project",
+          "description": "Here a small description about each area",
+          "enabled": true,
+          "permissionList": [
+          {
+            "name": "Project Definition",
+            "level": "Hide"
+          },
+          {
+            "name": "GIS",
+            "level": "Hide"
+          },
+          {
+            "name": "SLD Modelling",
+            "level": "Hide"
+          },
+          {
+            "name": "Outage Areas",
+            "level": "Hide"
+          },
+          {
+            "name": "Budget Areas",
+            "level": "Hide"
+          }
+        ]
+      },
+      {
+        "id": 3,
+        "permissionName": "Planning",
+        "description": "Here a small description about each area",
+        "enabled": true,
+        "permissionList": [
+          {
+            "name": "Constrain Definition",
+            "level": "Hide"
+          },
+          {
+            "name": "Task Navigator",
+            "level": "Hide"
+          },
+          {
+            "name": "Approve & Dispatch",
+            "level": "Hide"
+          },
+          {
+            "name": "Validate Planning",
+            "level": "Hide"
+          }
+        ]
+      }
+    ],
+    "userRoles": [
+      {
+        "id": 1,
+        "userName": "Kenjo Assou",
+        "photo": "../../../assets/i/user.jpg"
+      },
+      {
+        "id": 2,
+        "userName": "Kun Chang-Min",
+        "photo": "../../../assets/i/user.jpg"
+      },
+      {
+        "id": 3,
+        "userName": "Fatima Delgadillo",
+        "photo": "../../../assets/i/user.jpg"
+      },
+      {
+        "id": 4,
+        "userName": "Virendra Sana",
+        "photo": "../../../assets/i/user.jpg"
+      },
+      {
+        "id": 5,
+        "userName": "Emmalynn Mazzia",
+        "photo": "../../../assets/i/user.jpg"
+      },
+      {
+        "id": 6,
+        "userName": "Onyekachukwu Chibueze",
+        "photo": "../../../assets/i/user.jpg"
+      }
+    ]
+  },
+  {
+    "roleId": 5,
+    "roleName": "Reliability Engineer",
+    "roleDescription": "The technical meaning of maintenance involves functional checks. servicing, repairing orreplacing of necessary devices, equipment, machinery and building.infrastructure, and supporting utilities in industrial, business,governmental, and residential installations.",
+    "canBeDeleted": null,
+    "deleted": false,
+    "createdDate": "2018-10-09T09:07:27.541699",
+    "createdBy": null,
+    "updatedDate": null,
+    "updatedBy": null,
+    "rolePrivileges": [
+      {
+        "id": 1,
+        "permissionName": "System",
+        "description": "Here a small description about each area",
+        "enabled": false,
+        "permissionList": [
+          {
+            "name": "Users & Roles",
+            "level": "Hide"
+          },
+          {
+            "name": "Execution Teams",
+            "level": "Hide"
+          },
+          {
+            "name": "Risk Matrix",
+            "level": "Hide"
+          },
+          {
+            "name": "Knowledge Bank",
+            "level": "Hide"
+          }
+        ]
+      },
+      {
+          "id": 2,
+          "permissionName": "Project",
+          "description": "Here a small description about each area",
+          "enabled": true,
+          "permissionList": [
+          {
+            "name": "Project Definition",
+            "level": "View"
+          },
+          {
+            "name": "GIS",
+            "level": "View"
+          },
+          {
+            "name": "SLD Modelling",
+            "level": "View"
+          },
+          {
+            "name": "Outage Areas",
+            "level": "View"
+          },
+          {
+            "name": "Budget Areas",
+            "level": "View"
+          }
+        ]
+      },
+      {
+        "id": 3,
+        "permissionName": "Planning",
+        "description": "Here a small description about each area",
+        "enabled": true,
+        "permissionList": [
+          {
+            "name": "Constrain Definition",
+            "level": "View"
+          },
+          {
+            "name": "Task Navigator",
+            "level": "View"
+          },
+          {
+            "name": "Approve & Dispatch",
+            "level": "View"
+          },
+          {
+            "name": "Validate Planning",
+            "level": "View"
+          }
+        ]
+      }
+    ],
+    "userRoles": [
+      {
+        "id": 1,
+        "userName": "Kenjo Assou",
+        "photo": "../../../assets/i/user.jpg"
+      },
+      {
+        "id": 2,
+        "userName": "Kun Chang-Min",
+        "photo": "../../../assets/i/user.jpg"
+      },
+      {
+        "id": 3,
+        "userName": "Fatima Delgadillo",
+        "photo": "../../../assets/i/user.jpg"
+      },
+      {
+        "id": 4,
+        "userName": "Virendra Sana",
+        "photo": "../../../assets/i/user.jpg"
+      },
+      {
+        "id": 5,
+        "userName": "Emmalynn Mazzia",
+        "photo": "../../../assets/i/user.jpg"
+      },
+      {
+        "id": 6,
+        "userName": "Onyekachukwu Chibueze",
+        "photo": "../../../assets/i/user.jpg"
+      }
+    ]
+  },
+  {
+    "roleId": 6,
+    "roleName": "Planner",
+    "roleDescription": "The technical meaning of maintenance involves functional checks. servicing, repairing orreplacing of necessary devices, equipment, machinery and building.infrastructure, and supporting utilities in industrial, business,governmental, and residential installations.",
+    "canBeDeleted": null,
+    "deleted": false,
+    "createdDate": "2018-10-09T09:07:27.541699",
+    "createdBy": null,
+    "updatedDate": null,
+    "updatedBy": null,
+    "rolePrivileges": [
+      {
+        "id": 1,
+        "permissionName": "System",
+        "description": "Here a small description about each area",
+        "enabled": false,
+        "permissionList": [
+          {
+            "name": "Users & Roles",
+            "level": "View"
+          },
+          {
+            "name": "Execution Teams",
+            "level": "View"
+          },
+          {
+            "name": "Risk Matrix",
+            "level": "View"
+          },
+          {
+            "name": "Knowledge Bank",
+            "level": "View"
+          }
+        ]
+      },
+      {
+          "id": 2,
+          "permissionName": "Project",
+          "description": "Here a small description about each area",
+          "enabled": true,
+          "permissionList": [
+          {
+            "name": "Project Definition",
+            "level": "View"
+          },
+          {
+            "name": "GIS",
+            "level": "View"
+          },
+          {
+            "name": "SLD Modelling",
+            "level": "View"
+          },
+          {
+            "name": "Outage Areas",
+            "level": "View"
+          },
+          {
+            "name": "Budget Areas",
+            "level": "View"
+          }
+        ]
+      },
+      {
+        "id": 3,
+        "permissionName": "Planning",
+        "description": "Here a small description about each area",
+        "enabled": true,
+        "permissionList": [
+          {
+            "name": "Constrain Definition",
+            "level": "View"
+          },
+          {
+            "name": "Task Navigator",
+            "level": "View"
+          },
+          {
+            "name": "Approve & Dispatch",
+            "level": "View"
+          },
+          {
+            "name": "Validate Planning",
+            "level": "View"
+          }
+        ]
+      }
+    ],
+    "userRoles": [
+      {
+        "id": 1,
+        "userName": "Kenjo Assou",
+        "photo": "../../../assets/i/user.jpg"
+      },
+      {
+        "id": 2,
+        "userName": "Kun Chang-Min",
+        "photo": "../../../assets/i/user.jpg"
+      },
+      {
+        "id": 3,
+        "userName": "Fatima Delgadillo",
+        "photo": "../../../assets/i/user.jpg"
+      },
+      {
+        "id": 4,
+        "userName": "Virendra Sana",
+        "photo": "../../../assets/i/user.jpg"
+      },
+      {
+        "id": 5,
+        "userName": "Emmalynn Mazzia",
+        "photo": "../../../assets/i/user.jpg"
+      },
+      {
+        "id": 6,
+        "userName": "Onyekachukwu Chibueze",
+        "photo": "../../../assets/i/user.jpg"
+      }
+    ]
+  },
+  {
+    "roleId": 4,
+    "roleName": "Reliability Engineer",
+    "roleDescription": "The technical meaning of maintenance involves functional checks. servicing, repairing orreplacing of necessary devices, equipment, machinery and building.infrastructure, and supporting utilities in industrial, business,governmental, and residential installations.",
+    "canBeDeleted": null,
+    "deleted": false,
+    "createdDate": "2018-10-09T09:07:27.541699",
+    "createdBy": null,
+    "updatedDate": null,
+    "updatedBy": null,
+    "rolePrivileges": [
+      {
+        "id": 1,
+        "permissionName": "System",
+        "description": "Here a small description about each area",
+        "enabled": false,
+        "permissionList": [
+          {
+            "name": "Users & Roles",
+            "level": "View"
+          },
+          {
+            "name": "Execution Teams",
+            "level": "View"
+          },
+          {
+            "name": "Risk Matrix",
+            "level": "View"
+          },
+          {
+            "name": "Knowledge Bank",
+            "level": "View"
+          }
+        ]
+      },
+      {
+          "id": 2,
+          "permissionName": "Project",
+          "description": "Here a small description about each area",
+          "enabled": true,
+          "permissionList": [
+          {
+            "name": "Project Definition",
+            "level": "View"
+          },
+          {
+            "name": "GIS",
+            "level": "View"
+          },
+          {
+            "name": "SLD Modelling",
+            "level": "View"
+          },
+          {
+            "name": "Outage Areas",
+            "level": "View"
+          },
+          {
+            "name": "Budget Areas",
+            "level": "View"
+          }
+        ]
+      },
+      {
+        "id": 3,
+        "permissionName": "Planning",
+        "description": "Here a small description about each area",
+        "enabled": true,
+        "permissionList": [
+          {
+            "name": "Constrain Definition",
+            "level": "View"
+          },
+          {
+            "name": "Task Navigator",
+            "level": "View"
+          },
+          {
+            "name": "Approve & Dispatch",
+            "level": "View"
+          },
+          {
+            "name": "Validate Planning",
+            "level": "View"
+          }
+        ]
+      }
+    ],
+    "userRoles": [
+      {
+        "id": 1,
+        "userName": "Kenjo Assou",
+        "photo": "../../../assets/i/user.jpg"
+      },
+      {
+        "id": 2,
+        "userName": "Kun Chang-Min",
+        "photo": "../../../assets/i/user.jpg"
+      },
+      {
+        "id": 3,
+        "userName": "Fatima Delgadillo",
+        "photo": "../../../assets/i/user.jpg"
+      },
+      {
+        "id": 4,
+        "userName": "Virendra Sana",
+        "photo": "../../../assets/i/user.jpg"
+      },
+      {
+        "id": 5,
+        "userName": "Emmalynn Mazzia",
+        "photo": "../../../assets/i/user.jpg"
+      },
+      {
+        "id": 6,
+        "userName": "Onyekachukwu Chibueze",
+        "photo": "../../../assets/i/user.jpg"
+      }
+    ]
+  },
+  {
+    "roleId": 5,
+    "roleName": "Maintenance Technician",
+    "roleDescription": "The technical meaning of maintenance involves functional checks. servicing, repairing orreplacing of necessary devices, equipment, machinery and building.infrastructure, and supporting utilities in industrial, business,governmental, and residential installations.",
+    "canBeDeleted": null,
+    "deleted": false,
+    "createdDate": "2018-10-09T09:07:27.541699",
+    "createdBy": null,
+    "updatedDate": null,
+    "updatedBy": null,
+    "rolePrivileges": [
+      {
+        "id": 1,
+        "permissionName": "System",
+        "description": "Here a small description about each area",
+        "enabled": false,
+        "permissionList": [
+          {
+            "name": "Users & Roles",
+            "level": "View"
+          },
+          {
+            "name": "Execution Teams",
+            "level": "View"
+          },
+          {
+            "name": "Risk Matrix",
+            "level": "View"
+          },
+          {
+            "name": "Knowledge Bank",
+            "level": "View"
+          }
+        ]
+      },
+      {
+          "id": 2,
+          "permissionName": "Project",
+          "description": "Here a small description about each area",
+          "enabled": true,
+          "permissionList": [
+          {
+            "name": "Project Definition",
+            "level": "View"
+          },
+          {
+            "name": "GIS",
+            "level": "View"
+          },
+          {
+            "name": "SLD Modelling",
+            "level": "View"
+          },
+          {
+            "name": "Outage Areas",
+            "level": "View"
+          },
+          {
+            "name": "Budget Areas",
+            "level": "View"
+          }
+        ]
+      },
+      {
+        "id": 3,
+        "permissionName": "Planning",
+        "description": "Here a small description about each area",
+        "enabled": true,
+        "permissionList": [
+          {
+            "name": "Constrain Definition",
+            "level": "View"
+          },
+          {
+            "name": "Task Navigator",
+            "level": "View"
+          },
+          {
+            "name": "Approve & Dispatch",
+            "level": "View"
+          },
+          {
+            "name": "Validate Planning",
+            "level": "View"
+          }
+        ]
+      }
+    ],
+    "userRoles": [
+      {
+        "id": 1,
+        "userName": "Kenjo Assou",
+        "photo": "../../../assets/i/user.jpg"
+      },
+      {
+        "id": 2,
+        "userName": "Kun Chang-Min",
+        "photo": "../../../assets/i/user.jpg"
+      },
+      {
+        "id": 3,
+        "userName": "Fatima Delgadillo",
+        "photo": "../../../assets/i/user.jpg"
+      },
+      {
+        "id": 4,
+        "userName": "Virendra Sana",
+        "photo": "../../../assets/i/user.jpg"
+      },
+      {
+        "id": 5,
+        "userName": "Emmalynn Mazzia",
+        "photo": "../../../assets/i/user.jpg"
+      },
+      {
+        "id": 6,
+        "userName": "Onyekachukwu Chibueze",
+        "photo": "../../../assets/i/user.jpg"
+      }
+    ]
+  },
+  {
+    "roleId": 6,
+    "roleName": "Execution Team lead",
+    "roleDescription": "The technical meaning of maintenance involves functional checks. servicing, repairing orreplacing of necessary devices, equipment, machinery and building.infrastructure, and supporting utilities in industrial, business,governmental, and residential installations.",
+    "canBeDeleted": null,
+    "deleted": false,
+    "createdDate": "2018-10-09T09:07:27.541699",
+    "createdBy": null,
+    "updatedDate": null,
+    "updatedBy": null,
+    "rolePrivileges": [
+      {
+        "id": 1,
+        "permissionName": "System",
+        "description": "Here a small description about each area",
+        "enabled": false,
+        "permissionList": [
+          {
+            "name": "Users & Roles",
+            "level": "View"
+          },
+          {
+            "name": "Execution Teams",
+            "level": "View"
+          },
+          {
+            "name": "Risk Matrix",
+            "level": "View"
+          },
+          {
+            "name": "Knowledge Bank",
+            "level": "View"
+          }
+        ]
+      },
+      {
+          "id": 2,
+          "permissionName": "Project",
+          "description": "Here a small description about each area",
+          "enabled": true,
+          "permissionList": [
+          {
+            "name": "Project Definition",
+            "level": "View"
+          },
+          {
+            "name": "GIS",
+            "level": "View"
+          },
+          {
+            "name": "SLD Modelling",
+            "level": "View"
+          },
+          {
+            "name": "Outage Areas",
+            "level": "View"
+          },
+          {
+            "name": "Budget Areas",
+            "level": "View"
+          }
+        ]
+      },
+      {
+        "id": 3,
+        "permissionName": "Planning",
+        "description": "Here a small description about each area",
+        "enabled": true,
+        "permissionList": [
+          {
+            "name": "Constrain Definition",
+            "level": "View"
+          },
+          {
+            "name": "Task Navigator",
+            "level": "View"
+          },
+          {
+            "name": "Approve & Dispatch",
+            "level": "View"
+          },
+          {
+            "name": "Validate Planning",
+            "level": "View"
+          }
+        ]
+      }
+    ],
+    "userRoles": [
+      {
+        "id": 1,
+        "userName": "Kenjo Assou",
+        "photo": "../../../assets/i/user.jpg"
+      },
+      {
+        "id": 2,
+        "userName": "Kun Chang-Min",
+        "photo": "../../../assets/i/user.jpg"
+      },
+      {
+        "id": 3,
+        "userName": "Fatima Delgadillo",
+        "photo": "../../../assets/i/user.jpg"
+      },
+      {
+        "id": 4,
+        "userName": "Virendra Sana",
+        "photo": "../../../assets/i/user.jpg"
+      },
+      {
+        "id": 5,
+        "userName": "Emmalynn Mazzia",
+        "photo": "../../../assets/i/user.jpg"
+      },
+      {
+        "id": 6,
+        "userName": "Onyekachukwu Chibueze",
+        "photo": "../../../assets/i/user.jpg"
+      }
+    ]
+  }
+]

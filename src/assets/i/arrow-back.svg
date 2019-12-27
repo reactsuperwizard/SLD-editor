@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="9px" height="16px" viewBox="0 0 9 16" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 49.3 (51167) - http://www.bohemiancoding.com/sketch -->
+    <title>Group 3</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <rect id="path-1" x="0" y="0" width="1366" height="86"></rect>
+        <filter x="-0.0%" y="-0.6%" width="100.1%" height="102.3%" filterUnits="objectBoundingBox" id="filter-2">
+            <feOffset dx="0" dy="1" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feColorMatrix values="0 0 0 0 0.941176471   0 0 0 0 0.941176471   0 0 0 0 0.941176471  0 0 0 1 0" type="matrix" in="shadowOffsetOuter1"></feColorMatrix>
+        </filter>
+    </defs>
+    <g id="A-Migration-Engineer" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="A2_Migration-Engineer-V2" transform="translate(-31.000000, -34.000000)" fill-rule="nonzero">
+            <g id="Rectangle-2">
+                <use fill="black" fill-opacity="1" filter="url(#filter-2)" xlink:href="#path-1"></use>
+                <use fill="#FFFFFF" fill-rule="evenodd" xlink:href="#path-1"></use>
+            </g>
+            <g id="Group-3" transform="translate(30.000000, 34.000000)" fill="#0E3570">
+                <path d="M5.10376221,11.3790765 L13.8217109,11.3790765 L13.8217109,13.1568542 L5.10376221,13.1568542 L3.36017246,13.1568542 L3.36017246,2.49018758 L5.10376221,2.49018758 L5.10376221,11.3790765 Z" id="Combined-Shape" transform="translate(8.590942, 7.823521) rotate(45.000000) translate(-8.590942, -7.823521) "></path>
+            </g>
+        </g>
+    </g>
+</svg>

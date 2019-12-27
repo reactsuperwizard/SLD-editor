@@ -1,0 +1,9 @@
+@import 'mixin';
+.three-state-slide {
+  @include slide-checkbox-defualt;
+  span {
+    width: 33.3%;
+    font-size: 12px;
+  }
+  cursor: pointer;
+}

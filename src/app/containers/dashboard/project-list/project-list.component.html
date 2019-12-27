@@ -1,0 +1,106 @@
+<div class="project-listing" *ngIf="listView">
+
+  <div class="loading-box" *ngIf="loading">
+    <div class="img" alt="loading"></div>
+  </div>
+  <div *ngIf="!loading">
+    <div class="search-wrapper">
+      <input
+        type='text'
+        class="input-ctrl search-ctrl"
+        placeholder='Search'
+        (keyup)='updateFilter($event)'
+      />
+    </div>
+    <div class="filter-container" [ngClass]="{'filter-hide':!filterShow}">
+      <div class="header">
+        <i class="icon icon-filter" (click)="filterShow=!filterShow" [ngClass]="{'checked':!filterShow}"></i>
+        <span i18n>Filters</span>
+      </div>
+      <div class="filter-option" *ngFor="let item of filterColumns;let i = index" (click)="item.selected=!item.selected;updateFilter()">
+        <i class="icon icon-checkbox" [ngClass]="{'checked':item.selected}"></i>
+        <span>{{item.name}}</span>
+      </div>
+    </div>
+    <ngx-datatable
+      (activate)="onActivate($event)"
+      #projectTable
+      [rows]="filteredData"
+      [columnMode]="'force'"
+      [rowHeight]="64">
+
+      <ngx-datatable-column *ngIf="filterColumns[0].selected" name="Company" prop='company'>
+        <ng-template ngx-datatable-cell-template let-row="row" let-value="value" let-i="index">
+          <div class="country-header"
+               [ngStyle]="{'background-image': 'linear-gradient(rgba(255,255,255,1), rgba(255,255,255,0)), url(assets/locations/'+row.locationImg + ')'}">
+            <span class="company">{{row.company}}</span>
+          </div>
+        </ng-template>
+      </ngx-datatable-column>
+      <ngx-datatable-column *ngIf="filterColumns[1].selected" name="Location" prop='location'></ngx-datatable-column>
+      <ngx-datatable-column *ngIf="filterColumns[2].selected" name="Member" prop='manager'>
+        <ng-template ngx-datatable-cell-template let-row="row" let-value="value" let-i="index">
+          <div class="tcell-user">
+            <img [src]="'/assets/avatars/'+ row.managerAvatar" class="icon icon-avatar"/>
+            <span class="uname">{{row.manager}}</span>
+          </div>
+        </ng-template>
+      </ngx-datatable-column>
+      <ngx-datatable-column *ngIf="filterColumns[3].selected" name="Kernel Version"
+                            prop='kernelVersion'></ngx-datatable-column>
+      <ngx-datatable-column *ngIf="filterColumns[4].selected" name="Commercial Scope" prop='commercialScope'>
+        <ng-template ngx-datatable-cell-template let-row="row" let-value="value" let-i="index">
+          <div class="last-row">
+            <div class="year">{{row.commercialScope}}</div>
+            <div class="year-progress">
+              <div class="progress" [ngStyle]="{'width': row.progress*100 + '%' }"></div>
+            </div>
+          </div>
+        </ng-template>
+      </ngx-datatable-column>
+    </ngx-datatable>
+
+    <a routerLink="/dashboard/create-project" class="create-new">
+      Create new
+      <i class="icon icon-add-new"></i>
+    </a>
+  </div>
+</div>
+
+<div class="container-fluid" *ngIf="!listView">
+  <div class="row projects">
+    <div class="loading-box" *ngIf="loading">
+      <div class="img" alt="loading"></div>
+    </div>
+    <div class="col-lg-3"
+         *ngFor="let project of allProjects">
+      <div routerLink="/dashboard/project/{{project.projectId}}" class="card-project">
+        <div class="card-header"
+             [ngStyle]="{'background-image': 'linear-gradient(rgba(255,255,255,1), rgba(255,255,255,0)), url(assets/locations/'+project.locationImg + ')'}">
+          <span class="company">{{project.company}}</span>
+          <span class="location">{{project.location}}</span>
+        </div>
+        <div class="card-body">
+          <span class="project-manager-title" i18n>Project manager</span>
+          <div class="manager">
+            <img [src]="'assets/avatars/'+project.managerAvatar" alt="" class="manager-avatar">
+            <span class="project-manager">{{project.manager}}</span>
+          </div>
+          <span class="kernel-version" i18n>Kernel version {{project.kernelVersion}}</span>
+          <span class="commercial-scope" i18n>Commercial Scope: {{project.commercialScope}}</span>
+          <span class="date">{{project.date}}</span>
+        </div>
+        <div class="card-footer">
+          <div class="progress" [ngStyle]="{'width': project.progress*100 + '%' }"></div>
+        </div>
+      </div>
+    </div>
+    <div class="col-lg-3">
+      <div routerLink="/dashboard/create-project" class="card-project add-new">
+        <i class="icon icon-add-new"></i>
+        <span class="add-new-text" i18n>Add<br>New Item</span>
+      </div>
+    </div>
+  </div>
+</div>
+

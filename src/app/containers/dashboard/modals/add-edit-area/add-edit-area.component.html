@@ -1,0 +1,31 @@
+<div class="modal-container">
+  <div class="modal-header">
+    <span class="modal-title" id="modal-basic-title" i18n>Add new {{type}} area</span>
+    <button type="button" class="close" aria-label="Close" (click)="activeModal.dismiss('back')">
+    </button>
+  </div>
+  <form [formGroup]="form" (ngSubmit)="onSubmit()">
+    <div class="modal-body">
+      <div class="row">
+        <div class="col-sm-12">
+          <div class="form-wrapper">
+            <label class="label-element" i18n>Group name</label>
+            <input [placeholder]="placeholder" [class.invalid]="validation('areaId')" type="text" formControlName="areaId" class="form-input"/>
+            <div [class.show]="validation('areaId')" class="error-message" i18n>Group name is required.</div>
+          </div>
+        </div>
+        <div class="col-sm-12">
+          <div class="form-wrapper">
+            <label class="label-element" i18n>Description</label>
+            <input [class.invalid]="validation('description')" type="text" formControlName="description"
+                   class="form-input"/>
+            <div [class.show]="validation('description')" class="error-message" i18n>Description is required.</div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="modal-footer">
+      <button type="submit" class="btn btn-save" i18n>Save</button>
+    </div>
+  </form>
+</div>

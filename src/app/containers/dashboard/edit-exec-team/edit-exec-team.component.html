@@ -1,0 +1,195 @@
+<div class="sub-page edit-exce-team">
+  <div class="viewport">
+    <header class="sub-header sub-header-sm">
+      <i class="icon icon-back" (click)="backWithoutSave()"></i>
+      <h3>{{title}}</h3>
+    </header>
+    <div class="scroll-container">
+      <div class="role-info-section container-fluid">
+
+        <div class="role-info-bar">
+          <figure class="role-fig">
+            <i class="icon icon-execution-team"></i>
+          </figure>
+        </div>
+        <!-- /.role-info-bar -->
+        <div class="row frow">
+          <div class="col-lg-6 col-md-12 fieldset">
+            <div class="row">
+              <div class="col-lg-12">
+                <div class="fs-lbl">
+                  <span i18n><sup>*</sup>Name</span>
+                </div>
+                <div class="fs-val">
+                  <input type="text" class="input-ctrl" [(ngModel)]="team.teamName"/>
+                  <span class="error-indicate" [class.invalid]="submitted && !team.teamName" i18n>Name is Reqiured</span>
+                </div>
+              </div>
+            </div>
+            <div class="fs-lbl seperation-t-md" i18n>
+              Type of Execution team:
+            </div>
+            <div class="row">
+              <div class="col-lg-12">
+                <div class="fs-val chk-internal-external">
+                  <div class="team-type">
+                    <app-three-state-slide-select [(ngModel)]="team.type"
+                                                  [states]="['Internal','Mixed','External']"></app-three-state-slide-select>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-lg-12">
+                <div class="fs-lbl seperation-t-md">
+                  <span i18n><sup>*</sup>Service provider name</span>
+                </div>
+                <div class="fs-val">
+                  <input type="text" class="input-ctrl" [(ngModel)]="team.serviceProviderName"/>
+                  <span class="error-indicate" [class.invalid]="submitted && !team.serviceProviderName" i18n>Service provider name is Reqiured</span>
+                </div>
+              </div>
+            </div>
+
+
+          </div>
+            <div class="col-lg-6 col-md-12 fieldset">
+            <div class="fs-lbl fx-sb">
+              <span i18n>Description</span>
+              <span *ngIf="team.teamDescription">{{team.teamDescription.length}}/{{'400'}}</span>
+            </div>
+            <div class="fs-val">
+              <textarea class="input-ctrl textarea h-lg" [(ngModel)]="team.teamDescription" maxlength="400"></textarea>
+            </div>
+          </div>
+        </div>
+        <!-- /.form-role-info -->
+
+
+        <div class="pm-n-users row">
+
+          <div class="col col-users col-lg-6  col-md-12">
+            <ngb-tabset class="tabs tabs-exec-team" [destroyOnHide]="false">
+              <ngb-tab title="Member & Skills">
+                <ng-template ngbTabContent>
+                  <div class="tab tab-members">
+
+                    <div class="user-list">
+                      <div class="heading">
+                        <span i18n>Team leadership</span>
+                        <span i18n>${{getTotalHourlyRage() | number:'.2'}} USD</span></div>
+                      <div class="bar-user" mwlDroppable
+                           *ngFor="let item of team.executionTeamUsers | slice:0:1; let i = index"
+                           (drop)="onUserDrop(0)">
+                        <figure class="thumb">
+                          <img src="{{item.photo}}" alt="">
+                        </figure>
+                        <div class="user-details">
+                          <div class="name"><span>{{item.user}}</span><span class="leader-tag" i18n>Leader</span></div>
+                        </div>
+                        <span class="hourly-rate">${{item.hourlyRate | number:'.2'}} USD</span>
+                        <a class="icon icon-remove-user" (click)="removeExecutionTeamUser(i)"> </a>
+                      </div>
+                      <div class="bar-user" mwlDroppable
+                           *ngFor="let item of team.executionTeamUsers | slice:1:2; let i = index"
+                           (drop)="onUserDrop(1)">
+                        <figure class="thumb">
+                          <img src="{{item.photo}}" alt="">
+                        </figure>
+                        <div class="user-details">
+                          <div class="name"><span>{{item.user}}</span><span class="leader-tag" i18n>Deputy Leader</span>
+                          </div>
+                        </div>
+                        <span class="hourly-rate">${{item.hourlyRate | number:'.2'}} USD</span>
+                        <a class="icon icon-remove-user" (click)="removeExecutionTeamUser(i+1)"> </a>
+                      </div>
+
+                      <div class="heading"><span i18n>Members</span></div>
+                      <div class="bar-user" mwlDraggable
+                           *ngFor="let item of team.executionTeamUsers | slice:2:100;  let i = index"
+                           (dragEnd)="onUserDragEnd(i+2)">
+                        <figure class="thumb">
+                          <img src="{{item.photo}}" alt="">
+                        </figure>
+                        <div class="user-details">
+                          <div class="name">{{item.user}}</div>
+                        </div>
+                        <span class="hourly-rate" i18n>${{item.hourlyRate | number:'.2'}} USD</span>
+                        <a class="icon icon-remove-user" (click)="removeExecutionTeamUser(i+2)"> </a>
+                      </div>
+
+                      <app-add-new (click)="asignMember()"><span i18n>Assign members</span></app-add-new>
+                    </div>
+                  </div>
+
+                </ng-template>
+              </ngb-tab>
+
+              <ngb-tab title="Executed tasks">
+                <ng-template ngbTabContent>
+                  <div class="tab tab-tasks">
+                    <div class="user-list">
+                      <div class="heading">
+                        <span i18n>Task</span>
+                        <div class="rating" (click)="toggleTaskSortOrder()">
+                          <span i18n>Rating</span>
+                          <span class="sort-btn" [class.desc]="executionTasksSortDescOrder"></span>
+                        </div>
+                      </div>
+                      <div class="bar-user" *ngFor="let item of executionTasks">
+                        <div class="user-details">
+                          <div class="name">{{item.task}}</div>
+                        </div>
+                        <span class="rating">{{item.rating | number: '.1'}}</span>
+                      </div>
+                      <div class="bar-user search">
+
+                        <div class="pager-container">
+                          <ul class="pager">
+                            <li></li>
+                            <li><a aria-label="go to previous page" (click)="handlePaging(page.pageNumber,-1)"
+                                   role="button"><i
+                              class="datatable-icon-left"></i></a></li>
+                            <li [class.active]="i===page.pageNumber" *ngFor="let i of page.pageIndexs" class="pages"
+                                role="button"><a (click)="handlePaging(page.pageNumber=i)">
+                              {{i+1}} </a></li>
+                            <li><a aria-label="go to next page" (click)="handlePaging(page.pageNumber,1)" role="button"><i
+                              class="datatable-icon-right"></i></a></li>
+                            <li></li>
+                          </ul>
+                        </div>
+
+                        <input type="search" class="input-ctrl search-ctrl" placeholder="Search task"
+                               (keyup)='updateFilter($event)'/>
+                      </div>
+                    </div>
+                  </div>
+                </ng-template>
+              </ngb-tab>
+            </ngb-tabset>
+          </div>
+          <!-- /.col -->
+          <div class="col col-users goodat-col col-lg-6  col-md-12">
+            <div class="user-list">
+              <div class="goodat" *ngFor="let item of goodat">
+                <div class="goodat-count" i18n>{{item.count}} members good at</div>
+                <div class="goodat-skills">
+                  <div class="skill" *ngFor="let skill of item.skills"><span>{{skill}}
+                    </span></div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- /.col -->
+        </div>
+        <!-- /.pm-n-users -->
+        <div class="bar-action fx-r">
+          <a class="btn btn-save btn-clear btn-save-form space-r" (click)="delete()" i18n>Delete</a>
+          <a class="btn btn-save btn-save-form" (click)="save()" i18n>Save</a>
+        </div>
+      </div>
+      <!-- /.create-user-form -->
+    </div>
+
+  </div>
+</div>

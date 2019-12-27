@@ -1,0 +1,128 @@
+@import 'mixin';
+
+.outage-table {
+  margin-top: 16px;
+  width: 100%;
+  position: relative;
+  .ngx-datatable {
+    border: 1px solid $lighterGray;
+    border-radius: 4px;
+    .datatable-header,
+    .datatable-body .datatable-body-row {
+      height: 40px !important;
+      border-bottom: 1px solid $lighterGray;
+      font-size: 12px;
+      color: $lightBlack;
+    }
+    .datatable-header {
+      border-bottom: 1px solid #B0B0B0;
+    }
+    .datatable-header-cell-label {
+      line-height: 38px;
+    }
+    .datatable-body-row {
+      .datatable-body-cell {
+        font-size: 14px;
+        .datatable-body-cell-label {
+          line-height: 38px;
+        }
+      }
+    }
+    .datatable-row-center {
+      .datatable-header-cell:first-child, .datatable-body-cell:first-child {
+        border-right: 1px solid $lighterGray;
+      }
+      .datatable-header-cell:nth-child(2), .datatable-body-cell:nth-child(2) {
+        padding-left: 10px;
+      }
+    }
+  }
+  .empty-row {
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    font-size: 12px;
+  }
+  .checkbox-wrap {
+    width: 40px;
+    height: 40px;
+    line-height: 48px;
+    margin: 0;
+    text-align: center;
+    input {
+      display: none;
+    }
+    .icon {
+      width: 16px;
+      height: 16px;
+    }
+  }
+  .sub-header {
+    .filter-container {
+      width: 180px;
+      position: absolute;
+      right: 0;
+      top: 0;
+      z-index: 1000;
+      background-color: #3D3D3D;
+      display: flex;
+      flex-direction: column;
+      color: white;
+      padding: 0 0 16px 16px;
+      border-radius: 5px;
+      user-select: none;
+      .header {
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: space-between;
+        align-items: center;
+        border-bottom: 2px solid #686868;
+        height: 41px;
+        .icon {
+          width: 40px;
+          height: 40px;
+          background-size: 40%;
+          cursor: pointer;
+        }
+      }
+      .filter-option {
+        height: 30px;
+        display: flex;
+        align-items: center;
+        .icon {
+          width: 16px;
+          height: 16px;
+        }
+        span {
+          padding-left: 10px;
+          font-size: 13px;
+        }
+      }
+      &.filter-hide {
+        background-color: transparent;
+        .header {
+          border-bottom: none;
+          span {
+            display: none;
+          }
+        }
+        .filter-option {
+          display: none;
+        }
+      }
+    }
+  }
+}
+
+.outage-info {
+  display: flex;
+  justify-content: flex-end;
+  padding-right: 16px;
+  align-items: center;
+  height: 40px;
+  i {
+    cursor: pointer;
+    width: 16px;
+    height: 16px;
+  }
+}

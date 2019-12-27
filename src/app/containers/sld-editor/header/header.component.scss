@@ -1,0 +1,116 @@
+// the header
+.header {
+    font-family: 'ABBVoice';
+
+    input {
+        font-family: 'ABBVoice';
+        font-weight: 400;
+        font-size: 14px;
+    }
+    img:focus {
+        outline: none;
+    }
+
+    .user-action-btn-group {
+        background-color: #d8d8d8;
+        border: 1px solid #a7a7a7;
+        border-radius: 4px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        cursor: pointer;
+        user-select: none;
+
+        &:active {
+            background-color: #a7a7a7;
+            border-color: #7a7a7a;
+        }
+    }
+
+    // the funtional tool bar with search
+    .tool-bar {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 8px 16px;
+        background-color: #fff;
+        border-bottom: 1px solid #d8d8d8;
+
+        .user-action-btn-group {
+            height: 32px;
+            width: 32px;
+        }
+
+        .back-btn {
+            cursor: pointer;
+            &:hover {
+                opacity: 0.7;
+            }
+        }
+
+        .left-content {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            width: 400px;
+
+            & > div {
+                padding: 0 8px;
+
+                &.title {
+                    font-weight: 500;
+                    font-size: 17px;
+                }
+
+                // fake drop down for now
+                &.faux-drop-down {
+                    margin-left: 8px;
+                    border: 1px solid #dbdbdb;
+                    border-radius: 4px;
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                    height: 32px;
+                    width: 184px;
+                    font-weight: 400;
+                    font-size: 14px;
+
+                    .input-area {
+                        display: flex;
+                        align-items: center;
+
+                        .green-circle {
+                            background-color: #14be6e;
+                            border-radius: 50%;
+                            height: 16px;
+                            width: 16px;
+                            margin-right: 8px;
+                        }
+                    }
+
+                    img {
+                        transform: rotate(270deg);
+                    }
+                }
+            }
+        }
+
+        // right content of tool bar
+        .right-content {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+            & > div {
+                margin: 0 8px;
+            }
+
+            .separator {
+                width: 1px;
+                height: 40px;
+                background-color: #f4f4f4;
+            }
+        }
+    }
+
+}

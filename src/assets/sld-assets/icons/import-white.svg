@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="16px" height="20px" viewBox="0 0 16 20" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 52.5 (67469) - http://www.bohemiancoding.com/sketch -->
+    <title>import-white</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <path d="M2,15 L5,15 L5,17 L0,17 L0,3 L5,3 L5,5 L2,5 L2,15 Z M14,8 L10,8 L10,5.5 L4,10 L10,14.5 L10,12 L14,12 L14,8 Z" id="path-1"></path>
+    </defs>
+    <g id="Project-Modelling-–-GIS-&amp;-SLD" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" opacity="1">
+        <g id="5.6-/-Settings-/-Edit-Mode-/-SLD-Modelling-/-Import&amp;Export" transform="translate(-288.000000, -166.000000)">
+            <g id="/menu" transform="translate(16.000000, 104.000000)">
+                <g id="/import&amp;export">
+                    <g id="32-/-combo-box-/-filled" transform="translate(72.000000, 48.000000)">
+                        <g id="16-/-import" transform="translate(200.000000, 16.000000)">
+                            <g id="16-/-paste" transform="translate(0.000000, -2.000000)">
+                                <mask id="mask-2" fill="white">
+                                    <use xlink:href="#path-1"></use>
+                                </mask>
+                                <use id="Shape" fill="#464646" fill-rule="nonzero" xlink:href="#path-1"></use>
+                                <g id="color-grey-0" mask="url(#mask-2)" fill="#FFFFFF">
+                                    <rect id="Rectangle" x="0" y="0" width="16" height="20"></rect>
+                                </g>
+                            </g>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

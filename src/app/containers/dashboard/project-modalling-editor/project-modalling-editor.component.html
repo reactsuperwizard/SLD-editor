@@ -1,0 +1,30 @@
+<div class="loading-box" *ngIf="loading">
+  <div class="img" alt="loading"></div>
+</div>
+
+<div *ngIf="!loading" class="container-fluid">
+  <div class="editors row">
+    <div class="editor col-lg-6 col-sm-12">
+      <h3 i18n>GIS Editor</h3>
+      <div class="view" [style.backgroundImage]="'url('+ gis.background +')'">
+        <div *ngIf="gis.edit" class="editing">
+          <div class="name"><img src="{{gis.image}}" alt=""/>{{gis.name}}</div>
+          <div class="edit-mark"><span i18n>Current Editing</span><i></i></div>
+        </div>
+        <div *ngIf="gis.edit" class="editing-overlay">
+          <div class="edit-indicator" routerLink="/project-modelling/{{gis.projectId}}" i18n>GIS Edit mode</div>
+        </div>
+      </div>
+    </div>
+    <!-- gis editor -->
+    <div class="editor col-lg-6 col-sm-12">
+      <h3 i18n>SLD Editor</h3>
+      <div class="view" [style.backgroundImage]="'url('+ sld.background +')'">
+        <div *ngIf="sld.edit" class="editing-overlay" [routerLink]="'/sld-editor'">
+          <div class="edit-indicator" i18n>SLD Edit mode</div>
+        </div>
+      </div>
+    </div>
+    <!-- sld editor -->
+  </div>
+</div>

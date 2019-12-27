@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="16px" height="16px" viewBox="0 0 16 16" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 52.5 (67469) - http://www.bohemiancoding.com/sketch -->
+    <title>32 / normal / box-icon / normal</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="settings/zoom" transform="translate(-36.000000, -16.000000)">
+            <g id="/undo&amp;redo">
+                <g id="32-/-normal-/-box-icon-/-normal" transform="translate(16.000000, 8.000000)">
+                    <rect id="Rectangle" fill="#000000" x="25" y="13" width="6" height="6" rx="3"></rect>
+                    <path d="M28,9 L28,9 C31.8659932,9 35,12.1340068 35,16 L35,16 C35,19.8659932 31.8659932,23 28,23 L28,23 C24.1340068,23 21,19.8659932 21,16 L21,16 C21,12.1340068 24.1340068,9 28,9 Z" id="Rectangle" stroke="#979797" stroke-dasharray="1"></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="32px" height="48px" viewBox="-4.0 0.0 32 48" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 52.5 (67469) - http://www.bohemiancoding.com/sketch -->
+    <title>transformer-two-ansi</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Project-Modelling-–-GIS-&amp;-SLD" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" opacity="1">
+        <g id="Artboard" transform="translate(-2604.000000, -1308.000000)" fill-rule="nonzero" stroke="#000000">
+            <g id="32-/-sld-/-vertical-/-box-icon-/-normal-copy-12" transform="translate(2600.000000, 1300.000000)">
+                <g id="sld-/-ansi-/-transformer2-/-black" transform="translate(4.000000, 8.000000)">
+                    <path d="M11,23.5 C10.5333333,20.8333333 9.36666667,19.5 7.5,19.5 C5.63333333,19.5 4.46666667,20.8333333 4,23.5" id="Path-10" stroke-linecap="round" transform="translate(7.500000, 21.500000) scale(1, -1) rotate(90.000000) translate(-7.500000, -21.500000) "></path>
+                    <path d="M11,16.5 C10.5333333,13.8333333 9.36666667,12.5 7.5,12.5 C5.63333333,12.5 4.46666667,13.8333333 4,16.5" id="Path-10" stroke-linecap="round" transform="translate(7.500000, 14.500000) scale(1, -1) rotate(90.000000) translate(-7.500000, -14.500000) "></path>
+                    <path d="M11,30.5 C10.5333333,27.8333333 9.36666667,26.5 7.5,26.5 C5.63333333,26.5 4.46666667,27.8333333 4,30.5" id="Path-10" stroke-linecap="round" transform="translate(7.500000, 28.500000) scale(1, -1) rotate(90.000000) translate(-7.500000, -28.500000) "></path>
+                    <path d="M3,22 L3,28" id="Path" transform="translate(3.000000, 25.000000) rotate(90.000000) translate(-3.000000, -25.000000) "></path>
+                    <path d="M21,11.5 L21,17.5" id="Path" transform="translate(21.000000, 14.500000) rotate(90.000000) translate(-21.000000, -14.500000) "></path>
+                    <path d="M21,31.5 L21,37.5" id="Path" transform="translate(21.000000, 34.500000) rotate(90.000000) translate(-21.000000, -34.500000) "></path>
+                    <path d="M11,37.5 C10.5333333,34.8333333 9.36666667,33.5 7.5,33.5 C5.63333333,33.5 4.46666667,34.8333333 4,37.5" id="Path-10" stroke-linecap="round" transform="translate(7.500000, 35.500000) scale(1, -1) rotate(90.000000) translate(-7.500000, -35.500000) "></path>
+                    <path d="M20,20 C19.5333333,17.3333333 18.3666667,16 16.5,16 C14.6333333,16 13.4666667,17.3333333 13,20" id="Path-10" stroke-linecap="round" transform="translate(16.500000, 18.000000) scale(-1, -1) rotate(90.000000) translate(-16.500000, -18.000000) "></path>
+                    <path d="M20,13 C19.5333333,10.3333333 18.3666667,9 16.5,9 C14.6333333,9 13.4666667,10.3333333 13,13" id="Path-10" stroke-linecap="round" transform="translate(16.500000, 11.000000) scale(-1, -1) rotate(90.000000) translate(-16.500000, -11.000000) "></path>
+                    <path d="M20,40 C19.5333333,37.3333333 18.3666667,36 16.5,36 C14.6333333,36 13.4666667,37.3333333 13,40" id="Path-10" stroke-linecap="round" transform="translate(16.500000, 38.000000) scale(-1, -1) rotate(90.000000) translate(-16.500000, -38.000000) "></path>
+                    <path d="M20,33 C19.5333333,30.3333333 18.3666667,29 16.5,29 C14.6333333,29 13.4666667,30.3333333 13,33" id="Path-10" stroke-linecap="round" transform="translate(16.500000, 31.000000) scale(-1, -1) rotate(90.000000) translate(-16.500000, -31.000000) "></path>
+                    <path d="M20,7 L20,8" id="Path" stroke-linecap="round" transform="translate(20.000000, 7.500000) rotate(90.000000) translate(-20.000000, -7.500000) "></path>
+                    <path d="M4,10.5 L4,11.5" id="Path" stroke-linecap="round" transform="translate(4.000000, 11.000000) rotate(90.000000) translate(-4.000000, -11.000000) "></path>
+                    <path d="M4,38.5 L4,39.5" id="Path" stroke-linecap="round" transform="translate(4.000000, 39.000000) rotate(90.000000) translate(-4.000000, -39.000000) "></path>
+                    <path d="M20,21 L20,22" id="Path" stroke-linecap="round" transform="translate(20.000000, 21.500000) rotate(90.000000) translate(-20.000000, -21.500000) "></path>
+                    <path d="M20,27 L20,28" id="Path" stroke-linecap="round" transform="translate(20.000000, 27.500000) rotate(90.000000) translate(-20.000000, -27.500000) "></path>
+                    <path d="M20,41 L20,42" id="Path" stroke-linecap="round" transform="translate(20.000000, 41.500000) rotate(90.000000) translate(-20.000000, -41.500000) "></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

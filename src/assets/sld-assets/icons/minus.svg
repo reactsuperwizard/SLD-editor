@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="10px" height="2px" viewBox="0 0 10 2" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 52.5 (67469) - http://www.bohemiancoding.com/sketch -->
+    <title>minus</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <rect id="path-1" x="0" y="0" width="10" height="2"></rect>
+    </defs>
+    <g id="Project-Modelling-–-GIS-&amp;-SLD" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" opacity="0.900000036">
+        <g id="5.X-/-Settings-/-Edit-Mode-/-SLD-Modelling-/-Defining-Outage" transform="translate(-1239.000000, -631.000000)">
+            <g id="/controls-right" transform="translate(1176.000000, 608.000000)">
+                <g id="settings/zoom">
+                    <g id="/undo&amp;redo">
+                        <g id="32-/-normal-/-box-icon-/-normal" transform="translate(56.000000, 8.000000)">
+                            <g id="--16-/-Minus-" transform="translate(7.000000, 15.000000)">
+                                <mask id="mask-2" fill="white">
+                                    <use xlink:href="#path-1"></use>
+                                </mask>
+                                <use id="Mask" fill="#464646" fill-rule="nonzero" opacity="1" xlink:href="#path-1"></use>
+                            </g>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

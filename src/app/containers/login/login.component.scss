@@ -1,0 +1,101 @@
+// login-page
+.login-page {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  padding: 100px 0;
+  .logo {
+    font-size: 24px;
+    font-weight: 500;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.5;
+    letter-spacing: normal;
+    color: #262626;
+    padding-top: 77px;
+    background: url('../../../assets/i/logo.svg') 0 0 no-repeat;
+    background-size: 172px;
+    margin-top: 40px;
+    margin-left: 15px;
+  }
+  .login-container {
+    width: 608px;
+    height: 352px;
+    box-shadow: 0 8px 24px 0 rgba(0, 0, 0, 0.1);
+    background-color: #ffffff;
+    padding: 24px;
+    position: relative;
+    clip-path: polygon(0% 0, 25px 0%, calc(100% - 20px) 0%, 100% 0, 100% 100%, calc(100% - 20px) 100%, 20px 100%, 0 calc(100% - 20px));
+  }
+  .row-action {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 54px;
+  }
+  .lnk {
+    font-size: 14px;
+    text-align: center;
+    color: #0f00ff;
+    line-height: 32px;
+  }
+  .btn {
+    margin-left: 24px;
+    color: white;
+  }
+  .btn-login {
+    height: 32px;
+    line-height: 32px;
+    width: 104px !important;
+    min-width: 104px !important;
+    &:hover {
+      opacity: 1;
+      background: #0F00D0;
+    }
+    &:active {
+      opacity: 1;
+      background: #0F0089;
+    }
+  }
+  .fieldset {
+    font-size: 14px;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1;
+    letter-spacing: normal;
+    color: #686868;
+    margin-top: 16px;
+    &:first-child {
+      margin-top: 16px;
+    }
+    .fs-val {
+      margin-top: 4px;
+    }
+  }
+  .login-error-message-container {
+    height: 30px;
+    margin-top: 20px;
+    color: red;
+  }
+  .text-ctrl {
+    width: 272px;
+    height: 32px;
+    border: solid 1px #bababa;
+    background-color: #ffffff;
+    padding: 0 7px;
+  }
+  .cols {
+    display: flex;
+    .col {
+      overflow: hidden;
+      padding: 0;
+      &:nth-child(1) {
+        flex: 0 288px;
+      }
+      &:nth-child(2) {
+        flex: 1;
+      }
+    }
+  }
+}

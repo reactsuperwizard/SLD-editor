@@ -1,0 +1,44 @@
+<div class="col-lg-7">
+  <div class="outage-table">
+
+    <ngx-datatable #outagetable [rows]="localData" [columnMode]="'force'" rowHeight="40" [selected]="selected"
+                   [selectionType]="'checkbox'" (select)="onSelect($event)">
+      <ngx-datatable-column prop="id" [width]="40" [sortable]="false" [canAutoResize]="false" [draggable]="false"
+                            [resizeable]="false">
+        <ng-template ngx-datatable-header-template let-value="value" let-allRowsSelected="allRowsSelected"
+                     let-selectFn="selectFn">
+          <label [for]="'all-user-header'" class="checkbox-wrap">
+            <input [id]="'all-user-header'" type="checkbox" [checked]="allRowsSelected"
+                   (change)="selectFn(!allRowsSelected)"/>
+            <i class="icon icon-checkbox" [ngClass]="{'checked':allRowsSelected}"></i>
+          </label>
+        </ng-template>
+        <ng-template ngx-datatable-cell-template let-row="row" let-value="value" let-isSelected="isSelected"
+                     let-i="index"
+                     let-onCheckboxChangeFn="onCheckboxChangeFn">
+          <label [for]="'all-user-'+row.id" class="checkbox-wrap">
+            <input [id]="'all-user-'+row.id" type="checkbox" [checked]="isSelected"
+                   (change)="onCheckboxChangeFn($event)">
+            <i class="icon icon-checkbox" [ngClass]="{'checked':isSelected}"></i>
+          </label>
+        </ng-template>
+      </ngx-datatable-column>
+      <ngx-datatable-column name="Type" prop='type'>
+      </ngx-datatable-column>
+      <ngx-datatable-column name="Duration / Hours" prop='duration'>
+      </ngx-datatable-column>
+      <ngx-datatable-column name="Periocidy / Months" prop='period'>
+      </ngx-datatable-column>
+      <ngx-datatable-column [width]="40">
+        <ng-template ngx-datatable-header-template>
+          <div class="outage-info">
+            <i class="icon icon-info"></i>
+          </div>
+        </ng-template>
+      </ngx-datatable-column>
+    </ngx-datatable>
+
+    <app-add-new (click)="addOrEditMember(null)"><span i18n>Add new outage</span></app-add-new>
+  </div>
+</div>
+<!-- end .footer -->

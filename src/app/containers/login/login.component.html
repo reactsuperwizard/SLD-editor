@@ -1,0 +1,96 @@
+<div class="login-page">
+  <div class="login-container" *ngIf="state.loginFlow === 'normal'">
+    <div class="cols">
+      <div class="col">
+        <div class="logo">Reliability Care</div>
+      </div>
+      <div class="col">
+        <div class="fieldset">
+          <div class="fs-lbl" i18n>
+            User name
+          </div>
+          <div class="fs-val">
+            <input type="text" class="text-ctrl" [(ngModel)]="state.username" (focus)="loginErrorMessage=null" />
+          </div>
+        </div>
+        <div class="fieldset">
+          <div class="fs-lbl" i18n>
+            Password
+          </div>
+          <div class="fs-val">
+            <input type="password" class="text-ctrl" [(ngModel)]="state.password" (focus)="loginErrorMessage=null"/>
+          </div>
+        </div>
+        <div class="login-error-message-container">
+          <span *ngIf="loginErrorMessage">{{ loginErrorMessage }}</span>
+        </div>
+        <div class="row-action">
+          <a class="lnk" (click)="forgotPassword()">Forgot password?</a>
+          <a (click)="login()" class="btn btn-login">Log in</a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- login-container -->
+  <div class="login-container" *ngIf="state.loginFlow === 'recovery'">
+    <div class="cols">
+      <div class="col">
+        <div class="logo" i18n>Reliability Care</div>
+      </div>
+      <div class="col">
+        <div class="fieldset">
+          <div class="fs-lbl" i18n>
+            Email
+          </div>
+          <div class="fs-val">
+            <input type="text" class="text-ctrl" />
+          </div>
+        </div>
+        <div class="fieldset">
+          <div class="fs-lbl" i18n>
+            Recovery password
+          </div>
+          <div class="fs-val">
+            <input type="password" class="text-ctrl" />
+          </div>
+        </div>
+
+        <div class="row-action">
+          <a (click)="sumitForgotPassword()" class="btn" i18n>Submit</a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="login-container" *ngIf="state.loginFlow === 'language-selection'">
+    <div class="cols">
+      <div class="col" i18n>
+        <div class="logo">Reliability Care</div>
+      </div>
+      <div class="col">
+        <div class="fieldset">
+          <div class="fs-lbl" i18n>
+            Customer name
+          </div>
+          <div class="fs-val">
+            <input type="text" class="text-ctrl" />
+          </div>
+        </div>
+        <div class="fieldset">
+          <div class="fs-lbl" i18n>
+            Language
+          </div>
+          <div class="fs-val">
+            <select class="select-ctrl">
+              <option i18n>English</option>
+              <option i18n>Hindi</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="row-action">
+          <a (click)="next()" class="btn" i18n>Next</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

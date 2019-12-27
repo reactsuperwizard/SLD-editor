@@ -1,0 +1,223 @@
+<div class="risk-container">
+  <div class="risk-matrix-wrap" [class.flexible]="mode=== 'flexible'" #riskMatrix *ngIf="mode==='flexible'||mode==='absolute'">
+    <svg viewBox="0 0 126 126" version="1.1">
+      <g transform="translate(15,11)" viewBox="0 0 100 100" width="100" height="80" class="svg-graph drag-area flexible" (mousemove)="handleDrag($event)"
+        (mouseup)="lowRiskDragging=false;highRiskDragging=false" (mouseleave)="disableDrag()" [ngClass]="{'dragging': lowRiskDragging||highRiskDragging}">
+        <g class="bg" [ngClass]="{'absolute': mode==='absolute'}">
+          <rect width="100" height="100" />
+        </g>
+        <g class="data" *ngIf="mode==='flexible'">
+          <ng-container *ngFor="let row of flexibleRiskMatrixValue; let rowIndex = index;">
+            <ng-container *ngFor="let column of row; let colIndex = index;">
+              <polygon [class.low-risk]="column.split(',')[0] === 'low'"
+                       [class.medium-risk]="column.split(',')[0] === 'medium'"
+                       [class.high-risk]="column.split(',')[0] === 'high'"
+                       (click)="flexibleRiskMatrixValue[rowIndex][colIndex] = riskMode + ',' + column.split(',')[1];"
+                       [attr.points]="(colIndex * 10) +',' +(rowIndex * 10) +' ' +  ((colIndex + 1) * 10)
+                       + ',' + ((rowIndex + 1) * 10) + ' '+(colIndex * 10)+','+ ((rowIndex + 1) * 10)
+                       +' ' + (colIndex * 10) +',' +(rowIndex * 10)"/>
+              <polygon [class.low-risk]="column.split(',')[1] === 'low'"
+                       [class.medium-risk]="column.split(',')[1] === 'medium'"
+                       [class.high-risk]="column.split(',')[1] === 'high'"
+                       (click)="flexibleRiskMatrixValue[rowIndex][colIndex] =  column.split(',')[0] + ',' + riskMode;"
+                       [attr.points]="(colIndex * 10) +',' +(rowIndex * 10) +' ' + ((colIndex + 1) * 10)
+                       + ',' + ((rowIndex + 1) * 10) + ' '+ ((colIndex + 1) * 10) +','+(rowIndex * 10)
+                       +' ' + (colIndex * 10) +',' +(rowIndex * 10)"/>
+            </ng-container>
+          </ng-container>
+        </g>
+        <g class="coord" *ngIf="mode==='flexible'">
+          <line x1="10" y1="0" x2="10" y2="100" />
+          <line x1="20" y1="0" x2="20" y2="100" />
+          <line x1="30" y1="0" x2="30" y2="100" />
+          <line x1="40" y1="0" x2="40" y2="100" />
+          <line x1="50" y1="0" x2="50" y2="100" />
+          <line x1="60" y1="0" x2="60" y2="100" />
+          <line x1="70" y1="0" x2="70" y2="100" />
+          <line x1="80" y1="0" x2="80" y2="100" />
+          <line x1="90" y1="0" x2="90" y2="100" />
+
+          <line y1="10" x1="0" y2="10" x2="100" />
+          <line y1="20" x1="0" y2="20" x2="100" />
+          <line y1="30" x1="0" y2="30" x2="100" />
+          <line y1="40" x1="0" y2="40" x2="100" />
+          <line y1="50" x1="0" y2="50" x2="100" />
+          <line y1="60" x1="0" y2="60" x2="100" />
+          <line y1="70" x1="0" y2="70" x2="100" />
+          <line y1="80" x1="0" y2="80" x2="100" />
+          <line y1="90" x1="0" y2="90" x2="100" />
+
+          <line x1="10" y1="0" x2="100" y2="90" />
+          <line x1="20" y1="0" x2="100" y2="80" />
+          <line x1="30" y1="0" x2="100" y2="70" />
+          <line x1="40" y1="0" x2="100" y2="60" />
+          <line x1="50" y1="0" x2="100" y2="50" />
+          <line x1="60" y1="0" x2="100" y2="40" />
+          <line x1="70" y1="0" x2="100" y2="30" />
+          <line x1="80" y1="0" x2="100" y2="20" />
+          <line x1="90" y1="0" x2="100" y2="10" />
+
+          <line x1="0" y1="0" x2="100" y2="100" />
+
+          <line y1="10" x1="0" y2="100" x2="90" />
+          <line y1="20" x1="0" y2="100" x2="80" />
+          <line y1="30" x1="0" y2="100" x2="70" />
+          <line y1="40" x1="0" y2="100" x2="60" />
+          <line y1="50" x1="0" y2="100" x2="50" />
+          <line y1="60" x1="0" y2="100" x2="40" />
+          <line y1="70" x1="0" y2="100" x2="30" />
+          <line y1="80" x1="0" y2="100" x2="20" />
+          <line y1="90" x1="0" y2="100" x2="10" />
+        </g>
+        <g class="data" *ngIf="mode==='absolute'">
+          <circle class="medium-risk" cx="0" cy="100" [attr.r]="value.highRisk * 1.414" />
+          <circle class="low-risk" cx="0" cy="100" [attr.r]="value.lowRisk * 1.414"/>
+        </g>
+        <g class="coord" *ngIf="mode==='absolute'">
+          <line x1="20" y1="0" x2="20" y2="100" />
+          <line x1="40" y1="0" x2="40" y2="100" />
+          <line x1="60" y1="0" x2="60" y2="100" />
+          <line x1="80" y1="0" x2="80" y2="100" />
+
+          <line y1="20" x1="0" y2="20" x2="100" />
+          <line y1="40" x1="0" y2="40" x2="100" />
+          <line y1="60" x1="0" y2="60" x2="100" />
+          <line y1="80" x1="0" y2="80" x2="100" />
+        </g>
+        <g transform="rotate(-45,50,50)" class="handle low-risk" (mouseover)="lowRiskHandleShow=true;highRiskHandleShow=false"
+          (mousedown)="lowRiskDragging=true;highRiskDragging=false">
+          <path [ngClass]="{'active': lowRiskHandleShow}" [attr.transform]="'translate(' + (value.lowRisk-50)*1.414 +',0)'"
+            d="M47.5 42.5 c 0 -5, 5 -5, 5 0 v15 c 0 5, -5 5, -5 0 v-15 z"></path>
+        </g>
+        <g transform="rotate(-45,50,50)" class="handle high-risk" (mouseover)="lowRiskHandleShow=false;highRiskHandleShow=true"
+          (mousedown)="lowRiskDragging=false;highRiskDragging=true">
+          <path [ngClass]="{'active': highRiskHandleShow}" [attr.transform]="'translate(' + (value.highRisk-50)*1.414 +',0)'"
+            d="M47.5 42.5 c 0 -5, 5 -5, 5 0 v15 c 0 5, -5 5, -5 0 v-15 z"></path>
+        </g>
+      </g>
+      <g class="mask">
+        <rect x="0" y="-1000" width="126" height="1011"></rect>
+        <rect x="0" y="111" width="126" height="1015"></rect>
+        <rect y="0" x="-1000" height="126" width="1015"></rect>
+        <rect y="0" x="115" height="126" width="1011"></rect>
+      </g>
+      <g class="axis y-axis" transform="translate(15,11)">
+        <g class="tick" transform="translate(0,0)">
+          <line x1="-4" y1="0" x2="-5.5" y2="0"></line>
+          <text dy="1.5" x="-8" y="0">100</text>
+        </g>
+        <g class="tick" transform="translate(0,20)">
+          <line x1="-4" y1="0" x2="-5.5" y2="0"></line>
+          <text dy="1.5" x="-8" y="0">80</text>
+        </g>
+        <g class="tick" transform="translate(0,40)">
+          <line x1="-4" y1="0" x2="-5.5" y2="0"></line>
+          <text dy="1.5" x="-8" y="0">60</text>
+        </g>
+        <g class="tick" transform="translate(0,60)">
+          <line x1="-4" y1="0" x2="-5.5" y2="0"></line>
+          <text dy="1.5" x="-8" y="0">40</text>
+        </g>
+        <g class="tick" transform="translate(0,80)">
+          <line x1="-4" y1="0" x2="-5.5" y2="0"></line>
+          <text dy="1.5" x="-8" y="0">20</text>
+        </g>
+        <g class="tick" transform="translate(0,106)">
+          <line transform="translate(-1,-6),rotate(-45)" x1="-4" y1="0" x2="-5.5" y2="0"></line>
+          <text dy="1.5" x="-8" y="0">0</text>
+        </g>
+      </g>
+      <g class="axis x-axis" transform="translate(15,111)">
+        <g class="tick" transform="translate(20,0)">
+          <line x1="0" x2="0" y1="4" y2="5.5"></line>
+          <text dx="2" x="0" y="11">20</text>
+        </g>
+        <g class="tick" transform="translate(40,0)">
+          <line x1="0" x2="0" y1="4" y2="5.5"></line>
+          <text dx="2" x="0" y="11">40</text>
+        </g>
+        <g class="tick" transform="translate(60,0)">
+          <line x1="0" x2="0" y1="4" y2="5.5"></line>
+          <text dx="2" x="0" y="11">60</text>
+        </g>
+        <g class="tick" transform="translate(80,0)">
+          <line x1="0" x2="0" y1="4" y2="5.5"></line>
+          <text dx="2" x="0" y="11">80</text>
+        </g>
+        <g class="tick" transform="translate(100,0)">
+          <line x1="0" x2="0" y1="4" y2="5.5"></line>
+          <text dx="3" x="0" y="11">100</text>
+        </g>
+      </g>
+      <g class="legend x-legend" transform="translate(15,6)">
+        <text x="10" y="0">Low</text>
+        <text class="legend-name" x="50" y="0" i18n>Importance</text>
+        <text x="90" y="0" i18n>High</text>
+      </g>
+      <g class="legend y-legend" transform="translate(120,11)">
+        <text transform="rotate(90)" x="10" y="0" i18n>Poor</text>
+        <text transform="rotate(90)" class="legend-name" x="50" y="0" i18n>Condition</text>
+        <text transform="rotate(90)" x="90" y="0" i18n>Good</text>
+      </g>
+    </svg>
+  </div>
+  <div class="risk-bar" #riskMatrix *ngIf="mode==='slide'">
+    <svg viewBox="0 0 480 104" version="1.1" (mousemove)="handleDrag($event)"
+        (mouseup)="lowRiskDragging=false;highRiskDragging=false" (mouseleave)="disableDrag()" class="drag-area absolute" [ngClass]="{'dragging': lowRiskDragging||highRiskDragging}">
+      <g class="slide-bar-container" transform="translate(0,40)">
+        <circle class="start" cx="12" cy="12" r="12"></circle>
+        <circle class="end" cx="468" cy="12" r="12"></circle>
+        <g class="slide-bar" transform="translate(12,0)">
+          <rect class="high-risk" x="0" y="0" width="456" height="24"></rect>
+          <rect class="medium-risk" x="0" y="0" [attr.width]="value.highRisk * 4.56" height="24"></rect>
+          <rect class="low-risk" x="0" y="0" [attr.width]="value.lowRisk * 4.56" height="24"></rect>
+          <g class="handle low-risk" [attr.transform]="'translate(' + value.lowRisk * 4.56 +',0)'" (mouseover)="lowRiskHandleShow=true;highRiskHandleShow=false"
+          (mousedown)="lowRiskDragging=true;highRiskDragging=false">
+            <line x1="0" y1="-8" x2="0" y2="32"></line>
+            <rect class="text-area" x="-12" y="-24" width="24" height="16"></rect>
+            <text x="0" y="-12">{{value.lowRisk}}</text>
+            <circle cx="0" cy="12" r="8"></circle>
+          </g>
+          <g class="handle high-risk" [attr.transform]="'translate(' + value.highRisk * 4.56 +',0)'" (mouseover)="lowRiskHandleShow=true;highRiskHandleShow=false"
+          (mousedown)="lowRiskDragging=false;highRiskDragging=true">
+            <line x1="0" y1="-8" x2="0" y2="32"></line>
+            <rect class="text-area" x="-12" y="-24" width="24" height="16"></rect>
+            <text x="0" y="-12">{{value.highRisk}}</text>
+            <circle cx="0" cy="12" r="8"></circle>
+          </g>
+        </g>
+        <g class="axis" transform="translate(12,50)">
+          <g class="tick" transform="translate(0,0)">
+            <text>0</text>
+          </g>
+          <g class="tick" transform="translate(91.2,0)">
+            <text>20</text>
+          </g>
+          <g class="tick" transform="translate(182.4,0)">
+            <text>40</text>
+          </g>
+          <g class="tick" transform="translate(273.6,0)">
+            <text>60</text>
+          </g>
+          <g class="tick" transform="translate(364.8,0)">
+            <text>80</text>
+          </g>
+          <g class="tick" transform="translate(456,0)">
+            <text>100</text>
+          </g>
+        </g>
+        <g class="legend" transform="translate(12,-30)">
+          <g class="tick" transform="translate(0,0)">
+            <text i18n>Low</text>
+          </g>
+          <g class="tick" transform="translate(228,0)">
+            <text i18n>Medium</text>
+          </g>
+          <g class="tick" transform="translate(456,0)">
+            <text i18n>High</text>
+          </g>
+        </g>
+      </g>
+    </svg>
+  </div>
+</div>

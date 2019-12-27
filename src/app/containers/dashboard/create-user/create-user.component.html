@@ -1,0 +1,478 @@
+<div class="sub-page">
+  <div class="viewport">
+    <header class="sub-header">
+      <h3>Create a new user</h3>
+    </header>
+
+    <div class="create-user-form">
+      <div class="emp-info">
+        <div class="fig">
+          <img [src]="state.form.photo" accept="image/*">
+          <a class="btn-upload-img">+
+            <input type='file' class="file" (change)="onSelectFile($event)"></a>
+        </div>
+
+        <div class="ei"><span>Employee Information</span>
+          <a class="lnk" (click)="togglePermisson(true)" *ngIf="hasSelectedRole(state.selectedRole)">Manage permissions</a></div>
+      </div>
+
+      <div class="frow">
+        <div class="fieldset">
+          <div class="fs-lbl">
+            <sup>*</sup>Name
+          </div>
+          <div class="fs-val">
+            <input type="text" class="input-ctrl" [(ngModel)]="state.form.userName" />
+          </div>
+        </div>
+        <div class="fieldset">
+          <div class="fs-lbl">
+            <sup>*</sup>Surname
+          </div>
+          <div class="fs-val">
+            <input type="text" class="input-ctrl" [(ngModel)]="state.form.surName" />
+          </div>
+        </div>
+      </div>
+
+      <div class="frow">
+        <div class="fieldset">
+          <div class="fs-lbl">
+            <sup>*</sup>Employer
+          </div>
+          <div class="fs-val">
+            <input type="text" class="input-ctrl" [(ngModel)]="state.form.employer" />
+          </div>
+        </div>
+        <div class="fieldset">
+          <div class="fs-lbl">
+            <sup>*</sup>Job position
+          </div>
+          <div class="fs-val">
+            <input type="text" class="input-ctrl" [(ngModel)]="state.form.jobPosition" />
+          </div>
+        </div>
+      </div>
+
+      <div class="frow">
+        <div class="fieldset">
+          <div class="fs-lbl">
+            <sup>*</sup>Email
+          </div>
+          <div class="fs-val">
+            <input type="email" class="input-ctrl" [(ngModel)]="state.form.email" />
+          </div>
+        </div>
+        <div class="fieldset">
+          <div class="fs-lbl">
+            <sup>*</sup>Phone
+          </div>
+          <div class="fs-val fs-val-fx">
+            <select class="select-ctrl" [(ngModel)]="state.form.telCode">
+              <option>+1</option>
+              <option>+91</option>
+            </select>
+            <input type="tel" class="input-ctrl" appNumberOnly [(ngModel)]="state.form.phone" />
+          </div>
+        </div>
+      </div>
+      <div class="frow fstart">
+        <a class="btn btn-gray" (click)="showAddRole()">+ Add role</a>
+        <div class="added-roles" *ngIf="lo.keys(state.selectedRole).length>0">
+
+          <span class="role-tag"  *ngFor="let item of lo.keys( getSelectedRoleArray(state.selectedRole) )"><span (click)="showAddRole()">
+            {{ lo.keyBy(state.roles, 'roleId') ?
+            lo.keyBy(state.roles, 'roleId')[item].roleName : ''}}
+
+            </span>
+            <a class="remove" (click)="unSelectRole(item)"> </a>
+          </span>
+        </div>
+      </div>
+
+      <div class="section-execution-info" *ngIf="hasMaintainanceRole(state.selectedRole)">
+        <div class="ei"><span>Execution Information</span>
+        </div>
+        <div class="frow">
+          <div class="fieldset">
+            <div class="fs-lbl">
+              Assign to:
+            </div>
+            <div class="fs-val">
+
+              <ng-select class="custom custom-select grayed" [(ngModel)]="state.form.assignToVal" (close)="assignToChange(state.form.assignToVal)"
+                placeholder="Select"
+                [hideSelected]="true">
+                <ng-option *ngFor="let item of state.form.assignTo" [value]="item.value" >{{item.value}}</ng-option>
+                <ng-option class="opt-create-new" value="create-new">Create new team</ng-option>
+              </ng-select>
+
+
+            </div>
+          </div>
+          <div class="fieldset fieldset-sm">
+            <div class="fs-lbl">
+              Currency
+            </div>
+            <div class="fs-val fs-val-fx">
+              <div class="txt-val">
+              {{state.form.currency}}
+              </div>
+            </div>
+          </div>
+          <div class="fieldset fieldset-md">
+            <div class="fs-lbl">
+              Hourly rate
+            </div>
+            <div class="fs-val fs-val-fx">
+              <input type="text" class="input-ctrl" appNumberOnly [(ngModel)]="state.form.hourlyRate" />
+            </div>
+          </div>
+        </div>
+
+        <div class="frow">
+          <div class="fieldset">
+            <div class="fs-lbl">
+              Skills
+            </div>
+            <div class="fs-val">
+
+
+              <ng-select class="custom skills-dd custom-select hide-val"
+              [(ngModel)]="state.form.userSkillsDTOList"
+
+              (keydown.enter)="onPressReturn($event, state.form.userSkillsDTOList)"
+              [multiple]="true"
+                placeholder="Select"
+                [openOnEnter]="false"
+                [hideSelected]="true">
+                <ng-option *ngFor="let item of skillOpts$" [value]="item.skillId">{{item.skillName}}</ng-option>
+              </ng-select>
+
+
+            </div>
+          </div>
+          <div class="fieldset">
+            <div class="fs-lbl">
+              &nbsp;
+            </div>
+            <div class="fs-val fs-val-fx">
+              <div class="txt-val">
+              <a class="lnk-manage-skills" (click)="toggleManageSkills(true)">Manage skills list</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="frow">
+          <div class="fieldset fluid">
+
+            <div class="fs-val skills-list">
+              <a class="skill-tag" *ngFor="let item of getSkillFromId(state.form.userSkillsDTOList)" (click)="toggleManageSkill(true, item)">{{item.skillName}} <a class="remove-st" (click)="removeSkillTag(item)">× </a></a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- /.section-execution-info -->
+
+
+      <div class="bar-action fx-r">
+        <a *ngIf="validateForm()" class="btn btn-save btn-save-form" (click)="toggleSucessMsg(true)"
+          [class.disabled]="!validateForm()">Save</a>
+        <a *ngIf="!validateForm()" class="btn btn-save btn-gray btn-save-form"  [class.disabled]="!validateForm()">Save</a>
+      </div>
+    </div>
+    <!-- /.create-user-form -->
+  </div>
+
+  <div class="modal-wrap" *ngIf="state.isShowAddRole">
+    <div class="modal modal-role">
+      <header class="modal-title">
+        <h4>Edit Role</h4>
+        <a class="close" (click)="hideAddRole()"></a>
+      </header>
+      <div class="modal-body">
+
+        <div class="cards-role">
+          <owl-carousel-o *ngIf="state.rolesList" [options]="state.slideOpts">
+            <ng-container *ngFor="let item of state.rolesList; let i = index">
+
+              <ng-template carouselSlide>
+                <div class="card-role" [class.selected]="state.selectedRoleStatic[item.roleId]" (click)="toggleSelectRole(item)">
+                  <div class="cr-head">
+                    <figure class="fig">
+                      <img [src]=" '../../../../assets/i/role-' + item.roleId+'.svg'" alt="">
+                    </figure>
+                    <div class="fig-caption">{{item.roleName}}</div>
+                  </div>
+                  <div class="role-desc">
+                    {{item.roleDescription}}
+                  </div>
+                </div>
+              </ng-template>
+            </ng-container>
+          </owl-carousel-o>
+
+        </div>
+
+        <div class="bar-action">
+          <a class="btn btn-save btn-gray disabled" *ngIf="!hasSelectItems(state.rolesList)">Save</a>
+          <a class="btn btn-save" (click)="saveAddRole()" *ngIf="hasSelectItems(state.rolesList)">Save</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal-wrap" *ngIf="state.isShowManagePermissions">
+    <div class="modal  modal-permission">
+      <header class="modal-title">
+        <h4>Manage Permissions</h4>
+        <a class="close" (click)="togglePermisson(false)"></a>
+      </header>
+      <div class="modal-body">
+
+        <div class="permission-list">
+
+          <div class="permission-group" *ngFor="let item of state.form.permissions">
+            <header class="pg-head">
+              <label [for]="'pg-' + item.id" class="checkbox-ctrl">
+                <input [id]="'pg-' + item.id" type="checkbox" class="chk" [(ngModel)]="item.enabled">
+                <span class="txt">{{item.permissionName}}</span>
+              </label>
+            </header>
+            <div class="pg-body">
+              <div class="pg-row" *ngFor="let permission of item.permissionList; let i = index">
+                <label [for]="'pc-' + item.id + '-'  + i" class="switch-ctrl" [class.disabled]="!item.enabled">
+                  <input [id]="'pc-' + item.id + '-' + i" type="checkbox" class="chk" [(ngModel)]="permission.isEnabled">
+                  <span class="txt"> <i></i> <span class="sl">Edit</span> {{permission.name}}</span>
+                </label>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+        <div class="bar-action">
+          <a class="btn btn-save" (click)="togglePermisson(false)">Save</a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- /. modal-permission -->
+
+  <div class="modal-wrap" *ngIf="state.showCreateNewExe">
+    <div class="modal  modal-permission modal-new-execution">
+      <header class="modal-title">
+        <h4>Create New Execution Team</h4>
+        <a class="close" (click)="toggleCreateExTeam(false)"></a>
+      </header>
+      <div class="modal-body">
+
+        <div class="frow">
+          <div class="fieldset">
+            <div class="fs-lbl">
+              <sup>*</sup>Name
+            </div>
+            <div class="fs-val">
+              <input type="text" class="input-ctrl" [(ngModel)]="state.createNewExecutionTeam.name" />
+            </div>
+          </div>
+        </div>
+        <div class="frow">
+          <div class="fieldset inline">
+            <div class="fs-lbl">
+              <sup>*</sup>Team type
+            </div>
+            <div class="fs-val">
+              <label [for]="'team-type'" class="switch-ctrl lg">
+                  <input [id]="'team-type'" type="checkbox" class="chk" [(ngModel)]="state.createNewExecutionTeam.teamTypeExternal">
+                  <span class="txt"> <i></i> <span class="sl">External</span> </span>
+                </label>
+            </div>
+          </div>
+        </div>
+        <div class="frow" *ngIf="state.createNewExecutionTeam.teamTypeExternal">
+          <div class="fieldset">
+            <div class="fs-lbl">
+              <sup>*</sup>Company
+            </div>
+            <div class="fs-val">
+              <input type="text" class="input-ctrl" [(ngModel)]="state.createNewExecutionTeam.company" />
+            </div>
+          </div>
+        </div>
+
+        <div class="bar-action">
+          <a class="btn btn-save" (click)="toggleCreateExTeam(false)">Save</a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- /.modal-new-execution -->
+
+  <div class="modal-wrap" *ngIf="state.showManageSkill">
+    <div class="modal  modal-permission modal-manage-skill">
+      <header class="modal-title">
+        <h4>Manage skill</h4>
+        <a class="close" (click)="toggleManageSkill(false)"></a>
+      </header>
+      <div class="modal-body">
+
+        <div class="frow">
+          <div class="fieldset">
+            <div class="fs-lbl">
+              Skill name
+            </div>
+            <div class="fs-val">
+              <input type="text" class="input-ctrl" [(ngModel)]="state.manageSkill.selectedSkill.skillName" />
+            </div>
+          </div>
+        </div>
+        <div class="frow">
+          <div class="fieldset inline">
+            <div class="fs-lbl">
+              Level of Expertise
+            </div>
+            <div class="fs-val">
+              <ng5-slider class="rangle-slider" [(value)]="state.manageSkill.loe.value" [options]="state.manageSkill.loe.options"></ng5-slider>
+            </div>
+          </div>
+        </div>
+        <div class="frow">
+          <div class="fieldset">
+            <div class="fs-lbl">
+              Validity
+            </div>
+            <div class="fs-val fs-val-validity">
+              <select class="select-ctrl select-v-month">
+                <option value="">Jan</option>
+                <option value="">Feb</option>
+                <option value="">Mar</option>
+                <option value="">Apr</option>
+                <option value="">May</option>
+                <option value="">Jun</option>
+              </select>
+              <select class="select-ctrl select-v-year">
+                <option value="">2018</option>
+                <option value="">2019</option>
+              </select>
+              <a class="btn btn-upload-certificate">Upload certificate
+                <input type="file" class="file">
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="bar-action">
+          <a class="btn btn-save" (click)="toggleManageSkill(false)">Save</a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- /.modal-manage-skill -->
+
+  <div class="modal-wrap" *ngIf="state.showManageSkills">
+    <div class="modal  modal-permission modal-manage-skills">
+      <header class="modal-title">
+        <h4>Manage Skills</h4>
+        <a class="close" (click)="toggleManageSkills(false)"></a>
+      </header>
+      <div class="modal-body">
+
+        <div class="bar-search-skill">
+          <input type="search" placeholder="Search" class="input-ctrl" />
+        </div>
+
+        <div class="skills-list">
+          <span class="skill-tag" *ngFor="let item of skillOpts$; let i = index"  [class.system]="!item.createdBy">{{item.skillName}} <a class="remove-st" (click)="toggleDelModal(true, i)" *ngIf="item.createdBy" >× </a></span>
+        </div>
+
+        <div class="bar-action">
+          <a class="btn btn-save" (click)="toggleManageSkills(false)">Save</a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- /.modal-manage-skills -->
+  <div class="modal-wrap" *ngIf="state.showCreateSkills">
+    <div class="modal  modal-permission modal-manage-skill h-auto">
+      <header class="modal-title">
+        <h4>Setup skill</h4>
+        <a class="close" (click)="toggleCreateSkills(false)"></a>
+      </header>
+      <div class="modal-body">
+        <div class="frow">
+          <div class="fieldset inline">
+            <div class="fs-lbl">
+              Level of Expertise
+            </div>
+            <div class="fs-val">
+              <ng5-slider class="rangle-slider" [(value)]="state.manageSkill.loe.value" [options]="state.manageSkill.loe.options"></ng5-slider>
+            </div>
+          </div>
+        </div>
+        <div class="frow">
+          <div class="fieldset">
+            <div class="fs-lbl">
+              Validity
+            </div>
+            <div class="fs-val fs-val-validity">
+              <select class="select-ctrl select-v-month">
+                <option value="">Jan</option>
+                <option value="">Feb</option>
+                <option value="">Mar</option>
+                <option value="">Apr</option>
+                <option value="">May</option>
+                <option value="">Jun</option>
+              </select>
+              <select class="select-ctrl select-v-year">
+                <option value="">2018</option>
+                <option value="">2019</option>
+              </select>
+              <a class="btn btn-upload-certificate">Upload certificate
+                <input type="file" class="file">
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="bar-action">
+          <a class="btn btn-save" (click)="toggleCreateSkills(false)">Save</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal-wrap" *ngIf="state.showDelModal">
+    <div class="modal  modal-permission modal-manage-skill h-auto">
+      <header class="modal-title">
+        <h4>Delete</h4>
+        <a class="close" (click)="toggleDelModal(false)"></a>
+      </header>
+      <div class="modal-body">
+        <div class="msg">Are you sure you want to delete this?</div>
+
+        <div class="bar-action">
+          <a class="btn btn-save btn-clear" (click)="toggleDelModal(false)">Cancel</a>
+          <a class="btn btn-save" (click)="confirmDeleteTag(false)">Delete</a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- /.delete-modal -->
+  <div class="modal-wrap" *ngIf="state.showSuccessModal">
+    <div class="modal  modal-permission modal-manage-skill h-auto">
+      <header class="modal-title">
+        <h4>Save</h4>
+        <a class="close" (click)="toggleSucessMsg(false)"></a>
+      </header>
+      <div class="modal-body">
+        <div class="msg">New user successfully created?</div>
+
+        <div class="bar-action">
+          <a class="btn btn-save"  [routerLink]="'/dashboard'" >OK</a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- /.delete-modal -->
+</div>

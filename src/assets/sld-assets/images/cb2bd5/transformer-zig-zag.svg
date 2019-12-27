@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="32px" height="48px" viewBox="-4.0 0.0 32 48" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 52.5 (67469) - http://www.bohemiancoding.com/sketch -->
+    <title>transformer-zig-zag</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Project-Modelling-–-GIS-&amp;-SLD" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" opacity="1">
+        <g id="Artboard" transform="translate(-824.000000, -1308.000000)" stroke="#cb2bd5">
+            <g id="32-/-sld-/-vertical-/-box-icon-/-normal-copy-21" transform="translate(820.000000, 1300.000000)">
+                <g id="sld-/-both-/-zigzag-transformer-/-black" transform="translate(4.000000, 8.000000)">
+                    <path d="M12,-3.55271368e-15 L12,12" id="Path" fill-rule="nonzero"></path>
+                    <path d="M12,36 L12,48" id="Path" fill-rule="nonzero"></path>
+                    <rect id="Rectangle" fill-rule="nonzero" x="0.5" y="12.5" width="23" height="23" rx="11.5"></rect>
+                    <polyline id="Path-13" points="12 24 15.9960327 20 19 23"></polyline>
+                    <polyline id="Path-9" points="9 31 12 28 12 24 8 20 8 17"></polyline>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

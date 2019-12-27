@@ -1,0 +1,102 @@
+<div class="sub-page edit-role">
+  <div class="viewport">
+    <header class="sub-header sub-header-sm">
+      <i class="icon icon-back" (click)="backWithoutSave()"></i>
+      <h3>{{title}}</h3>
+      <a href="javascript:;">customize dashboard</a>
+    </header>
+
+    <div class="scroll-container">
+      <div class="role-info-section container-fluid">
+
+        <div class="role-info-bar">
+          <figure class="role-fig">
+            <i class="icon icon-role"></i>
+          </figure>
+        </div>
+
+        <!-- /.role-info-bar -->
+        <div class="frow row">
+          <div class="col-lg-6">
+            <div class="fieldset">
+              <div class="fs-lbl" [class.invalid]="!role.roleName" i18n>
+                <sup>*</sup>Role name
+              </div>
+              <div class="fs-val">
+                <input type="text" class="input-ctrl" [(ngModel)]="role.roleName"/>
+                <span class="error-indicate" [class.invalid]="submitted && !role.roleName" i18n>Role name is Reqiured</span>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-6">
+            <div class="fieldset">
+              <div class="fs-lbl fx-sb">
+                <span i18n>Description</span>
+                <span class="length-field" *ngIf="role.roleDescription">{{role.roleDescription.length}}/400</span>
+              </div>
+              <div class="fs-val">
+                <textarea class="input-ctrl textarea h-md" [(ngModel)]="role.roleDescription"
+                          maxlength="400"></textarea>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="pm-n-users">
+
+          <div class="col col-users">
+            <ngb-tabset class="tabs tabs-role" [destroyOnHide]="false">
+              <ngb-tab title="Priviledges">
+                <ng-template ngbTabContent>
+                  <div class="tab tab-priviledges">
+
+                    <div class="permission-list row">
+
+                      <div *ngFor="let item of role.rolePrivileges" class="col-md-12 col-lg-6">
+                        <div class="permission-group">
+                          <header class="pg-head">
+                            <a class="enable-permission" (click)="item.enabled=!item.enabled">
+                              <i class="icon icon-checkbox" [class.checked]="item.enabled"></i>
+                              <span class="txt">{{item.permissionName}}</span>
+                            </a>
+
+                          </header>
+                          <div class="pg-body">
+                            <div class="pg-row" *ngFor="let permission of item.permissionList">
+                              <span class="txt">{{permission.name}}</span>
+                              <div class="slide-select">
+                                <app-three-state-slide-select [(ngModel)]="permission.level"
+                                                              [disabled]="!item.enabled"></app-three-state-slide-select>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+
+                    </div>
+                  </div>
+                </ng-template>
+              </ngb-tab>
+
+              <ngb-tab title="Dashboard">
+                <ng-template ngbTabContent>
+                  <div class="tab tab-dashboard">
+                    <p>Tab dashboard not exist in design</p>
+                  </div>
+                </ng-template>
+              </ngb-tab>
+            </ngb-tabset>
+          </div>
+
+        </div>
+        <div class="bar-action fx-r">
+          <a class="btn btn-clear btn-save-form" (click)="delete()" i18n>Delete</a>
+          <a class="btn btn-save btn-save-form btn-gray" (click)="save()"
+             i18n>Save</a>
+        </div>
+      </div>
+      <!-- /.create-user-form -->
+    </div>
+
+  </div>
+</div>

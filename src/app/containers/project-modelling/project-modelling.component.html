@@ -1,0 +1,11 @@
+<div class="page-container">
+  <header class="header-container">
+    <a routerLink="/dashboard" class="back" href="javascript:;"><i></i><span i18n>GIS edit mode</span></a>
+    <div class="header-opts">
+      <input [disabled]="map.isSubStainsNotAvailable()" class="form-input top-search" (keydown)="clear($event)" (keydown.enter)="search($event)" type="search" placeholder="Search for substation"/>
+    </div>
+  </header>
+  <!-- map -->
+  <app-map></app-map>
+
+</div>

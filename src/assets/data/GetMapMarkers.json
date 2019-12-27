@@ -1,0 +1,90 @@
+{
+    "country": "CHE",
+    "markers": [
+      {
+        "id": "1",
+        "coordinate": [770485.2451145765, 5895435.117579074],
+        "props" : {
+            "id": "1",
+            "name":"name 1",
+            "region": "East",
+            "reference": "AR",
+            "type": "Type 1",
+            "owner":"Owner 1",
+            "administer": "administer 1",
+            "altitude": 12,
+            "constructionArea": "1",
+            "totalArea": "5",
+            "freeSpace": "2",
+            "controlRooms": "2",
+            "switchgear": "Switchgear 1",
+            "voltageLevel": "110v",
+            "installationYear": "2018",
+            "commisioningYear": "2018",
+            "possibilityToExtend": "Yes"
+         }
+      },
+      {"id": "2", "coordinate":  [973501.9922400047, 6039748.226981487],
+        "props" : {
+            "id": "2",
+            "name":"name 2",
+            "region": "East",
+            "reference": "AR",
+            "type": "Type 1",
+            "owner":"Owner 1",
+            "administer": "administer 1",
+            "altitude": 12,
+            "constructionArea": "1",
+            "totalArea": "5",
+            "freeSpace": "2",
+            "controlRooms": "2",
+            "switchgear": "Switchgear 1",
+            "voltageLevel": "110v",
+            "installationYear": "2018",
+            "commisioningYear": "2018",
+            "possibilityToExtend": "Yes"
+         }},
+      {"id": "3", "coordinate": [984508.9243130701, 5811048.6383522395],
+        "props" : {
+            "id": "3",
+            "name":"name 3",
+            "region": "East",
+            "reference": "AR",
+            "type": "Type 1",
+            "owner":"Owner 1",
+            "administer": "administer 1",
+            "altitude": 12,
+            "constructionArea": "1",
+            "totalArea": "5",
+            "freeSpace": "2",
+            "controlRooms": "2",
+            "switchgear": "Switchgear 1",
+            "voltageLevel": "110v",
+            "installationYear": "2018",
+            "commisioningYear": "2018",
+            "possibilityToExtend": "Yes"
+         }}
+    ],
+    "connections": [
+      {
+        "props": {
+          "id": "1=2",
+          "name": "Connection Line",
+          "source": "Source",
+          "reference": "SR-001",
+          "origin": "1",
+          "destination":"2"
+        }
+      },
+      {
+        "props": {
+          "id": "2=3",
+          "name": "Connection Line",
+          "source": "Load",
+          "reference": "SR-001",
+          "origin": "2",
+          "destination":"3"
+        }
+      }
+    ]
+  }

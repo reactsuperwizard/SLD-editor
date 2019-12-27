@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="32px" height="48px" viewBox="-4.0 0.0 32 48" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 52.5 (67469) - http://www.bohemiancoding.com/sketch -->
+    <title>contactor-closed</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Project-Modelling-–-GIS-&amp;-SLD" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" opacity="1">
+        <g id="Artboard" transform="translate(-624.000000, -2308.000000)" fill-rule="nonzero" stroke="#ff000f">
+            <g id="32-/-sld-/-vertical-/-box-icon-/-normal" transform="translate(620.000000, 2300.000000)">
+                <g id="sld-/-multi-/-contactor-(closed)-/-black" transform="translate(4.000000, 8.000000)">
+                    <path d="M12,0 L12,10.5" id="Path"></path>
+                    <polyline id="Path" transform="translate(17.470000, 33.220000) scale(-1, 1) translate(-17.470000, -33.220000) " points="11.94 18.44 23 35.5 23 48"></polyline>
+                    <path d="M18,10 L18,22 C14.6862915,22 12,19.3137085 12,16 C12,12.6862915 14.6862915,10 18,10 Z" id="Combined-Shape" transform="translate(15.000000, 16.000000) scale(-1, 1) translate(-15.000000, -16.000000) "></path>
+                    <path d="M18,16 L18,28" id="Path" transform="translate(18.000000, 22.000000) rotate(90.000000) translate(-18.000000, -22.000000) "></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

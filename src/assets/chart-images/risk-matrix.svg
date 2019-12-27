@@ -1,0 +1,252 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="298px" height="296px" viewBox="0 0 298 296" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 52.5 (67469) - http://www.bohemiancoding.com/sketch -->
+    <title>/risk_matrix</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <rect id="path-1" x="0" y="0" width="240" height="240" rx="4"></rect>
+        <filter x="-16.7%" y="-13.3%" width="133.3%" height="133.3%" filterUnits="objectBoundingBox" id="filter-2">
+            <feOffset dx="0" dy="8" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="12" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.06 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix>
+        </filter>
+    </defs>
+    <g id="2-–-Manage-Project" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="1.1-/-Reliability-Center-/-Project-Manager-Dashboard" transform="translate(-903.000000, -252.000000)">
+            <g id="/widgets" transform="translate(24.000000, 180.000000)">
+                <g id="/risk_matrix" transform="translate(872.000000, 68.000000)">
+                    <g id="risk_matrix" transform="translate(40.000000, 28.000000)">
+                        <g id="Base">
+                            <use fill="black" fill-opacity="1" filter="url(#filter-2)" xlink:href="#path-1"></use>
+                            <use fill="#FFFFFF" fill-rule="evenodd" xlink:href="#path-1"></use>
+                        </g>
+                        <path d="M6.82746586,6.82282764 L119.999039,119.917518 C119.99968,119.918158 120.00032,119.918799 120.00096,119.919439 L233.177169,233.172533 C234.738735,234.735161 234.737875,237.267821 233.175248,238.829387 C232.42518,239.578945 231.408176,240 230.347781,240 L3.9999992,240.000001 C1.7908602,240.000001 -8.07488084e-07,238.20914 -8.13150013e-07,236.000001 L-3.22908358e-08,9.65221565 C-2.49003649e-08,7.44307665 1.79086098,5.65221566 3.99999998,5.65221567 C5.06039497,5.65221567 6.07739864,6.07326997 6.82746586,6.82282764 Z" id="Base" fill="#4FB0A0" fill-rule="nonzero"></path>
+                        <path d="M9.65685417,-5.10026635e-11 L236,-5.16179988e-10 C238.209139,-5.20591216e-10 240,1.790861 240,4 L240,230.343146 C240,232.552285 238.209139,234.343146 236,234.343146 C234.939134,234.343146 233.921718,233.921718 233.171573,233.171573 L6.82842703,6.82842711 C5.26632987,5.26632993 5.26632989,2.73367002 6.82842706,1.17157286 C7.57857258,0.421427355 8.59598822,-4.88872919e-11 9.65685417,-5.10018694e-11 Z" id="Base" fill="#E85335" fill-rule="nonzero"></path>
+                        <path d="M4,-6.78484491e-11 L116.686292,-6.34869934e-12 C118.808023,-5.19202053e-12 120.842855,0.842854723 122.343146,2.34314575 L237.656854,117.656854 C239.157145,119.157145 240,121.191977 240,123.313708 L240,236 C240,238.209139 238.209139,240 236,240 L121.656854,240 C120.595988,240 119.578573,239.578573 118.828427,238.828427 L1.17157288,121.171573 C0.421427361,120.421427 -1.28107329e-12,119.404012 -1.86162197e-12,118.343146 L-6.92153002e-11,4 C-7.04320786e-11,1.790861 1.790861,-7.10173049e-11 4,-7.22342186e-11 Z" id="Base" fill="#FFFBBF" fill-rule="nonzero"></path>
+                        <g id="grid" opacity="0.049999997" fill-rule="nonzero" stroke="#000000" stroke-linecap="square">
+                            <g id="in">
+                                <path d="M47.5,0.5 L47.5,240" id="Line"></path>
+                                <path d="M95.5,0.5 L95.5,240" id="Line"></path>
+                                <path d="M143.5,0.5 L143.5,240" id="Line"></path>
+                                <path d="M191.5,0.5 L191.5,240" id="Line"></path>
+                                <path d="M119.5,-71.5 L119.5,168" id="Line" transform="translate(120.000000, 48.000000) rotate(90.000000) translate(-120.000000, -48.000000) "></path>
+                                <path d="M119.5,-23.5 L119.5,216" id="Line" transform="translate(120.000000, 96.000000) rotate(90.000000) translate(-120.000000, -96.000000) "></path>
+                                <path d="M119.5,24.5 L119.5,264" id="Line" transform="translate(120.000000, 144.000000) rotate(90.000000) translate(-120.000000, -144.000000) "></path>
+                                <path d="M119.5,72.5 L119.5,312" id="Line" transform="translate(120.000000, 192.000000) rotate(90.000000) translate(-120.000000, -192.000000) "></path>
+                            </g>
+                        </g>
+                        <g id="assets" transform="translate(8.000000, 7.000000)">
+                            <g id="atoms-/-caret-up-light" transform="translate(48.000000, 192.000000)" fill="#FFFFFF">
+                                <polygon id="Page-1-Copy-43" transform="translate(4.000000, 3.500000) rotate(270.000000) translate(-4.000000, -3.500000) " points="1.5 0.5 1.5 6.5 6.50002 3.501"></polygon>
+                            </g>
+                            <g id="atoms-/-caret-up-light" transform="translate(48.000000, 200.000000)" fill="#FFFFFF">
+                                <polygon id="Page-1-Copy-43" transform="translate(4.000000, 3.500000) rotate(270.000000) translate(-4.000000, -3.500000) " points="1.5 0.5 1.5 6.5 6.50002 3.501"></polygon>
+                            </g>
+                            <g id="atoms-/-caret-up-light" transform="translate(56.000000, 200.000000)" fill="#FFFFFF">
+                                <polygon id="Page-1-Copy-43" transform="translate(4.000000, 3.500000) rotate(270.000000) translate(-4.000000, -3.500000) " points="1.5 0.5 1.5 6.5 6.50002 3.501"></polygon>
+                            </g>
+                            <g id="atoms-/-caret-up-light" transform="translate(56.000000, 208.000000)" fill="#FFFFFF">
+                                <polygon id="Page-1-Copy-43" transform="translate(4.000000, 3.500000) rotate(270.000000) translate(-4.000000, -3.500000) " points="1.5 0.5 1.5 6.5 6.50002 3.501"></polygon>
+                            </g>
+                            <g id="atoms-/-caret-up-light" transform="translate(24.000000, 168.000000)" fill="#FFFFFF">
+                                <polygon id="Page-1-Copy-43" transform="translate(4.000000, 3.500000) rotate(270.000000) translate(-4.000000, -3.500000) " points="1.5 0.5 1.5 6.5 6.50002 3.501"></polygon>
+                            </g>
+                            <g id="atoms-/-caret-up-light" transform="translate(24.000000, 192.000000)" fill="#FFFFFF">
+                                <polygon id="Page-1-Copy-43" transform="translate(4.000000, 3.500000) rotate(270.000000) translate(-4.000000, -3.500000) " points="1.5 0.5 1.5 6.5 6.50002 3.501"></polygon>
+                            </g>
+                            <g id="atoms-/-caret-up-light" transform="translate(24.000000, 200.000000)" fill="#FFFFFF">
+                                <polygon id="Page-1-Copy-43" transform="translate(4.000000, 3.500000) rotate(270.000000) translate(-4.000000, -3.500000) " points="1.5 0.5 1.5 6.5 6.50002 3.501"></polygon>
+                            </g>
+                            <g id="atoms-/-caret-up-light" transform="translate(8.000000, 216.000000)" fill="#FFFFFF">
+                                <polygon id="Page-1-Copy-43" transform="translate(4.000000, 3.500000) rotate(270.000000) translate(-4.000000, -3.500000) " points="1.5 0.5 1.5 6.5 6.50002 3.501"></polygon>
+                            </g>
+                            <g id="atoms-/-caret-up-light" transform="translate(0.000000, 208.000000)" fill="#FFFFFF">
+                                <polygon id="Page-1-Copy-43" transform="translate(4.000000, 3.500000) rotate(270.000000) translate(-4.000000, -3.500000) " points="1.5 0.5 1.5 6.5 6.50002 3.501"></polygon>
+                            </g>
+                            <g id="atoms-/-caret-up-light" transform="translate(192.000000, 24.000000)" fill="#FFFFFF">
+                                <polygon id="Page-1-Copy-43" transform="translate(4.000000, 3.500000) rotate(270.000000) translate(-4.000000, -3.500000) " points="1.5 0.5 1.5 6.5 6.50002 3.501"></polygon>
+                            </g>
+                            <g id="atoms-/-caret-up-light" transform="translate(200.000000, 16.000000)" fill="#FFFFFF">
+                                <polygon id="Page-1-Copy-43" transform="translate(4.000000, 3.500000) rotate(270.000000) translate(-4.000000, -3.500000) " points="1.5 0.5 1.5 6.5 6.50002 3.501"></polygon>
+                            </g>
+                            <g id="atoms-/-caret-up-light" transform="translate(192.000000, 8.000000)" fill="#FFFFFF">
+                                <polygon id="Page-1-Copy-43" transform="translate(4.000000, 3.500000) rotate(270.000000) translate(-4.000000, -3.500000) " points="1.5 0.5 1.5 6.5 6.50002 3.501"></polygon>
+                            </g>
+                            <g id="atoms-/-caret-up-light" transform="translate(200.000000, 24.000000)" fill="#FFFFFF">
+                                <polygon id="Page-1-Copy-43" transform="translate(4.000000, 3.500000) rotate(270.000000) translate(-4.000000, -3.500000) " points="1.5 0.5 1.5 6.5 6.50002 3.501"></polygon>
+                            </g>
+                            <g id="atoms-/-caret-up-light" transform="translate(208.000000, 24.000000)" fill="#FFFFFF">
+                                <polygon id="Page-1-Copy-43" transform="translate(4.000000, 3.500000) rotate(270.000000) translate(-4.000000, -3.500000) " points="1.5 0.5 1.5 6.5 6.50002 3.501"></polygon>
+                            </g>
+                            <g id="atoms-/-caret-up-light" transform="translate(208.000000, 48.000000)" fill="#FFFFFF">
+                                <polygon id="Page-1-Copy-43" transform="translate(4.000000, 3.500000) rotate(270.000000) translate(-4.000000, -3.500000) " points="1.5 0.5 1.5 6.5 6.50002 3.501"></polygon>
+                            </g>
+                            <g id="atoms-/-caret-up-light" transform="translate(216.000000, 64.000000)" fill="#FFFFFF">
+                                <polygon id="Page-1-Copy-43" transform="translate(4.000000, 3.500000) rotate(270.000000) translate(-4.000000, -3.500000) " points="1.5 0.5 1.5 6.5 6.50002 3.501"></polygon>
+                            </g>
+                            <g id="atoms-/-caret-up-light" transform="translate(200.000000, 48.000000)" fill="#FFFFFF">
+                                <polygon id="Page-1-Copy-43" transform="translate(4.000000, 3.500000) rotate(270.000000) translate(-4.000000, -3.500000) " points="1.5 0.5 1.5 6.5 6.50002 3.501"></polygon>
+                            </g>
+                            <g id="atoms-/-caret-up-light" transform="translate(168.000000, 24.000000)" fill="#FFFFFF">
+                                <polygon id="Page-1-Copy-43" transform="translate(4.000000, 3.500000) rotate(270.000000) translate(-4.000000, -3.500000) " points="1.5 0.5 1.5 6.5 6.50002 3.501"></polygon>
+                            </g>
+                            <g id="atoms-/-caret-up-light" transform="translate(168.000000, 16.000000)" fill="#FFFFFF">
+                                <polygon id="Page-1-Copy-43" transform="translate(4.000000, 3.500000) rotate(270.000000) translate(-4.000000, -3.500000) " points="1.5 0.5 1.5 6.5 6.50002 3.501"></polygon>
+                            </g>
+                            <g id="atoms-/-caret-up-light" transform="translate(168.000000, 8.000000)" fill="#FFFFFF">
+                                <polygon id="Page-1-Copy-43" transform="translate(4.000000, 3.500000) rotate(270.000000) translate(-4.000000, -3.500000) " points="1.5 0.5 1.5 6.5 6.50002 3.501"></polygon>
+                            </g>
+                            <g id="atoms-/-caret-up-light" transform="translate(152.000000, 8.000000)" fill="#FFFFFF">
+                                <polygon id="Page-1-Copy-43" transform="translate(4.000000, 3.500000) rotate(270.000000) translate(-4.000000, -3.500000) " points="1.5 0.5 1.5 6.5 6.50002 3.501"></polygon>
+                            </g>
+                            <g id="atoms-/-caret-up-light" transform="translate(152.000000, 0.000000)" fill="#FFFFFF">
+                                <polygon id="Page-1-Copy-43" transform="translate(4.000000, 3.500000) rotate(270.000000) translate(-4.000000, -3.500000) " points="1.5 0.5 1.5 6.5 6.50002 3.501"></polygon>
+                            </g>
+                            <g id="atoms-/-caret-up-light" transform="translate(208.000000, 8.000000)" fill="#FFFFFF">
+                                <polygon id="Page-1-Copy-43" transform="translate(4.000000, 3.500000) rotate(270.000000) translate(-4.000000, -3.500000) " points="1.5 0.5 1.5 6.5 6.50002 3.501"></polygon>
+                            </g>
+                            <g id="atoms-/-caret-up-light" transform="translate(216.000000, 0.000000)" fill="#FFFFFF">
+                                <polygon id="Page-1-Copy-43" transform="translate(4.000000, 3.500000) rotate(270.000000) translate(-4.000000, -3.500000) " points="1.5 0.5 1.5 6.5 6.50002 3.501"></polygon>
+                            </g>
+                            <g id="atoms-/-caret-up-dark" transform="translate(96.000000, 120.000000)" fill="#464646">
+                                <polygon id="Page-1-Copy-43" transform="translate(4.000000, 3.500000) rotate(270.000000) translate(-4.000000, -3.500000) " points="1.5 0.5 1.5 6.5 6.50002 3.501"></polygon>
+                            </g>
+                            <g id="atoms-/-caret-up-dark" transform="translate(120.000000, 168.000000)" fill="#464646">
+                                <polygon id="Page-1-Copy-43" transform="translate(4.000000, 3.500000) rotate(270.000000) translate(-4.000000, -3.500000) " points="1.5 0.5 1.5 6.5 6.50002 3.501"></polygon>
+                            </g>
+                            <g id="atoms-/-caret-up-dark" transform="translate(112.000000, 160.000000)" fill="#464646">
+                                <polygon id="Page-1-Copy-43" transform="translate(4.000000, 3.500000) rotate(270.000000) translate(-4.000000, -3.500000) " points="1.5 0.5 1.5 6.5 6.50002 3.501"></polygon>
+                            </g>
+                            <g id="atoms-/-caret-up-dark" transform="translate(96.000000, 160.000000)" fill="#464646">
+                                <polygon id="Page-1-Copy-43" transform="translate(4.000000, 3.500000) rotate(270.000000) translate(-4.000000, -3.500000) " points="1.5 0.5 1.5 6.5 6.50002 3.501"></polygon>
+                            </g>
+                            <g id="atoms-/-caret-up-dark" transform="translate(72.000000, 160.000000)" fill="#464646">
+                                <polygon id="Page-1-Copy-43" transform="translate(4.000000, 3.500000) rotate(270.000000) translate(-4.000000, -3.500000) " points="1.5 0.5 1.5 6.5 6.50002 3.501"></polygon>
+                            </g>
+                            <g id="atoms-/-caret-up-dark" transform="translate(64.000000, 152.000000)" fill="#464646">
+                                <polygon id="Page-1-Copy-43" transform="translate(4.000000, 3.500000) rotate(270.000000) translate(-4.000000, -3.500000) " points="1.5 0.5 1.5 6.5 6.50002 3.501"></polygon>
+                            </g>
+                            <g id="atoms-/-caret-up-dark" transform="translate(64.000000, 120.000000)" fill="#464646">
+                                <polygon id="Page-1-Copy-43" transform="translate(4.000000, 3.500000) rotate(270.000000) translate(-4.000000, -3.500000) " points="1.5 0.5 1.5 6.5 6.50002 3.501"></polygon>
+                            </g>
+                            <g id="atoms-/-caret-up-dark" transform="translate(112.000000, 104.000000)" fill="#464646">
+                                <polygon id="Page-1-Copy-43" transform="translate(4.000000, 3.500000) rotate(270.000000) translate(-4.000000, -3.500000) " points="1.5 0.5 1.5 6.5 6.50002 3.501"></polygon>
+                            </g>
+                            <g id="atoms-/-caret-up-dark" transform="translate(72.000000, 96.000000)" fill="#464646">
+                                <polygon id="Page-1-Copy-43" transform="translate(4.000000, 3.500000) rotate(270.000000) translate(-4.000000, -3.500000) " points="1.5 0.5 1.5 6.5 6.50002 3.501"></polygon>
+                            </g>
+                            <g id="atoms-/-caret-up-dark" transform="translate(168.000000, 192.000000)" fill="#464646">
+                                <polygon id="Page-1-Copy-43" transform="translate(4.000000, 3.500000) rotate(270.000000) translate(-4.000000, -3.500000) " points="1.5 0.5 1.5 6.5 6.50002 3.501"></polygon>
+                            </g>
+                            <g id="atoms-/-caret-up-dark" transform="translate(160.000000, 200.000000)" fill="#464646">
+                                <polygon id="Page-1-Copy-43" transform="translate(4.000000, 3.500000) rotate(270.000000) translate(-4.000000, -3.500000) " points="1.5 0.5 1.5 6.5 6.50002 3.501"></polygon>
+                            </g>
+                            <g id="atoms-/-caret-up-dark" transform="translate(120.000000, 200.000000)" fill="#464646">
+                                <polygon id="Page-1-Copy-43" transform="translate(4.000000, 3.500000) rotate(270.000000) translate(-4.000000, -3.500000) " points="1.5 0.5 1.5 6.5 6.50002 3.501"></polygon>
+                            </g>
+                            <g id="atoms-/-caret-up-dark" transform="translate(120.000000, 72.000000)" fill="#464646">
+                                <polygon id="Page-1-Copy-43" transform="translate(4.000000, 3.500000) rotate(270.000000) translate(-4.000000, -3.500000) " points="1.5 0.5 1.5 6.5 6.50002 3.501"></polygon>
+                            </g>
+                            <g id="atoms-/-caret-up-dark" transform="translate(104.000000, 64.000000)" fill="#464646">
+                                <polygon id="Page-1-Copy-43" transform="translate(4.000000, 3.500000) rotate(270.000000) translate(-4.000000, -3.500000) " points="1.5 0.5 1.5 6.5 6.50002 3.501"></polygon>
+                            </g>
+                            <g id="atoms-/-caret-up-dark" transform="translate(120.000000, 48.000000)" fill="#464646">
+                                <polygon id="Page-1-Copy-43" transform="translate(4.000000, 3.500000) rotate(270.000000) translate(-4.000000, -3.500000) " points="1.5 0.5 1.5 6.5 6.50002 3.501"></polygon>
+                            </g>
+                            <g id="atoms-/-caret-up-dark" transform="translate(144.000000, 96.000000)" fill="#464646">
+                                <polygon id="Page-1-Copy-43" transform="translate(4.000000, 3.500000) rotate(270.000000) translate(-4.000000, -3.500000) " points="1.5 0.5 1.5 6.5 6.50002 3.501"></polygon>
+                            </g>
+                            <g id="atoms-/-caret-up-dark" transform="translate(192.000000, 96.000000)" fill="#464646">
+                                <polygon id="Page-1-Copy-43" transform="translate(4.000000, 3.500000) rotate(270.000000) translate(-4.000000, -3.500000) " points="1.5 0.5 1.5 6.5 6.50002 3.501"></polygon>
+                            </g>
+                            <g id="atoms-/-caret-up-dark" transform="translate(168.000000, 72.000000)" fill="#464646">
+                                <polygon id="Page-1-Copy-43" transform="translate(4.000000, 3.500000) rotate(270.000000) translate(-4.000000, -3.500000) " points="1.5 0.5 1.5 6.5 6.50002 3.501"></polygon>
+                            </g>
+                            <g id="atoms-/-caret-up-dark" transform="translate(72.000000, 48.000000)" fill="#464646">
+                                <polygon id="Page-1-Copy-43" transform="translate(4.000000, 3.500000) rotate(270.000000) translate(-4.000000, -3.500000) " points="1.5 0.5 1.5 6.5 6.50002 3.501"></polygon>
+                            </g>
+                            <g id="atoms-/-caret-up-dark" transform="translate(96.000000, 24.000000)" fill="#464646">
+                                <polygon id="Page-1-Copy-43" transform="translate(4.000000, 3.500000) rotate(270.000000) translate(-4.000000, -3.500000) " points="1.5 0.5 1.5 6.5 6.50002 3.501"></polygon>
+                            </g>
+                            <g id="atoms-/-caret-up-dark" transform="translate(64.000000, 16.000000)" fill="#464646">
+                                <polygon id="Page-1-Copy-43" transform="translate(4.000000, 3.500000) rotate(270.000000) translate(-4.000000, -3.500000) " points="1.5 0.5 1.5 6.5 6.50002 3.501"></polygon>
+                            </g>
+                            <g id="atoms-/-caret-up-dark" transform="translate(24.000000, 16.000000)" fill="#464646">
+                                <polygon id="Page-1-Copy-43" transform="translate(4.000000, 3.500000) rotate(270.000000) translate(-4.000000, -3.500000) " points="1.5 0.5 1.5 6.5 6.50002 3.501"></polygon>
+                            </g>
+                            <g id="atoms-/-caret-up-dark" transform="translate(8.000000, 24.000000)" fill="#464646">
+                                <polygon id="Page-1-Copy-43" transform="translate(4.000000, 3.500000) rotate(270.000000) translate(-4.000000, -3.500000) " points="1.5 0.5 1.5 6.5 6.50002 3.501"></polygon>
+                            </g>
+                            <g id="atoms-/-caret-up-dark" transform="translate(24.000000, 96.000000)" fill="#464646">
+                                <polygon id="Page-1-Copy-43" transform="translate(4.000000, 3.500000) rotate(270.000000) translate(-4.000000, -3.500000) " points="1.5 0.5 1.5 6.5 6.50002 3.501"></polygon>
+                            </g>
+                            <g id="atoms-/-caret-up-dark" transform="translate(48.000000, 144.000000)" fill="#464646">
+                                <polygon id="Page-1-Copy-43" transform="translate(4.000000, 3.500000) rotate(270.000000) translate(-4.000000, -3.500000) " points="1.5 0.5 1.5 6.5 6.50002 3.501"></polygon>
+                            </g>
+                            <g id="atoms-/-caret-up-dark" transform="translate(144.000000, 144.000000)" fill="#464646">
+                                <polygon id="Page-1-Copy-43" transform="translate(4.000000, 3.500000) rotate(270.000000) translate(-4.000000, -3.500000) " points="1.5 0.5 1.5 6.5 6.50002 3.501"></polygon>
+                            </g>
+                            <g id="atoms-/-caret-up-dark" transform="translate(168.000000, 120.000000)" fill="#464646">
+                                <polygon id="Page-1-Copy-43" transform="translate(4.000000, 3.500000) rotate(270.000000) translate(-4.000000, -3.500000) " points="1.5 0.5 1.5 6.5 6.50002 3.501"></polygon>
+                            </g>
+                            <g id="atoms-/-caret-up-dark" transform="translate(72.000000, 24.000000)" fill="#464646">
+                                <polygon id="Page-1-Copy-43" transform="translate(4.000000, 3.500000) rotate(270.000000) translate(-4.000000, -3.500000) " points="1.5 0.5 1.5 6.5 6.50002 3.501"></polygon>
+                            </g>
+                            <g id="atoms-/-caret-up-dark" transform="translate(24.000000, 72.000000)" fill="#464646">
+                                <polygon id="Page-1-Copy-43" transform="translate(4.000000, 3.500000) rotate(270.000000) translate(-4.000000, -3.500000) " points="1.5 0.5 1.5 6.5 6.50002 3.501"></polygon>
+                            </g>
+                        </g>
+                    </g>
+                    <g id="Group" font-family="ABBvoice-Regular, ABBvoice" font-weight="normal">
+                        <text id="↳🖋-Text" font-size="12" line-spacing="14" fill="#686868">
+                            <tspan x="122" y="13">Importance</tspan>
+                        </text>
+                        <text id="↳🖋-Text" transform="translate(300.000000, 143.000000) scale(-1, -1) rotate(-90.000000) translate(-300.000000, -143.000000) " font-size="12" line-spacing="14" fill="#686868">
+                            <tspan x="272" y="148">Condition</tspan>
+                        </text>
+                        <g id="horizontal" transform="translate(28.000000, 0.000000)" fill="#DBDBDB" font-size="10" line-spacing="24">
+                            <text id="0">
+                                <tspan x="8.87" y="282">0</tspan>
+                            </text>
+                            <text id="20">
+                                <tspan x="54.2" y="282">20</tspan>
+                            </text>
+                            <text id="40">
+                                <tspan x="101.86" y="282">40</tspan>
+                            </text>
+                            <text id="60">
+                                <tspan x="149.915" y="282">60</tspan>
+                            </text>
+                            <text id="80">
+                                <tspan x="197.9" y="282">80</tspan>
+                            </text>
+                            <text id="100">
+                                <tspan x="247.585" y="282">100</tspan>
+                            </text>
+                        </g>
+                        <g id="vertical" transform="translate(0.000000, 16.000000)" fill="#DBDBDB" font-size="10" line-spacing="24">
+                            <text id="0">
+                                <tspan x="17.74" y="251">0</tspan>
+                            </text>
+                            <text id="20">
+                                <tspan x="12.4" y="202">20</tspan>
+                            </text>
+                            <text id="40">
+                                <tspan x="11.72" y="154">40</tspan>
+                            </text>
+                            <text id="60">
+                                <tspan x="11.83" y="106">60</tspan>
+                            </text>
+                            <text id="80">
+                                <tspan x="11.8" y="58">80</tspan>
+                            </text>
+                            <text id="100">
+                                <tspan x="7.17" y="10">100</tspan>
+                            </text>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

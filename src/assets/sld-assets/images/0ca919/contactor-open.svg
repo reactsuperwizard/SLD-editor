@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="32px" height="48px" viewBox="-4.0 0.0 32 48" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 52.5 (67469) - http://www.bohemiancoding.com/sketch -->
+    <title>contactor-open</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Project-Modelling-–-GIS-&amp;-SLD" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" opacity="1">
+        <g id="Artboard" transform="translate(-424.000000, -2308.000000)" fill-rule="nonzero" stroke="#0ca919">
+            <g id="32-/-sld-/-vertical-/-box-icon-/-normal" transform="translate(420.000000, 2300.000000)">
+                <g id="sld-/-multi-/-contactor-(open)-/-black" transform="translate(4.000000, 8.000000)">
+                    <path d="M12,0 L12,10.5" id="Path"></path>
+                    <path d="M12,10 L12,22 C8.6862915,22 6,19.3137085 6,16 C6,12.6862915 8.6862915,10 12,10 Z" id="Combined-Shape"></path>
+                    <polyline id="Path" points="0.94 18.44 12 35.5 12 48"></polyline>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

@@ -1,0 +1,15 @@
+<div class="modal-container">
+  <div class="modal-header">
+    <span class="modal-title" id="modal-basic-title">Not saved</span>
+    <button type="button" class="close" aria-label="Close" (click)="activeModal.dismiss('back')">
+      <span aria-hidden="false">&times;</span>
+    </button>
+  </div>
+  <div class="modal-body">
+    <span i18n>Are you sure you want to exit without saving?</span>
+  </div>
+  <div class="modal-footer">
+    <a class="btn btn-cancel" (click)="activeModal.close('cancel')" i18n>Cancel</a>
+    <a class="btn btn-sure" (click)="activeModal.close('leave')" i18n>Still Leave</a>
+  </div>
+</div>

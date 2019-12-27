@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="32px" height="48px" viewBox="-4.0 0.0 32 48" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 52.5 (67469) - http://www.bohemiancoding.com/sketch -->
+    <title>capacitors-bank-iec</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Project-Modelling-–-GIS-&amp;-SLD" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" opacity="1">
+        <g id="Artboard" transform="translate(-1304.000000, -1988.000000)" fill-rule="nonzero" stroke="#0ca919">
+            <g id="32-/-sld-/-vertical-/-box-icon-/-normal" transform="translate(1300.000000, 1980.000000)">
+                <g id="sld-/-iec-/-capacitor-bank-/-black" transform="translate(4.000000, 8.000000)">
+                    <path d="M12,12 L12,36" id="Path" transform="translate(12.000000, 24.000000) rotate(90.000000) translate(-12.000000, -24.000000) "></path>
+                    <path d="M12,6 L12,30" id="Path" transform="translate(12.000000, 18.000000) rotate(90.000000) translate(-12.000000, -18.000000) "></path>
+                    <path d="M12,0 L12,17.5" id="Path"></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

@@ -1,0 +1,71 @@
+.reliability-workspace {
+  padding: 32px 24px;
+  font-size: 14px;
+  overflow: auto;
+  height: 100%;
+  font-size: 14px;
+  position: relative;
+  .section {
+    margin-bottom: 50px;
+    .section-header {
+      font-size: 16px;
+      font-weight: 500;
+    }
+  }
+
+  .workspace-card {
+    height: 344px;
+    width: 100%;
+    background-color: white;
+    border-radius: 3px;
+    box-shadow: 0 4px 12px 0 rgba(0,0,0,0.06);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-top: 16px;
+    margin-right: 16px;
+    .workspace-card-header {
+      padding-top: 16px;
+      padding-left: 16px;
+      .icon {
+        height: 20px;
+        width: 16px;
+      }
+    }
+    .workspace-card-content {
+      display: flex;
+      flex-grow: 1;
+      flex-shrink: 0;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      .workspace-card-title {
+        font-size: 32px;
+        font-weight: 300;
+      }
+      .workspace-color-bar {
+        width: 80px;
+        height: 8px;
+        margin-bottom: 16px;
+        &.orange {
+          background-color: #FFCD9D;
+        }
+        &.green {
+          background-color: #B7EAB2;
+        }
+        &.teal {
+          background-color: #A9E4DA;
+        }
+      }
+    }
+    .workspace-card-footer {
+      cursor: pointer;
+      height: 56px;
+      border-top: 1px solid #f4f4f4;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+  }
+
+}

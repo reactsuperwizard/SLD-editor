@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="32px" height="48px" viewBox="-4.0 0.5 32 48" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 52.5 (67469) - http://www.bohemiancoding.com/sketch -->
+    <title>shunt-reactor-iec</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Project-Modelling-–-GIS-&amp;-SLD" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" opacity="1">
+        <g id="Artboard" transform="translate(-1504.000000, -1667.000000)">
+            <g id="32-/-sld-/-vertical-/-box-icon-/-normal-copy-22" transform="translate(1500.000000, 1660.000000)">
+                <g id="sld-/-iec-/-shunt-reactor-/-black" transform="translate(4.000000, 8.000000)">
+                    <rect id="Rectangle" fill="#0ca919" fill-rule="nonzero" x="6" y="42" width="12" height="1"></rect>
+                    <path d="M12,25 L12,42.5" id="Path" stroke="#0ca919" stroke-width="1" fill-rule="nonzero"></path>
+                    <rect id="Rectangle" fill="#0ca919" fill-rule="nonzero" x="8" y="44" width="8" height="1"></rect>
+                    <rect id="Rectangle" fill="#0ca919" fill-rule="nonzero" x="10" y="46" width="4" height="1"></rect>
+                    <path d="M12,25 C17.5228475,25 22,20.5228475 22,15 C22,9.4771525 17.5228475,5 12,5 C6.4771525,5 2,9.4771525 2,15" id="Oval" stroke="#0ca919" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"></path>
+                    <polyline id="Path" stroke="#0ca919" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" fill-rule="nonzero" points="2 15 12 15 12 0"></polyline>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

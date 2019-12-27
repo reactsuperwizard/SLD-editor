@@ -1,0 +1,30 @@
+.palette-div-container {
+    position: relative;
+
+    .palette-div {
+        max-height: 536px;
+        min-height: 312px;
+    }
+
+    .hover-palette-container {
+        position: absolute;
+        right: 70%;
+        top: 228px;
+        height: 90px;
+        z-index: 10001;
+        background-color: white;
+        box-shadow: 0 4px 12px 0 rgba(0, 0, 0, 0.12);
+        border-radius: 4px;
+
+        .hover-palette-inner-container {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100%;
+
+            .hover-palette-div {
+                height: 74px;
+            }
+        }
+    }
+}

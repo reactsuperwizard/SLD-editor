@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="16px" height="16px" viewBox="0 0 16 16" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 52.5 (67469) - http://www.bohemiancoding.com/sketch -->
+    <title>chevron-large</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <polygon id="path-1" points="7.32 13.24 0.52 7 7.32 0.76 8.68 2.24 3.48 7 8.68 11.76"></polygon>
+    </defs>
+    <g id="Project-Modelling-–-GIS-&amp;-SLD" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" opacity="1">
+        <g id="5.X-/-Settings-/-Edit-Mode-/-SLD-Modelling-/-Defining-Outage-/-Manage" transform="translate(-16.000000, -52.000000)">
+            <g id="/submenu" transform="translate(0.000000, 20.000000)">
+                <g id="16-/-left" transform="translate(16.000000, 32.000000)">
+                    <g id="--16-/-Left-" transform="translate(3.000000, 1.000000)">
+                        <mask id="mask-2" fill="white">
+                            <use xlink:href="#path-1"></use>
+                        </mask>
+                        <use id="Mask" fill="#464646" fill-rule="nonzero" xlink:href="#path-1"></use>
+                        <g id="color-background-icon-regular" mask="url(#mask-2)" fill="#000000">
+                            <g transform="translate(-3.000000, -1.000000)" id="Rectangle">
+                                <rect x="0" y="0" width="16" height="16"></rect>
+                            </g>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

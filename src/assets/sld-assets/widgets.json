@@ -1,0 +1,647 @@
+[
+    {
+        "name": "bus-bar",
+        "class": "busbar",
+        "ports": [
+            { "id": "pseudo-1", "spot": "0.5 0.5" }
+        ],
+        "resizable": true,
+        "isConnector": true,
+        "angle": -90,
+        "height": 56,
+        "width": 32
+    },
+    {
+        "name": "cable-circuit",
+        "ports": [
+            { "id": "1", "spot": "0.5 0" },
+            { "id": "2", "spot": "0.5 1" }
+        ],
+        "resizable": false,
+        "angle": -90,
+        "height": 56,
+        "width": 32
+    },
+    {
+        "name": "bus-duct",
+        "ports": [
+            { "id": "1", "spot": "0.5 0" },
+            { "id": "2", "spot": "0.5 1" }
+        ],
+        "resizable": true,
+        "angle": -90,
+        "height": 56,
+        "width": 32
+    },
+    {
+        "name": "transmission-overhead-line",
+        "ports": [
+            { "id": "1", "spot": "0.5 0" },
+            { "id": "2", "spot": "0.5 1" }
+        ],
+        "resizable": true,
+        "angle": -90,
+        "height": 56,
+        "width": 32
+    },
+    {
+        "name": "circuit-breaker",
+        "states": {
+            "Closed": "closed",
+            "Opened": "open"
+        },
+        "currentState": "Closed",
+        "ports": [
+            { "id": "1", "spot": "0.5 0" },
+            { "id": "2", "spot": "0.5 1" }
+        ],
+        "resizable": false,
+        "height": 48,
+        "width": 32
+    },
+    {
+        "name": "disconnect-circuit-breaker",
+        "states": {
+            "CB close / D close": "closed",
+            "CB open / D close": "partially-closed",
+            "CB open / D open": "open"
+        },
+        "currentState": "CB close / D close",
+        "ports": [
+            { "id": "1", "spot": "0.5 0" },
+            { "id": "2", "spot": "0.5 1" }
+        ],
+        "resizable": false,
+        "height": 48,
+        "width": 32
+    },
+    {
+        "name": "drawout-circuit-breaker",
+        "states": {
+            "Closed": "closed",
+            "Opened": "open"
+        },
+        "currentState": "Closed",
+        "ports": [
+            { "id": "1", "spot": "0.5 0" },
+            { "id": "2", "spot": "0.5 1" }
+        ],
+        "resizable": false,
+        "height": 48,
+        "width": 32
+    },
+    {
+        "name": "fuse",
+        "hasAnsi": true,
+        "ports": [
+            { "id": "1", "spot": "0.5 0" },
+            { "id": "2", "spot": "0.5 1" }
+        ],
+        "resizable": false,
+        "height": 48,
+        "width": 32,
+        "metadataDescription": [
+            {
+                "category": "General",
+                "properties": [
+                    {
+                        "name": "SLD reference",
+                        "key": "sldReference",
+                        "readOnly": true
+                    },
+                    {
+                        "name": "Supplier",
+                        "key": "supplier",
+                        "required": true
+                    },
+                    {
+                        "name": "Asset configuration",
+                        "key": "assetconfiguration",
+                        "type": "enum",
+                        "options": ["Single phase-single asset", "Three phase-single asset"],
+                        "required": true
+                    },
+                    {
+                        "name": "OPEX budget area",
+                        "key": "opeXbudgetarea",
+                        "required": true
+                    }
+                ]
+            },
+            {
+                "category": "Substation",
+                "properties": [
+                    {
+                        "name": "SLD bay reference",
+                        "key": "sldBayReference",
+                        "required": true
+                    },
+                    {
+                        "name": "Longitude",
+                        "key": "longitude",
+                        "type": "number",
+                        "format": "00.000000",
+                        "required": true
+                    },
+                    {
+                        "name": "Latitude",
+                        "key": "latitude",
+                        "type": "number",
+                        "format": "00.000000",
+                        "required": true
+                    },
+                    {
+                        "name": "Altitude",
+                        "key": "altitude",
+                        "type": "number",
+                        "format": "0000",
+                        "required": true
+                    }
+                ]
+            },
+            {
+                "category": "Technical",
+                "properties": [
+                    {
+                        "name": "Installation location",
+                        "key": "installationLocation",
+                        "type": "enum",
+                        "options": ["Indoor", "Outdoor"],
+                        "required": true
+                    },
+                    {
+                        "name": "Insulation medium",
+                        "key": "installationMedium",
+                        "type": "enum",
+                        "options": ["Air", "Oil", "SF6"],
+                        "required": true
+                    },
+                    {
+                        "name": "Fuse link insulation",
+                        "key": "fuseLinkInsulation",
+                        "type": "enum",
+                        "options": ["Powder", "Silica sand"],
+                        "required": true
+                    },
+                    {
+                        "name": "Fuse main class",
+                        "key": "fuseMainClass",
+                        "type": "enum",
+                        "options": ["Current limiting", "Expulsion", "Non-current limiting"],
+                        "required": true
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "name": "ground-switch",
+        "states": {
+            "Closed": "closed",
+            "Opened": "open"
+        },
+        "hasAnsi": true,
+        "currentState": "Closed",
+        "ports": [
+            { "id": "1", "spot": "0.5 0" }
+        ],
+        "resizable": false,
+        "height": 48,
+        "width": 32,
+        "metadataDescription": [
+            {
+                "category": "General",
+                "properties": [
+                    {
+                        "name": "SLD reference",
+                        "key": "sldReference",
+                        "readOnly": true
+                    },
+                    {
+                        "name": "Supplier",
+                        "key": "supplier",
+                        "required": true
+                    },
+                    {
+                        "name": "Installation year",
+                        "key": "installationYear",
+                        "type": "number",
+                        "format": "0000",
+                        "required": true
+                    }
+                ]
+            },
+            {
+                "category": "Substation",
+                "properties": [
+                    {
+                        "name": "SLD bay reference",
+                        "key": "sldBayReference",
+                        "required": true
+                    },
+                    {
+                        "name": "Outage area",
+                        "key": "outageArea",
+                        "required": true
+                    },
+                    {
+                        "name": "SLD equipment reference",
+                        "key": "sldEquipmentReference",
+                        "required": false
+                    },
+                    {
+                        "name": "Substation",
+                        "key": "substation",
+                        "required": true
+                    }
+                ]
+            },
+            {
+                "category": "Technical",
+                "properties": [
+                    {
+                        "name": "Internal protection (IP)",
+                        "key": "internalProtection",
+                        "required": true
+                    },
+                    {
+                        "name": "Rated minimum ambient temperature",
+                        "key": "ratedMinAmbientTemp",
+                        "type": "number",
+                        "format": "00.0",
+                        "required": true
+                    },
+                    {
+                        "name": "Rated maximum ambient temperature",
+                        "key": "ratedMaxAmbientTemp",
+                        "type": "number",
+                        "format": "00.0",
+                        "required": false
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "name": "disconnect-switch",
+        "states": {
+            "Closed": "closed",
+            "Opened": "open"
+        },
+        "currentState": "Closed",
+        "ports": [
+            { "id": "1", "spot": "0.5 0" },
+            { "id": "2", "spot": "0.5 1" }
+        ],
+        "resizable": false,
+        "height": 48,
+        "width": 32,
+        "metadataDescription": [
+            {
+                "category": "General",
+                "properties": [
+                    {
+                        "name": "SLD reference",
+                        "key": "sldReference",
+                        "readOnly": true
+                    },
+                    {
+                        "name": "Supplier",
+                        "key": "supplier",
+                        "required": true
+                    },
+                    {
+                        "name": "Installation year",
+                        "key": "installationYear",
+                        "type": "number",
+                        "format": "0000",
+                        "required": true
+                    }
+                ]
+            },
+            {
+                "category": "Substation",
+                "properties": [
+                    {
+                        "name": "SLD bay reference",
+                        "key": "sldBayReference",
+                        "required": false
+                    },
+                    {
+                        "name": "Outage area",
+                        "key": "outageArea",
+                        "required": true
+                    },
+                    {
+                        "name": "SLD equipment reference",
+                        "key": "sldEquipmentReference",
+                        "required": true
+                    }
+                ]
+            },
+            {
+                "category": "Technical",
+                "properties": [
+                    {
+                        "name": "Internal protection (IP)",
+                        "key": "internalProtection",
+                        "required": false
+                    },
+                    {
+                        "name": "Rated minimum ambient temperature",
+                        "key": "ratedMinAmbientTemp",
+                        "type": "number",
+                        "format": "00.0",
+                        "required": true
+                    },
+                    {
+                        "name": "Rated maximum ambient temperature",
+                        "key": "ratedMaxAmbientTemp",
+                        "type": "number",
+                        "format": "00.0",
+                        "required": true
+                    },
+                    {
+                        "name": "Installation",
+                        "key": "installation",
+                        "type": "enum",
+                        "options": ["Indoor", "Outdoor"],
+                        "required": true
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "name": "disconnect-switch-load-break",
+        "states": {
+            "Closed": "closed",
+            "Opened": "open"
+        },
+        "currentState": "Closed",
+        "ports": [
+            { "id": "1", "spot": "0.5 0" },
+            { "id": "2", "spot": "0.5 1" }
+        ],
+        "resizable": false,
+        "height": 48,
+        "width": 32
+    },
+    {
+        "name": "combined-disconnect-ground-switch",
+        "states": {
+            "Closed": "closed",
+            "Opened": "open"
+        },
+        "hasAnsi": true,
+        "currentState": "Closed",
+        "ports": [
+            { "id": "1", "spot": "0.5 0" },
+            { "id": "2", "spot": "0.5 1" }
+        ],
+        "resizable": false,
+        "height": 48,
+        "width": 32
+    },
+    {
+        "name": "transformer-one",
+        "hasAnsi": true,
+        "ports": [
+            { "id": "1", "spot": "0.5 0" },
+            { "id": "2", "spot": "0.5 1" }
+        ],
+        "resizable": false,
+        "height": 48,
+        "width": 32,
+        "displayInPalette": false,
+        "cluster": "transformers",
+        "clusterHead": true
+    },
+    {
+        "name": "reactor",
+        "ports": [
+            { "id": "1", "spot": "0.5 0" },
+            { "id": "2", "spot": "0.5 1" }
+        ],
+        "resizable": false,
+        "height": 48,
+        "width": 32
+    },
+    {
+        "name": "neutral-ground-reactor",
+        "ports": [
+            { "id": "1", "spot": "0.5 0" }
+        ],
+        "resizable": false,
+        "height": 48,
+        "width": 32
+    },
+    {
+        "name": "contactor",
+        "states": {
+            "Closed": "closed",
+            "Opened": "open"
+        },
+        "currentState": "Closed",
+        "ports": [
+            { "id": "1", "spot": "0.5 0" },
+            { "id": "2", "spot": "0.5 1" }
+        ],
+        "resizable": false,
+        "height": 48,
+        "width": 32
+    },
+    {
+        "name": "capacitors-bank",
+        "hasAnsi": true,
+        "ports": [
+            { "id": "1", "spot": "0.5 0" },
+            { "id": "2", "spot": "0.5 1" }
+        ],
+        "resizable": false,
+        "height": 48,
+        "width": 32
+    },
+    {
+        "name": "surge-arrester",
+        "hasAnsi": true,
+        "ports": [
+            { "id": "1", "spot": "0.5 0" }
+        ],
+        "resizable": false,
+        "height": 48,
+        "width": 32
+    },
+    {
+        "name": "gis-bushing",
+        "ports": [
+            { "id": "1", "spot": "0.5 0" },
+            { "id": "2", "spot": "0.5 1" }
+        ],
+        "resizable": false,
+        "height": 48,
+        "width": 32
+    },
+    {
+        "name": "line-trap",
+        "ports": [
+          { "id": "1", "spot": "0.5 0" },
+          { "id": "2", "spot": "0.5 1" }
+        ],
+        "resizable": false,
+        "height": 48,
+        "width": 32
+    },
+    {
+        "name": "power-supply",
+        "class": "power-supply",
+        "ports": [
+            { "id": "1", "spot": "0.5 1" }
+        ],
+        "resizable": false,
+        "height": 48,
+        "width": 32
+    },
+    {
+        "name": "load",
+        "class": "load",
+        "ports": [
+            { "id": "1", "spot": "0.5 0" }
+        ],
+        "resizable": false,
+        "height": 48,
+        "width": 32
+    },
+    {
+        "name": "joint",
+        "ports": [
+            { "id": "1", "spot": "0 0.5", "angle": -90},
+            { "id": "2", "spot": "1 0.5", "angle": 90},
+            { "id": "3", "spot": "0.5 0"},
+            { "id": "4", "spot": "0.5 1"}
+        ],
+        "resizable": false,
+        "height": 8,
+        "width": 24
+    },
+    {
+        "name": "ground",
+        "hasAnsi": true,
+        "ports": [
+            { "id": "1", "spot": "0.5 0" }
+        ],
+        "resizable": false,
+        "height": 48,
+        "width": 32,
+        "displayInPalette": false
+    },
+    {
+        "name": "shunt-reactor",
+        "hasAnsi": true,
+        "ports": [
+            { "id": "1", "spot": "0.5 0" }
+        ],
+        "resizable": false,
+        "height": 48,
+        "width": 32,
+        "displayInPalette": false
+    },
+    {
+        "name": "transformer-zig-zag",
+        "ports": [
+          { "id": "1", "spot": "0.5 0" },
+          { "id": "2", "spot": "0.5 1" }
+        ],
+        "resizable": false,
+        "height": 48,
+        "width": 32,
+        "displayInPalette": false
+    },
+    {
+        "name": "neutral-ground-resistor",
+        "ports": [
+            { "id": "1", "spot": "0.5 0" }
+        ],
+        "resizable": false,
+        "height": 48,
+        "width": 32,
+        "displayInPalette": false
+    },
+    {
+        "name": "current-transformer-brushing",
+        "hasAnsi": true,
+        "ports": [
+          { "id": "1", "spot": "0.5 0" },
+          { "id": "2", "spot": "0.5 1" }
+        ],
+        "resizable": false,
+        "height": 48,
+        "width": 32,
+        "displayInPalette": false
+    },
+    {
+        "name": "current-transformer",
+        "hasAnsi": true,
+        "ports": [
+            { "id": "1", "spot": "0.5 0" },
+            { "id": "2", "spot": "0.5 1" }
+        ],
+        "resizable": false,
+        "height": 48,
+        "width": 32,
+        "displayInPalette": false
+    },
+    {
+        "name": "voltage-transformer",
+        "hasAnsi": true,
+        "ports": [
+            { "id": "1", "spot": "0.5 0" }
+        ],
+        "resizable": false,
+        "height": 48,
+        "width": 32,
+        "displayInPalette": false,
+        "cluster": "transformers"
+    },
+    {
+        "name": "transformer-two",
+        "hasAnsi": true,
+        "ports": [
+            { "id": "1", "spot": "0.5 0" },
+            { "id": "2", "spot": "0.5 1" }
+        ],
+        "resizable": false,
+        "height": 48,
+        "width": 32,
+        "displayInPalette": false,
+        "cluster": "transformers"
+    },
+    {
+        "name": "transformer-three",
+        "hasAnsi": true,
+        "ports": [
+            { "id": "1", "spot": "0.5 0" },
+            { "id": "2", "spot": "0.5 1" }
+        ],
+        "resizable": false,
+        "height": 48,
+        "width": 32,
+        "displayInPalette": false,
+        "cluster": "transformers",
+        "exclusiveTo": "iec"
+    },
+    {
+        "name": "transformer-four",
+        "hasAnsi": true,
+        "ports": [
+            { "id": "1", "spot": "0.5 0" },
+            { "id": "2", "spot": "0.5 1" }
+        ],
+        "resizable": false,
+        "height": 48,
+        "width": 32,
+        "displayInPalette": false,
+        "cluster": "transformers",
+        "exclusiveTo": "iec"
+    }
+]

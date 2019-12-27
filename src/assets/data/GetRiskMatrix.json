@@ -1,0 +1,18 @@
+{
+  "riskMatrixAbsolute": {
+    "lowRisk": 30,
+    "highRisk": 70
+  },
+  "riskMatrixFlexible" :[
+    ["medium,medium", "medium,medium", "medium,high", "high,high", "high,high", "high,high", "high,high", "high,high", "high,high", "high,high"],
+    ["medium,medium", "medium,medium", "medium,medium", "medium,medium", "medium,medium", "medium,high", "high,high", "high,high", "high,high", "high,high"],
+    ["low,medium", "medium,medium", "medium,medium", "medium,medium", "medium,medium", "medium,medium", "medium,high", "high,high", "high,high", "high,high"],
+    ["low,low", "medium,medium", "medium,medium", "medium,medium", "medium,medium", "medium,medium", "medium,medium", "medium,high", "high,high", "high,high"],
+    ["low,low", "medium,medium", "medium,medium", "medium,medium", "medium,medium", "medium,medium", "medium,medium", "medium,medium", "medium,high", "high,high"],
+    ["low,low", "low,medium", "medium,medium", "medium,medium", "medium,medium", "medium,medium", "medium,medium", "medium,medium", "medium,medium", "high,high"],
+    ["low,low", "low,low", "low,medium", "medium,medium", "medium,medium", "medium,medium", "medium,medium", "medium,medium", "medium,medium", "high,high"],
+    ["low,low", "low,low", "low,low", "low,medium", "medium,medium", "medium,medium", "medium,medium", "medium,medium", "medium,medium", "medium,high"],
+    ["low,low", "low,low", "low,low", "low,low", "low,medium", "medium,medium", "medium,medium", "medium,medium", "medium,medium", "medium,medium"],
+    ["low,low", "low,low", "low,low", "low,low", "low,low", "low,low", "low,low", "low,medium", "medium,medium", "medium,medium"]
+  ]
+}

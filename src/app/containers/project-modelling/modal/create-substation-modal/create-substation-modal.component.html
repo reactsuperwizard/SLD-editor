@@ -1,0 +1,178 @@
+<div class="modal-container">
+  <div class="modal-header">
+    <span *ngIf="edit" class="modal-title" i18n>Editing substation</span>
+    <span *ngIf="!edit" class="modal-title" i18n>Creating substation</span>
+    <button type="button" class="close" (click)="close()">
+    </button>
+  </div>
+  <form [formGroup]="form" (ngSubmit)="onSubmit()">
+    <div class="modal-body">
+      <h2 class="h2-title" i18n>Details</h2>
+      <div class="row">
+        <div class="col-lg-4">
+          <div class="form-wrapper">
+            <label class="label-element" i18n>Name</label>
+            <input [class.invalid]="validation('name')" formControlName="name" type="text" class="form-input"/>
+          </div>
+        </div>
+        <div class="col-lg-4">
+          <div class="form-wrapper">
+            <label class="label-element" i18n>Region</label>
+            <select [class.invalid]="validation('region')" formControlName="region" class="form-input">
+              <option value=""></option>
+              <option *ngFor="let item of masterData.regions" [value]="item">{{item}}</option>
+            </select>
+          </div>
+        </div>
+        <div class="col-lg-4">
+          <div class="form-wrapper">
+            <label class="label-element" i18n>Substation Reference</label>
+            <input [class.invalid]="validation('reference')" formControlName="reference" placeholder="0000" type="text"
+                   class="form-input"/>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-4">
+          <div class="form-wrapper">
+            <label class="label-element" i18n>Type</label>
+            <select [class.invalid]="validation('type')" formControlName="type" class="form-input">
+              <option value=""></option>
+              <option *ngFor="let item of masterData.subStationTypes" [value]="item">{{item}}</option>
+            </select>
+          </div>
+        </div>
+        <div class="col-lg-4">
+          <div class="form-wrapper">
+            <label class="label-element" i18n>Owner</label>
+            <input [class.invalid]="validation('owner')" formControlName="owner" type="text" class="form-input"/>
+          </div>
+        </div>
+        <div class="col-lg-4">
+          <div class="form-wrapper">
+            <label class="label-element" i18n>Administer</label>
+            <input [class.invalid]="validation('administer')" formControlName="administer" type="text"
+                   class="form-input"/>
+          </div>
+        </div>
+      </div>
+      <h2 class="h2-title" i18n>Location</h2>
+      <div class="row">
+        <div class="col-lg-4">
+          <div class="form-wrapper">
+            <label class="label-element" i18n>Longitude</label>
+            <input appNumberOnly [class.invalid]="validation('longitude')" formControlName="longitude" type="text"
+                   class="form-input"/>
+          </div>
+        </div>
+        <div class="col-lg-4">
+          <div class="form-wrapper">
+            <label class="label-element" i18n>Latitude</label>
+            <input appNumberOnly [class.invalid]="validation('latitude')" formControlName="latitude" type="text"
+                   class="form-input"/>
+          </div>
+        </div>
+        <div class="col-lg-4">
+          <div class="form-wrapper">
+            <label class="label-element" i18n>Altitude</label>
+            <input appNumberOnly [class.invalid]="validation('altitude')" formControlName="altitude"
+                   placeholder="meters"
+                   type="text" class="form-input"/>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-4">
+          <div class="form-wrapper">
+            <label class="label-element" i18n>Construction area (km²)</label>
+            <input appNumberOnly [class.invalid]="validation('constructionArea')" formControlName="constructionArea"
+                   placeholder="0" type="text" class="form-input"/>
+          </div>
+        </div>
+        <div class="col-lg-4">
+          <div class="form-wrapper">
+            <label class="label-element" i18n>Total area (km²)</label>
+            <input appNumberOnly [class.invalid]="validation('totalArea')" formControlName="totalArea" placeholder="0"
+                   type="text" class="form-input"/>
+          </div>
+        </div>
+        <div class="col-lg-4">
+          <div class="form-wrapper">
+            <label class="label-element" i18n>Free space (km²)</label>
+            <input appNumberOnly [class.invalid]="validation('freeSpace')" formControlName="freeSpace" placeholder="0"
+                   type="text" class="form-input"/>
+          </div>
+        </div>
+      </div>
+      <h2 class="h2-title" i18n>Technical</h2>
+      <div class="row">
+        <div class="col-lg-4">
+          <div class="form-wrapper">
+            <label class="label-element" i18n>Control rooms</label>
+            <input appNumberOnly [class.invalid]="validation('controlRooms')" formControlName="controlRooms"
+                   placeholder="0"
+                   type="text" class="form-input"/>
+          </div>
+        </div>
+        <div class="col-lg-4">
+          <div class="form-wrapper">
+            <label class="label-element" i18n>Type of Switchgear</label>
+            <select formControlName="switchgear" class="form-input">
+              <option value="">-</option>
+              <option *ngFor="let item of masterData.switchgearTypes" [value]="item">{{item}}</option>
+            </select>
+          </div>
+        </div>
+        <div class="col-lg-4">
+          <div class="form-wrapper">
+            <label class="label-element" i18n>Voltage level</label>
+            <select formControlName="voltageLevel" class="form-input">
+              <option value="">-</option>
+              <option *ngFor="let item of masterData.voltageLevels" [value]="item">{{item}}</option>
+            </select>
+          </div>
+        </div>
+      </div>
+      <h2 class="h2-title" i18n>Contract</h2>
+      <div class="row">
+        <div class="col-lg-4">
+          <div class="form-wrapper">
+            <label class="label-element" i18n>Year of installation</label>
+            <select formControlName="installationYear" class="form-input">
+              <option value="">-</option>
+              <option *ngFor="let item of masterData.years" [value]="item">{{item}}</option>
+            </select>
+          </div>
+        </div>
+        <div class="col-lg-4">
+          <div class="form-wrapper">
+            <label class="label-element" i18n>Year of commisioning</label>
+            <select formControlName="commisioningYear" class="form-input">
+              <option value="">-</option>
+              <option *ngFor="let item of masterData.years" [value]="item">{{item}}</option>
+            </select>
+          </div>
+        </div>
+        <div class="col-lg-4">
+          <div class="form-wrapper">
+            <label class="label-element" i18n>Possibility to extend</label>
+            <select formControlName="possibilityToExtend" class="form-input">
+              <option value="">To be defined</option>
+              <option *ngFor="let item of masterData.extends" [value]="item">{{item}}</option>
+            </select>
+          </div>
+        </div>
+      </div>
+      <div class="action-buttons">
+      </div>
+
+    </div>
+    <div class="modal-footer">
+      <button *ngIf="edit" (click)="deleteMarker()" type="button" class="btn btn-link" i18n>Delete substation</button>
+      <button *ngIf="!edit" (click)="close()" type="button" class="btn btn-link" i18n>Continue adding</button>
+      <button *ngIf="edit" type="submit" class="btn btn-primary" i18n>Edit SLD</button>
+      <button *ngIf="!edit" type="submit" class="btn btn-primary" i18n>Create SLD</button>
+    </div>
+
+  </form>
+</div>

@@ -1,0 +1,92 @@
+<div class="loading-box" *ngIf="loading">
+  <div class="img" alt="loading"></div>
+</div>
+<div *ngIf="!loading" class="scroll-panel">
+  <div class="body-panel" [perfectScrollbar]="{}">
+    <div class="project-modalling-area-page">
+      <h3 class="header">{{title}}</h3>
+
+      <div class="groups">
+        <ng-container *ngFor="let row of rows; let groupIndex = index;">
+          <div class="group-row">
+            <div class="left-section">
+              <div class="name">
+                <span>{{row.areaId}}</span>
+              </div>
+              <button
+                class="expand"
+                href="#"
+                [class.expanded]="row.expanded"
+                title="Expand/Collapse Group"
+                (click)="row.expanded = !row.expanded">
+              </button>
+              <div class="description">
+                <span>{{row.description}}</span>
+              </div>
+            </div>
+            <div class="actions">
+              <button class="icon icon-edit"
+                      (click)="edit(groupIndex, row)"></button>
+              <button (click)="deleteGroup(groupIndex)" class="icon icon-remove"></button>
+            </div>
+          </div>
+          <div class="group-table" *ngIf="row.expanded">
+            <div class="sub-header">
+              <div class="filter-container" [ngClass]="{'filter-hide':!row.filterShow}">
+                <div class="header">
+                  <i class="icon icon-filter" (click)="row.filterShow=!row.filterShow"
+                     [ngClass]="{'checked':!row.filterShow}"></i>
+                  <span i18n>Filters</span>
+                </div>
+                <div class="filter-option" *ngFor="let item of filterColumns;let i = index"
+                     (click)="item.selected=!item.selected;updateFilter()">
+                  <i class="icon icon-checkbox" [ngClass]="{'checked':item.selected}"></i>
+                  <span>{{item.name}}</span>
+                </div>
+              </div>
+            </div>
+            <div class="pm-area-table">
+              <ngx-datatable
+                #outageTable
+                [rows]="row.items"
+                [columnMode]="'force'"
+                [groupRowsBy]="'areaId'"
+                [headerHeight]="50"
+                [footerHeight]="50"
+                [rowHeight]="40"
+                [groupExpansionDefault]="true">
+                <ngx-datatable-column *ngIf="filterColumns[0].selected" name="Reference"
+                                      prop="refId"></ngx-datatable-column>
+                <ngx-datatable-column *ngIf="filterColumns[1].selected" name="Region"
+                                      prop="region"></ngx-datatable-column>
+                <ngx-datatable-column *ngIf="filterColumns[2].selected" name="Type" prop="type"></ngx-datatable-column>
+                <ngx-datatable-column *ngIf="filterColumns[3].selected" name="Tech" prop="tech"></ngx-datatable-column>
+                <ngx-datatable-column *ngIf="filterColumns[4].selected" name="Manufact"
+                                      prop="manufacture"></ngx-datatable-column>
+                <ngx-datatable-column *ngIf="filterColumns[5].selected" name="Model"
+                                      prop="model"></ngx-datatable-column>
+                <ngx-datatable-column *ngIf="filterColumns[6].selected" name="Risk" prop="risk"></ngx-datatable-column>
+                <ngx-datatable-column name="" [width]="60" [sortable]="false" [canAutoResize]="false"
+                                      [draggable]="false"
+                                      [resizeable]="false">
+                  <ng-template ngx-datatable-cell-template let-rowIndex="rowIndex" let-value="value" let-row="row"
+                               let-group="group">
+                    <button (click)="deleteAsset(groupIndex, row)" class="icon icon-remove"></button>
+                  </ng-template>
+                </ngx-datatable-column>
+              </ngx-datatable>
+            </div>
+            <app-add-new (click)="assignAsset(groupIndex)"><span i18n>Assign new asset</span></app-add-new>
+          </div>
+        </ng-container>
+        <app-add-new (click)="addNewGroup()"><span i18n>Add new {{type}} area</span></app-add-new>
+      </div>
+    </div>
+  </div>
+  <div class="footer-panel">
+    <div class="footer-buttons"></div>
+    <div class="footer-buttons">
+      <button class="btn btn-primary" i18n>Save</button>
+    </div>
+  </div>
+</div>

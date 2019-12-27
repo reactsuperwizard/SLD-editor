@@ -1,0 +1,18 @@
+// dialog-div
+.name-dialog {
+    width: 250px;
+}
+
+// content area
+.content {
+    padding: 0 10px;
+
+    .input-container {
+        margin-top: 10px;
+        input {
+            flex-grow: 1;
+            font-size: 1em;
+        }
+    }
+
+}

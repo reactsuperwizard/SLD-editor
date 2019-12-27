@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="16px" height="16px" viewBox="0 0 16 16" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 52.5 (67469) - http://www.bohemiancoding.com/sketch -->
+    <title>switch-white</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <path d="M1.77635684e-15,6 C1.77635684e-15,6 0.390768495,11 7.99919351,11 L7.99919351,8 L11.9999424,12 L7.99919351,16 L7.99919351,13 C2.14345239,13 3.55271368e-15,10.9525 1.77635684e-15,6 Z M11.9999424,10 C11.9999424,10 11.6091739,5 4.00074889,5 L4.00074889,8 L1.77635684e-15,4 L4.00074889,8.8817842e-16 L4.00074889,3 C9.85649001,3 11.9999424,5.0475 11.9999424,10 Z" id="path-1"></path>
+    </defs>
+    <g id="Project-Modelling-–-GIS-&amp;-SLD" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" opacity="1">
+        <g id="5.7-/-Settings-/-Edit-Mode-/-SLD-Modelling-/-Edit-on-Right-Click" transform="translate(-920.000000, -544.000000)">
+            <g id="/right-click-(single-object)" transform="translate(776.000000, 264.000000)">
+                <g id="/right-click/single-object" transform="translate(24.000000, 80.000000)">
+                    <g id="32-/-combo-box-/-filled-/-dark" transform="translate(0.000000, 192.000000)">
+                        <g id="16-/-toogle" transform="translate(120.000000, 8.000000)">
+                            <g transform="translate(2.000000, 0.000000)">
+                                <mask id="mask-2" fill="white">
+                                    <use xlink:href="#path-1"></use>
+                                </mask>
+                                <use id="toogle" fill="#000000" transform="translate(5.999971, 8.000000) scale(-1, 1) translate(-5.999971, -8.000000) " xlink:href="#path-1"></use>
+                                <g id="color-grey-0" mask="url(#mask-2)" fill="#FFFFFF">
+                                    <g transform="translate(-2.000000, 0.000000)" id="Rectangle">
+                                        <rect x="0" y="0" width="16" height="16"></rect>
+                                    </g>
+                                </g>
+                            </g>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

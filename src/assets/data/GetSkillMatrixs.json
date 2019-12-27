@@ -1,0 +1,103 @@
+
+
+
+[
+  {
+    "skillId": 1,
+    "skillName": "dot net core",
+    "skillLevel": "level1",
+    "skillCertificate": "Dot net core 2.0",
+    "userId": 4,
+    "userName": "Unit Test",
+    "employer": null,
+    "jobPosition": null,
+    "email": "unittest@wipro.com",
+    "phone": null,
+    "certificateExpiry": "2018-11-03T00:00:00",
+    "certificate": 1
+  },
+  {
+    "skillId": 1,
+    "skillName": "dot net core",
+    "skillLevel": "level1",
+    "skillCertificate": "Dot net core 2.0",
+    "userId": 5,
+    "userName": "User 1",
+    "employer": null,
+    "jobPosition": null,
+    "email": "user1@wipro.com",
+    "phone": null,
+    "certificateExpiry": "2018-11-03T00:00:00",
+    "certificate": 1
+  },
+  {
+    "skillId": 1,
+    "skillName": "dot net core",
+    "skillLevel": "level1",
+    "skillCertificate": "Dot net core 2.0",
+    "userId": 6,
+    "userName": "User 2",
+    "employer": null,
+    "jobPosition": null,
+    "email": "user2@wipro.com",
+    "phone": null,
+    "certificateExpiry": "2018-11-03T00:00:00",
+    "certificate": 1
+  },
+  {
+    "skillId": 1,
+    "skillName": "dot net core",
+    "skillLevel": "level1",
+    "skillCertificate": "Dot net core 2.0",
+    "userId": 7,
+    "userName": "User 3",
+    "employer": null,
+    "jobPosition": null,
+    "email": "user3@wipro.com",
+    "phone": null,
+    "certificateExpiry": "2018-11-03T00:00:00",
+    "certificate": 1
+  },
+  {
+    "skillId": 4,
+    "skillName": "Dot net new",
+    "skillLevel": "level3",
+    "skillCertificate": "Unit Test Certificate",
+    "userId": 4,
+    "userName": "Unit Test",
+    "employer": null,
+    "jobPosition": null,
+    "email": "unittest@wipro.com",
+    "phone": null,
+    "certificateExpiry": "2018-11-03T00:00:00",
+    "certificate": 1
+  },
+  {
+    "skillId": 4,
+    "skillName": "Dot net new",
+    "skillLevel": "level3",
+    "skillCertificate": "Unit Test Certificate",
+    "userId": 5,
+    "userName": "User 1",
+    "employer": null,
+    "jobPosition": null,
+    "email": "user1@wipro.com",
+    "phone": null,
+    "certificateExpiry": "2018-11-03T00:00:00",
+    "certificate": 1
+  },
+  {
+    "skillId": 4,
+    "skillName": "Dot net new",
+    "skillLevel": "level3",
+    "skillCertificate": "Unit Test Certificate",
+    "userId": 6,
+    "userName": "User 2",
+    "employer": null,
+    "jobPosition": null,
+    "email": "user2@wipro.com",
+    "phone": null,
+    "certificateExpiry": "2018-11-03T00:00:00",
+    "certificate": 1
+  }
+]

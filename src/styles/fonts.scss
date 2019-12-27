@@ -1,0 +1,15 @@
+@mixin font-family($font-name, $font-weight, $font-style, $font-url, $font-file) {
+  @font-face {
+    font-family: '#{$font-name}';
+    src: url('#{$font-url}#{$font-file}.ttf');
+    // src: url('#{$font-url}#{$font-file}.eot?#iefix') format('embedded-opentype'), url('#{$font-url}#{$font-file}.woff') format('woff'), url('#{$font-url}#{$font-file}.ttf') format('truetype'), url('#{$font-url}#{$font-file}.svg##{$font-name}') format('svg');
+    font-weight: $font-weight;
+    font-style: $font-style;
+  }
+}
+
+
+@include font-family('ABBvoice', 300, normal, 'assets/fonts/', 'ABBvoice_Lt');
+@include font-family('ABBvoice', 400, normal, 'assets/fonts/', 'ABBvoice_Rg');
+@include font-family('ABBvoice', 500, normal, 'assets/fonts/', 'ABBvoice_Md');
+@include font-family('ABBvoice', 700, normal, 'assets/fonts/', 'ABBvoice_Bd');

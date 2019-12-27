@@ -1,0 +1,153 @@
+@import 'mixin';
+.content-wrap.all-users {
+  @include content-wrap-style();
+  .body-panel {
+    padding: 20px;
+    &.modal-body-panel {
+      padding: 0 20px;
+    }
+  }
+  .filter-container {
+    width: 180px;
+    position: absolute;
+    right: 16px;
+    top: 20px;
+    z-index: 1000;
+    background-color: #3D3D3D;
+    display: flex;
+    flex-direction: column;
+    color: white;
+    padding: 0 0 16px 16px;
+    border-radius: 5px;
+    user-select: none;
+    box-shadow: 0 2px 4px $lightGray;
+    .header {
+      display: flex;
+      flex-direction: row-reverse;
+      justify-content: space-between;
+      align-items: center;
+      border-bottom: 2px solid #686868;
+      height: 41px;
+      .icon {
+        width: 40px;
+        height: 40px;
+        background-size: 40%;
+        cursor: pointer;
+      }
+    }
+    .filter-option {
+      height: 30px;
+      display: flex;
+      align-items: center;
+      .icon {
+        width: 16px;
+        height: 16px;
+      }
+      span {
+        padding-left: 16px;
+        font-size: 13px;
+        white-space: nowrap;
+      }
+    }
+    &.filter-hide {
+      background-color: transparent;
+      box-shadow: none;
+      .header {
+        border-bottom: none;
+        span {
+          display: none;
+        }
+      }
+      .filter-option {
+        display: none;
+      }
+    }
+  }
+  .all-user-table {
+    width: 100%;
+    .datatable-header,
+    .datatable-body .datatable-body-row {
+      height: 40px !important;
+      border-bottom: 1px solid $lighterGray;
+    }
+    .datatable-header-inner {
+      border-top: 1px solid $lighterGray;
+    }
+    .datatable-header-cell-label {
+      font-size: 12px;
+      color: $gray;
+    }
+    .empty-row {
+      height: 40px;
+      line-height: 40px;
+    }
+    .checkbox-wrap {
+      width: 40px;
+      height: 40px;
+      line-height: 48px;
+      margin: 0;
+      text-align: center;
+      border-right: 1px solid $lighterGray;
+      input {
+        display: none;
+      }
+      .icon {
+        width: 16px;
+        height: 16px;
+      }
+    }
+    .datatable-header-cell {
+      margin-bottom: 10px;
+    }
+    .datatable-header-cell:nth-child(2),
+    .datatable-body-cell:nth-child(2) {
+      margin-left: 20px;
+    }
+    .datatable-body-cell,
+    .datatable-header-cell-wrapper {
+      color: $lightBlack;
+      line-height: 40px;
+      font-size: 14px;
+      .icon {
+        width: 16px;
+        height: 16px;
+        &.icon-avatar  {
+          border-radius: 100%;
+          border: 1px solid rgba($gray, .8);
+          width: 24px;
+          height: 24px;
+        }
+      }
+      .datatable-header-cell-label {
+        font-size: 12px;
+        color: $lightBlack;
+      }
+      .team-span {
+        margin-right: 6px;
+      }
+    }
+    .tcell-user {
+      display: flex;
+      align-items: center;
+      left: 0;
+      right: 0;
+      top: 0;
+      bottom: 0;
+      .uname {
+        margin-left: 16px;
+        color: $lightBlack;
+        &.no-margin {
+          margin-left: 0;
+        }
+      }
+    }
+    .datatable-footer {
+      .page-count {
+        display: none;
+      }
+      .datatable-pager {
+        @include paging-default();
+      }
+    }
+  }
+}

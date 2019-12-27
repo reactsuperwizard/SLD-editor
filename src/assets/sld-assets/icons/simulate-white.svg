@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="16px" height="16px" viewBox="0 0 16 16" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 52.5 (67469) - http://www.bohemiancoding.com/sketch -->
+    <title>simulate-white</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <polygon id="path-1" points="3 3 3 13 13 8"></polygon>
+    </defs>
+    <g id="Project-Modelling-–-GIS-&amp;-SLD" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" opacity="1">
+        <g id="5.7-/-Settings-/-Edit-Mode-/-SLD-Modelling-/-Edit-on-Right-Click" transform="translate(-680.000000, -544.000000)">
+            <g id="/right-click-(non-switchable)" transform="translate(536.000000, 264.000000)">
+                <g id="/right-click/non-switchable" transform="translate(24.000000, 80.000000)">
+                    <g id="32-/-combo-box-/-filled-/-dark" transform="translate(0.000000, 192.000000)">
+                        <g id="16-/-play" transform="translate(120.000000, 8.000000)">
+                            <g>
+                                <mask id="mask-2" fill="white">
+                                    <use xlink:href="#path-1"></use>
+                                </mask>
+                                <use id="Play" fill="#464646" xlink:href="#path-1"></use>
+                                <g id="color-grey-0" mask="url(#mask-2)" fill="#FFFFFF">
+                                    <rect id="Rectangle" x="0" y="0" width="16" height="16"></rect>
+                                </g>
+                            </g>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

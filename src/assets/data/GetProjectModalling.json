@@ -1,0 +1,13 @@
+{
+  "gis": {
+    "edit": true,
+    "background": "/assets/i/dis-background.png",
+    "image": "/assets/avatars/user_avatar_male1.png",
+    "name": "Jordi Santiago",
+    "projectId": 1
+  },
+  "sld": {
+    "edit": true,
+    "background": "/assets/i/sld-background.png"
+  }
+}

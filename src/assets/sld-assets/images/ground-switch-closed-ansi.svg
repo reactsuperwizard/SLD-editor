@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="32px" height="48px" viewBox="-4.0 0.0 32 48" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 52.5 (67469) - http://www.bohemiancoding.com/sketch -->
+    <title>ground-switch-closed-ansi</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Project-Modelling-–-GIS-&amp;-SLD" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" opacity="1">
+        <g id="Artboard" transform="translate(-2604.000000, -748.000000)" fill-rule="nonzero" stroke="#000000">
+            <g id="32-/-sld-/-vertical-/-box-icon-/-normal-copy-4" transform="translate(2600.000000, 740.000000)">
+                <g id="sld-/-ansi-/-ground-switch-(closed)-/-black" transform="translate(4.000000, 8.000000)">
+                    <path d="M12,0 L12,10" id="Path"></path>
+                    <path d="M10,8 L10,13" id="Path" transform="translate(10.000000, 10.500000) rotate(90.000000) translate(-10.000000, -10.500000) "></path>
+                    <path d="M10,33 L10,38" id="Path" transform="translate(10.000000, 35.500000) rotate(90.000000) translate(-10.000000, -35.500000) "></path>
+                    <path d="M8,10.5 L8,19" id="Path"></path>
+                    <path d="M8,19 L8,36" id="Path"></path>
+                    <path d="M12,36 L12,41.5" id="Path"></path>
+                    <polyline id="Path-11" points="12 41 19.0061384 41 14.5 46.5"></polyline>
+                    <path d="M15.0061384,41 L10.5,46.5" id="Path-11"></path>
+                    <path d="M11.0061384,41 L6.5,46.5" id="Path-11"></path>
+                    <polyline id="Path-11" points="12 41 7.00613839 41 2.5 46.5"></polyline>
+                    <path d="M7.5,11.5 L7.5,18.5" id="Path" transform="translate(7.500000, 15.500000) rotate(90.000000) translate(-7.500000, -15.500000) "></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

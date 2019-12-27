@@ -1,0 +1,144 @@
+@import 'mixin';
+
+.tabs-project-entity-container {
+  user-select: none;
+  @include tab-page-default;
+  .tab {
+    .content-wrap {
+      @include content-wrap-style;
+    }
+  }
+}
+app-outage-table {
+  width: 100%;
+}
+.tab-risk-matrix {
+  .risk-matrix {
+    flex: 4;
+  }
+  .risk-opts {
+    flex: 6;
+    display: flex;
+    flex-direction: column;
+    padding: 12px 20px 0 50px;
+    .item {
+      height: 56px;
+      display: flex;
+      align-items: center;
+      font-size: 15px;
+      &.mode-switch {
+        justify-content: space-between;
+        border-bottom: 1px solid $lighterGray;
+        .slide-checkbox {
+          @include slide-checkbox-defualt;
+        }
+      }
+      &.risk-indicate {
+        div {
+          cursor: pointer;
+          padding: 0 10px 0 5px;
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          height: 15px;
+          i {
+            width: 8px;
+            height: 8px;
+            border-radius: 4px;
+            margin-right: 8px;
+            &.active + span {
+              color: $black;
+            }
+            &.low {
+              background-color: $lowRisk;
+              &.active {
+                border: 1px solid darken($lowRisk, 30%);
+              }
+            }
+            &.medium {
+              background-color: $mediumRisk;
+              &.active {
+                border: 1px solid darken($mediumRisk, 30%);
+              }
+            }
+            &.high {
+              background-color: $highRisk;
+              &.active {
+                border: 1px solid darken($highRisk, 30%);
+              }
+            }
+          }
+          span {
+            color: $gray;
+          }
+        }
+      }
+      &.opt-tip {
+        justify-content: space-between;
+        border: 1px solid $lighterGray;
+        padding: 0 10px 0 20px;
+        border-radius: 5px;
+        height: 36px;
+        .icon {
+          width: 16px;
+          height: 16px;
+        }
+      }
+    }
+    .risk-slide-bar {
+      margin-top: 50px;
+    }
+  }
+}
+
+.tab-knowledge-bank {
+  .title {
+    margin: 0 16px 24px 16px;
+    border-bottom: 1px solid $lighterGray;
+    height: 56px;
+    line-height: 56px;
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+  }
+  .items {
+    width: 100%;
+    padding: 0 16px 24px 16px;
+    display: flex;
+    flex-direction: column;
+    .item {
+      border: 1px solid $lightGray;
+      border-radius: 5px;
+      height: 41px;
+      min-height: 41px;
+      display: flex;
+      align-items: center;
+      margin-bottom: 4px;
+      &:hover {
+        background-color: $lighterGray;
+      }
+      label {
+        margin: 0;
+        input {
+          display: none;
+        }
+        width: 41px;
+        height: 41px;
+        line-height: 47px;
+        text-align: center;
+        border-right: 1px solid $lightGray;
+        .icon {
+          width: 16px;
+          height: 16px;
+        }
+      }
+      span {
+        flex: 1;
+        padding-left: 15px;
+        font-size: 15px;
+      }
+    }
+  }
+}

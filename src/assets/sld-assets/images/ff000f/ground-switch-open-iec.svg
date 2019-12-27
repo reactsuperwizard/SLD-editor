@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="32px" height="48px" viewBox="-3.0 0.0 32 48" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 52.5 (67469) - http://www.bohemiancoding.com/sketch -->
+    <title>ground-switch-open-iec</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Project-Modelling-–-GIS-&amp;-SLD" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" opacity="1">
+        <g id="Artboard" transform="translate(-1303.000000, -748.000000)" fill-rule="nonzero">
+            <g id="32-/-sld-/-vertical-/-box-icon-/-normal-copy" transform="translate(1300.000000, 740.000000)">
+                <g id="sld-/-iec-/-ground-switch-(open)-/-black" transform="translate(4.000000, 8.000000)">
+                    <path d="M12,0 L12,10" id="Path" stroke="#ff000f" stroke-width="1"></path>
+                    <path d="M10,8 L10,13" id="Path" stroke="#ff000f" stroke-width="1" transform="translate(10.000000, 10.500000) rotate(90.000000) translate(-10.000000, -10.500000) "></path>
+                    <path d="M10,35.5 L10,40.5" id="Path" stroke="#ff000f" stroke-width="1" transform="translate(10.000000, 38.000000) rotate(90.000000) translate(-10.000000, -38.000000) "></path>
+                    <path d="M8,10.5 L8,15.5" id="Path" stroke="#ff000f" stroke-width="1"></path>
+                    <path d="M12,38 L12,42.5" id="Path" stroke="#ff000f" stroke-width="1"></path>
+                    <rect id="Rectangle" fill="#ff000f" x="6" y="42" width="12" height="1"></rect>
+                    <rect id="Rectangle" fill="#ff000f" x="8" y="44" width="8" height="1"></rect>
+                    <rect id="Rectangle" fill="#ff000f" x="10" y="46" width="4" height="1"></rect>
+                    <path d="M7.5,11.5 L7.5,18.5" id="Path" stroke="#ff000f" stroke-width="1" transform="translate(7.500000, 15.500000) rotate(90.000000) translate(-7.500000, -15.500000) "></path>
+                    <polyline id="Path" stroke="#ff000f" stroke-width="1" points="-0.06 19.44 8 31.5 8 37.5"></polyline>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

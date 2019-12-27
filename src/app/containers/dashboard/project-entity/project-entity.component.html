@@ -1,0 +1,136 @@
+<div class="tabs-project-entity-container">
+  <ngb-tabset class="tabs" [destroyOnHide]="true">
+    <ngb-tab [title]="userType === 'Admin' ? 'Outage type' : 'Project'">
+      <ng-template ngbTabContent>
+        <div class="tab tab-outage-type">
+          <app-outage-type></app-outage-type>
+        </div>
+      </ng-template>
+    </ngb-tab>
+
+    <ngb-tab title="Risk matrix">
+      <ng-template ngbTabContent>
+        <div class="tab tab-risk-matrix">
+          <div class="content-wrap scroll-panel">
+            <div class="body-panel" [perfectScrollbar]="{}">
+              <div class="title" i18n>Manage risk matrix</div>
+              <div class="container-fluid">
+                <div class="row">
+                  <div class="col-lg-4 col-xs-12">
+                    <div class="risk-matrix">
+                      <app-risk-matrix [flexibleRiskMatrixValue]="matrix" [riskMode]="riskMode" [mode]="riskMatrixMode"
+                                       [(ngModel)]="riskMatrixValue"></app-risk-matrix>
+                    </div>
+                  </div>
+                  <div class="col-lg-8 col-xs-12">
+                    <div class="risk-opts">
+                      <div class="item mode-switch">
+                        <span i18n>Design matrix type</span>
+                        <label for="matrix-mode-select" class="slide-checkbox">
+                          <input id="matrix-mode-select" type="checkbox" [(ngModel)]="flexibleMode"
+                                 (ngModelChange)="riskMatrixMode=flexibleMode?'flexible':'absolute'">
+                          <span class="txt" [ngClass]="{'active': flexibleMode}" i18n>Flexible</span>
+                          <span class="txt" [ngClass]="{'active': !flexibleMode}" i18n>Absolute </span>
+                        </label>
+                      </div>
+                      <div class="item risk-indicate" *ngIf="flexibleMode">
+                        <div (click)="riskMode = 'low'"><i [class.active]="riskMode === 'low'" class="low"></i><span
+                          i18n>Low</span></div>
+                        <div (click)="riskMode = 'medium'"><i [class.active]="riskMode === 'medium'"
+                                                              class="medium"></i><span
+                          i18n>Mediun</span></div>
+                        <div (click)="riskMode = 'high'"><i [class.active]="riskMode === 'high'" class="high"></i><span
+                          i18n>High</span>
+                        </div>
+                      </div>
+                      <div class="item opt-tip" *ngIf="flexibleMode">
+                        <span i18n>Select and click on triangles to change the risk type</span>
+                        <i class="icon icon-info"></i>
+                      </div>
+                      <div class="risk-slide-bar" *ngIf="!flexibleMode">
+                        <app-risk-matrix mode="slide" [(ngModel)]="riskMatrixValue"></app-risk-matrix>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="footer-panel">
+              <div class="footer-buttons">
+                <a class="btn btn-secondary" (click)="resetRiskMatrix()" i18n>Reset</a>
+              </div>
+              <div class="footer-buttons">
+                <a class="btn btn-primary" i18n>Save</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </ng-template>
+    </ngb-tab>
+
+    <ngb-tab title="Knowledge bank">
+      <ng-template ngbTabContent>
+        <div class="tab tab-knowledge-bank">
+          <div class="loading-box" *ngIf="loading">
+            <div class="img" alt="loading"></div>
+          </div>
+          <div class="scroll-panel">
+            <div class="body-panel" [perfectScrollbar]="{}">
+              <div class="container-fluid">
+                <div class="row">
+                  <div class="col-md-6 col-sm-12">
+                    <div class="title">
+                      <span i18n>Document categories</span>
+                    </div>
+
+                    <div class="items">
+                      <div class="item" *ngFor="let item of knowledgeBankDocs;let i = index">
+                        <label [for]="'bank-doc-select-'+i" [ngClass]="{'selected': item.selected}">
+                          <input [id]="'bank-doc-select-'+i" type="checkbox" [(ngModel)]="item.selected">
+                          <i class="icon icon-checkbox" [ngClass]="{'checked': item.selected}"></i>
+                        </label>
+                        <span>{{item.name}}</span>
+                      </div>
+                      <app-add-new (click)="addOrEditNewKnowledgeBankItem('doc')"><span i18n>Add new</span>
+                      </app-add-new>
+                    </div>
+
+                  </div>
+                  <div class="col-md-6 col-sm-12">
+                    <div class="title">
+                      <span i18n>Image categories</span>
+                    </div>
+                    <div class="items">
+                      <div class="item" *ngFor="let item of knowledgeBankImages;let i = index">
+                        <label [for]="'bank-img-select-'+i">
+                          <input [id]="'bank-img-select-'+i" type="checkbox" [(ngModel)]="item.selected">
+                          <i class="icon icon-checkbox" [ngClass]="{'checked': item.selected}"></i>
+                        </label>
+                        <span>{{item.name}}</span>
+                      </div>
+                      <app-add-new (click)="addOrEditNewKnowledgeBankItem('image')"><span i18n>Add new</span>
+                      </app-add-new>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="footer-panel">
+              <div class="footer-buttons">
+                <a class="btn btn-link" *ngIf="getKnowledgeBankItemSelectedCount() > 0"
+                   (click)="deleteSelectedKnowledgeBanks()"
+                   i18n>Delete</a>
+                <a class="btn btn-secondary" *ngIf="getKnowledgeBankItemSelectedCount() === 1"
+                   (click)="editSelectedKnowledgeBanks()"
+                   i18n>Edit</a>
+              </div>
+              <div class="footer-buttons">
+                <button class="btn btn-primary" i18n>Save</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </ng-template>
+    </ngb-tab>
+  </ngb-tabset>
+</div>

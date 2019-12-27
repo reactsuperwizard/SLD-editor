@@ -1,0 +1,1162 @@
+[
+  {
+    "teamId": 1,
+    "teamName": "Baden 1",
+    "teamDescription": "The technical meaning of maintenance involves functional checks. ",
+    "type": "Internal",
+    "leader": "Alma Malmberg",
+    "leaderPhoto": "../../../assets/i/user.jpg",
+    "leaderHourlyRate": 90,
+    "rating": 4.2,
+    "hourlyRate": 360,
+    "region": "Switzerland",
+    "topSkill": [
+      "Testing",
+      "Transformer",
+      "On-load tap charger"
+    ],
+    "comments": null,
+    "deleted": false,
+    "createdDate": null,
+    "createdBy": null,
+    "updatedDate": null,
+    "updateddBy": null,
+    "leaderNavigation": null,
+    "isExternalExecutionTeam": false,
+    "serviceProviderName": "BO A.B.",
+    "executionTeamUsers": [
+      {
+        "teamId": 1,
+        "userId": 1,
+        "goodat": [
+          "On-load tap charger",
+          "Transformer",
+          "Producing"
+        ],
+        "deleted": false,
+        "createdDate": null,
+        "createdBy": null,
+        "updatedDate": null,
+        "updateddBy": null,
+        "team": null,
+        "photo": "../../../assets/i/user.jpg",
+        "hourlyRate": 90,
+        "user": "Joe Malmberg"
+      },
+      {
+        "teamId": 1,
+        "userId": 2,
+        "isDeputyLeader": true,
+        "goodat": [
+          "On-load tap charger",
+          "Transformer",
+          "Producing"
+        ],
+        "deleted": false,
+        "createdDate": null,
+        "createdBy": null,
+        "updatedDate": null,
+        "updateddBy": null,
+        "team": null,
+        "photo": "../../../assets/i/user.jpg",
+        "hourlyRate": 90,
+        "user": "Chinmay Sarasvati"
+      },
+      {
+        "teamId": 1,
+        "userId": 4,
+        "goodat": [
+          "On-load tap charger",
+          "Transformer",
+          "Producing 1"
+        ],
+        "deleted": false,
+        "createdDate": null,
+        "createdBy": null,
+        "updatedDate": null,
+        "updateddBy": null,
+        "team": null,
+        "photo": "../../../assets/i/user.jpg",
+        "hourlyRate": 90,
+        "user": "Karlien Nijhuis"
+      },
+      {
+        "teamId": 1,
+        "userId": 5,
+        "goodat": [
+          "On-load tap charger",
+          "Transformer",
+          "Producing 2"
+        ],
+        "deleted": false,
+        "createdDate": null,
+        "createdBy": null,
+        "updatedDate": null,
+        "updateddBy": null,
+        "team": null,
+        "photo": "../../../assets/i/user.jpg",
+        "hourlyRate": 90,
+        "user": "Jelanee Uwaezuoke"
+      },
+      {
+        "teamId": 1,
+        "userId": 6,
+        "deleted": false,
+        "createdDate": null,
+        "createdBy": null,
+        "updatedDate": null,
+        "updateddBy": null,
+        "team": null,
+        "photo": "../../../assets/i/user.jpg",
+        "hourlyRate": 90,
+        "user": "Svyatoslav Taushev"
+      }
+    ],
+    "executionTasks": [
+      {
+        "taskId": 1,
+        "task": "Change equipment part",
+        "rating": 4.3
+      },
+      {
+        "taskId": 1,
+        "task": "Recalibrate transformer",
+        "rating": 3.8
+      },
+      {
+        "taskId": 1,
+        "task": "Change component head",
+        "rating": 4.7
+      },
+      {
+        "taskId": 1,
+        "task": "Change equipment part",
+        "rating": 4.0
+      },
+      {
+        "taskId": 1,
+        "task": "Recalibrate transformer",
+        "rating": 3.8
+      },
+      {
+        "taskId": 1,
+        "task": "Change component head",
+        "rating": 4.7
+      },
+      {
+        "taskId": 1,
+        "task": "Change equipment part",
+        "rating": 4.3
+      },
+      {
+        "taskId": 1,
+        "task": "Recalibrate transformer",
+        "rating": 3.9
+      },
+      {
+        "taskId": 1,
+        "task": "Change component head",
+        "rating": 4.7
+      },
+      {
+        "taskId": 1,
+        "task": "Change equipment part",
+        "rating": 4.3
+      },
+      {
+        "taskId": 1,
+        "task": "Recalibrate transformer",
+        "rating": 3.8
+      },
+      {
+        "taskId": 1,
+        "task": "Change component head",
+        "rating": 4.5
+      }
+    ]
+  },
+  {
+    "teamId": 2,
+    "teamName": "Baden 2",
+    "teamDescription": "The technical meaning of maintenance involves functional checks. ",
+    "type": "Internal",
+    "leader": "Alma Malmberg",
+    "leaderPhoto": "../../../assets/i/user.jpg",
+    "leaderHourlyRate": 90,
+    "rating": 4.2,
+    "hourlyRate": 360,
+    "region": "Switzerland",
+    "topSkill": [
+      "Testing",
+      "Transformer",
+      "On-load tap charger"
+    ],
+    "comments": null,
+    "deleted": false,
+    "createdDate": null,
+    "createdBy": null,
+    "updatedDate": null,
+    "updateddBy": null,
+    "leaderNavigation": null,
+    "isExternalExecutionTeam": false,
+    "serviceProviderName": "BO A.B.",
+    "executionTeamUsers": [
+      {
+        "teamId": 1,
+        "userId": 1,
+        "goodat": [
+          "On-load tap charger",
+          "Testing",
+          "Producing"
+        ],
+        "deleted": false,
+        "createdDate": null,
+        "createdBy": null,
+        "updatedDate": null,
+        "updateddBy": null,
+        "team": null,
+        "photo": "../../../assets/i/user.jpg",
+        "hourlyRate": 90,
+        "user": "Joe Malmberg"
+      },
+      {
+        "teamId": 1,
+        "userId": 2,
+        "isDeputyLeader": true,
+        "deleted": false,
+        "createdDate": null,
+        "createdBy": null,
+        "updatedDate": null,
+        "updateddBy": null,
+        "team": null,
+        "photo": "../../../assets/i/user.jpg",
+        "hourlyRate": 90,
+        "user": "Chinmay Sarasvati"
+      },
+      {
+        "teamId": 1,
+        "userId": 3,
+        "deleted": false,
+        "createdDate": null,
+        "createdBy": null,
+        "updatedDate": null,
+        "updateddBy": null,
+        "team": null,
+        "photo": "../../../assets/i/user.jpg",
+        "hourlyRate": 90,
+        "user": "Adaora Azubuike"
+      },
+      {
+        "teamId": 1,
+        "userId": 4,
+        "deleted": false,
+        "createdDate": null,
+        "createdBy": null,
+        "updatedDate": null,
+        "updateddBy": null,
+        "team": null,
+        "photo": "../../../assets/i/user.jpg",
+        "hourlyRate": 90,
+        "user": "Karlien Nijhuis"
+      },
+      {
+        "teamId": 1,
+        "userId": 5,
+        "deleted": false,
+        "createdDate": null,
+        "createdBy": null,
+        "updatedDate": null,
+        "updateddBy": null,
+        "team": null,
+        "photo": "../../../assets/i/user.jpg",
+        "hourlyRate": 90,
+        "user": "Jelanee Uwaezuoke"
+      },
+      {
+        "teamId": 1,
+        "userId": 6,
+        "deleted": false,
+        "createdDate": null,
+        "createdBy": null,
+        "updatedDate": null,
+        "updateddBy": null,
+        "team": null,
+        "photo": "../../../assets/i/user.jpg",
+        "hourlyRate": 90,
+        "user": "Svyatoslav Taushev"
+      }
+    ],
+    "executionTasks": [
+      {
+        "taskId": 1,
+        "task": "Change equipment part",
+        "rating": 4.3
+      },
+      {
+        "taskId": 1,
+        "task": "Recalibrate transformer",
+        "rating": 3.8
+      },
+      {
+        "taskId": 1,
+        "task": "Change component head",
+        "rating": 4.7
+      }
+    ]
+  },
+  {
+    "teamId": 3,
+    "teamName": "Baden 21",
+    "teamDescription": "The technical meaning of maintenance involves functional checks. ",
+    "type": "Internal",
+    "leader": "Alma Malmberg",
+    "leaderPhoto": "../../../assets/i/user.jpg",
+    "leaderHourlyRate": 90,
+    "rating": 4.2,
+    "hourlyRate": 360,
+    "region": "Sweden",
+    "topSkill": [
+      "Testing",
+      "Transformer",
+      "On-load tap charger"
+    ],
+    "comments": null,
+    "deleted": false,
+    "createdDate": null,
+    "createdBy": null,
+    "updatedDate": null,
+    "updateddBy": null,
+    "leaderNavigation": null,
+    "isExternalExecutionTeam": false,
+    "serviceProviderName": "BO A.B.",
+    "executionTeamUsers": [
+      {
+        "teamId": 1,
+        "userId": 1,
+        "goodat": [
+          "Transformer",
+          "Testing",
+          "Producing"
+        ],
+        "deleted": false,
+        "createdDate": null,
+        "createdBy": null,
+        "updatedDate": null,
+        "updateddBy": null,
+        "team": null,
+        "photo": "../../../assets/i/user.jpg",
+        "hourlyRate": 90,
+        "user": "Joe Malmberg"
+      },
+      {
+        "teamId": 1,
+        "userId": 2,
+        "deleted": false,
+        "createdDate": null,
+        "createdBy": null,
+        "updatedDate": null,
+        "updateddBy": null,
+        "team": null,
+        "photo": "../../../assets/i/user.jpg",
+        "hourlyRate": 90,
+        "user": "Chinmay Sarasvati"
+      },
+      {
+        "teamId": 1,
+        "userId": 4,
+        "deleted": false,
+        "createdDate": null,
+        "createdBy": null,
+        "updatedDate": null,
+        "updateddBy": null,
+        "team": null,
+        "photo": "../../../assets/i/user.jpg",
+        "hourlyRate": 90,
+        "user": "Karlien Nijhuis"
+      },
+      {
+        "teamId": 1,
+        "userId": 5,
+        "deleted": false,
+        "createdDate": null,
+        "createdBy": null,
+        "updatedDate": null,
+        "updateddBy": null,
+        "team": null,
+        "photo": "../../../assets/i/user.jpg",
+        "hourlyRate": 90,
+        "user": "Jelanee Uwaezuoke"
+      },
+      {
+        "teamId": 1,
+        "userId": 6,
+        "deleted": false,
+        "createdDate": null,
+        "createdBy": null,
+        "updatedDate": null,
+        "updateddBy": null,
+        "team": null,
+        "photo": "../../../assets/i/user.jpg",
+        "hourlyRate": 90,
+        "user": "Svyatoslav Taushev"
+      }
+    ],
+    "executionTasks": [
+      {
+        "taskId": 1,
+        "task": "Change equipment part",
+        "rating": 4.3
+      },
+      {
+        "taskId": 1,
+        "task": "Recalibrate transformer",
+        "rating": 3.8
+      },
+      {
+        "taskId": 1,
+        "task": "Change component head",
+        "rating": 4.7
+      }
+    ]
+  },
+  {
+    "teamId": 4,
+    "teamName": "Baden 23",
+    "teamDescription": "The technical meaning of maintenance involves functional checks. ",
+    "type": "Internal",
+    "leader": "Alma Malmberg",
+    "leaderPhoto": "../../../assets/i/user.jpg",
+    "leaderHourlyRate": 90,
+    "rating": 4.2,
+    "hourlyRate": 360,
+    "region": "Sweden",
+    "topSkill": [
+      "Testing",
+      "Transformer",
+      "On-load tap charger"
+    ],
+    "comments": null,
+    "deleted": false,
+    "createdDate": null,
+    "createdBy": null,
+    "updatedDate": null,
+    "updateddBy": null,
+    "leaderNavigation": null,
+    "isExternalExecutionTeam": false,
+    "serviceProviderName": "BO A.B.",
+    "executionTeamUsers": [
+      {
+        "teamId": 1,
+        "userId": 1,
+        "goodat": [
+          "On-load tap charger",
+          "Transformer",
+          "Testing",
+          "Producing"
+        ],
+        "deleted": false,
+        "createdDate": null,
+        "createdBy": null,
+        "updatedDate": null,
+        "updateddBy": null,
+        "team": null,
+        "photo": "../../../assets/i/user.jpg",
+        "hourlyRate": 90,
+        "user": "Joe Malmberg"
+      },
+      {
+        "teamId": 1,
+        "userId": 2,
+        "deleted": false,
+        "createdDate": null,
+        "createdBy": null,
+        "updatedDate": null,
+        "updateddBy": null,
+        "team": null,
+        "photo": "../../../assets/i/user.jpg",
+        "hourlyRate": 90,
+        "user": "Chinmay Sarasvati"
+      },
+      {
+        "teamId": 1,
+        "userId": 3,
+        "deleted": false,
+        "createdDate": null,
+        "createdBy": null,
+        "updatedDate": null,
+        "updateddBy": null,
+        "team": null,
+        "photo": "../../../assets/i/user.jpg",
+        "hourlyRate": 90,
+        "user": "Adaora Azubuike"
+      },
+      {
+        "teamId": 1,
+        "userId": 4,
+        "deleted": false,
+        "createdDate": null,
+        "createdBy": null,
+        "updatedDate": null,
+        "updateddBy": null,
+        "team": null,
+        "photo": "../../../assets/i/user.jpg",
+        "hourlyRate": 90,
+        "user": "Karlien Nijhuis"
+      },
+      {
+        "teamId": 1,
+        "userId": 5,
+        "deleted": false,
+        "createdDate": null,
+        "createdBy": null,
+        "updatedDate": null,
+        "updateddBy": null,
+        "team": null,
+        "photo": "../../../assets/i/user.jpg",
+        "hourlyRate": 90,
+        "user": "Jelanee Uwaezuoke"
+      },
+      {
+        "teamId": 1,
+        "userId": 6,
+        "deleted": false,
+        "createdDate": null,
+        "createdBy": null,
+        "updatedDate": null,
+        "updateddBy": null,
+        "team": null,
+        "photo": "../../../assets/i/user.jpg",
+        "hourlyRate": 90,
+        "user": "Svyatoslav Taushev"
+      }
+    ],
+    "executionTasks": [
+      {
+        "taskId": 1,
+        "task": "Change equipment part",
+        "rating": 4.3
+      },
+      {
+        "taskId": 1,
+        "task": "Recalibrate transformer",
+        "rating": 3.8
+      },
+      {
+        "taskId": 1,
+        "task": "Change component head",
+        "rating": 4.7
+      }
+    ]
+  },
+  {
+    "teamId": 5,
+    "teamName": "Baden 51",
+    "teamDescription": "The technical meaning of maintenance involves functional checks. ",
+    "type": "Internal",
+    "leader": "Alma Malmberg",
+    "leaderPhoto": "../../../assets/i/user.jpg",
+    "leaderHourlyRate": 90,
+    "rating": 4.2,
+    "hourlyRate": 360,
+    "region": "Switzerland",
+    "topSkill": [
+      "Testing",
+      "Transformer",
+      "On-load tap charger"
+    ],
+    "comments": null,
+    "deleted": false,
+    "createdDate": null,
+    "createdBy": null,
+    "updatedDate": null,
+    "updateddBy": null,
+    "leaderNavigation": null,
+    "isExternalExecutionTeam": false,
+    "serviceProviderName": "BO A.B.",
+    "executionTeamUsers": [
+      {
+        "teamId": 1,
+        "userId": 3,
+        "deleted": false,
+        "createdDate": null,
+        "createdBy": null,
+        "updatedDate": null,
+        "updateddBy": null,
+        "team": null,
+        "photo": "../../../assets/i/user.jpg",
+        "hourlyRate": 90,
+        "user": "Adaora Azubuike"
+      },
+      {
+        "teamId": 1,
+        "userId": 4,
+        "deleted": false,
+        "createdDate": null,
+        "createdBy": null,
+        "updatedDate": null,
+        "updateddBy": null,
+        "team": null,
+        "photo": "../../../assets/i/user.jpg",
+        "hourlyRate": 90,
+        "user": "Karlien Nijhuis"
+      },
+      {
+        "teamId": 1,
+        "userId": 5,
+        "deleted": false,
+        "createdDate": null,
+        "createdBy": null,
+        "updatedDate": null,
+        "updateddBy": null,
+        "team": null,
+        "photo": "../../../assets/i/user.jpg",
+        "hourlyRate": 90,
+        "user": "Jelanee Uwaezuoke"
+      },
+      {
+        "teamId": 1,
+        "userId": 6,
+        "deleted": false,
+        "createdDate": null,
+        "createdBy": null,
+        "updatedDate": null,
+        "updateddBy": null,
+        "team": null,
+        "photo": "../../../assets/i/user.jpg",
+        "hourlyRate": 90,
+        "user": "Svyatoslav Taushev"
+      }
+    ],
+    "executionTasks": [
+      {
+        "taskId": 1,
+        "task": "Change equipment part",
+        "rating": 4.3
+      },
+      {
+        "taskId": 1,
+        "task": "Recalibrate transformer",
+        "rating": 3.8
+      },
+      {
+        "taskId": 1,
+        "task": "Change component head",
+        "rating": 4.7
+      }
+    ]
+  },
+  {
+    "teamId": 6,
+    "teamName": "Baden 19",
+    "teamDescription": "The technical meaning of maintenance involves functional checks. ",
+    "type": "Mixed",
+    "leader": "Alma Malmberg",
+    "leaderPhoto": "../../../assets/i/user.jpg",
+    "leaderHourlyRate": 90,
+    "rating": 4.2,
+    "hourlyRate": 360,
+    "region": "Switzerland",
+    "topSkill": [
+      "Testing",
+      "Transformer",
+      "On-load tap charger"
+    ],
+    "comments": null,
+    "deleted": false,
+    "createdDate": null,
+    "createdBy": null,
+    "updatedDate": null,
+    "updateddBy": null,
+    "leaderNavigation": null,
+    "isExternalExecutionTeam": false,
+    "serviceProviderName": "BO A.B.",
+    "executionTeamUsers": [
+      {
+        "teamId": 1,
+        "userId": 1,
+        "goodat": [
+          "Transformer",
+          "Testing",
+          "Producing"
+        ],
+        "deleted": false,
+        "createdDate": null,
+        "createdBy": null,
+        "updatedDate": null,
+        "updateddBy": null,
+        "team": null,
+        "photo": "../../../assets/i/user.jpg",
+        "hourlyRate": 90,
+        "user": "Joe Malmberg"
+      },
+      {
+        "teamId": 1,
+        "userId": 2,
+        "deleted": false,
+        "createdDate": null,
+        "createdBy": null,
+        "updatedDate": null,
+        "updateddBy": null,
+        "team": null,
+        "photo": "../../../assets/i/user.jpg",
+        "hourlyRate": 90,
+        "user": "Chinmay Sarasvati"
+      },
+      {
+        "teamId": 1,
+        "userId": 3,
+        "deleted": false,
+        "createdDate": null,
+        "createdBy": null,
+        "updatedDate": null,
+        "updateddBy": null,
+        "team": null,
+        "photo": "../../../assets/i/user.jpg",
+        "hourlyRate": 90,
+        "user": "Adaora Azubuike"
+      },
+      {
+        "teamId": 1,
+        "userId": 4,
+        "deleted": false,
+        "createdDate": null,
+        "createdBy": null,
+        "updatedDate": null,
+        "updateddBy": null,
+        "team": null,
+        "photo": "../../../assets/i/user.jpg",
+        "hourlyRate": 90,
+        "user": "Karlien Nijhuis"
+      },
+      {
+        "teamId": 1,
+        "userId": 5,
+        "deleted": false,
+        "createdDate": null,
+        "createdBy": null,
+        "updatedDate": null,
+        "updateddBy": null,
+        "team": null,
+        "photo": "../../../assets/i/user.jpg",
+        "hourlyRate": 90,
+        "user": "Jelanee Uwaezuoke"
+      },
+      {
+        "teamId": 1,
+        "userId": 6,
+        "deleted": false,
+        "createdDate": null,
+        "createdBy": null,
+        "updatedDate": null,
+        "updateddBy": null,
+        "team": null,
+        "photo": "../../../assets/i/user.jpg",
+        "hourlyRate": 90,
+        "user": "Svyatoslav Taushev"
+      }
+    ],
+    "executionTasks": [
+      {
+        "taskId": 1,
+        "task": "Change equipment part",
+        "rating": 4.3
+      },
+      {
+        "taskId": 1,
+        "task": "Recalibrate transformer",
+        "rating": 3.8
+      },
+      {
+        "taskId": 1,
+        "task": "Change component head",
+        "rating": 4.7
+      }
+    ]
+  },
+  {
+    "teamId": 7,
+    "teamName": "Baden 5",
+    "teamDescription": "The technical meaning of maintenance involves functional checks. ",
+    "type": "Mixed",
+    "leader": "Alma Malmberg",
+    "leaderPhoto": "../../../assets/i/user.jpg",
+    "leaderHourlyRate": 90,
+    "rating": 4.2,
+    "hourlyRate": 360,
+    "region": "Sweden",
+    "topSkill": [
+      "Testing",
+      "Transformer",
+      "On-load tap charger"
+    ],
+    "comments": null,
+    "deleted": false,
+    "createdDate": null,
+    "createdBy": null,
+    "updatedDate": null,
+    "updateddBy": null,
+    "leaderNavigation": null,
+    "isExternalExecutionTeam": false,
+    "serviceProviderName": "BO A.B.",
+    "executionTeamUsers": [
+      {
+        "teamId": 1,
+        "userId": 1,
+        "goodat": [
+          "Transformer",
+          "Testing",
+          "Producing"
+        ],
+        "deleted": false,
+        "createdDate": null,
+        "createdBy": null,
+        "updatedDate": null,
+        "updateddBy": null,
+        "team": null,
+        "photo": "../../../assets/i/user.jpg",
+        "hourlyRate": 90,
+        "user": "Joe Malmberg"
+      },
+      {
+        "teamId": 1,
+        "userId": 2,
+        "deleted": false,
+        "createdDate": null,
+        "createdBy": null,
+        "updatedDate": null,
+        "updateddBy": null,
+        "team": null,
+        "photo": "../../../assets/i/user.jpg",
+        "hourlyRate": 90,
+        "user": "Chinmay Sarasvati"
+      },
+      {
+        "teamId": 1,
+        "userId": 3,
+        "deleted": false,
+        "createdDate": null,
+        "createdBy": null,
+        "updatedDate": null,
+        "updateddBy": null,
+        "team": null,
+        "photo": "../../../assets/i/user.jpg",
+        "hourlyRate": 90,
+        "user": "Adaora Azubuike"
+      },
+      {
+        "teamId": 1,
+        "userId": 4,
+        "deleted": false,
+        "createdDate": null,
+        "createdBy": null,
+        "updatedDate": null,
+        "updateddBy": null,
+        "team": null,
+        "photo": "../../../assets/i/user.jpg",
+        "hourlyRate": 90,
+        "user": "Karlien Nijhuis"
+      },
+      {
+        "teamId": 1,
+        "userId": 5,
+        "deleted": false,
+        "createdDate": null,
+        "createdBy": null,
+        "updatedDate": null,
+        "updateddBy": null,
+        "team": null,
+        "photo": "../../../assets/i/user.jpg",
+        "hourlyRate": 90,
+        "user": "Jelanee Uwaezuoke"
+      },
+      {
+        "teamId": 1,
+        "userId": 6,
+        "deleted": false,
+        "createdDate": null,
+        "createdBy": null,
+        "updatedDate": null,
+        "updateddBy": null,
+        "team": null,
+        "photo": "../../../assets/i/user.jpg",
+        "hourlyRate": 90,
+        "user": "Svyatoslav Taushev"
+      }
+    ],
+    "executionTasks": [
+      {
+        "taskId": 1,
+        "task": "Change equipment part",
+        "rating": 4.3
+      },
+      {
+        "taskId": 1,
+        "task": "Recalibrate transformer",
+        "rating": 3.8
+      },
+      {
+        "taskId": 1,
+        "task": "Change component head",
+        "rating": 4.7
+      }
+    ]
+  },
+  {
+    "teamId": 8,
+    "teamName": "Baden 16",
+    "teamDescription": "The technical meaning of maintenance involves functional checks. ",
+    "type": "External",
+    "leader": "Alma Malmberg",
+    "leaderPhoto": "../../../assets/i/user.jpg",
+    "leaderHourlyRate": 90,
+    "rating": 4.2,
+    "hourlyRate": 360,
+    "region": "Switzerland",
+    "topSkill": [
+      "Testing",
+      "Transformer",
+      "On-load tap charger"
+    ],
+    "comments": null,
+    "deleted": false,
+    "createdDate": null,
+    "createdBy": null,
+    "updatedDate": null,
+    "updateddBy": null,
+    "leaderNavigation": null,
+    "isExternalExecutionTeam": false,
+    "serviceProviderName": "BO A.B.",
+    "executionTeamUsers": [
+      {
+        "teamId": 1,
+        "userId": 1,
+        "goodat": [
+          "On-load tap charger",
+          "Transformer",
+          "Testing",
+          "Producing"
+        ],
+        "deleted": false,
+        "createdDate": null,
+        "createdBy": null,
+        "updatedDate": null,
+        "updateddBy": null,
+        "team": null,
+        "photo": "../../../assets/i/user.jpg",
+        "hourlyRate": 90,
+        "user": "Joe Malmberg"
+      },
+      {
+        "teamId": 1,
+        "userId": 2,
+        "deleted": false,
+        "createdDate": null,
+        "createdBy": null,
+        "updatedDate": null,
+        "updateddBy": null,
+        "team": null,
+        "photo": "../../../assets/i/user.jpg",
+        "hourlyRate": 90,
+        "user": "Chinmay Sarasvati"
+      },
+      {
+        "teamId": 1,
+        "userId": 3,
+        "deleted": false,
+        "createdDate": null,
+        "createdBy": null,
+        "updatedDate": null,
+        "updateddBy": null,
+        "team": null,
+        "photo": "../../../assets/i/user.jpg",
+        "hourlyRate": 90,
+        "user": "Adaora Azubuike"
+      },
+      {
+        "teamId": 1,
+        "userId": 4,
+        "deleted": false,
+        "createdDate": null,
+        "createdBy": null,
+        "updatedDate": null,
+        "updateddBy": null,
+        "team": null,
+        "photo": "../../../assets/i/user.jpg",
+        "hourlyRate": 90,
+        "user": "Karlien Nijhuis"
+      },
+      {
+        "teamId": 1,
+        "userId": 5,
+        "deleted": false,
+        "createdDate": null,
+        "createdBy": null,
+        "updatedDate": null,
+        "updateddBy": null,
+        "team": null,
+        "photo": "../../../assets/i/user.jpg",
+        "hourlyRate": 90,
+        "user": "Jelanee Uwaezuoke"
+      },
+      {
+        "teamId": 1,
+        "userId": 6,
+        "deleted": false,
+        "createdDate": null,
+        "createdBy": null,
+        "updatedDate": null,
+        "updateddBy": null,
+        "team": null,
+        "photo": "../../../assets/i/user.jpg",
+        "hourlyRate": 90,
+        "user": "Svyatoslav Taushev"
+      }
+    ],
+    "executionTasks": [
+      {
+        "taskId": 1,
+        "task": "Change equipment part",
+        "rating": 4.3
+      },
+      {
+        "taskId": 1,
+        "task": "Recalibrate transformer",
+        "rating": 3.8
+      },
+      {
+        "taskId": 1,
+        "task": "Change component head",
+        "rating": 4.7
+      }
+    ]
+  },
+  {
+    "teamId": 9,
+    "teamName": "Baden 17",
+    "teamDescription": "The technical meaning of maintenance involves functional checks. ",
+    "type": "External",
+    "leader": "Alma Malmberg",
+    "leaderPhoto": "../../../assets/i/user.jpg",
+    "leaderHourlyRate": 90,
+    "rating": 4.2,
+    "hourlyRate": 360,
+    "region": "Switzerland",
+    "topSkill": [
+      "Testing",
+      "Transformer",
+      "On-load tap charger"
+    ],
+    "comments": null,
+    "deleted": false,
+    "createdDate": null,
+    "createdBy": null,
+    "updatedDate": null,
+    "updateddBy": null,
+    "leaderNavigation": null,
+    "isExternalExecutionTeam": false,
+    "serviceProviderName": "BO A.B.",
+    "executionTeamUsers": [
+      {
+        "teamId": 1,
+        "userId": 1,
+        "goodat": [
+          "On-load tap charger",
+          "Transformer",
+          "Testing",
+          "Producing"
+        ],
+        "deleted": false,
+        "createdDate": null,
+        "createdBy": null,
+        "updatedDate": null,
+        "updateddBy": null,
+        "team": null,
+        "photo": "../../../assets/i/user.jpg",
+        "hourlyRate": 90,
+        "user": "Joe Malmberg"
+      },
+      {
+        "teamId": 1,
+        "userId": 2,
+        "deleted": false,
+        "createdDate": null,
+        "createdBy": null,
+        "updatedDate": null,
+        "updateddBy": null,
+        "team": null,
+        "photo": "../../../assets/i/user.jpg",
+        "hourlyRate": 90,
+        "user": "Chinmay Sarasvati"
+      },
+      {
+        "teamId": 1,
+        "userId": 3,
+        "deleted": false,
+        "createdDate": null,
+        "createdBy": null,
+        "updatedDate": null,
+        "updateddBy": null,
+        "team": null,
+        "photo": "../../../assets/i/user.jpg",
+        "hourlyRate": 90,
+        "user": "Adaora Azubuike"
+      },
+      {
+        "teamId": 1,
+        "userId": 4,
+        "deleted": false,
+        "createdDate": null,
+        "createdBy": null,
+        "updatedDate": null,
+        "updateddBy": null,
+        "team": null,
+        "photo": "../../../assets/i/user.jpg",
+        "hourlyRate": 90,
+        "user": "Karlien Nijhuis"
+      },
+      {
+        "teamId": 1,
+        "userId": 5,
+        "deleted": false,
+        "createdDate": null,
+        "createdBy": null,
+        "updatedDate": null,
+        "updateddBy": null,
+        "team": null,
+        "photo": "../../../assets/i/user.jpg",
+        "hourlyRate": 90,
+        "user": "Jelanee Uwaezuoke"
+      },
+      {
+        "teamId": 1,
+        "userId": 6,
+        "deleted": false,
+        "createdDate": null,
+        "createdBy": null,
+        "updatedDate": null,
+        "updateddBy": null,
+        "team": null,
+        "photo": "../../../assets/i/user.jpg",
+        "hourlyRate": 90,
+        "user": "Svyatoslav Taushev"
+      }
+    ],
+    "executionTasks": [
+      {
+        "taskId": 1,
+        "task": "Change equipment part",
+        "rating": 4.3
+      },
+      {
+        "taskId": 1,
+        "task": "Recalibrate transformer",
+        "rating": 3.8
+      },
+      {
+        "taskId": 1,
+        "task": "Change component head",
+        "rating": 4.7
+      }
+    ]
+  }
+]

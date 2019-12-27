@@ -1,0 +1,29 @@
+@import 'mixin';
+.modal-container {
+  .modal-header {
+    font-size: 18px;
+    .close {
+      outline: none;
+    }
+  }
+  .modal-body {
+    padding: 8px 16px;
+    .all-roles-list {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: nowrap;
+      overflow-x: scroll;
+      overflow-y: hidden;
+      padding: 0 24px 0 24px;
+    }
+  }
+  .modal-footer {
+    border: none;
+    .btn.btn-save {
+      @include button-default(white, black, black, 192px);
+    }
+    .btn.btn-delete {
+      @include button-default(black, white, white, 192px);
+    }
+  }
+}

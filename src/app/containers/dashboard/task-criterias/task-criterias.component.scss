@@ -1,0 +1,5 @@
+@import 'mixin';
+.tabs-project-modelling-container {
+  user-select: none;
+  @include tab-page-default;
+}

@@ -1,0 +1,62 @@
+[
+  {
+    "projectId": 1,
+    "company": "Vattenfall",
+    "location": "Germany West",
+    "locationImg": "location1.png",
+    "manager": "Jordi Santiago",
+    "managerAvatar": "user_avatar_male1.png",
+    "kernelVersion": "4.11.3",
+    "commercialScope": "2018",
+    "date": "2015",
+    "progress": 0.8
+  },
+  {
+    "projectId": 2,
+    "company": "Vattenfall",
+    "location": "Netherlands",
+    "locationImg": "location2.png",
+    "manager": "Annamarie Jansen",
+    "managerAvatar": "user_avatar_female2.png",
+    "kernelVersion": "4.11.3",
+    "commercialScope": "2018",
+    "date": "2010",
+    "progress": 0.95
+  },
+  {
+    "projectId": 3,
+    "company": "Vattenfall",
+    "location": "Austria",
+    "locationImg": "location1.png",
+    "manager": "Alex Schurmman",
+    "managerAvatar": "user_avatar_female5.png",
+    "kernelVersion": "4.11.3",
+    "commercialScope": "2022",
+    "date": "2018",
+    "progress": 0.15
+  },
+  {
+    "projectId": 4,
+    "company": "Vattenfall",
+    "location": "Netherlands Sourth",
+    "locationImg": "location1.png",
+    "manager": "Annamarie Jansen",
+    "managerAvatar": "user_avatar_female2.png",
+    "kernelVersion": "4.11.3",
+    "commercialScope": "2019",
+    "date": "2017",
+    "progress": 0.5
+  },
+  {
+    "projectId": 5,
+    "company": "Vattenfall",
+    "location": "Germany West",
+    "locationImg": "location1.png",
+    "manager": "Kari Franz",
+    "managerAvatar": "user_avatar_male2.png",
+    "kernelVersion": "4.11.3",
+    "commercialScope": "2025",
+    "date": "2018",
+    "progress": 0.8
+  }
+]

@@ -1,0 +1,107 @@
+.menu-bar {
+    background: transparent;
+    user-select: none;
+    font-family: 'Helvetica';
+    font-size: 14px;
+
+    .menu-item {
+        position: relative;
+    }
+
+    .menu-item-box {
+        border: 1px solid #dbdbdb;
+        border-radius: 4px;
+        background-color: #fff;
+        height: 48px;
+        display: flex;
+        align-items: center;
+        margin-bottom: 8px;
+
+        .icon-box {
+            height: 32px;
+            width: 24px;
+            border: 1px solid #a7a7a7;
+            background-color: #d8d8d8;
+            border-radius: 4px;
+
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 8px;
+        }
+
+        .separator {
+            height: 100%;
+            width: 1px;
+            background-color: #dbdbdb;
+        }
+
+        .chevron {
+            margin-left: 3px;
+            margin-right: 5px;
+        }
+
+        &.active {
+            border-color: #686868;
+            background-color: #3d3d3d;
+            box-shadow: 0 4px 12px 0 rgba(0, 0, 0, 0.24);
+
+            .icon-box {
+                background-color: #262626;
+                border-color: transparent;
+            }
+
+            .separator {
+                background-color: #686868;
+            }
+
+            .chevron {
+                img {
+                    transform: rotate(180deg);
+                }
+            }
+        }
+    }
+
+    // the floating container shown on click of a menu item button
+    .menu-sub-item-list-container {
+        position: absolute;
+        left: calc(100% + 8px);
+        top: 0;
+        max-width: 1000px;
+        z-index: 20001;
+    }
+
+    // the sub-item list
+    .menu-sub-item-list {
+        background-color: #3d3d3d;
+        border: 1px solid #686868;
+        border-radius: 4px;
+        box-shadow: 0 4px 12px 0 rgba(0, 0, 0, 0.24);
+        padding: 0 8px;
+        width: 240px;
+
+        .menu-sub-item {
+            height: 48px;
+            border-bottom: 1px solid #686868;
+            color: #fff;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0 8px;
+            cursor: pointer;
+
+            &:last-child {
+                border: none;
+            }
+
+            &.disabled {
+                display: none;
+            }
+        }
+    }
+
+    .input-file-container {
+        display: none;
+    }
+}

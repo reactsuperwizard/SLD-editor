@@ -1,0 +1,25 @@
+{
+    "bays": [
+        {
+            "bayId": "00000000-0000-0000-0000-000000000000",
+            "bayName": "default",
+            "weight": 1,
+            "isDefault": true,
+            "allComponents": []
+        }
+    ],
+    "outageAreasList": [],
+    "busbars": [],
+    "psLs": [],
+    "longitude": 0,
+    "latitude": 0,
+    "altitue": 0,
+    "subStationId": "00000000-0000-0000-0000-000000000000",
+    "serializedSld": {
+        "nodes": [],
+        "links": [],
+        "sldReferenceIter": 1,
+        "selectedKeys": [],
+        "standard": "ansi"
+    }
+}

@@ -1,0 +1,137 @@
+@import 'variables';
+.risk-container {
+  height: 100%;
+  user-select: none;
+  .drag-area.flexible.dragging {
+    cursor: nesw-resize;
+  }
+  .drag-area.absolute.dragging {
+    cursor: ew-resize;
+  }
+  .risk-bar {
+    .slide-bar-container {
+      .start,
+      .low-risk {
+        fill: $lowRisk;
+      }
+      .end,
+      .high-risk {
+        fill: $highRisk;
+      }
+      .medium-risk {
+        fill: $mediumRisk;
+      }
+      .slide-bar {
+        .handle {
+          cursor: ew-resize;
+          stroke: black;
+          stroke-width: 2px;
+          fill: white;
+          text-anchor: middle;
+          .text-area {
+            stroke-width: 1px;
+            stroke: $gray;
+          }
+          text {
+            stroke: $gray;
+            font-size: 10px;
+            stroke-width: 0.1px;
+            fill: $gray;
+          }
+        }
+      }
+    }
+    .axis,
+    .legend {
+      font-size: 10px;
+      text-anchor: middle;
+      text {
+        fill: $gray;
+      }
+    }
+  }
+  .risk-matrix-wrap {
+    height: 100%;
+    .svg-graph {
+      .bg {
+        fill: $mediumRisk;
+        &.absolute {
+          fill: $highRisk;
+        }
+      }
+      .data {
+        .low-risk {
+          cursor: pointer;
+          fill: $lowRisk;
+        }
+        .high-risk {
+          cursor: pointer;
+          fill: $highRisk;
+        }
+        .medium-risk {
+          cursor: pointer;
+          fill: $mediumRisk;
+        }
+      }
+    }
+    .axis {
+      font-size: 4px;
+      line {
+        stroke: $lightGray;
+        stroke-width: 0.7;
+      }
+      text {
+        fill: $lightGray;
+        text-anchor: end;
+      }
+    }
+    .legend {
+      font-size: 4px;
+      text {
+        text-anchor: middle;
+        fill: $lightGray;
+        &.legend-name {
+          fill: black;
+        }
+      }
+    }
+    .mask {
+      fill: white;
+    }
+    .absolute-mode {
+      .bg {
+        fill: $highRisk;
+      }
+      .data {
+        .low-risk {
+          fill: $mediumRisk;
+        }
+        .medium-risk {
+          fill: $lowRisk;
+        }
+      }
+    }
+    .coord line {
+      stroke: rgba(0, 0, 0, .05);
+      stroke-width: 0.2;
+      fill: none;
+    }
+    &.flexible {
+      .handle {
+        display: none;
+      }
+    }
+    .handle {
+      path {
+        fill: none;
+        stroke: transparent;
+        stroke-width: 1;
+        cursor: nesw-resize;
+        &.active {
+          fill: white;
+          stroke: black;
+        }
+      }
+    }
+  }
+}

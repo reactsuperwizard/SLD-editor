@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="344px" height="342px" viewBox="0 0 344 342" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 52.5 (67469) - http://www.bohemiancoding.com/sketch -->
+    <title>Group 4</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <rect id="path-1" x="0" y="0" width="280" height="280" rx="140"></rect>
+        <filter x="-20.0%" y="-14.3%" width="140.0%" height="140.0%" filterUnits="objectBoundingBox" id="filter-3">
+            <feOffset dx="0" dy="16" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="16" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.16 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix>
+        </filter>
+    </defs>
+    <g id="2-–-Manage-Project" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="1.1-/-Reliability-Center-/-Project-Manager-Dashboard" transform="translate(-880.000000, -737.000000)">
+            <g id="/custom-dashboard" transform="translate(24.000000, 616.000000)">
+                <g id="/assets-by-manufacture" transform="translate(832.000000, 40.000000)">
+                    <g id="Group-4" transform="translate(56.000000, 96.000000)">
+                        <g id="Rectangle">
+                            <mask id="mask-2" fill="white">
+                                <use xlink:href="#path-1"></use>
+                            </mask>
+                            <g id="Mask">
+                                <use fill="black" fill-opacity="1" filter="url(#filter-3)" xlink:href="#path-1"></use>
+                                <use fill="#6EC8B8" fill-rule="evenodd" xlink:href="#path-1"></use>
+                            </g>
+                            <polygon fill="#B7EAB2" fill-rule="nonzero" mask="url(#mask-2)" points="281 140 140 140 280 56"></polygon>
+                            <polygon fill="#973196" fill-rule="nonzero" mask="url(#mask-2)" points="280 140 140 140 92 280 280 280"></polygon>
+                            <polygon fill="#FF9482" fill-rule="nonzero" mask="url(#mask-2)" points="0 2 140 0 140 140 100 280 0 280"></polygon>
+                        </g>
+                        <text id="46%" font-family="ABBvoice-Medium, ABBvoice" font-size="20" font-weight="400" line-spacing="32" fill="#FFE9E7">
+                            <tspan x="24" y="144">46</tspan>
+                            <tspan x="48.18" y="144" font-family="ABBvoice-Light, ABBvoice" font-weight="300">%</tspan>
+                        </text>
+                        <text id="9%" font-family="ABBvoice-Medium, ABBvoice" font-size="20" font-weight="400" line-spacing="32" fill="#FFFFFF">
+                            <tspan x="233" y="116">9</tspan>
+                            <tspan x="244.88" y="116" font-family="ABBvoice-Light, ABBvoice" font-weight="300">%</tspan>
+                        </text>
+                        <text id="27%" font-family="ABBvoice-Medium, ABBvoice" font-size="20" font-weight="400" line-spacing="32" fill="#F9E8F9">
+                            <tspan x="184" y="224">27</tspan>
+                            <tspan x="205.34" y="224" font-family="ABBvoice-Light, ABBvoice" font-weight="300">%</tspan>
+                        </text>
+                        <text id="18%" font-family="ABBvoice-Medium, ABBvoice" font-size="20" font-weight="400" line-spacing="32" fill="#D7FBF7">
+                            <tspan x="172.2" y="51">18</tspan>
+                            <tspan x="193.86" y="51" font-family="ABBvoice-Light, ABBvoice" font-weight="300">%</tspan>
+                        </text>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

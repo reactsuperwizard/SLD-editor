@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="32px" height="48px" viewBox="-4.0 0.0 32 48" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 52.5 (67469) - http://www.bohemiancoding.com/sketch -->
+    <title>reactor</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Project-Modelling-–-GIS-&amp;-SLD" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" opacity="1">
+        <g id="Artboard" transform="translate(-424.000000, -1668.000000)" stroke="#000000">
+            <g id="32-/-sld-/-vertical-/-box-icon-/-normal" transform="translate(420.000000, 1660.000000)">
+                <g id="sld-/-multi-/-reactor-/-black" transform="translate(4.000000, 8.000000)">
+                    <path d="M12,0 L12,6" id="Path" fill-rule="nonzero"></path>
+                    <path d="M12,42 L12,48" id="Path" fill-rule="nonzero"></path>
+                    <path d="M16,16 C15.0666667,12 12.7333333,10 9,10 C5.26666667,10 2.93333333,12 2,16" id="Path-10" stroke-linecap="round" fill-rule="nonzero" transform="translate(9.000000, 13.000000) scale(-1, 1) rotate(90.000000) translate(-9.000000, -13.000000) "></path>
+                    <path d="M17,27 C15.9333333,23 13.2666667,21 9,21 C4.73333333,21 2.06666667,23 1,27" id="Path-10" stroke-linecap="round" fill-rule="nonzero" transform="translate(9.000000, 24.000000) scale(-1, 1) rotate(90.000000) translate(-9.000000, -24.000000) "></path>
+                    <path d="M11.5,20.5 C12.6156286,20.5 13.5,19.7040658 13.5,18.75 C13.5,17.4609003 12.3658054,15.5 11.5,15.5 C10.6341946,15.5 9.5,17.4609003 9.5,18.75 C9.5,19.7040658 10.3843714,20.5 11.5,20.5 Z" id="Oval" transform="translate(11.500000, 18.000000) scale(-1, 1) rotate(90.000000) translate(-11.500000, -18.000000) "></path>
+                    <path d="M11.5,32.5 C12.6156286,32.5 13.5,31.7040658 13.5,30.75 C13.5,29.4609003 12.3658054,27.5 11.5,27.5 C10.6341946,27.5 9.5,29.4609003 9.5,30.75 C9.5,31.7040658 10.3843714,32.5 11.5,32.5 Z" id="Oval" transform="translate(11.500000, 30.000000) scale(-1, 1) rotate(90.000000) translate(-11.500000, -30.000000) "></path>
+                    <path d="M16,38 C15.0666667,34 12.7333333,32 9,32 C5.26666667,32 2.93333333,34 2,38" id="Path-10" stroke-linecap="round" fill-rule="nonzero" transform="translate(9.000000, 35.000000) scale(-1, 1) rotate(90.000000) translate(-9.000000, -35.000000) "></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

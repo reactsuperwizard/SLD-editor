@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="32px" height="48px" viewBox="-4.0 0.0 32 48" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 52.5 (67469) - http://www.bohemiancoding.com/sketch -->
+    <title>surge-arrester-ansi</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Project-Modelling-–-GIS-&amp;-SLD" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" opacity="1">
+        <g id="Artboard" transform="translate(-2404.000000, -2148.000000)" fill-rule="nonzero" stroke="#0f6cff">
+            <g id="32-/-sld-/-vertical-/-box-icon-/-normal-copy-19" transform="translate(2400.000000, 2140.000000)">
+                <g id="sld-/-ansi-/-surge_arrestor-/-black" transform="translate(4.000000, 8.000000)">
+                    <path d="M12,-3.55271368e-15 L12,14" id="Path"></path>
+                    <rect id="Rectangle" x="5.5" y="13.5" width="13" height="23"></rect>
+                    <polyline id="Path-4" stroke-linecap="square" transform="translate(12.000000, 25.000000) scale(1, -1) translate(-12.000000, -25.000000) " points="2 13.5 2 17 12 25 22 33 22 36.5"></polyline>
+                    <polyline id="Path-11" points="12 41 19.0061384 41 14.5 46.5"></polyline>
+                    <path d="M12,36 L12,41.5" id="Path"></path>
+                    <path d="M15.0061384,41 L10.5,46.5" id="Path-11"></path>
+                    <path d="M11.0061384,41 L6.5,46.5" id="Path-11"></path>
+                    <polyline id="Path-11" points="12 41 7.00613839 41 2.5 46.5"></polyline>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

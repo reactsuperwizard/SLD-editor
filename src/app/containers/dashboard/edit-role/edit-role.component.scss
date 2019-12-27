@@ -1,0 +1,84 @@
+@import 'mixin';
+
+.edit-role {
+  .role-info-section {
+    padding-left: 120px;
+  }
+  .icon.icon-back {
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    background-size: 40%;
+    left: 0px;
+    top: 0px;
+    cursor: pointer;
+  }
+  .icon.icon-role {
+    width: 100px;
+    height: 100px;
+  }
+  .length-field {
+    position: absolute;
+    right: 32px;
+    top: 120px;
+  }
+  .enable-permission {
+    display: flex;
+    align-items: center;
+    margin-left: -12px;
+    .icon.icon-checkbox {
+      width: 40px;
+      height: 40px;
+      background-size: 40%;
+    }
+    .txt {
+      margin: 0 !important;
+    }
+  }
+
+  .error-indicate {
+    font-size: 12px;
+    display: none;
+    padding: 5px 0 0 15px;
+    position: relative;
+    &:before {
+      content: '';
+      width: 12px;
+      height: 12px;
+      position: absolute;
+      left: 0;
+      top: 5px;
+      background: url('/assets/i/error.svg') no-repeat;
+      background-size: 12px 12px;
+    }
+    &.invalid {
+      display: block;
+      color: $errorColor;
+    }
+  }
+  .fs-val.chk-internal-external {
+    width: 70%;
+  }
+  .tabs.tabs-role {
+    @include tab-page-default();
+  }
+  .btn.btn-save {
+    @include button-default(white, black, black, 192px);
+  }
+  .btn.btn-clear {
+    @include button-default(black, white, white, 192px);
+    text-decoration: underline;
+  }
+  .sub-header.sub-header-sm {
+    display: flex;
+    justify-content: space-between;
+    a {
+      color: $black;
+      text-decoration: underline;
+      font-size: 12px;
+      &:hover {
+        text-decoration: none;
+      }
+    }
+  }
+}

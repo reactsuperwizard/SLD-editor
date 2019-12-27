@@ -1,0 +1,239 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="368px" height="296px" viewBox="0 0 368 296" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 52.5 (67469) - http://www.bohemiancoding.com/sketch -->
+    <title>/graph</title>
+    <desc>Created with Sketch.</desc>
+    <g id="2-–-Manage-Project" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="1.1-/-Reliability-Center-/-Project-Manager-Dashboard" transform="translate(-40.000000, -1128.000000)">
+            <g id="/custom-dashboard" transform="translate(24.000000, 616.000000)">
+                <g id="/assets-by-age-distribution" transform="translate(0.000000, 456.000000)">
+                    <g id="/graph" transform="translate(16.000000, 56.000000)">
+                        <rect id="div" fill="#F4F4F4" fill-rule="nonzero" x="40" y="255" width="288" height="1"></rect>
+                        <rect id="div" fill="#F4F4F4" fill-rule="nonzero" x="40" y="295" width="288" height="1"></rect>
+                        <path d="M40,231 L328,231 L328,232 L40,232 L40,231 Z" id="div" fill="#F4F4F4" fill-rule="nonzero"></path>
+                        <path d="M40,207 L328,207 L328,208 L40,208 L40,207 Z" id="div" fill="#F4F4F4" fill-rule="nonzero"></path>
+                        <path d="M40,183 L328,183 L328,184 L40,184 L40,183 Z" id="div" fill="#F4F4F4" fill-rule="nonzero"></path>
+                        <path d="M40,159 L328,159 L328,160 L40,160 L40,159 Z" id="div" fill="#F4F4F4" fill-rule="nonzero"></path>
+                        <path d="M40,135 L328,135 L328,136 L40,136 L40,135 Z" id="div" fill="#F4F4F4" fill-rule="nonzero"></path>
+                        <path d="M40,111 L328,111 L328,112 L40,112 L40,111 Z" id="div" fill="#F4F4F4" fill-rule="nonzero"></path>
+                        <path d="M40,87 L328,87 L328,88 L40,88 L40,87 Z" id="div" fill="#F4F4F4" fill-rule="nonzero"></path>
+                        <path d="M40,63 L328,63 L328,64 L40,64 L40,63 Z" id="div" fill="#F4F4F4" fill-rule="nonzero"></path>
+                        <path d="M40,0 L328,0 L328,1 L40,1 L40,0 Z" id="div" fill="#F4F4F4" fill-rule="nonzero"></path>
+                        <rect id="div" fill="#F4F4F4" fill-rule="nonzero" x="0" y="39" width="368" height="1"></rect>
+                        <path d="M328.5,0.5 L328.5,295.5 L364,295.5 C365.932997,295.5 367.5,293.932997 367.5,292 L367.5,4 C367.5,2.06700338 365.932997,0.5 364,0.5 L328.5,0.5 Z" id="Rectangle" stroke="#F4F4F4" fill-opacity="0.25" fill="#F4F4F4" fill-rule="nonzero"></path>
+                        <rect id="Rectangle" fill="#DBDBDB" fill-rule="nonzero" x="328" y="0" width="1" height="296"></rect>
+                        <path d="M39.5,295.5 L39.5,0.5 L4,0.5 C2.06700338,0.5 0.5,2.06700338 0.5,4 L0.5,292 C0.5,293.932997 2.06700338,295.5 4,295.5 L39.5,295.5 Z" id="Rectangle" stroke="#F4F4F4" fill-opacity="0.25" fill="#F4F4F4" fill-rule="nonzero"></path>
+                        <rect id="Rectangle" fill="#DBDBDB" fill-rule="nonzero" x="39" y="0" width="1" height="296"></rect>
+                        <text id="0" font-family="ABBvoice-Regular, ABBvoice" font-size="12" font-weight="normal" line-spacing="24" fill="#9F9F9F">
+                            <tspan x="16.244" y="257">0</tspan>
+                        </text>
+                        <text id="0" font-family="ABBvoice-Regular, ABBvoice" font-size="12" font-weight="normal" line-spacing="24" fill="#9F9F9F">
+                            <tspan x="344.244" y="257">0</tspan>
+                        </text>
+                        <text id="25" font-family="ABBvoice-Regular, ABBvoice" font-size="12" font-weight="normal" line-spacing="24" fill="#9F9F9F">
+                            <tspan x="341.382" y="209">25</tspan>
+                        </text>
+                        <text id="40" font-family="ABBvoice-Regular, ABBvoice" font-size="12" font-weight="normal" line-spacing="24" fill="#9F9F9F">
+                            <tspan x="13.132" y="233">40</tspan>
+                        </text>
+                        <text id="50" font-family="ABBvoice-Regular, ABBvoice" font-size="12" font-weight="normal" line-spacing="24" fill="#9F9F9F">
+                            <tspan x="341.33" y="161">50</tspan>
+                        </text>
+                        <text id="80" font-family="ABBvoice-Regular, ABBvoice" font-size="12" font-weight="normal" line-spacing="24" fill="#9F9F9F">
+                            <tspan x="13.18" y="209">80</tspan>
+                        </text>
+                        <text id="120" font-family="ABBvoice-Regular, ABBvoice" font-size="12" font-weight="normal" line-spacing="24" fill="#9F9F9F">
+                            <tspan x="10.214" y="185">120</tspan>
+                        </text>
+                        <text id="160" font-family="ABBvoice-Regular, ABBvoice" font-size="12" font-weight="normal" line-spacing="24" fill="#9F9F9F">
+                            <tspan x="10.112" y="161">160</tspan>
+                        </text>
+                        <text id="200" font-family="ABBvoice-Regular, ABBvoice" font-size="12" font-weight="normal" line-spacing="24" fill="#9F9F9F">
+                            <tspan x="9.284" y="137">200</tspan>
+                        </text>
+                        <text id="240" font-family="ABBvoice-Regular, ABBvoice" font-size="12" font-weight="normal" line-spacing="24" fill="#9F9F9F">
+                            <tspan x="9.428" y="113">240</tspan>
+                        </text>
+                        <text id="280" font-family="ABBvoice-Regular, ABBvoice" font-size="12" font-weight="normal" line-spacing="24" fill="#9F9F9F">
+                            <tspan x="9.476" y="89">280</tspan>
+                        </text>
+                        <text id="320" font-family="ABBvoice-Regular, ABBvoice" font-size="12" font-weight="normal" line-spacing="24" fill="#9F9F9F">
+                            <tspan x="9.71" y="65">320</tspan>
+                        </text>
+                        <text id="75" font-family="ABBvoice-Regular, ABBvoice" font-size="12" font-weight="normal" line-spacing="24" fill="#9F9F9F">
+                            <tspan x="341.984" y="113">75</tspan>
+                        </text>
+                        <text id="100" font-family="ABBvoice-Regular, ABBvoice" font-size="12" font-weight="normal" line-spacing="24" fill="#9F9F9F">
+                            <tspan x="338.402" y="65">100</tspan>
+                        </text>
+                        <text id="kUSD" font-family="ABBvoice-Regular, ABBvoice" font-size="12" font-weight="normal" line-spacing="24" fill="#686868">
+                            <tspan x="5.08" y="20">kUSD</tspan>
+                        </text>
+                        <text id="Av%" font-family="ABBvoice-Regular, ABBvoice" font-size="12" font-weight="normal" line-spacing="24" fill="#686868">
+                            <tspan x="336.272" y="20">Av%</tspan>
+                        </text>
+                        <text id="Years" font-family="ABBvoice-Regular, ABBvoice" font-size="12" font-weight="normal" line-spacing="24" fill="#686868">
+                            <tspan x="169.194" y="20">Years</tspan>
+                        </text>
+                        <g id="lines" transform="translate(54.000000, 48.000000)">
+                            <text id="‘08" font-family="ABBvoice-Regular, ABBvoice" font-size="12" font-weight="normal" line-spacing="24" fill="#9F9F9F">
+                                <tspan x="1.27" y="220">‘08</tspan>
+                            </text>
+                            <text id="‘09" font-family="ABBvoice-Regular, ABBvoice" font-size="12" font-weight="normal" line-spacing="24" fill="#9F9F9F">
+                                <tspan x="24" y="220">‘09</tspan>
+                            </text>
+                            <text id="‘10" font-family="ABBvoice-Regular, ABBvoice" font-size="12" font-weight="normal" line-spacing="24" fill="#9F9F9F">
+                                <tspan x="50.248" y="220">‘10</tspan>
+                            </text>
+                            <text id="‘11" font-family="ABBvoice-Regular, ABBvoice" font-size="12" font-weight="normal" line-spacing="24" fill="#9F9F9F">
+                                <tspan x="75.058" y="220">‘11</tspan>
+                            </text>
+                            <text id="‘12" font-family="ABBvoice-Regular, ABBvoice" font-size="12" font-weight="normal" line-spacing="24" fill="#9F9F9F">
+                                <tspan x="98.56" y="220">‘12</tspan>
+                            </text>
+                            <text id="‘13" font-family="ABBvoice-Regular, ABBvoice" font-size="12" font-weight="normal" line-spacing="24" fill="#9F9F9F">
+                                <tspan x="122.554" y="220">‘13</tspan>
+                            </text>
+                            <text id="‘14" font-family="ABBvoice-Regular, ABBvoice" font-size="12" font-weight="normal" line-spacing="24" fill="#9F9F9F">
+                                <tspan x="146.212" y="220">‘14</tspan>
+                            </text>
+                            <text id="‘15" font-family="ABBvoice-Regular, ABBvoice" font-size="12" font-weight="normal" line-spacing="24" fill="#9F9F9F">
+                                <tspan x="170.41" y="220">‘15</tspan>
+                            </text>
+                            <text id="‘16" font-family="ABBvoice-Regular, ABBvoice" font-size="12" font-weight="normal" line-spacing="24" fill="#9F9F9F">
+                                <tspan x="194.458" y="220">‘16</tspan>
+                            </text>
+                            <text id="‘17" font-family="ABBvoice-Regular, ABBvoice" font-size="12" font-weight="normal" line-spacing="24" fill="#9F9F9F">
+                                <tspan x="219.082" y="220">‘17</tspan>
+                            </text>
+                            <text id="‘18" font-family="ABBvoice-Regular, ABBvoice" font-size="12" font-weight="normal" line-spacing="24" fill="#9F9F9F">
+                                <tspan x="242.26" y="220">‘18</tspan>
+                            </text>
+                            <g id="'08" transform="translate(2.000000, 16.000000)" fill-rule="nonzero">
+                                <path d="M7,16 L9,16 C9.55228475,16 10,16.4477153 10,17 L10,192 L6,192 L6,17 C6,16.4477153 6.44771525,16 7,16 Z" id="3" fill="#973196"></path>
+                                <path d="M13,32 L15,32 C15.5522847,32 16,32.4477153 16,33 L16,192 L12,192 L12,33 C12,32.4477153 12.4477153,32 13,32 Z" id="3" fill="#973196"></path>
+                                <path d="M1,0 L3,0 C3.55228475,-1.01453063e-16 4,0.44771525 4,1 L4,192 L0,192 L0,1 C-6.76353751e-17,0.44771525 0.44771525,1.01453063e-16 1,0 Z" id="3" fill="#973196"></path>
+                                <rect id="2" fill="#FF9482" x="6" y="80" width="4" height="112"></rect>
+                                <rect id="2" fill="#FF9482" x="12" y="64" width="4" height="128"></rect>
+                                <rect id="2" fill="#FF9482" x="0" y="72" width="4" height="120"></rect>
+                                <rect id="1" fill="#A9E4DA" x="6" y="144" width="4" height="48"></rect>
+                                <rect id="1" fill="#A9E4DA" x="12" y="120" width="4" height="72"></rect>
+                                <rect id="1" fill="#A9E4DA" x="0" y="136" width="4" height="56"></rect>
+                            </g>
+                            <g id="'08" transform="translate(26.000000, 0.000000)" fill-rule="nonzero">
+                                <path d="M7,0 L9,0 C9.55228475,-1.01453063e-16 10,0.44771525 10,1 L10,208 L6,208 L6,1 C6,0.44771525 6.44771525,1.01453063e-16 7,0 Z" id="3" fill="#973196"></path>
+                                <path d="M13,32 L15,32 C15.5522847,32 16,32.4477153 16,33 L16,208 L12,208 L12,33 C12,32.4477153 12.4477153,32 13,32 Z" id="3" fill="#973196"></path>
+                                <path d="M1,56 L3,56 C3.55228475,56 4,56.4477153 4,57 L4,208 L0,208 L0,57 C-6.76353751e-17,56.4477153 0.44771525,56 1,56 Z" id="3" fill="#973196"></path>
+                                <rect id="2" fill="#FF9482" x="6" y="96" width="4" height="112"></rect>
+                                <rect id="2" fill="#FF9482" x="12" y="112" width="4" height="96"></rect>
+                                <rect id="2" fill="#FF9482" x="0" y="104" width="4" height="104"></rect>
+                                <rect id="1" fill="#A9E4DA" x="6" y="176" width="4" height="32"></rect>
+                                <rect id="1" fill="#A9E4DA" x="12" y="160" width="4" height="48"></rect>
+                                <rect id="1" fill="#A9E4DA" x="0" y="168" width="4" height="40"></rect>
+                            </g>
+                            <g id="'08" transform="translate(50.000000, 32.000000)" fill-rule="nonzero">
+                                <path d="M7,0 L9,0 C9.55228475,-1.01453063e-16 10,0.44771525 10,1 L10,176 L6,176 L6,1 C6,0.44771525 6.44771525,1.01453063e-16 7,0 Z" id="3" fill="#973196"></path>
+                                <path d="M13,32 L15,32 C15.5522847,32 16,32.4477153 16,33 L16,176 L12,176 L12,33 C12,32.4477153 12.4477153,32 13,32 Z" id="3" fill="#973196"></path>
+                                <path d="M1,48 L3,48 C3.55228475,48 4,48.4477153 4,49 L4,176 L0,176 L0,49 C-6.76353751e-17,48.4477153 0.44771525,48 1,48 Z" id="3" fill="#973196"></path>
+                                <rect id="2" fill="#FF9482" x="6" y="64" width="4" height="112"></rect>
+                                <rect id="2" fill="#FF9482" x="12" y="81" width="4" height="95"></rect>
+                                <rect id="2" fill="#FF9482" x="0" y="88" width="4" height="88"></rect>
+                                <rect id="1" fill="#A9E4DA" x="6" y="128" width="4" height="48"></rect>
+                                <rect id="1" fill="#A9E4DA" x="12" y="144" width="4" height="32"></rect>
+                                <rect id="1" fill="#A9E4DA" x="0" y="136" width="4" height="40"></rect>
+                            </g>
+                            <g id="'08" transform="translate(74.000000, 16.000000)" fill-rule="nonzero">
+                                <path d="M7,0 L9,0 C9.55228475,-1.01453063e-16 10,0.44771525 10,1 L10,192 L6,192 L6,1 C6,0.44771525 6.44771525,1.01453063e-16 7,0 Z" id="3" fill="#973196"></path>
+                                <path d="M13,24 L15,24 C15.5522847,24 16,24.4477153 16,25 L16,192 L12,192 L12,25 C12,24.4477153 12.4477153,24 13,24 Z" id="3" fill="#973196"></path>
+                                <path d="M1,32 L3,32 C3.55228475,32 4,32.4477153 4,33 L4,192 L0,192 L0,33 C-6.76353751e-17,32.4477153 0.44771525,32 1,32 Z" id="3" fill="#973196"></path>
+                                <rect id="2" fill="#FF9482" x="6" y="72" width="4" height="120"></rect>
+                                <rect id="2" fill="#FF9482" x="12" y="80" width="4" height="112"></rect>
+                                <rect id="2" fill="#FF9482" x="0" y="88" width="4" height="104"></rect>
+                                <rect id="1" fill="#A9E4DA" x="6" y="152" width="4" height="40"></rect>
+                                <rect id="1" fill="#A9E4DA" x="12" y="112" width="4" height="80"></rect>
+                                <rect id="1" fill="#A9E4DA" x="0" y="144" width="4" height="48"></rect>
+                            </g>
+                            <g id="'08" transform="translate(98.000000, 40.000000)" fill-rule="nonzero">
+                                <path d="M7,40 L9,40 C9.55228475,40 10,40.4477153 10,41 L10,168 L6,168 L6,41 C6,40.4477153 6.44771525,40 7,40 Z" id="3" fill="#973196"></path>
+                                <path d="M13,0 L15,0 C15.5522847,-1.01453063e-16 16,0.44771525 16,1 L16,168 L12,168 L12,1 C12,0.44771525 12.4477153,1.01453063e-16 13,0 Z" id="3" fill="#973196"></path>
+                                <path d="M1,24 L3,24 C3.55228475,24 4,24.4477153 4,25 L4,168 L0,168 L0,25 C-6.76353751e-17,24.4477153 0.44771525,24 1,24 Z" id="3" fill="#973196"></path>
+                                <rect id="2" fill="#FF9482" x="6" y="88" width="4" height="80"></rect>
+                                <rect id="2" fill="#FF9482" x="12" y="64" width="4" height="104"></rect>
+                                <rect id="2" fill="#FF9482" x="0" y="72" width="4" height="96"></rect>
+                                <rect id="1" fill="#A9E4DA" x="6" y="144" width="4" height="24"></rect>
+                                <rect id="1" fill="#A9E4DA" x="12" y="136" width="4" height="32"></rect>
+                                <rect id="1" fill="#A9E4DA" x="0" y="120" width="4" height="48"></rect>
+                            </g>
+                            <g id="'08" transform="translate(122.000000, 32.000000)" fill-rule="nonzero">
+                                <path d="M7,0 L9,0 C9.55228475,-1.01453063e-16 10,0.44771525 10,1 L10,176 L6,176 L6,1 C6,0.44771525 6.44771525,1.01453063e-16 7,0 Z" id="3" fill="#973196"></path>
+                                <path d="M13,24 L15,24 C15.5522847,24 16,24.4477153 16,25 L16,176 L12,176 L12,25 C12,24.4477153 12.4477153,24 13,24 Z" id="3" fill="#973196"></path>
+                                <path d="M1,16 L3,16 C3.55228475,16 4,16.4477153 4,17 L4,176 L0,176 L0,17 C-6.76353751e-17,16.4477153 0.44771525,16 1,16 Z" id="3" fill="#973196"></path>
+                                <rect id="2" fill="#FF9482" x="6" y="88" width="4" height="88"></rect>
+                                <rect id="2" fill="#FF9482" x="12" y="64" width="4" height="112"></rect>
+                                <rect id="2" fill="#FF9482" x="0" y="80" width="4" height="96"></rect>
+                                <rect id="1" fill="#A9E4DA" x="6" y="152" width="4" height="24"></rect>
+                                <rect id="1" fill="#A9E4DA" x="12" y="120" width="4" height="56"></rect>
+                                <rect id="1" fill="#A9E4DA" x="0" y="136" width="4" height="40"></rect>
+                            </g>
+                            <g id="'08" transform="translate(146.000000, 16.000000)" fill-rule="nonzero">
+                                <path d="M7,24 L9,24 C9.55228475,24 10,24.4477153 10,25 L10,192 L6,192 L6,25 C6,24.4477153 6.44771525,24 7,24 Z" id="3" fill="#973196"></path>
+                                <path d="M13,40 L15,40 C15.5522847,40 16,40.4477153 16,41 L16,192 L12,192 L12,41 C12,40.4477153 12.4477153,40 13,40 Z" id="3" fill="#973196"></path>
+                                <path d="M1,0 L3,0 C3.55228475,-1.01453063e-16 4,0.44771525 4,1 L4,192 L0,192 L0,1 C-6.76353751e-17,0.44771525 0.44771525,1.01453063e-16 1,0 Z" id="3" fill="#973196"></path>
+                                <rect id="2" fill="#FF9482" x="6" y="64" width="4" height="128"></rect>
+                                <rect id="2" fill="#FF9482" x="12" y="96" width="4" height="96"></rect>
+                                <rect id="2" fill="#FF9482" x="0" y="72" width="4" height="120"></rect>
+                                <rect id="1" fill="#A9E4DA" x="6" y="144" width="4" height="48"></rect>
+                                <rect id="1" fill="#A9E4DA" x="12" y="152" width="4" height="40"></rect>
+                                <rect id="1" fill="#A9E4DA" x="0" y="120" width="4" height="72"></rect>
+                            </g>
+                            <g id="'08" transform="translate(170.000000, 8.000000)" fill-rule="nonzero">
+                                <path d="M7,40 L9,40 C9.55228475,40 10,40.4477153 10,41 L10,200 L6,200 L6,41 C6,40.4477153 6.44771525,40 7,40 Z" id="3" fill="#973196"></path>
+                                <path d="M13,0 L15,0 C15.5522847,-1.01453063e-16 16,0.44771525 16,1 L16,200 L12,200 L12,1 C12,0.44771525 12.4477153,1.01453063e-16 13,0 Z" id="3" fill="#973196"></path>
+                                <path d="M1,24 L3,24 C3.55228475,24 4,24.4477153 4,25 L4,200 L0,200 L0,25 C-6.76353751e-17,24.4477153 0.44771525,24 1,24 Z" id="3" fill="#973196"></path>
+                                <rect id="2" fill="#FF9482" x="6" y="96" width="4" height="104"></rect>
+                                <rect id="2" fill="#FF9482" x="12" y="72" width="4" height="128"></rect>
+                                <rect id="2" fill="#FF9482" x="0" y="80" width="4" height="120"></rect>
+                                <rect id="1" fill="#A9E4DA" x="6" y="128" width="4" height="72"></rect>
+                                <rect id="1" fill="#A9E4DA" x="12" y="144" width="4" height="56"></rect>
+                                <rect id="1" fill="#A9E4DA" x="0" y="152" width="4" height="48"></rect>
+                            </g>
+                            <g id="'08" transform="translate(194.000000, 16.000000)" fill-rule="nonzero">
+                                <path d="M7,32 L9,32 C9.55228475,32 10,32.4477153 10,33 L10,192 L6,192 L6,33 C6,32.4477153 6.44771525,32 7,32 Z" id="3" fill="#973196"></path>
+                                <path d="M13,24 L15,24 C15.5522847,24 16,24.4477153 16,25 L16,192 L12,192 L12,25 C12,24.4477153 12.4477153,24 13,24 Z" id="3" fill="#973196"></path>
+                                <path d="M1,0 L3,0 C3.55228475,-1.01453063e-16 4,0.44771525 4,1 L4,192 L0,192 L0,1 C-6.76353751e-17,0.44771525 0.44771525,1.01453063e-16 1,0 Z" id="3" fill="#973196"></path>
+                                <rect id="2" fill="#FF9482" x="6" y="88" width="4" height="104"></rect>
+                                <rect id="2" fill="#FF9482" x="12" y="72" width="4" height="120"></rect>
+                                <rect id="2" fill="#FF9482" x="0" y="104" width="4" height="88"></rect>
+                                <rect id="1" fill="#A9E4DA" x="6" y="160" width="4" height="32"></rect>
+                                <rect id="1" fill="#A9E4DA" x="12" y="136" width="4" height="56"></rect>
+                                <rect id="1" fill="#A9E4DA" x="0" y="152" width="4" height="40"></rect>
+                            </g>
+                            <g id="'08" transform="translate(218.000000, 24.000000)" fill-rule="nonzero">
+                                <path d="M7,0 L9,0 C9.55228475,-1.01453063e-16 10,0.44771525 10,1 L10,184 L6,184 L6,1 C6,0.44771525 6.44771525,1.01453063e-16 7,0 Z" id="3" fill="#973196"></path>
+                                <path d="M13,24 L15,24 C15.5522847,24 16,24.4477153 16,25 L16,184 L12,184 L12,25 C12,24.4477153 12.4477153,24 13,24 Z" id="3" fill="#973196"></path>
+                                <path d="M1,8 L3,8 C3.55228475,8 4,8.44771525 4,9 L4,184 L0,184 L0,9 C-6.76353751e-17,8.44771525 0.44771525,8 1,8 Z" id="3" fill="#973196"></path>
+                                <rect id="2" fill="#FF9482" x="6" y="72" width="4" height="112"></rect>
+                                <rect id="2" fill="#FF9482" x="12" y="96" width="4" height="88"></rect>
+                                <rect id="2" fill="#FF9482" x="0" y="88" width="4" height="96"></rect>
+                                <rect id="1" fill="#A9E4DA" x="6" y="144" width="4" height="40"></rect>
+                                <rect id="1" fill="#A9E4DA" x="12" y="128" width="4" height="56"></rect>
+                                <rect id="1" fill="#A9E4DA" x="0" y="160" width="4" height="24"></rect>
+                            </g>
+                            <g id="'08" transform="translate(242.000000, 16.000000)" fill-rule="nonzero">
+                                <path d="M7,0 L9,0 C9.55228475,-1.01453063e-16 10,0.44771525 10,1 L10,192 L6,192 L6,1 C6,0.44771525 6.44771525,1.01453063e-16 7,0 Z" id="3" fill="#973196"></path>
+                                <path d="M13,16 L15,16 C15.5522847,16 16,16.4477153 16,17 L16,192 L12,192 L12,17 C12,16.4477153 12.4477153,16 13,16 Z" id="3" fill="#973196"></path>
+                                <path d="M1,24 L3,24 C3.55228475,24 4,24.4477153 4,25 L4,192 L0,192 L0,25 C-6.76353751e-17,24.4477153 0.44771525,24 1,24 Z" id="3" fill="#973196"></path>
+                                <rect id="2" fill="#FF9482" x="6" y="88" width="4" height="104"></rect>
+                                <rect id="2" fill="#FF9482" x="12" y="96" width="4" height="96"></rect>
+                                <rect id="2" fill="#FF9482" x="0" y="96" width="4" height="96"></rect>
+                                <rect id="1" fill="#A9E4DA" x="6" y="176" width="4" height="16"></rect>
+                                <rect id="1" fill="#A9E4DA" x="12" y="160" width="4" height="32"></rect>
+                                <rect id="1" fill="#A9E4DA" x="0" y="144" width="4" height="48"></rect>
+                            </g>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

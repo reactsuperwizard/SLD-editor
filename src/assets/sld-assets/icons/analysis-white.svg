@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="16px" height="16px" viewBox="0 0 16 16" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 52.5 (67469) - http://www.bohemiancoding.com/sketch -->
+    <title>analysis-white</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <path d="M2.75,12.93 L14,12.93 L14,13.68 L2,13.68 L2,3.18 L2.75,3.18 L2.75,12.93 Z M12.965,6.93 L11,3 L8.285,8.43 L6.095,8.43 L4.595,10.68 L3.5,10.68 L3.5,12.18 L5.405,12.18 L6.905,9.93 L9.215,9.93 L11,6.36 L12.035,8.43 L14,8.43 L14,6.93 L12.965,6.93 Z" id="path-1"></path>
+    </defs>
+    <g id="Project-Modelling-–-GIS-&amp;-SLD" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" opacity="1">
+        <g id="5.X-/-Settings-/-Edit-Mode-/-SLD-Modelling-/-Defining-Outage" transform="translate(-28.000000, -288.000000)">
+            <g id="/controls-left" transform="translate(16.000000, 104.000000)">
+                <g id="/zoom" transform="translate(0.000000, 168.000000)">
+                    <g id="32-/-normal-/-box-icon-/-normal" transform="translate(8.000000, 8.000000)">
+                        <g id="16-/-trend" transform="translate(4.000000, 8.000000)">
+                            <g>
+                                <mask id="mask-2" fill="black">
+                                    <use xlink:href="#path-1"></use>
+                                </mask>
+                                <use id="Shape" fill="#FFFFFF" fill-rule="nonzero" xlink:href="#path-1"></use>
+                                <g id="color-background-icon-regular" mask="url(#mask-2)" fill="#FFFFFF">
+                                    <rect id="Rectangle" x="0" y="0" width="16" height="16"></rect>
+                                </g>
+                            </g>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

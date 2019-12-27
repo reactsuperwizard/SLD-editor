@@ -1,0 +1,140 @@
+<div #container class="outer-container">
+    <sld-header [viewModeActive]="viewModeActive" (viewModeToggle)="toggleViewMode()" [diagram]="diagram"></sld-header>
+
+    <div class="workspace-container">
+        <div class="menu-bar-container">
+            <sld-menu-bar [diagram]="diagram" [labelsShown]="showLabels" (fullscreenToggle)="toggleFullscreen()" (viewModeToggle)="toggleViewMode()"
+                (new)="createNewDiagramModel()" (labelsToggle)="toggleLabels()" [diagramName]="diagramName" (escape)="escape()"
+                (import)="createNewDiagramModel($event)" (substationUpdate)="updateSubstationJSON($event)" (toast)="showToast($event)"
+                (shade)="updateShade($event)" [currentShade]="shadeBy" (dataUpdate)="refreshNodesDisplay()" [viewModeActive]="viewModeActive">
+            </sld-menu-bar>
+        </div>
+        <div class="canvases">
+            <sld-diagram class="diagram" [diagram]="diagram" [contextMenu]="contextMenu"
+                [labelsShown]="showLabels" [viewModeActive]="viewModeActive" [palette]="palette">
+            </sld-diagram>
+            <div class="palette-container" [hidden]="userDrawMode || viewModeActive">
+                <div class="equipment-library-title" i18n>Equipment library</div>
+                <sld-palette class="palette" [palette]="palette" [hoverPalette]="hoverPalette"
+                    [standard]="standard" [containerHeight]="containerRef.nativeElement.offsetHeight">
+                </sld-palette>
+            </div>
+        </div>
+        <div #loadedImagesDiv class="loaded-images-container"></div>
+
+        <div class="user-action-tool-set outage-area-tool" (click)="toggleUserDrawMode('outage')">
+            <div class="user-action-btn-group" [class.active]="userDrawMode === 'outage'">
+                <img [src]="iconsPath + 'outage.svg'">
+            </div>
+        </div>
+        <div class="user-action-tool-set bay-area-tool" (click)="toggleUserDrawMode('bay')">
+            <div class="user-action-btn-group" [class.active]="userDrawMode === 'bay'">
+                <img [src]="iconsPath + 'heirarchy.svg'">
+            </div>
+        </div>
+        <div class="user-action-tool-set undo-redo-tool" *ngIf="!viewModeActive">
+            <div class="user-action-btn-group">
+                <div class="action-button" [class.disabled]="!cmd.canRedo()" (click)="redo()">
+                    <img [src]="iconsPath + 'redo.svg'">
+                </div>
+                <div class="action-button" [class.disabled]="!cmd.canUndo()" (click)="undo()">
+                    <img [src]="iconsPath + 'undo.svg'">
+                </div>
+            </div>
+        </div>
+        <div class="user-action-tool-set zoom-tool">
+            <div class="user-action-btn-group">
+                <div class="action-button" (click)="cmd.increaseZoom()">
+                    <img [src]="iconsPath + 'plus.svg'">
+                </div>
+                <div class="action-button" (click)="cmd.resetZoom()">
+                    <img [src]="iconsPath + 'reset-zoom.svg'">
+                </div>
+                <div class="action-button" (click)="cmd.decreaseZoom()">
+                    <img [src]="iconsPath + 'minus.svg'">
+                </div>
+            </div>
+        </div>
+        <div class="user-action-tool-set heirarchy-tool">
+            <div class="user-action-btn-group">
+                <div class="action-button">
+                    <img [src]="iconsPath + 'earth.svg'">
+                </div>
+                <div class="action-button">
+                    <img [src]="iconsPath + 'heirarchy.svg'">
+                </div>
+                <div class="action-button">
+                    <img [src]="iconsPath + 'inverted-triangle.svg'">
+                </div>
+            </div>
+        </div>
+
+        <div class="context-menu-container"
+            [style.left]="contextMenuDisplay.left" [style.top]="contextMenuDisplay.top">
+            <sld-context-menu [contextMenuObj]="contextMenu" (show)="onContextMenuShow()" (substationUpdate)="updateSubstationJSON($event)"
+                [diagram]="diagram" (metadataClick)="openMetadataDialog()" (viewConnected)="highlightConnectedComponents=true; refreshNodesDisplay()"
+                (stateSwitch)="refreshNodesDisplay()" [currentSimulation]="simulation" [viewModeActive]="viewModeActive"
+                (simulate)="onSimulate($event)" (staticContent)="openStaticContentDialog($event)" (refreshDisplay)="refreshNodesDisplay()">
+            </sld-context-menu>
+        </div>
+
+        <div class="user-drawn-areas-list" *ngIf="userDrawMode && (userDrawMode === 'outage' ? outageAreasList : baysList); let areaList">
+            <div class="title" *ngIf="userDrawMode === 'outage'" i18n>Outage area</div>
+            <div class="title" *ngIf="userDrawMode === 'bay'" i18n>Bay</div>
+
+            <div class="area-box" *ngFor="let area of areaList"
+                [style.border-color]="(selectedArea === area) && area.color ? area.color : '#dbdbdb'"
+                (click)="area.isDefault ? '' : selectUserDrawnArea(area); openEditAreaDialog(area)">
+                <div class="inner-box" [style.background]="(selectedArea === area) && area.backgroundColor ? area.backgroundColor : '#f4f4f4'">
+                    <div class="pill-box" [style.background]="area.color || '#dbdbdb'">
+                        {{ userDrawMode === 'outage' ? area.outageAreaName : area.bayName }}
+                    </div>
+                    <span class="delete-btn" (click)="deleteUserDrawnArea(area)" *ngIf="!viewModeActive && !area.isDefault">
+                        <img [src]="iconsPath + 'cross.svg'">
+                    </span>
+                </div>
+            </div>
+
+            <div class="separator" *ngIf="!viewModeActive || !areaList.length"></div>
+            <div class="create-area" (click)="openEditAreaDialog()" *ngIf="!viewModeActive || !areaList.length">
+                <button [disabled]="viewModeActive">
+                    <img [src]="iconsPath + 'plus.svg'">
+                    <span *ngIf="userDrawMode === 'outage'" i18n>Create OA</span>
+                    <span *ngIf="userDrawMode === 'bay'" i18n>Create bay</span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </div>
+
+        <div class="metadata-dialog-container" *ngIf="metadataDialog.show"
+            [style.left]="metadataDialog.left" [style.top]="metadataDialog.top">
+            <sld-metadata-dialog [dataDescription]="metadataDialog.dataDescription" [sldData]="metadataDialog.sldData"
+                (save)="onMetadataDialogSave()" (discard)="onMetadataDialogDiscard()">
+            </sld-metadata-dialog>
+        </div>
+
+        <div class="name-dialog-container" *ngIf="nameDialog.show"
+            [style.left]="nameDialog.left" [style.top]="nameDialog.top">
+            <sld-name-dialog [name]="nameDialog.nameToEdit" [error]="nameDialog.error" [type]="nameDialog.type"
+                (save)="onNameDialogSave($event)" (discard)="onNameDialogDiscard()">
+            </sld-name-dialog>
+        </div>
+
+        <div class="edit-area-dialog-container" *ngIf="editAreaDialog.show">
+            <sld-edit-area-dialog [diagram]="diagram" (close)="editAreaDialog={}" [type]="editAreaDialog.type"
+                (save)="onEditAreaDialogSave($event)" [error]="editAreaDialog.error" [areaObject]="editAreaDialog.areaObject">
+            </sld-edit-area-dialog>
+        </div>
+
+        <div class="static-content-dialog-container" *ngIf="staticContentDialog.show">
+            <sld-static-content-dialog  (close)="staticContentDialog={}"
+                [rows]="staticContentDialog.rows" [title]="staticContentDialog.title">
+            </sld-static-content-dialog>
+        </div>
+
+        <div class="toast" *ngIf="toast.show">
+            {{ toast.message }}
+        </div>
+    </div>
+</div>

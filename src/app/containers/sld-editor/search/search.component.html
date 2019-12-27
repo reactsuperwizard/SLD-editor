@@ -1,0 +1,16 @@
+<div #searchDiv class="search">
+    <div class="input-box">
+        <input #inputRef placeholder="Search for component" [(ngModel)]="searchText" (input)="search()"  i18n-placeholder>
+        <img [src]="iconsPath + 'search.svg'">
+
+        <div #searchResultsDiv class="search-results-container" *ngIf="searchText && this.hasFocus">
+            <div class="search-result-row disabled" *ngIf="!searchResults.length" i18n>
+                No components found
+            </div>
+            <div class="search-result-row" *ngFor="let key of searchResults; let i=index" (click)="goToComponent(key)"
+                [class.active]="i===selectedIndex" (mouseenter)="selectedIndex=i">
+                {{ key }}
+            </div>
+        </div>
+    </div>
+</div>

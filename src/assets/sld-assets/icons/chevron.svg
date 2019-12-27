@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="8px" height="8px" viewBox="0 0 8 8" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 52.5 (67469) - http://www.bohemiancoding.com/sketch -->
+    <title>chevron</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Project-Modelling-–-GIS-&amp;-SLD" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" opacity="1">
+        <g id="5.X-/-Settings-/-Edit-Mode-/-SLD-Modelling-/-Shade-by-risk--active" transform="translate(-59.000000, -124.000000)" fill="#464646">
+            <g id="/controls-left" transform="translate(16.000000, 104.000000)">
+                <g id="/zoom">
+                    <g id="8-/-chevron-down-dark" transform="translate(47.000000, 24.000000) scale(-1, 1) rotate(90.000000) translate(-47.000000, -24.000000) translate(43.000000, 20.000000)">
+                        <polygon id="Chevron" points="7.29370629 2 4 5.49872503 0.707292707 2 0 2.75010625 4 7 8 2.75010625"></polygon>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="16px" height="16px" viewBox="0 0 16 16" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 52.5 (67469) - http://www.bohemiancoding.com/sketch -->
+    <title>checkbox-white</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Project-Modelling-–-GIS-&amp;-SLD" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" opacity="1">
+        <g id="5.X-/-Settings-/-Edit-Mode-/-SLD-Modelling-/-View" transform="translate(-288.000000, -224.000000)">
+            <g id="/menu" transform="translate(16.000000, 104.000000)">
+                <g id="/view" transform="translate(0.000000, 56.000000)">
+                    <g id="32-/-combo-box-/-filled" transform="translate(72.000000, 48.000000)">
+                        <g id="atoms-/-checkbox-checked-black" transform="translate(200.000000, 16.000000)">
+                            <rect id="Rectangle-2" fill="#000000" x="0" y="0" width="16" height="16" rx="4"></rect>
+                            <polygon id="Page-1" fill="#FFFFFF" points="11.9849014 3.4287551 6.7979608 10.1879412 3.77959237 7.35569528 2.28571429 8.9450836 7.0612262 13.4254934 13.7138816 4.75610251"></polygon>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

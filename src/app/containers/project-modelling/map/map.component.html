@@ -1,0 +1,51 @@
+<div class="map-wrapper">
+
+  <div class="markers" *ngIf="getMarkers().length !== 0">
+    <div (click)="legend = !legend" class="header">
+      <h1 i18n>Substation list</h1>
+      <a href="javascript:;" [class.collapsed]="!legend"></a>
+    </div>
+    <ul *ngIf="legend">
+      <li *ngFor="let marker of getMarkers()"
+          [class.hidden]="!marker.visible"
+          [class.active]="hoverOverMarker !== null ? hoverOverMarker.getId() === marker.id : false">
+        <div class="dot"></div>
+        <div class="name">{{marker.name}}</div>
+        <div class="region">{{marker.region}}</div>
+      </li>
+    </ul>
+    <div *ngIf="legend" class="search-wrapper">
+      <input [(ngModel)]="legendQuery" class="form-input" type="search" placeholder="Search"/>
+    </div>
+  </div>
+  <div id="map" class="map"></div>
+
+  <a [class.fade-out]="enableForConnect" (click)="addSubStationEvent()" [class.active]="addSubStation" class="add-button add-substation"
+     href="javascript:;">
+    <small i18n>Add<br/>
+      substation
+    </small>
+    <i></i>
+  </a>
+
+  <a [class.fade-out]="enableForConnect" (click)="addJointEvent();" [class.active]="addJoint" class="add-button add-joint" href="javascript:;">
+    <small i18n>Add joint</small>
+    <i></i>
+  </a>
+
+  <a [class.disabled]="!isPossibleToConnect()" (click)="enableConnections();" class="add-button add-connection" href="javascript:;">
+    <small i18n>Connect</small>
+    <i></i>
+  </a>
+  <div class="zoom">
+    <a href="javascript:;" (click)="zoomOut()"></a>
+    <a href="javascript:;" (click)="focus()"></a>
+    <a href="javascript:;" (click)="zoomIn()"></a>
+  </div>
+
+  <div class="view">
+    <button></button>
+    <button routerLink="/sld-editor"></button>
+    <button></button>
+  </div>
+</div>

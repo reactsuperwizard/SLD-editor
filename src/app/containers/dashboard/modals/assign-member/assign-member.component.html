@@ -1,0 +1,13 @@
+<div class="modal-container">
+  <div class="modal-header">
+    <span class="modal-title" id="modal-basic-title" i18n>Assign project support</span>
+    <button type="button" class="close" aria-label="Close" (click)="activeModal.dismiss('back')">
+    </button>
+  </div>
+  <div class="modal-body">
+    <app-all-users #allUsers [asModal]="true"></app-all-users>
+  </div>
+  <div class="modal-footer">
+    <a class="btn btn-save" (click)="save()" i18n>Assign</a>
+  </div>
+</div>

@@ -1,0 +1,151 @@
+<div class="scroll-container" [perfectScrollbar]="{}">
+  <div class="loading-box" *ngIf="loading">
+    <div class="img" alt="loading"></div>
+  </div>
+
+  <div class="content-wrap all-teams">
+    <div class="title">
+      <span>Internal</span>
+      <input type="search" class="input-ctrl search-ctrl" placeholder="Search"
+             (keyup)="updateFilter($event, 'internal')"/>
+    </div>
+    <div class="body">
+      <div class="all-teams row">
+        <div class="col-lg-3 col-md-6" *ngFor="let item of allExecuTeamInternal; let i = index">
+          <div class="card-execu" (click)="addOrEditExecutionTeam('Internal', item)">
+            <div class="cr-head">
+              <div class="circ-member-count">{{item.executionTeamUsers.length}}</div>
+              <div class="tinfo">
+                <h5 class="lbl" i18n>Team</h5>
+                <h4>{{item.teamName}}</h4>
+              </div>
+              <div class="team-rating">
+                <div class="ra-val">{{item.rating}}</div>
+              </div>
+            </div>
+            <div class="cr-body">
+              <div class="role-desc">
+                {{item.teamDescription}}
+              </div>
+
+              <div class="lbl-tskills" i18n>Top Skills</div>
+              <div class="tskill-list">
+                <div class="tskill" *ngFor="let tskill of item.topSkills | slice:0:3">{{tskill}}</div>
+              </div>
+            </div>
+            <!-- /.cr-body -->
+            <footer class="cr-footer">
+              <div class="hrate" i18n>Hourly Rate</div>
+              <div class="hrate-v">${{item.hourlyRate | number:'.2'}}</div>
+            </footer>
+            <!-- /.cr-footser -->
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-6">
+          <div class="card-execu add-new" (click)="addOrEditExecutionTeam('Internal')">
+            <i class="icon icon-add-new"></i>
+            <span class="add-new-text" i18n>Create<br/>new team</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="content-wrap all-teams">
+    <div class="title">
+      <span>Mixed</span>
+      <input type="search" class="input-ctrl search-ctrl" placeholder="Search" (keyup)="updateFilter($event, 'mixed')"/>
+    </div>
+    <div class="body">
+      <div class="all-teams row">
+        <div class="col-lg-3 col-md-6" *ngFor="let item of allExecuTeamMixed; let i = index">
+          <div class="card-execu" (click)="addOrEditExecutionTeam('Mixed', item)">
+            <div class="cr-head">
+              <div class="circ-member-count">{{item.executionTeamUsers.length}}</div>
+              <div class="tinfo">
+                <h5 class="lbl" i18n>Team</h5>
+                <h4>{{item.teamName}}</h4>
+              </div>
+              <div class="team-rating">
+                <div class="ra-val">{{item.rating}}</div>
+              </div>
+            </div>
+            <div class="cr-body">
+              <div class="role-desc">
+                {{item.teamDescription}}
+              </div>
+
+              <div class="lbl-tskills" i18n>Top Skills</div>
+              <div class="tskill-list">
+                <div class="tskill" *ngFor="let tskill of item.topSkill">{{tskill}}</div>
+              </div>
+            </div>
+            <!-- /.cr-body -->
+            <footer class="cr-footer">
+              <div class="hrate" i18n>Hourly Rate</div>
+              <div class="hrate-v">${{item.hourlyRate | number:'.2'}}</div>
+            </footer>
+            <!-- /.cr-footser -->
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-6">
+          <div class="card-execu add-new" (click)="addOrEditExecutionTeam('Mixed')">
+            <i class="icon icon-add-new"></i>
+            <span class="add-new-text" i18n>Create<br/>new team</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="content-wrap all-teams">
+    <div class="title">
+      <span>External</span>
+      <input type="search" class="input-ctrl search-ctrl" placeholder="Search"
+             (keyup)="updateFilter($event, 'external')"/>
+    </div>
+    <div class="body">
+      <div class="all-teams row">
+        <div class="col-lg-3 col-md-6" *ngFor="let item of allExecuTeamExternal; let i = index">
+          <div class="card-execu"
+               (click)="addOrEditExecutionTeam('External',item)">
+            <div class="cr-head">
+              <div class="circ-member-count">{{item.executionTeamUsers.length}}</div>
+              <div class="tinfo">
+                <h5 class="lbl" i18n>Team</h5>
+                <h4>{{item.teamName}}</h4>
+              </div>
+              <div class="team-rating">
+                <div class="ra-val">{{item.rating}}</div>
+              </div>
+            </div>
+            <div class="cr-body">
+              <div class="role-desc">
+                {{item.teamDescription}}
+              </div>
+
+              <div class="lbl-tskills" i18n>Top Skills</div>
+              <div class="tskill-list">
+                <div class="tskill" *ngFor="let tskill of item.topSkill">{{tskill}}</div>
+              </div>
+            </div>
+            <!-- /.cr-body -->
+            <footer class="cr-footer">
+              <div class="hrate" i18n>Hourly Rate</div>
+              <div class="hrate-v">${{item.hourlyRate | number:'.2'}}</div>
+            </footer>
+            <!-- /.cr-footser -->
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-6">
+          <div class="card-execu add-new" (click)="addOrEditExecutionTeam('External')">
+            <i class="icon icon-add-new"></i>
+            <span class="add-new-text" i18n>Create<br/>new team</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</div>
+<div class="clear-cut"></div>
